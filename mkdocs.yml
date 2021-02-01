@@ -1,0 +1,56 @@
+site_name: 'AppsDock Application Server'
+site_url: 'https://docs.appsdock.de/guide'
+copyright: 'Copyright &copy; 2020 AppsDock Enterprise'
+
+theme:
+  feature:
+    tabs: true
+  name: 'material'
+  palette:
+    primary: 'blue grey'
+    accent: 'teal'
+
+extra_css:
+  - 'custom.css'
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  #- pymdownx.tabbed
+
+nav:
+
+  # Project Documentation Pages
+
+  - Project:
+    - Introduction: project/index.md
+    - Server Backup: project/backup.md
+
+  # Developer Guide Pages
+
+  - Developer:
+    - Introduction: developer/index.md
+    - Guidelines:
+      - Version Control: developer/guidelines/version-control.md
+    - Getting Started:
+      - Introduction: developer/gettingstarted/introduction.md
+      - Environment: developer/gettingstarted/environment.md
+      - Setup: developer/gettingstarted/setup.md
+    - Identity and Access:
+        - Introduction: developer/identity-access/intro.md
+        - Authentication: developer/identity-access/authentication.md
+        - Authorization: developer/identity-access/authorization.md
+    - Dev-Process:
+      - Introduction: developer/process/introduction.md
+      - Code Generation: developer/process/generation.md
+    - Architecture:
+      - Backend:
+        - Introduction: developer/architecture/backend/introduction.md
+    - Apps:
+      - Introduction: developer/apps/introduction.md
+      - REST Api: developer/apps/rest-api.md
+
+  # Operations Guide Pages
+
+  - Operations:
+    - Introduction: operations/index.md
