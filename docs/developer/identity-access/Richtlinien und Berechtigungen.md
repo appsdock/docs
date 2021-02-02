@@ -37,28 +37,72 @@ Eine Ressource kann bestimmt oder unbestimmt sein. Unbestimmte Ressourcen werden
 
 Der Effekt ist entweder *Erlauben* oder *Verbieten*.
 
-### Code
+## Beispiele
 
-Berechtigungen werden als Funktionsattribut angelegt. Berechtigungen welche für alle Funktionen gelten sollen können alternativ als Klassenattribut angelegt werden.
+Berechtigungen werden als [Methoden-Attribut](#methoden-attribut) oder alternativ als [Klassen-Attribut](#klassen-attribut) angelegt. Berechtigungen als [Klassen-Attribut](#klassen-attribut) gelten für alle Funktionen innerhalb der Klasse.
 
-Berechtigungen beginnen immer mit dem Wort *Permission*, gefolgt von der Aktion in Klammern. Bei mehreren Aktionen werden diese als Array angegeben.
-
-Standardmäßig werden Berechtigungen auf unbestimmte Ressourcen geprüft. Wenn bestimmte Ressourcen geprüft werden sollen, können diese als zweiter Parameter angegeben werden.
-
-Berechtigungen werden standardmäßig im aktuellen Kontext geprüft. Soll eine Berechtigung in einem anderen Kontext geprüft werden, kann dieser als dritter Parameter angegeben werden.
+### Unbestimmte Ressource
 
 ~~~php
-#[Permission('app.administrate')]
-class AppWriteRestAPI extends RestAPIController
-{​
-    #[
-        Permission(['app.extra', 'app.delete']),
-        Permission('foo.bar', 'id'),
-        Permission('bar.foo', context: 'com.appsdock')
-    ]
-    public function uninstall(string $appId): JsonResponse
-    {
-    	...
-    }
+#[Permission('read')]
+~~~
+
+### Bestimmte Ressource
+
+Über den zweiten Parameter kann die UUID der Ressource angegeben werden. Die UUID kann bspw. im Kontext der REST API mittels eines Routing-Parameters dynamisch übergeben werden.
+
+~~~php
+#[Permission('read', 'id')]
+~~~
+
+### Alternativer Kontext
+
+Über den dritten Parameter kann ein alternativer Kontext angegeben werden, damit man Richtlinien aus anderen Apps prüfen kann.
+
+~~~php
+#[Permission('read', 'id', 'com.appsdock')]
+~~~
+
+### Mehrere Richtlinien
+
+Mehrere Richtlinien können direkt als Array übergeben werden.
+
+~~~php
+#[Permission(['read', 'write', 'delete'])]
+~~~
+
+Bei bestimmten Ressourcen oder einem alternativen Kontext müssen diese separat aufgeführt werden.
+
+~~~php
+#[Permission(['read', 'write'])]
+#[Permission('delete', 'id')]
+#[Permission('administrate', context: 'com.appsdock')]
+~~~
+
+### Klassen-Attribut
+
+~~~php
+#[Permission('read')]
+class DMS
+{
+	...
 }
+~~~
+
+### Methoden-Attribut
+
+~~~php
+#[Permission('write')]
+public function write(string $text): bool
+{
+	...
+}
+~~~
+
+### Sonderfall: *öffentlicher Zugriff*
+
+Der öffentliche Zugriff auf Klassen-Ebene kann von Richtlinien auf Methoden-Ebene überschrieben werden. Wiederum ignoriert der öffentliche Zugriff auf Methoden-Ebene alle zusätzlichen Richtlinien.
+
+~~~php
+#[PublicAccess]
 ~~~
