@@ -37,9 +37,41 @@ Eine Ressource kann bestimmt oder unbestimmt sein. Unbestimmte Ressourcen werden
 
 Der Effekt ist entweder *Erlauben* oder *Verbieten*.
 
-## Beispiele
+## Berechtigungssteuerung
 
-Berechtigungen werden als [Methoden-Attribut](#methoden-attribut) oder alternativ als [Klassen-Attribut](#klassen-attribut) angelegt. Berechtigungen als [Klassen-Attribut](#klassen-attribut) gelten für alle Funktionen innerhalb der Klasse.
+Der Berechtigungssteuerung wird die Aktion als erster Parameter und der Kontext als zweiter Parameter angegeben.
+
+~~~php
+$isPermitted = $this->permissionController->isPermitted(
+    'read',
+    $this->context->getId()
+);
+~~~
+
+Bei einer bestimmten Ressource wird deren *UUID* als dritter Parameter angegeben.
+
+~~~php
+$isPermitted = $this->permissionController->isPermitted(
+    'read',
+    $this->context->getId(),
+    $appId
+);
+~~~
+
+Alternativ kann ein Standardwert als vierter Parameter angegeben werden. Dieser wird nur zurückgegeben, wenn **keine** Richtlinie existiert.
+
+~~~php
+$isPermitted = $this->permissionController->isPermitted(
+    'read',
+    $this->context->getId(),
+    $appId,
+    $default
+);
+~~~
+
+## REST API
+
+Berechtigungen werden als [Methoden-Attribut](#methoden-attribut) oder alternativ als [Klassen-Attribut](#klassen-attribut) definiert. Berechtigungen als [Klassen-Attribut](#klassen-attribut) gelten für alle Funktionen innerhalb der Klasse.
 
 ### Unbestimmte Ressource
 
