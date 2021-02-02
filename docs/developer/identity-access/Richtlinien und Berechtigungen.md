@@ -81,7 +81,7 @@ Berechtigungen werden als [Methoden-Attribut](#methoden-attribut) oder alternati
 
 ### Bestimmte Ressource
 
-Über den zweiten Parameter kann die UUID der Ressource angegeben werden. Die UUID kann bspw. im Kontext der REST API mittels eines Routing-Parameters dynamisch übergeben werden.
+Über den zweiten Parameter kann die *UUID* der Ressource angegeben werden. Die *UUID* kann bspw. im Kontext der REST API mittels eines Routing-Parameters dynamisch übergeben werden.
 
 ~~~php
 #[Permission('read', 'id')]
