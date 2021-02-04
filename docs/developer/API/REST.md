@@ -7,8 +7,26 @@ Um für eine App eigene REST API Endpunkte zu erstellen, legt man eine Klasse an
 ~~~php
 class AppRestAPI extends RestAPIController
 {
-    #[API('POST', '/app:create/{id}', 'app.create')]
-    public function create(string $appId): JsonResponse
+    #[API('GET', '/books', 'book.list')]
+    public function listBooks(): JsonResponse
+    {
+        ...
+    }
+    
+    #[API('GET', '/books/{id}', 'book.get')]
+    public function getBook(string $bookId): JsonResponse
+    {
+        ...
+    }
+    
+    #[API('POST', '/books', 'book.create')]
+    public function createBook(): JsonResponse
+    {
+        ...
+    }
+    
+    #[API('DELETE', '/books/{id}', 'book.delete')]
+    public function deleteBook(string $bookId): JsonResponse
     {
         ...
     }
@@ -17,10 +35,10 @@ class AppRestAPI extends RestAPIController
 
 | Parameter | Datentyp | Standardwert | Erforderlich | Beschreibung
 | :-------: | -------- | :----------: | :----------: | ------------ 
-| 1 | String\|String[] | - | &#10004; | Methode(n) (DELETE, GET, HEAD, PATCH, POST, PUT)
-| 2 | String | - | &#10004; | Route
+| 1 | String\|String[] | - | &#10004; | Methoden: DELETE, GET, HEAD, PATCH, POST und PUT.
+| 2 | String | - | &#10004; | Route: Valide URL.
 | 3 | String | - | &#10004; | Eindeutiger Name in Domain-Schreibweise.
-| 4 | Integer | 1 | &#10008; | API-Version
+| 4 | Integer | 1 | &#10008; | API-Version.
 
 | &#10004; Ja | &#10008; Nein
 | ----------- | -------------
