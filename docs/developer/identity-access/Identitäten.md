@@ -12,4 +12,4 @@ Benutzer können zu einer Gruppe zusammengefasst werden. Ein Benutzer kann mehre
 
 ## Rollen
 
-Rollen sind Identitäten, welche Benutzern und Gruppen zugewiesen werden können. Mittels der Rolle werden die Berechtigungen identifiziert. Einer Rolle können eine oder mehrere [Richtlinien](Richtlinien-und-Berechtigungen#Richtlinie) zugewiesen werden.
+Rollen sind Identitäten, welche Benutzern und Gruppen zugewiesen werden können. Mittels der Rolle werden die Berechtigungen identifiziert. Einer Rolle können eine oder mehrere Richtlinien zugewiesen werden.
