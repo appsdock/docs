@@ -5,7 +5,7 @@
 Um für eine App eigene REST API Endpunkte zu erstellen, legt man eine Klasse an, welche vom *RestAPIController* erbt. In dieser werden über Annotation Attribute die einzelnen Endpunkte definiert.
 
 ~~~php
-class AppRestAPI extends RestAPIController
+class BookRestAPI extends RestAPIController
 {
     #[API('GET', '/books', 'book.list')]
     public function listBooks(): JsonResponse
