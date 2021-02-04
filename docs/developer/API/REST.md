@@ -16,10 +16,10 @@ class AppRestAPI extends RestAPIController
 ~~~
 
 | Parameter | Datentyp | Standardwert | Erforderlich | Beschreibung
-| :-------: | -------- | ------------ | :----------: | ------------ 
-| 1 | String\|String[] | Keiner | &#10004; | Methode(n) (DELETE, GET, HEAD, PATCH, POST, PUT)
-| 2 | String | Keiner | &#10004; | Route
-| 3 | String | Keiner | &#10004; | Eindeutiger Name in Domain-Schreibweise.
+| :-------: | -------- | :----------: | :----------: | ------------ 
+| 1 | String\|String[] | - | &#10004; | Methode(n) (DELETE, GET, HEAD, PATCH, POST, PUT)
+| 2 | String | - | &#10004; | Route
+| 3 | String | - | &#10004; | Eindeutiger Name in Domain-Schreibweise.
 | 4 | Integer | 1 | &#10008; | API-Version
 
 | &#10004; Ja | &#10008; Nein
