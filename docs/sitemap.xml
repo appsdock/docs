@@ -4,19 +4,7 @@
      <lastmod>2021-04-29</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://appsdock.github.io/docs/guidelines/version-control/</loc>
-     <lastmod>2021-04-29</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://appsdock.github.io/docs/gettingstarted/introduction/</loc>
-     <lastmod>2021-04-29</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://appsdock.github.io/docs/gettingstarted/environment/</loc>
-     <lastmod>2021-04-29</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://appsdock.github.io/docs/gettingstarted/setup/</loc>
+     <loc>https://appsdock.github.io/docs/gettingstarted/guidelines/version-control/</loc>
      <lastmod>2021-04-29</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -24,15 +12,7 @@
      <lastmod>2021-04-29</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://appsdock.github.io/docs/identity-access/intro/</loc>
-     <lastmod>2021-04-29</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
      <loc>https://appsdock.github.io/docs/identity-access/authentication/</loc>
-     <lastmod>2021-04-29</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://appsdock.github.io/docs/identity-access/authorization/</loc>
      <lastmod>2021-04-29</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -41,26 +21,6 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://appsdock.github.io/docs/identity-access/policies/</loc>
-     <lastmod>2021-04-29</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://appsdock.github.io/docs/process/introduction/</loc>
-     <lastmod>2021-04-29</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://appsdock.github.io/docs/process/generation/</loc>
-     <lastmod>2021-04-29</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://appsdock.github.io/docs/architecture/backend/introduction/</loc>
-     <lastmod>2021-04-29</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://appsdock.github.io/docs/apps/introduction/</loc>
-     <lastmod>2021-04-29</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://appsdock.github.io/docs/API/REST/</loc>
      <lastmod>2021-04-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
