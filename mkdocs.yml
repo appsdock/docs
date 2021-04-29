@@ -9,7 +9,7 @@ site_dir: docs
 
 theme:
   feature:
-    tabs: true
+    #tabs: true
   name: 'material'
   palette:
     primary: 'blue grey'
