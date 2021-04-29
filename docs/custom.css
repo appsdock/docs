@@ -1,0 +1,7 @@
+.md-footer-nav {
+    display: none;
+}
+
+.md-sidebar.md-sidebar--primary {
+    border-right: 1px solid #eee;
+}
