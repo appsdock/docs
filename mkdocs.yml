@@ -1,8 +1,8 @@
-site_name: 'AppsDock OS'
-site_url: 'https://appsdock.github.io/docs/'
-copyright: '&copy; 2021 AppsDock GbR'
+site_name: AppsDock OS
+site_url: https://appsdock.github.io/docs/
+copyright: © 2021 AppsDock GbR
 repo_url: https://github.com/appsdock/docs
-repo_name: GitHub
+repo_name: AppsDock OS Documentation
 
 docs_dir: src
 site_dir: docs
