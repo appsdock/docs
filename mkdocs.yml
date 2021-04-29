@@ -2,7 +2,7 @@ site_name: AppsDock OS Documentation
 site_url: https://appsdock.github.io/docs/
 copyright: © 2021 AppsDock GbR
 repo_url: https://github.com/appsdock/docs
-repo_name: AppsDock OS Documentation
+repo_name: GitHub
 
 docs_dir: src
 site_dir: docs
@@ -24,8 +24,8 @@ nav:
       - Version Control: gettingstarted/guidelines/version-control.md
     - XDebug: gettingstarted/xdebug.md
     - API:
-        - REST: api/rest.md
+      - REST: gettingstarted/api/rest.md
   - Identity and Access:
-      - Authentication: identity-access/authentication.md
-      - Identity: identity-access/identity.md
-      - Policy: identity-access/policies.md
+    - Authentication: identity-access/authentication.md
+    - Identity: identity-access/identity.md
+    - Policy: identity-access/policies.md

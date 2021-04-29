@@ -1,17 +1,17 @@
 # Phpstorm Xdebug-Einrichtung
 
 * Deployment-Konfiguration des Vagrant Box vollenden
-* Überprüfung der Einstellung siehe Screenshot [step1]
+* Überprüfung der Einstellung siehe Screenshot
 
 ![Schritt 1](../assets/images/step1.png)
 
-### Server einrichten [step2]
+### Server einrichten
 
 **Wichtig! Das Mapping Local-Path zu Remot Path (Bild Project Files)**
 
 ![Schritt 2](../assets/images/step2.png)
 
-### Debugkonfiguration [step3]
+### Debugkonfiguration
 
 Run -> Debug -> Edit Configurations -> Defaults aufklappen -> Php Remote Debug
 
