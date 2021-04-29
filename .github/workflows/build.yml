@@ -22,5 +22,6 @@ jobs:
         run: |
           git config --global user.name 'Automated Build'
           git config --global user.email 'github@appsdock.de'
+          git add *
           git commit -am 'CHANGE #documentation #automatedBuild Automated build'
           git push
