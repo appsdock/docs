@@ -1,6 +1,6 @@
-site_name: 'AppsDock Application Server'
+site_name: 'AppsDock OS'
 site_url: 'https://appsdock.github.io/docs/'
-copyright: 'Copyright &copy; 2020 AppsDock Enterprise'
+copyright: '&copy; 2021 AppsDock GbR'
 repo_url: https://github.com/appsdock/docs
 repo_name: GitHub
 
@@ -8,20 +8,17 @@ docs_dir: src
 site_dir: docs
 
 theme:
-  feature:
-    #tabs: true
-  name: 'material'
+  name: material
   palette:
-    primary: 'blue grey'
-    accent: 'teal'
+    primary: light green
+    accent: blue
 
 extra_css:
-  - 'custom.css'
+  - custom.css
 
 markdown_extensions:
   - admonition
   - codehilite
-  #- pymdownx.tabbed
 
 nav:
 

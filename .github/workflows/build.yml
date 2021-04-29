@@ -1,0 +1,23 @@
+name: Build
+
+on: push
+
+jobs:
+  build:
+    name: Build
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+
+      - name: Build docuementation
+        run: docker run --rm -it -v ./src/:/docs/ squidfunk/mkdocs-material build
+
+      - name: Commit docuementation
+        run: |
+          git config --global user.name 'Automated Build'
+          git config --global user.email 'github@appsdock.de'
+          git commit -am 'CHANGE #documentation #automatedBuild Automated build'
+          git push
