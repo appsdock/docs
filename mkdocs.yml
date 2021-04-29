@@ -25,37 +25,27 @@ markdown_extensions:
 
 nav:
 
-  # Project Documentation Pages
-
-  - Project:
-    - Introduction: project/index.md
-    - Server Backup: project/backup.md
-
-  # Developer Guide Pages
-
-  - Developer:
-    - Introduction: developer/index.md
-    - Guidelines:
-      - Version Control: developer/guidelines/version-control.md
-    - Getting Started:
-      - Introduction: developer/gettingstarted/introduction.md
-      - Environment: developer/gettingstarted/environment.md
-      - Setup: developer/gettingstarted/setup.md
-    - Identity and Access:
-        - Introduction: developer/identity-access/intro.md
-        - Authentication: developer/identity-access/authentication.md
-        - Authorization: developer/identity-access/authorization.md
-    - Dev-Process:
-      - Introduction: developer/process/introduction.md
-      - Code Generation: developer/process/generation.md
-    - Architecture:
-      - Backend:
-        - Introduction: developer/architecture/backend/introduction.md
-    - Apps:
-      - Introduction: developer/apps/introduction.md
-      - REST Api: developer/apps/rest-api.md
-
-  # Operations Guide Pages
-
-  - Operations:
-    - Introduction: operations/index.md
+  - Introduction: index.md
+  - Guidelines:
+    - Version Control: guidelines/version-control.md
+  - Getting Started:
+    - Introduction: gettingstarted/introduction.md
+    - Environment: gettingstarted/environment.md
+    - Setup: gettingstarted/setup.md
+    - XDebug: gettingstarted/xdebug.md
+  - Identity and Access:
+      - Introduction: identity-access/intro.md
+      - Authentication: identity-access/authentication.md
+      - Authorization: identity-access/authorization.md
+      - Identity: identity-access/identity.md
+      - Policy: identity-access/policies.md
+  - Dev-Process:
+    - Introduction: process/introduction.md
+    - Code Generation: process/generation.md
+  - Architecture:
+    - Backend:
+      - Introduction: architecture/backend/introduction.md
+  - Apps:
+    - Introduction: apps/introduction.md
+  - API:
+    - Rest: API/REST.md

@@ -1,62 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
-     <loc>https://docs.appsdock.de/guide/project/</loc>
+     <loc>https://docs.appsdock.de/guide/</loc>
      <lastmod>2021-04-29</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.appsdock.de/guide/project/backup/</loc>
+     <loc>https://docs.appsdock.de/guide/guidelines/version-control/</loc>
      <lastmod>2021-04-29</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.appsdock.de/guide/developer/</loc>
+     <loc>https://docs.appsdock.de/guide/gettingstarted/introduction/</loc>
      <lastmod>2021-04-29</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.appsdock.de/guide/developer/guidelines/version-control/</loc>
+     <loc>https://docs.appsdock.de/guide/gettingstarted/environment/</loc>
      <lastmod>2021-04-29</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.appsdock.de/guide/developer/gettingstarted/introduction/</loc>
+     <loc>https://docs.appsdock.de/guide/gettingstarted/setup/</loc>
      <lastmod>2021-04-29</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.appsdock.de/guide/developer/gettingstarted/environment/</loc>
+     <loc>https://docs.appsdock.de/guide/gettingstarted/xdebug/</loc>
      <lastmod>2021-04-29</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.appsdock.de/guide/developer/gettingstarted/setup/</loc>
+     <loc>https://docs.appsdock.de/guide/identity-access/intro/</loc>
      <lastmod>2021-04-29</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.appsdock.de/guide/developer/identity-access/intro/</loc>
+     <loc>https://docs.appsdock.de/guide/identity-access/authentication/</loc>
      <lastmod>2021-04-29</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.appsdock.de/guide/developer/identity-access/authentication/</loc>
+     <loc>https://docs.appsdock.de/guide/identity-access/authorization/</loc>
      <lastmod>2021-04-29</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.appsdock.de/guide/developer/identity-access/authorization/</loc>
+     <loc>https://docs.appsdock.de/guide/identity-access/identity/</loc>
      <lastmod>2021-04-29</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.appsdock.de/guide/developer/process/introduction/</loc>
+     <loc>https://docs.appsdock.de/guide/identity-access/policies/</loc>
      <lastmod>2021-04-29</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.appsdock.de/guide/developer/process/generation/</loc>
+     <loc>https://docs.appsdock.de/guide/process/introduction/</loc>
      <lastmod>2021-04-29</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.appsdock.de/guide/developer/architecture/backend/introduction/</loc>
+     <loc>https://docs.appsdock.de/guide/process/generation/</loc>
      <lastmod>2021-04-29</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.appsdock.de/guide/developer/apps/introduction/</loc>
+     <loc>https://docs.appsdock.de/guide/architecture/backend/introduction/</loc>
      <lastmod>2021-04-29</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.appsdock.de/guide/operations/</loc>
+     <loc>https://docs.appsdock.de/guide/apps/introduction/</loc>
+     <lastmod>2021-04-29</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.appsdock.de/guide/API/REST/</loc>
      <lastmod>2021-04-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
