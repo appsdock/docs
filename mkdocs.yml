@@ -1,4 +1,4 @@
-site_name: AppsDock OS
+site_name: AppsDock OS Documentation
 site_url: https://appsdock.github.io/docs/
 copyright: © 2021 AppsDock GbR
 repo_url: https://github.com/appsdock/docs
@@ -10,39 +10,22 @@ site_dir: docs
 theme:
   name: material
   palette:
-    primary: light green
-    accent: blue
-
-extra_css:
-  - custom.css
+    primary: green
+    accent: light green
 
 markdown_extensions:
   - admonition
   - codehilite
 
 nav:
-
   - Introduction: index.md
-  - Guidelines:
-    - Version Control: guidelines/version-control.md
   - Getting Started:
-    - Introduction: gettingstarted/introduction.md
-    - Environment: gettingstarted/environment.md
-    - Setup: gettingstarted/setup.md
+    - Guidelines:
+      - Version Control: gettingstarted/guidelines/version-control.md
     - XDebug: gettingstarted/xdebug.md
+    - API:
+        - REST: api/rest.md
   - Identity and Access:
-      - Introduction: identity-access/intro.md
       - Authentication: identity-access/authentication.md
-      - Authorization: identity-access/authorization.md
       - Identity: identity-access/identity.md
       - Policy: identity-access/policies.md
-  - Dev-Process:
-    - Introduction: process/introduction.md
-    - Code Generation: process/generation.md
-  - Architecture:
-    - Backend:
-      - Introduction: architecture/backend/introduction.md
-  - Apps:
-    - Introduction: apps/introduction.md
-  - API:
-    - Rest: API/REST.md

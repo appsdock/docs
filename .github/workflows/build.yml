@@ -12,10 +12,10 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v2
 
-      - name: Build docuementation
+      - name: Generate documentation
         run: docker run --rm -v ${PWD}:/docs/ squidfunk/mkdocs-material build
 
-      - name: Commit docuementation
+      - name: Commit and push documentation
         run: |
           git config --global user.name 'Automated Build'
           git config --global user.email 'github@appsdock.de'

@@ -4,7 +4,7 @@
 
 A commit message must consist of the following parts:
 
-![Concept](commit.png)
+![Concept](../../assets/images/commit.png)
 
 **FunctionID**<br>
 This identifier should contain the project identifier. This project identifier are defined for each project / app in jira.<br><br>
