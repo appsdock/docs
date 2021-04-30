@@ -1,0 +1,9 @@
+/* General */
+code {
+    white-space: pre;
+}
+
+/* Classes */
+.text-align-right {
+    text-align: right;
+}

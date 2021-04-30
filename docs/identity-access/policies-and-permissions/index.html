@@ -9,14 +9,14 @@
       
       
       
-        <link rel="canonical" href="https://appsdock.github.io/docs/identity-access/authentication/">
+        <link rel="canonical" href="https://appsdock.github.io/docs/identity-access/policies-and-permissions/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.3">
     
     
       
-        <title>Authentication - AppsDock OS Documentation</title>
+        <title>Policies and permissions - AppsDock OS Documentation</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#appsdock-os-authentication-service" class="md-skip">
+        <a href="#policies-and-permissions" class="md-skip">
           Skip to content
         </a>
       
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Authentication
+              Policies and permissions
             
           </span>
         </div>
@@ -502,98 +502,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Authentication
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../authentication/" class="md-nav__link">
         Authentication
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#basics" class="md-nav__link">
-    Basics
-  </a>
-  
-    <nav class="md-nav" aria-label="Basics">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#auth-client" class="md-nav__link">
-    Auth Client
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#access-token" class="md-nav__link">
-    Access token
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#authentication" class="md-nav__link">
-    Authentication
-  </a>
-  
-    <nav class="md-nav" aria-label="Authentication">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#token-based-auth" class="md-nav__link">
-    Token Based Auth
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cookie-based-auth" class="md-nav__link">
-    Cookie Based Auth
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -613,11 +526,187 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../policies-and-permissions/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Policies and permissions
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Policies and permissions
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#permission" class="md-nav__link">
+    Permission
+  </a>
+  
+    <nav class="md-nav" aria-label="Permission">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    Examples
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#policy" class="md-nav__link">
+    Policy
+  </a>
+  
+    <nav class="md-nav" aria-label="Policy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#action" class="md-nav__link">
+    Action
+  </a>
+  
+    <nav class="md-nav" aria-label="Action">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#role" class="md-nav__link">
+    Role
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resource" class="md-nav__link">
+    Resource
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#effect" class="md-nav__link">
+    Effect
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#permission-control" class="md-nav__link">
+    Permission control
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rest-api" class="md-nav__link">
+    REST API
+  </a>
+  
+    <nav class="md-nav" aria-label="REST API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#unspecified-resource" class="md-nav__link">
+    Unspecified resource
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#specified-resource" class="md-nav__link">
+    Specified resource
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternative-context" class="md-nav__link">
+    Alternative context
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiple-policies" class="md-nav__link">
+    Multiple policies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#class-attribute" class="md-nav__link">
+    Class attribute
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-attribute" class="md-nav__link">
+    Method attribute
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#special-cases" class="md-nav__link">
+    Special cases
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -654,23 +743,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#basics" class="md-nav__link">
-    Basics
+  <a href="#permission" class="md-nav__link">
+    Permission
   </a>
   
-    <nav class="md-nav" aria-label="Basics">
+    <nav class="md-nav" aria-label="Permission">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#auth-client" class="md-nav__link">
-    Auth Client
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#access-token" class="md-nav__link">
-    Access token
+  <a href="#examples" class="md-nav__link">
+    Examples
   </a>
   
 </li>
@@ -681,23 +763,119 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#authentication" class="md-nav__link">
-    Authentication
+  <a href="#policy" class="md-nav__link">
+    Policy
   </a>
   
-    <nav class="md-nav" aria-label="Authentication">
+    <nav class="md-nav" aria-label="Policy">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#token-based-auth" class="md-nav__link">
-    Token Based Auth
+  <a href="#action" class="md-nav__link">
+    Action
+  </a>
+  
+    <nav class="md-nav" aria-label="Action">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#role" class="md-nav__link">
+    Role
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#cookie-based-auth" class="md-nav__link">
-    Cookie Based Auth
+  <a href="#resource" class="md-nav__link">
+    Resource
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#effect" class="md-nav__link">
+    Effect
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#permission-control" class="md-nav__link">
+    Permission control
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rest-api" class="md-nav__link">
+    REST API
+  </a>
+  
+    <nav class="md-nav" aria-label="REST API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#unspecified-resource" class="md-nav__link">
+    Unspecified resource
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#specified-resource" class="md-nav__link">
+    Specified resource
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternative-context" class="md-nav__link">
+    Alternative context
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiple-policies" class="md-nav__link">
+    Multiple policies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#class-attribute" class="md-nav__link">
+    Class attribute
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#method-attribute" class="md-nav__link">
+    Method attribute
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#special-cases" class="md-nav__link">
+    Special cases
   </a>
   
 </li>
@@ -719,115 +897,197 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/appsdock/docs/edit/master/docs/identity-access/authentication.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/appsdock/docs/edit/master/docs/identity-access/policies-and-permissions.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="appsdock-os-authentication-service">AppsDock <abbr title="Operating System">OS</abbr> Authentication Service</h1>
-<p>The AppsDock <abbr title="Operating System">OS</abbr> application server provides a build in authentication and authorization service to secure the resources. 
-This topic provides an overview how to authenticate and access secured resources of the application server.</p>
-<h2 id="basics">Basics</h2>
-<p>The request of resources from AppsDock <abbr title="Operating System">OS</abbr> application server requires an access token from the AppsDock <abbr title="Operating System">OS</abbr> authentication
-service. To obtain an access token, there must be a registered auth client at AppsDock <abbr title="Operating System">OS</abbr> identity management which must be 
-used when requesting the auth endpoints with client credentials from your web or app application.</p>
-<h3 id="auth-client">Auth Client</h3>
-<p>The access of auth <abbr title="Application Programming Interface">API</abbr> endpoints requires at least one registered auth client at AppsDock <abbr title="Operating System">OS</abbr> identity management. 
-The AppsDock <abbr title="Operating System">OS</abbr> identity management can register multiple auth client with different configurations which can be used by
-different applications. Each auth client has its own credentials (client id or client id with secret) which must be used
-when requesting the auth <abbr title="Application Programming Interface">API</abbr>. The credentials can be attached as basic base64 encoded Auhtorization header or as query
-parameter at request uri.</p>
-<h3 id="access-token">Access token</h3>
-<p>The access token is issued by the AppsDock authentication service and contains secured information (claims) about the
-actual operator. The token also contains information which are used to validate/authenticate the operator and verify 
-that it has the required permissions / is authorized to perform the operation. 
-Access tokens have to be attached to each request that intents to access secured resources of the AppsDock <abbr title="Operating System">OS</abbr> application
-server. The transport must be always over a secured channel like <abbr title="Hypertext Transfer Protocol Secure">HTTPS</abbr>.</p>
-<p>An access token issued by the AppsDock authentication service looks like the following example:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
-</code></pre></div>
-</td></tr></table>
-<p>To attach the access token, you must set the access token as bearer type in the Authorization header.</p>
-<h2 id="authentication">Authentication</h2>
-<p>The AppsDock <abbr title="Operating System">OS</abbr> authentication service provides an <abbr title="Application Programming Interface">API</abbr> for token and cookie based authentication management which 
-includes the following operations:</p>
+                <h1 id="policies-and-permissions">Policies and permissions</h1>
+<h2 id="permission">Permission</h2>
+<p>A permission consists of one or more policies.</p>
+<h3 id="examples">Examples</h3>
+<p>The permission <strong><abbr title="Document Management System">DMS</abbr> user</strong> has the indefinite right to read within the entire <abbr title="Document Management System">DMS</abbr> and the definite right to write in its own folders.</p>
 <table>
 <thead>
 <tr>
-<th>Endpoint</th>
-<th>Operation</th>
+<th>Policy</th>
+<th>Action</th>
+<th align="center">Role</th>
+<th align="center">Resource</th>
+<th align="center">Effect</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>/auth/token</td>
-<td>Authentication with email/username and password</td>
+<td><code>READ</code></td>
+<td>com.appsdock.dms.action:read</td>
+<td align="center"><abbr title="Universally Unique Identifier">UUID</abbr></td>
+<td align="center"><strong>*</strong></td>
+<td align="center"><code>ALLOW</code></td>
 </tr>
 <tr>
-<td>/auth/token/refresh</td>
-<td>Session/Token refresh via refresh token or cookie</td>
-</tr>
-<tr>
-<td>/auth/revoke</td>
-<td>Revoke auth session via refresh token or cookie</td>
+<td><code>WRITE</code></td>
+<td>com.appsdock.dms.action:write</td>
+<td align="center"><abbr title="Universally Unique Identifier">UUID</abbr></td>
+<td align="center"><code>ALLOW</code></td>
+<td align="center"></td>
 </tr>
 </tbody>
 </table>
-<p>The AppsDock <abbr title="Operating System">OS</abbr> authentication service supports both token and cookie based authentication flows. </p>
-<h3 id="token-based-auth">Token Based Auth</h3>
-<p>The token based authentication is used by confidential clients like mobile apps, which are capable of storing the 
-refresh token securely. To obtain an access and refresh token, you have to send a request with the auth 
-client credentials as authorization header to the token endpoint.</p>
+<h2 id="policy">Policy</h2>
+<p>A policy consists of the action, role, resource and effect.</p>
+<h3 id="action">Action</h3>
+<p>Actions are defined by the apps.</p>
+<h4 id="example">Example</h4>
+<p>The <abbr title="Document Management System">DMS</abbr> app defines the action <strong>Create folder</strong>.</p>
+<h3 id="role">Role</h3>
+<p>Exactly one role must be assigned per policy.</p>
+<h3 id="resource">Resource</h3>
+<p>A resource can be defined or undefined. Indefinite resources are defined by means of the <strong>*</strong>.</p>
+<h3 id="effect">Effect</h3>
+<p>The effect is either <strong>allow</strong> or <strong>deny</strong>.</p>
+<h2 id="permission-control">Permission control</h2>
+<p>The permission control is given the action as the first parameter, and the context as the second parameter.</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>POST https://domain.com/auth/token
-Content-Type: application/json
-Authrorization: Basic WIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="cp">&lt;?php</span>
 
-{&quot;email&quot;: &quot;jon@doe.com&quot;, &quot;password&quot;: &quot;xxxxx&quot;}
+<span class="nv">$isPermitted</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">permissionController</span><span class="o">-&gt;</span><span class="na">isPermitted</span><span class="p">(</span>
+<span class="s1">&#39;read&#39;</span><span class="p">,</span>
+<span class="nv">$this</span><span class="o">-&gt;</span><span class="na">context</span><span class="o">-&gt;</span><span class="na">getId</span><span class="p">()</span>
+<span class="p">);</span>
 </code></pre></div>
 </td></tr></table>
-<p>The response contains the access/refresh token and additional information about the access token.</p>
+<p>Given a specific resource, its <abbr title="Universally Unique Identifier">UUID</abbr> is given as the third parameter.</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
 <span class="normal">5</span>
 <span class="normal">6</span>
-<span class="normal">7</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;expires_in&quot;</span><span class="p">:</span> <span class="mi">180</span><span class="p">,</span>
-    <span class="nt">&quot;expires_at&quot;</span><span class="p">:</span> <span class="mi">1595453215</span><span class="p">,</span>
-    <span class="nt">&quot;token_type&quot;</span><span class="p">:</span> <span class="s2">&quot;bearer&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;access_token&quot;</span><span class="p">:</span> <span class="s2">&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0......&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;refresh_token&quot;</span><span class="p">:</span> <span class="s2">&quot;xwRJSMxNTE2MjMeKKF2QiwibmFtZSIfwpMeJf6Ik&quot;</span>
-<span class="p">}</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="cp">&lt;?php</span>
+
+<span class="nv">$isPermitted</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">permissionController</span><span class="o">-&gt;</span><span class="na">isPermitted</span><span class="p">(</span>
+    <span class="s1">&#39;read&#39;</span><span class="p">,</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">context</span><span class="o">-&gt;</span><span class="na">getId</span><span class="p">(),</span>
+    <span class="nv">$appId</span>
+<span class="p">);</span>
 </code></pre></div>
 </td></tr></table>
-<p>The access token must be attached as bearer token in Authorization header on each request of secured resources. 
-The refresh token is used to refresh the access token when it expires and obtain a new access token.</p>
-<div class="admonition warning">
-<p class="admonition-title">Refresh token storage</p>
-<p>The refresh token must be stored securely and should not be accessible by the client user. Do not store the refresh token into any kind of client side storages of web applications like local or session store nor into cookies.</p>
-</div>
-<h3 id="cookie-based-auth">Cookie Based Auth</h3>
-<p>A cookie based client response only the expiry information about the current auth session, and uses a secured <abbr title="Hypertext Transfer Protocol Secure">HTTPS</abbr> only
-cookie to store the auth session information on client side. The auth cookie issued by the cookie based confidential client
-has also a short lifetime like the access token, so it must be refreshed to keep the auth session valid.</p>
+<p>Alternatively, a default value can be specified as the fourth parameter. This is only returned if <strong>no</strong> policy exists.</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;expires_in&quot;</span><span class="p">:</span> <span class="mi">180</span><span class="p">,</span>
-    <span class="nt">&quot;expires_at&quot;</span><span class="p">:</span> <span class="mi">1595453215</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="cp">&lt;?php</span>
+
+<span class="nv">$isPermitted</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">permissionController</span><span class="o">-&gt;</span><span class="na">isPermitted</span><span class="p">(</span>
+    <span class="s1">&#39;read&#39;</span><span class="p">,</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">context</span><span class="o">-&gt;</span><span class="na">getId</span><span class="p">(),</span>
+    <span class="nv">$appId</span><span class="p">,</span>
+    <span class="nv">$default</span>
+<span class="p">);</span>
+</code></pre></div>
+</td></tr></table>
+<h2 id="rest-api"><abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr></h2>
+<p>Permissions are defined as <a href="#method-attribute">method-attribute</a> or alternatively as <a href="#class-attribute">class-attribute</a>. Permissions as <a href="#class-attribute">class-attribute</a> apply to all functions within the class.</p>
+<h3 id="unspecified-resource">Unspecified resource</h3>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="cp">&lt;?php</span>
+
+<span class="c1">#[Permission(&#39;read&#39;)]</span>
+</code></pre></div>
+</td></tr></table>
+<h3 id="specified-resource">Specified resource</h3>
+<p>The second parameter can be used to specify the <abbr title="Universally Unique Identifier">UUID</abbr> of the resource. The <abbr title="Universally Unique Identifier">UUID</abbr> can, for example, be passed dynamically in the context of the <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr> by means of a routing parameter.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="cp">&lt;?php</span>
+
+<span class="c1">#[Permission(&#39;read&#39;, &#39;id&#39;)]</span>
+</code></pre></div>
+</td></tr></table>
+<h3 id="alternative-context">Alternative context</h3>
+<p>The third parameter can be used to specify an alternative context so that policies from other apps can be checked.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="cp">&lt;?php</span>
+
+<span class="c1">#[Permission(&#39;read&#39;, &#39;id&#39;, &#39;com.appsdock&#39;)]</span>
+</code></pre></div>
+</td></tr></table>
+<h3 id="multiple-policies">Multiple policies</h3>
+<p>Multiple policies can be passed directly as an array.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="cp">&lt;?php</span>
+
+<span class="c1">#[Permission([&#39;read&#39;, &#39;write&#39;, &#39;delete&#39;])]</span>
+</code></pre></div>
+</td></tr></table>
+<p>For specific resources or an alternative context, these must be listed separately.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="cp">&lt;?php</span>
+
+<span class="c1">#[Permission([&#39;read&#39;, &#39;write&#39;])]</span>
+<span class="c1">#[Permission(&#39;delete&#39;, &#39;id&#39;)]</span>
+<span class="c1">#[Permission(&#39;administrate&#39;, context: &#39;com.appsdock&#39;)]</span>
+</code></pre></div>
+</td></tr></table>
+<h3 id="class-attribute">Class attribute</h3>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="cp">&lt;?php</span>
+
+<span class="c1">#[Permission(&#39;read&#39;)]</span>
+<span class="k">class</span> <span class="nc">DMS</span>
+<span class="p">{</span>
+    <span class="o">...</span>
 <span class="p">}</span>
 </code></pre></div>
 </td></tr></table>
+<h3 id="method-attribute">Method attribute</h3>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="cp">&lt;?php</span>
+
+<span class="c1">#[Permission(&#39;write&#39;)]</span>
+<span class="k">public</span> <span class="k">function</span> <span class="nf">write</span><span class="p">(</span><span class="nx">string</span> <span class="nv">$text</span><span class="p">)</span><span class="o">:</span> <span class="nx">bool</span>
+<span class="p">{</span>
+<span class="o">...</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+<h3 id="special-cases">Special cases</h3>
 <div class="admonition warning">
-<p class="admonition-title">Public clients</p>
-<p>Public auth clients are currently not supported by the AppsDock authentication service!</p>
+<p class="admonition-title">Public access</p>
+<p>Public access at class level can be overridden by policies at method level. Again, method-level public access ignores any additional policies.</p>
 </div>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="cp">&lt;?php</span>
+
+<span class="c1">#[PublicAccess]</span>
+</code></pre></div>
+</td></tr></table>
                 
               
               
@@ -846,7 +1106,7 @@ has also a short lifetime like the access token, so it must be refreshed to keep
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../../gettingstarted/phpstorm/xdebug/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../identity/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -855,25 +1115,11 @@ has also a short lifetime like the access token, so it must be refreshed to keep
               <span class="md-footer__direction">
                 Previous
               </span>
-              Xdebug
-            </div>
-          </div>
-        </a>
-      
-      
-        <a href="../identity/" class="md-footer__link md-footer__link--next" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
               Identity
             </div>
           </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-          </div>
         </a>
+      
       
     </nav>
   
