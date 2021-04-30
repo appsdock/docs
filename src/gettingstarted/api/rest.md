@@ -1,12 +1,22 @@
 # REST API
 
-## Endpunkte
+## Endpoints
 
-Um für eine App eigene REST API Endpunkte zu erstellen, legt man eine Klasse an, welche vom ***AppsDock\Core\Contracts\App\Application\RestAPIController*** erbt. In dieser werden über Annotation Attribute die einzelnen Endpunkte definiert. Der Zugriff auf Endpunkte kann mittels Richtlinien abgesichert werden.
+To create your own REST API endpoints for an app, create a class that inherits from the **AppsDock &#10095; Core &#10095; Contracts &#10095; Application &#10095; RestAPIController**. In this class, the individual endpoints are defined via annotation attributes. Access to endpoints can be secured by means of policies.
 
-### Methoden
+### Methods
+
+| Parameter | Datentyp | Standardwert | Erforderlich | Beschreibung
+| :-------: | -------- | :----------: | :----------: | ------------ 
+| 1 | `STRING`<br>`STRING[]` | - | &#10004; | Possible methods are `DELETE`, `GET`, `HEAD`, `PATCH`, `POST` and `PUT`.
+| 2 | `STRING` | - | &#10004; | Route: A valid URI.
+| 3 | `STRING` | - | &#10004; | Unique name in domain notation.
+| 4 | `INTEGER` | 1 | &#10008; | The API version.
+<div class="text-align-right">Legend: &#10004; Yes &#10008; No</div>
 
 ~~~php
+<?php
+
 class BookRestAPI extends RestAPIController
 {
     #[API('GET', '/books', 'book.list')]
@@ -35,23 +45,15 @@ class BookRestAPI extends RestAPIController
 }
 ~~~
 
-| Parameter | Datentyp | Standardwert | Erforderlich | Beschreibung
-| :-------: | -------- | :----------: | :----------: | ------------ 
-| 1 | String\|String[] | - | &#10004; | Methoden: DELETE, GET, HEAD, PATCH, POST und PUT.
-| 2 | String | - | &#10004; | Route: Valide URL.
-| 3 | String | - | &#10004; | Eindeutiger Name in Domain-Schreibweise.
-| 4 | Integer | 1 | &#10008; | API-Version.
+### Return value
 
-| &#10004; Ja | &#10008; Nein
-| ----------- | -------------
+The return value of an endpoint must always be of the data type **AppsDock &#10095; Core &#10095; Http &#10095; JsonResponse**.
 
-#### Rückgabewerte
-
-Der Rückgabewert eines Endpunkts muss immer vom Datentyp ***AppsDock\Core\Http\JsonResponse*** sein.
-
-Um eine allgemeine Rückmeldung zu erzeugen, kann die Methode ***createResponse*** verwendet werden.
+To create a general response, the method **createResponse** can be used.
 
 ~~~php
+<?php
+
 $this->createResponse(
     int $statusCode = 200,
     array $data = [],
@@ -59,9 +61,11 @@ $this->createResponse(
 );
 ~~~
 
-Soll ein HTTP-Status-Code zurückgegeben werden, kann die Methode ***createStatusResponse*** verwendet werden.
+If an HTTP status code is to be returned, the method **createStatusResponse** can be used.
 
 ~~~php
+<?php
+
 $this->createStatusResponse(
     int $statusCode,
     string $message = null,
@@ -69,12 +73,18 @@ $this->createStatusResponse(
 );
 ~~~
 
-Sollen Daten zurückgegeben werden, kann die Methode ***createDataResponse*** verwendet werden.
+If data is to be returned, the method **createDataResponse** can be used.
 
 ~~~php
+<?php
+
 $this->createDataResponse(
     ReadModel|ReadModelCollection|null $data,
     int $statusCode = 200,
     array $headers = []
 );
 ~~~
+
+*[API]: Application Programming Interface
+*[REST]: Representational State Transfer
+*[URI]: Uniform Resource Identifier

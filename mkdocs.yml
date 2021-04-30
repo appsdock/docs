@@ -13,19 +13,44 @@ theme:
     primary: green
     accent: light green
 
+extra_css:
+  - assets/css/appsdock.css
+extra:
+  manifest: manifest.webmanifest
+
 markdown_extensions:
+    # Enable abbreviations
+  - abbr
+    # Enable admonitions
   - admonition
-  - codehilite
+    # Enable footnotes
+  - footnotes
+    # Enable syntax highlighting for code blocks
+  - pymdownx.highlight:
+      # Show line numbers for code blocks
+      linenums: true
+    # Enable syntax highlighting for inline code
+  - pymdownx.inlinehilite
+    # Allows for the nesting of code blocks inside other blocks (recommended)
+  - pymdownx.superfences
 
 nav:
   - Introduction: index.md
   - Getting Started:
-    - Guidelines:
-      - Version Control: gettingstarted/guidelines/version-control.md
-    - XDebug: gettingstarted/xdebug.md
     - API:
       - REST: gettingstarted/api/rest.md
-  - Identity and Access:
+    - Guidelines:
+      - Commit messages: gettingstarted/guidelines/commit-messages.md
+      - Exceptions:
+        - Error codes: gettingstarted/guidelines/exceptions/error-codes.md
+        - Runtime:
+          - Illegal argument: gettingstarted/guidelines/exceptions/runtime/illegal-argument.md
+          - Illegal format: gettingstarted/guidelines/exceptions/runtime/illegal-format.md
+          - Illegal type: gettingstarted/guidelines/exceptions/runtime/illegal-type.md
+      - Naming convention: gettingstarted/guidelines/naming-convention.md
+    - PhpStorm:
+      - Xdebug: gettingstarted/phpstorm/xdebug.md
+  - Identity and access:
     - Authentication: identity-access/authentication.md
     - Identity: identity-access/identity.md
-    - Policy: identity-access/policies.md
+    - Policies and permissions: identity-access/policies-and-permissions.md

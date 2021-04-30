@@ -1,15 +1,15 @@
-# Identitäten
+# Identities
 
-Zu den Identitäten zählen Benutzer, Gruppen und Rollen.
+Identities include users, groups and roles.
 
-## Benutzer
+## User
 
-Der Benutzer wird für die Identifizierung und Autorisierung einer Entität verwendet.
+The user is used for the identification and authorisation of an entity.
 
-## Gruppen
+## Groups
 
-Benutzer können zu einer Gruppe zusammengefasst werden. Ein Benutzer kann mehreren Gruppen angehören. Durch eine Gruppe können mehreren Benutzern Rollen zugewiesen werden.
+Users can be combined into a group. A user can belong to several groups. Roles can be assigned to several users through a group.
 
-## Rollen
+## Roles
 
-Rollen sind Identitäten, welche Benutzern und Gruppen zugewiesen werden können. Mittels der Rolle werden die Berechtigungen identifiziert. Einer Rolle können eine oder mehrere Richtlinien zugewiesen werden.
+Roles are identities that can be assigned to users and groups. The permissions are identified by means of the role. One or more policies can be assigned to a role.

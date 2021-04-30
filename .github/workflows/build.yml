@@ -15,9 +15,6 @@ jobs:
       - name: Generate documentation
         run: docker run --rm -v ${PWD}:/docs/ squidfunk/mkdocs-material build
 
-      - name: Wait for Docker
-        run: sleep 10
-
       - name: Commit and push documentation
         run: |
           git config --global user.name 'Automated Build'
