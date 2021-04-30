@@ -2,7 +2,7 @@
 
 ## Endpoints
 
-To create your own REST API endpoints for an app, create a class that inherits from the **AppsDock &#10095; Core &#10095; Contracts &#10095; Application &#10095; RestAPIController**. In this class, the individual endpoints are defined via annotation attributes. Access to endpoints can be secured by means of policies.
+To create your own REST API endpoints for an app, create a class that inherits from the **AppsDock &#10095; Core &#10095; Contracts &#10095; App &#10095; Application &#10095; RestAPIController**. In this class, the individual endpoints are defined via annotation attributes. Access to endpoints can be secured by means of policies.
 
 ### Methods
 
