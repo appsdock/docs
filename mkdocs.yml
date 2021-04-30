@@ -41,6 +41,7 @@ nav:
       - REST: gettingstarted/api/rest.md
     - Guidelines:
       - Commit messages: gettingstarted/guidelines/commit-messages.md
+      - Configuration: gettingstarted/guidelines/configuration.md
       - Exceptions:
         - Error codes: gettingstarted/guidelines/exceptions/error-codes.md
         - Runtime:

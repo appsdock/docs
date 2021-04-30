@@ -22,6 +22,6 @@ Got to **Run &#10095; Debug &#10095; Edit configurations &#10095; Expand default
 
 Go to **Run &#10095; Start listening for PHP connections** and start listening.
 
-Then set breakpoint in PhpStorm and call page in browser to test the setup.
+Then set a breakpoint in PhpStorm and call page in browser to test the setup.
 
 *[PHP]: PHP: Hypertext Preprocessor
