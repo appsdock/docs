@@ -6,11 +6,11 @@ To create your own REST API endpoints for an app, create a class that inherits f
 
 ### Methods
 
-| Parameter | Datentyp | Standardwert | Erforderlich | Beschreibung
-| :-------: | -------- | :----------: | :----------: | ------------ 
-| 1 | `STRING`<br>`STRING[]` | - | &#10004; | Possible methods are `DELETE`, `GET`, `HEAD`, `PATCH`, `POST` and `PUT`.
-| 2 | `STRING` | - | &#10004; | Route: A valid URI.
-| 3 | `STRING` | - | &#10004; | Unique name in domain notation.
+| Parameter | Data type | Default value | Required | Description
+| --------: | --------- | :-----------: | :------: | ----------- 
+| 1 | `STRING`<br>`STRING[]` | - | &#10004; | Possible values are `DELETE`, `GET`, `HEAD`, `PATCH`, `POST` and `PUT`.
+| 2 | `STRING` | - | &#10004; | A valid URI.
+| 3 | `STRING` | - | &#10004; | A unique name in domain notation.
 | 4 | `INTEGER` | 1 | &#10008; | The API version.
 <div class="text-align-right">Legend: &#10004; Yes &#10008; No</div>
 
