@@ -425,7 +425,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../runtime/illegal-argument/" class="md-nav__link">
+      <a href="../runtime/illegal-argument.md" class="md-nav__link">
         Illegal argument
       </a>
     </li>
@@ -437,7 +437,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../runtime/illegal-format/" class="md-nav__link">
+      <a href="../runtime/illegal-format.md" class="md-nav__link">
         Illegal format
       </a>
     </li>
@@ -449,7 +449,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../runtime/illegal-type/" class="md-nav__link">
+      <a href="../runtime/illegal-type.md" class="md-nav__link">
         Illegal type
       </a>
     </li>
@@ -647,13 +647,13 @@
                 
                 
                 <h1 id="error-codes">Error codes</h1>
-<p>An error code is always an integer.</p>
 <h2 id="ranges">Ranges</h2>
 <table>
 <thead>
 <tr>
 <th align="right">Range</th>
 <th>Context</th>
+<th>Scope</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -661,26 +661,49 @@
 <tr>
 <td align="right">10.000</td>
 <td>Core</td>
+<td></td>
 <td>AppsDock <abbr title="Operating System">OS</abbr> core components.</td>
+</tr>
+<tr>
+<td align="right">11.000</td>
+<td></td>
+<td>Infrastructure</td>
+<td>AppsDock <abbr title="Operating System">OS</abbr> core infrastructure components.</td>
+</tr>
+<tr>
+<td align="right">12.000</td>
+<td></td>
+<td>Security &amp; authentication</td>
+<td>AppsDock <abbr title="Operating System">OS</abbr> core security and authentication components.</td>
+</tr>
+<tr>
+<td align="right">13.000</td>
+<td></td>
+<td>Internal communication</td>
+<td>AppsDock <abbr title="Operating System">OS</abbr> core internal communication components.</td>
 </tr>
 <tr>
 <td align="right">20.000</td>
 <td>System</td>
+<td></td>
 <td>AppsDock <abbr title="Operating System">OS</abbr> system components.</td>
 </tr>
 <tr>
 <td align="right">30.000</td>
 <td>Integration</td>
+<td></td>
 <td>Third party <abbr title="Application Programming Interface">API</abbr> services, like an email service provider.</td>
 </tr>
 <tr>
 <td align="right">40.000</td>
 <td>Plugin</td>
+<td></td>
 <td>Small application to extend AppsDock <abbr title="Operating System">OS</abbr> or app functionality.</td>
 </tr>
 <tr>
 <td align="right">90.000<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></td>
 <td>Apps</td>
+<td></td>
 <td>Applications build with AppsDock <abbr title="Operating System">OS</abbr>.</td>
 </tr>
 </tbody>
@@ -689,7 +712,7 @@
 <hr />
 <ol>
 <li id="fn:1">
-<p>The range from 50.000 to 80.000 are reserved for future use.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+<p>The ranges from 50.000 to 80.000 are reserved for future use.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>
@@ -726,13 +749,13 @@
         </a>
       
       
-        <a href="../runtime/illegal-argument/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../../naming-convention/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Illegal argument
+              Naming convention
             </div>
           </div>
           <div class="md-footer__button md-icon">
