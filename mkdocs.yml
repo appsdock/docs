@@ -44,10 +44,17 @@ nav:
       - Configuration: gettingstarted/guidelines/configuration.md
       - Exceptions:
         - Error codes: gettingstarted/guidelines/exceptions/error-codes.md
-        - Runtime:
-          - Illegal argument: gettingstarted/guidelines/exceptions/runtime/illegal-argument.md
-          - Illegal format: gettingstarted/guidelines/exceptions/runtime/illegal-format.md
-          - Illegal type: gettingstarted/guidelines/exceptions/runtime/illegal-type.md
+        - Core:
+          - Core: gettingstarted/guidelines/exceptions/core/core.md
+          - Infrastructure: gettingstarted/guidelines/exceptions/core/infrastructure.md
+          - Internal communication: gettingstarted/guidelines/exceptions/core/internal-communication.md
+          - Security and authentication: gettingstarted/guidelines/exceptions/core/security-authentication.md
+        - Integration:
+          - Integration: gettingstarted/guidelines/exceptions/integration/integration.md
+        - Plugin:
+          - Plugin: gettingstarted/guidelines/exceptions/plugin/plugin.md
+        - System:
+          - System: gettingstarted/guidelines/exceptions/system/system.md
       - Naming convention: gettingstarted/guidelines/naming-convention.md
     - PhpStorm:
       - Xdebug: gettingstarted/phpstorm/xdebug.md
