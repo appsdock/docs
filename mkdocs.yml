@@ -42,19 +42,7 @@ nav:
     - Guidelines:
       - Commit messages: gettingstarted/guidelines/commit-messages.md
       - Configuration: gettingstarted/guidelines/configuration.md
-      - Exceptions:
-        - Error codes: gettingstarted/guidelines/exceptions/error-codes.md
-        - Core:
-          - Core: gettingstarted/guidelines/exceptions/core/core.md
-          - Infrastructure: gettingstarted/guidelines/exceptions/core/infrastructure.md
-          - Internal communication: gettingstarted/guidelines/exceptions/core/internal-communication.md
-          - Security and authentication: gettingstarted/guidelines/exceptions/core/security-authentication.md
-        - Integration:
-          - Integration: gettingstarted/guidelines/exceptions/integration/integration.md
-        - Plugin:
-          - Plugin: gettingstarted/guidelines/exceptions/plugin/plugin.md
-        - System:
-          - System: gettingstarted/guidelines/exceptions/system/system.md
+      - Exceptions: gettingstarted/guidelines/exceptions.md
       - Naming convention: gettingstarted/guidelines/naming-convention.md
     - PhpStorm:
       - Xdebug: gettingstarted/phpstorm/xdebug.md
@@ -62,3 +50,4 @@ nav:
     - Authentication: identity-access/authentication.md
     - Identity: identity-access/identity.md
     - Policies and permissions: identity-access/policies-and-permissions.md
+  - Exceptions: exceptions.md

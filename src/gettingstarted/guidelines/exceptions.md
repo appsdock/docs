@@ -1,6 +1,6 @@
-# Error codes
+# Exceptions
 
-## Ranges
+## Error code ranges
 
 | Range | Context | Scope | Description
 | ----: | ------- | ----- | -----------
