@@ -20,6 +20,34 @@
      <lastmod>2021-05-03</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://appsdock.github.io/docs/gettingstarted/guidelines/exceptions/core/core/</loc>
+     <lastmod>2021-05-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://appsdock.github.io/docs/gettingstarted/guidelines/exceptions/core/infrastructure/</loc>
+     <lastmod>2021-05-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://appsdock.github.io/docs/gettingstarted/guidelines/exceptions/core/internal-communication/</loc>
+     <lastmod>2021-05-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://appsdock.github.io/docs/gettingstarted/guidelines/exceptions/core/security-authentication/</loc>
+     <lastmod>2021-05-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://appsdock.github.io/docs/gettingstarted/guidelines/exceptions/integration/integration/</loc>
+     <lastmod>2021-05-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://appsdock.github.io/docs/gettingstarted/guidelines/exceptions/plugin/plugin/</loc>
+     <lastmod>2021-05-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://appsdock.github.io/docs/gettingstarted/guidelines/exceptions/system/system/</loc>
+     <lastmod>2021-05-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://appsdock.github.io/docs/gettingstarted/guidelines/naming-convention/</loc>
      <lastmod>2021-05-03</lastmod>
      <changefreq>daily</changefreq>
