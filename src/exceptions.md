@@ -8,6 +8,14 @@ For every error the list provides a more detailed description with possible caus
 
 !!! danger "The setting has the wrong type."
     When validating the data type of the value of the setting, it was found that it does not correspond to the expected data type `BOOLEAN`.
+### Reasons
+
+- The data type of the value of the setting is not of the data type `BOOLEAN`.
+- The data type of the value of the setting was `BOOLEAN`, but changed during transportation.
+### Solutions
+
+- Change the data type of the value of the setting to `BOOLEAN`.
+- Check your network for `HTTP` `POST` manipulation by firewalls or proxies.
 
 
 ## 10002
@@ -78,83 +86,83 @@ For every error the list provides a more detailed description with possible caus
 
 ## 12000
 
-!!! danger "Cannot find ssh key pairs for this installation."
+!!! danger "The SSH key pairs for this installation could not be found."
     Unfortunately, there is currently no detailed description available.
 ### Reasons
 
-AppsDock OS is not installed yet.
-* Could not create ssh key pairs.
+- AppsDock OS is not installed yet.
+- Could not create SSH key pairs.
 ### Solutions
 
-Check current installation and eventually run `adk install`
-* Run `adk util:ssh-gen` for generating new key pairs. Please note: All current auth session will not work anymore.
+- Check current installation and eventually run `adk install`
+- Run `adk util:ssh-gen` for generating new key pairs. Please note: All current auth session will not work anymore.
 
 
 ## 12001
 
-!!! danger "The username doest not match with any existing user."
+!!! danger "The username does not match with any existing user."
     Unfortunately, there is currently no detailed description available.
 ### Reasons
 
-The entered username does not exist.
-* The entered password is wrong or does not related to the username.
+- The entered username does not exist.
+- The password entered is incorrect or does not belong to the user name.
 ### Solutions
 
-Check the username and try again.
-* Account may not exist now, please contact your account administrator.
+- Check the username and try again.
+- Account may not exist now, please contact your account administrator.
 
 
 ## 12002
 
-!!! danger "An initialized user account is not enabled for authentication."
+!!! danger "The initialized user account not enabled for authentication."
     Unfortunately, there is currently no detailed description available.
-### Reasons
+### Reason
 
-The user account has been created recently and requires an action of the account owner for activation.
+- The user account has been created recently and requires an action of the account owner for activation.
 ### Solutions
 
-Check your email inbox for an activation email and complete the account activation by following the instructions.
-* Contact the user account administrator and request for a new activation email.
+- Check your email inbox for an activation email and complete the account activation by following the instructions.
+- Contact the user account administrator and request for a new activation email.
 
 
 ## 12003
 
-!!! danger "A potentially auth bruteforce attack has been detected."
+!!! danger "A potential bruteforce attack was detected."
     Unfortunately, there is currently no detailed description available.
-### Reasons
+### Reason
 
-Frequently failed login attempts.
-### Solutions
+- Frequently failed login attempts.
+### Solution
 
-Try again shortly.
+- Try again shortly.
 
 
 ## 12004
 
-!!! danger "Wrong password."
+!!! danger "The password is wrong."
     Unfortunately, there is currently no detailed description available.
-### Reasons
+### Reason
 
-Username or password is wrong.
-### Solutions
+- Username or password is wrong.
+### Solution
 
-Check entered username and password and try again.
+- Check entered username and password and try again.
 
 
 ## 12005
 
-!!! danger "User account is locked."
+!!! danger "The user account is locked."
     Unfortunately, there is currently no detailed description available.
-### Solutions
+### Solution
 
-Contact the user account administrator.
+- Contact the user account administrator.
 
 
 ## 12006
 
-!!! danger "User account is inactive."
+!!! danger "The user account is inactive."
     Unfortunately, there is currently no detailed description available.
-### Solutions
+### Solution
 
-Contact the user account administrator.
+- Contact the user account administrator.
 
