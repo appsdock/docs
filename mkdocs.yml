@@ -9,7 +9,16 @@ site_dir: docs
 
 theme:
   name: material
+  features:
+      # Enable XHR loading
+    - navigation.instant
+      # Enable sections
+    - navigation.sections
+      # Enable tabs
+    - navigation.tabs
+    - navigation.top
   palette:
+    scheme: slate
     primary: green
     accent: light green
 
@@ -33,6 +42,10 @@ markdown_extensions:
   - pymdownx.inlinehilite
     # Allows for the nesting of code blocks inside other blocks (recommended)
   - pymdownx.superfences
+    # Table of contents
+  - toc:
+      # Limit the displayed levels
+      toc_depth: 3
 
 nav:
   - Introduction: index.md

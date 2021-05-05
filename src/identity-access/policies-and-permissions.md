@@ -6,12 +6,14 @@ A permission consists of one or more policies.
 
 ### Examples
 
-The permission **DMS user** has the indefinite right to read within the entire DMS and the definite right to write in its own folders.
+The permission DMS user has the indefinite right to read within the entire DMS and the definite right to write in its own folders.
 
 | Policy | Action | Role | Resource | Effect
 | ------ | ------ | :--: | :------: | :----:
-| `READ` | com.appsdock.dms.action:read | UUID | **\*** | `ALLOW`
-| `WRITE` | com.appsdock.dms.action:write | UUID | `ALLOW`
+| Read | com.appsdock.dms.action:volume.read | Role A| **\*** | `ALLOW`
+| Read | com.appsdock.dms.action:volume.read | Role B | Volume A | `ALLOW`
+| Write | com.appsdock.dms.action:volume.write | Role B | Volume B | `ALLOW`
+| Write | com.appsdock.dms.action:volume.write | Role C | Volume B | `DENY`
 
 ## Policy
 
