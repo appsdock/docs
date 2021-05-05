@@ -58,7 +58,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="green" data-md-color-accent="light-green">
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="light-green">
   
     
     <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
@@ -159,6 +159,80 @@
       
       
         
+          
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Introduction
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../gettingstarted/api/rest/" class="md-tabs__link">
+        Getting Started
+      </a>
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../authentication/" class="md-tabs__link md-tabs__link--active">
+        Identity and access
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../exceptions/" class="md-tabs__link">
+      Exceptions
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+        
       
       <main class="md-main" data-md-component="main">
         <div class="md-main__inner md-grid">
@@ -170,8 +244,10 @@
                   <div class="md-sidebar__inner">
                     
 
+  
 
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="AppsDock OS Documentation" class="md-nav__button md-logo" aria-label="AppsDock OS Documentation" data-md-component="logo">
       
@@ -241,7 +317,9 @@
   
   
     
-    <li class="md-nav__item md-nav__item--nested">
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_1" type="checkbox" id="__nav_2_1" >
@@ -280,7 +358,9 @@
   
   
     
-    <li class="md-nav__item md-nav__item--nested">
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" >
@@ -355,7 +435,9 @@
   
   
     
-    <li class="md-nav__item md-nav__item--nested">
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" >
@@ -514,19 +596,6 @@
   <a href="#action" class="md-nav__link">
     Action
   </a>
-  
-    <nav class="md-nav" aria-label="Action">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    Example
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -712,19 +781,6 @@
     Action
   </a>
   
-    <nav class="md-nav" aria-label="Action">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    Example
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
         
           <li class="md-nav__item">
@@ -843,7 +899,7 @@
 <h2 id="permission">Permission</h2>
 <p>A permission consists of one or more policies.</p>
 <h3 id="examples">Examples</h3>
-<p>The permission <strong><abbr title="Document Management System">DMS</abbr> user</strong> has the indefinite right to read within the entire <abbr title="Document Management System">DMS</abbr> and the definite right to write in its own folders.</p>
+<p>The permission <abbr title="Document Management System">DMS</abbr> user has the indefinite right to read within the entire <abbr title="Document Management System">DMS</abbr> and the definite right to write in its own folders.</p>
 <table>
 <thead>
 <tr>
@@ -856,18 +912,32 @@
 </thead>
 <tbody>
 <tr>
-<td><code>READ</code></td>
-<td>com.appsdock.dms.action:read</td>
-<td align="center"><abbr title="Universally Unique Identifier">UUID</abbr></td>
+<td>Read</td>
+<td>com.appsdock.dms.action:volume.read</td>
+<td align="center">Role A</td>
 <td align="center"><strong>*</strong></td>
 <td align="center"><code>ALLOW</code></td>
 </tr>
 <tr>
-<td><code>WRITE</code></td>
-<td>com.appsdock.dms.action:write</td>
-<td align="center"><abbr title="Universally Unique Identifier">UUID</abbr></td>
+<td>Read</td>
+<td>com.appsdock.dms.action:volume.read</td>
+<td align="center">Role B</td>
+<td align="center">Volume A</td>
 <td align="center"><code>ALLOW</code></td>
-<td align="center"></td>
+</tr>
+<tr>
+<td>Write</td>
+<td>com.appsdock.dms.action:volume.write</td>
+<td align="center">Role B</td>
+<td align="center">Volume B</td>
+<td align="center"><code>ALLOW</code></td>
+</tr>
+<tr>
+<td>Write</td>
+<td>com.appsdock.dms.action:volume.write</td>
+<td align="center">Role C</td>
+<td align="center">Volume B</td>
+<td align="center"><code>DENY</code></td>
 </tr>
 </tbody>
 </table>
@@ -1036,6 +1106,10 @@
           </div>
         </div>
         
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+          </a>
+        
       </main>
       
         
@@ -1097,7 +1171,7 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.sections", "navigation.tabs", "navigation.top"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.4ea5477f.min.js"></script>

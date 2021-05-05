@@ -1,9 +1,17 @@
-/* General */
+/* No in-word break */
 code {
     white-space: pre;
 }
 
-/* Classes */
+/* Align text right */
 .text-align-right {
     text-align: right;
+}
+
+/* Page-wide table */
+.md-typeset__table {
+    min-width: 100%;
+}
+.md-typeset table:not([class]) {
+    display: table;
 }
