@@ -1,71 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
      <loc>https://appsdock.github.io/docs/</loc>
-     <lastmod>2021-05-03</lastmod>
+     <lastmod>2021-05-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://appsdock.github.io/docs/gettingstarted/api/rest/</loc>
-     <lastmod>2021-05-03</lastmod>
+     <lastmod>2021-05-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://appsdock.github.io/docs/gettingstarted/guidelines/commit-messages/</loc>
-     <lastmod>2021-05-03</lastmod>
+     <lastmod>2021-05-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://appsdock.github.io/docs/gettingstarted/guidelines/configuration/</loc>
-     <lastmod>2021-05-03</lastmod>
+     <lastmod>2021-05-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://appsdock.github.io/docs/gettingstarted/guidelines/exceptions/error-codes/</loc>
-     <lastmod>2021-05-03</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://appsdock.github.io/docs/gettingstarted/guidelines/exceptions/core/core/</loc>
-     <lastmod>2021-05-03</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://appsdock.github.io/docs/gettingstarted/guidelines/exceptions/core/infrastructure/</loc>
-     <lastmod>2021-05-03</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://appsdock.github.io/docs/gettingstarted/guidelines/exceptions/core/internal-communication/</loc>
-     <lastmod>2021-05-03</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://appsdock.github.io/docs/gettingstarted/guidelines/exceptions/core/security-authentication/</loc>
-     <lastmod>2021-05-03</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://appsdock.github.io/docs/gettingstarted/guidelines/exceptions/integration/integration/</loc>
-     <lastmod>2021-05-03</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://appsdock.github.io/docs/gettingstarted/guidelines/exceptions/plugin/plugin/</loc>
-     <lastmod>2021-05-03</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://appsdock.github.io/docs/gettingstarted/guidelines/exceptions/system/system/</loc>
-     <lastmod>2021-05-03</lastmod>
+     <loc>https://appsdock.github.io/docs/gettingstarted/guidelines/exceptions/</loc>
+     <lastmod>2021-05-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://appsdock.github.io/docs/gettingstarted/guidelines/naming-convention/</loc>
-     <lastmod>2021-05-03</lastmod>
+     <lastmod>2021-05-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://appsdock.github.io/docs/gettingstarted/phpstorm/xdebug/</loc>
-     <lastmod>2021-05-03</lastmod>
+     <lastmod>2021-05-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://appsdock.github.io/docs/identity-access/authentication/</loc>
-     <lastmod>2021-05-03</lastmod>
+     <lastmod>2021-05-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://appsdock.github.io/docs/identity-access/identity/</loc>
-     <lastmod>2021-05-03</lastmod>
+     <lastmod>2021-05-05</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://appsdock.github.io/docs/identity-access/policies-and-permissions/</loc>
-     <lastmod>2021-05-03</lastmod>
+     <lastmod>2021-05-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://appsdock.github.io/docs/exceptions/</loc>
+     <lastmod>2021-05-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
