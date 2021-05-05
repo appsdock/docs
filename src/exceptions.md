@@ -7,71 +7,71 @@ For every error the list provides a more detailed description with possible caus
 ## 10001
 
 !!! danger "The setting has the wrong type."
-    Unfortunately, there is currently no detailed description available.
+    When validating the data type of the value of the setting, it was found that it does not correspond to the expected data type `BOOLEAN`.
 
 
 ## 10002
 
 !!! danger "The setting has the wrong type."
-    Unfortunately, there is currently no detailed description available.
+    When validating the data type of the value of the setting, it was found that it does not correspond to the expected data type `STRING`.
 
 
 ## 10003
 
 !!! danger "The setting has the wrong type."
-    Unfortunately, there is currently no detailed description available.
+    When validating the data type of the value of the setting, it was found that it does not correspond to the expected data type `INTEGER`.
 
 
 ## 10004
 
 !!! danger "The setting has the wrong type."
-    Unfortunately, there is currently no detailed description available.
+    When validating the data type of the value of the setting, it was found that it does not correspond to the expected data type `ARRAY`.
 
 
 ## 10005
 
 !!! danger "The option is not in the list of allowed options."
-    Unfortunately, there is currently no detailed description available.
+    When validating the value of the setting, it was found that it does not correspond to the allowed values.
 
 
 ## 10006
 
 !!! danger "Some options are not in the list of allowed options."
-    Unfortunately, there is currently no detailed description available.
+    When validating the values of the setting, it was found that some do not correspond to the allowed values.
 
 
 ## 10007
 
 !!! danger "The setting is not a valid date."
-    Unfortunately, there is currently no detailed description available.
+    When validating the value of the setting, it was found that it does not correspond to a date. A valid date format is `0000-00-00`.
 
 
 ## 10008
 
 !!! danger "The setting is not a valid time."
-    Unfortunately, there is currently no detailed description available.
+    When validating the value of the setting, it was found that it does not correspond to a time. A valid time format is `00:00:00`.
 
 
 ## 10009
 
 !!! danger "The setting does not exist."
-    Unfortunately, there is currently no detailed description available.
+    When reading the setting in the configuration, it was found that the setting does not exist.
 
 
 ## 10010
 
 !!! danger "The setting does not exist."
-    Unfortunately, there is currently no detailed description available.
+    When changing the setting in the configuration, it was found that the setting does not exist.
 
 
 ## 10011
 
 !!! danger "The setting does not exist."
-    Unfortunately, there is currently no detailed description available.
+    When resetting the setting in the configuration, it was found that the setting does not exist.
 
 
 ## 10012
 
-!!! danger "The setting does not exist."
+!!! danger "When setting the setting in the user preferences, it was found that the setting does not exist."
     Unfortunately, there is currently no detailed description available.
 
