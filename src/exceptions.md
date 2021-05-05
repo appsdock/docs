@@ -1,4 +1,8 @@
 
+# Exceptions
+
+This table provides an overview of all exception errors within AppsDock OS. The error number leads to a more detailed description with possible causes and solutions.
+
 | Code | Message
 | ---: | -------
 | [10001](#10001) | The setting has the wrong type.
@@ -14,146 +18,146 @@
 | [10011](#10011) | The setting does not exist.
 | [10012](#10012) | The setting does not exist.
 
-# 10001
+## 10001
 
 The setting has the wrong type.
 
-## Reasons
+### Reasons
 
 
 
-## Solutions
+### Solutions
 
 
 
-# 10002
-
-The setting has the wrong type.
-
-## Reasons
-
-
-
-## Solutions
-
-
-
-# 10003
+## 10002
 
 The setting has the wrong type.
 
-## Reasons
+### Reasons
 
 
 
-## Solutions
+### Solutions
 
 
 
-# 10004
+## 10003
 
 The setting has the wrong type.
 
-## Reasons
+### Reasons
 
 
 
-## Solutions
+### Solutions
 
 
 
-# 10005
+## 10004
+
+The setting has the wrong type.
+
+### Reasons
+
+
+
+### Solutions
+
+
+
+## 10005
 
 The option is not in the list of allowed options.
 
-## Reasons
+### Reasons
 
 
 
-## Solutions
+### Solutions
 
 
 
-# 10006
+## 10006
 
 Some options are not in the list of allowed options.
 
-## Reasons
+### Reasons
 
 
 
-## Solutions
+### Solutions
 
 
 
-# 10007
+## 10007
 
 The setting is not a valid date.
 
-## Reasons
+### Reasons
 
 
 
-## Solutions
+### Solutions
 
 
 
-# 10008
+## 10008
 
 The setting is not a valid time.
 
-## Reasons
+### Reasons
 
 
 
-## Solutions
+### Solutions
 
 
 
-# 10009
-
-The setting does not exist.
-
-## Reasons
-
-
-
-## Solutions
-
-
-
-# 10010
+## 10009
 
 The setting does not exist.
 
-## Reasons
+### Reasons
 
 
 
-## Solutions
+### Solutions
 
 
 
-# 10011
-
-The setting does not exist.
-
-## Reasons
-
-
-
-## Solutions
-
-
-
-# 10012
+## 10010
 
 The setting does not exist.
 
-## Reasons
+### Reasons
 
 
 
-## Solutions
+### Solutions
+
+
+
+## 10011
+
+The setting does not exist.
+
+### Reasons
+
+
+
+### Solutions
+
+
+
+## 10012
+
+The setting does not exist.
+
+### Reasons
+
+
+
+### Solutions
 
 
