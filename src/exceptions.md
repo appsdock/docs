@@ -18,38 +18,74 @@ This table provides an overview of all exception errors within AppsDock OS. The 
 | [10011](#10011) | The setting does not exist.
 | [10012](#10012) | The setting does not exist.
 
-## &#9839; 10001 &#183; The setting has the wrong type.
+## 10001
+
+!!! danger "Message"
+    The setting has the wrong type.
 
 
-## &#9839; 10002 &#183; The setting has the wrong type.
+## 10002
+
+!!! danger "Message"
+    The setting has the wrong type.
 
 
-## &#9839; 10003 &#183; The setting has the wrong type.
+## 10003
+
+!!! danger "Message"
+    The setting has the wrong type.
 
 
-## &#9839; 10004 &#183; The setting has the wrong type.
+## 10004
+
+!!! danger "Message"
+    The setting has the wrong type.
 
 
-## &#9839; 10005 &#183; The option is not in the list of allowed options.
+## 10005
+
+!!! danger "Message"
+    The option is not in the list of allowed options.
 
 
-## &#9839; 10006 &#183; Some options are not in the list of allowed options.
+## 10006
+
+!!! danger "Message"
+    Some options are not in the list of allowed options.
 
 
-## &#9839; 10007 &#183; The setting is not a valid date.
+## 10007
+
+!!! danger "Message"
+    The setting is not a valid date.
 
 
-## &#9839; 10008 &#183; The setting is not a valid time.
+## 10008
+
+!!! danger "Message"
+    The setting is not a valid time.
 
 
-## &#9839; 10009 &#183; The setting does not exist.
+## 10009
+
+!!! danger "Message"
+    The setting does not exist.
 
 
-## &#9839; 10010 &#183; The setting does not exist.
+## 10010
+
+!!! danger "Message"
+    The setting does not exist.
 
 
-## &#9839; 10011 &#183; The setting does not exist.
+## 10011
+
+!!! danger "Message"
+    The setting does not exist.
 
 
-## &#9839; 10012 &#183; The setting does not exist.
+## 10012
+
+!!! danger "Message"
+    The setting does not exist.
 
