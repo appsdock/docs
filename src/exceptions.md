@@ -72,6 +72,6 @@ For every error the list provides a more detailed description with possible caus
 
 ## 10012
 
-!!! danger "When setting the setting in the user preferences, it was found that the setting does not exist."
-    Unfortunately, there is currently no detailed description available.
+!!! danger "The setting does not exist."
+    When setting the setting in the user preferences, it was found that the setting does not exist.
 
