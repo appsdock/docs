@@ -58,6 +58,16 @@ There is a more detailed description with possible causes and solutions for ever
 !!! danger "The setting does not exist."
     When setting the setting in the user preferences, it was found that the setting does not exist.
 
+## 11000
+
+!!! danger "An error occurred while connecting to the database."
+    
+
+## 11001
+
+!!! danger "An error occurred while setup the ORM."
+    
+
 ## 12000
 
 !!! danger "The server is currently not available."
