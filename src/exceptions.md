@@ -68,6 +68,16 @@ There is a more detailed description with possible causes and solutions for ever
 !!! danger "An error occurred while setup the ORM."
     
 
+## 11002
+
+!!! danger "An error occurred during executing a sql statement."
+    
+
+## 11003
+
+!!! danger "An error occurred during ORM operations."
+    
+
 ## 12000
 
 !!! danger "The server is currently not available."
