@@ -80,7 +80,7 @@ There is a more detailed description with possible causes and solutions for ever
 ### Solutions
 
 - Check current installation and eventually run `adk install`
-- Run `adk util:ssh-gen` for generating new key pairs. Please note: All current auth session will not work anymore.
+- Run `adk util:ssh-gen` for generating new key pairs. Please note, that all current auth sessions will not work anymore.
 
 ## 12001
 
