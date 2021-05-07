@@ -55,7 +55,7 @@ nav:
     - Guidelines:
       - Commit messages: gettingstarted/guidelines/commit-messages.md
       - Configuration: gettingstarted/guidelines/configuration.md
-      - Exceptions: gettingstarted/guidelines/exceptions.md
+      - Exception errors: gettingstarted/guidelines/exceptions.md
       - Naming convention: gettingstarted/guidelines/naming-convention.md
     - PhpStorm:
       - Xdebug: gettingstarted/phpstorm/xdebug.md

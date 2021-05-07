@@ -1,9 +1,10 @@
-# Exceptions
+# Exception errors
 
-This list provides an overview of all exception errors within AppsDock OS.
-There is a more detailed description with possible causes and solutions for every error.
+This page provides a list of all exception errors within AppsDock OS.
+The guideline for exception errors can be found under **Getting Started &#10095; Guidelines &#10095; [Exception errors](gettingstarted/guidelines/exceptions)**.
 
 EXCEPTION_LIST
 
+*[HTTP]: Hypertext Transfer Protocol
 *[OS]: Operating System
 *[SSH]: Secure Shell
