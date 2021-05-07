@@ -16,7 +16,7 @@
     
     
       
-        <title>Exceptions - AppsDock OS Documentation</title>
+        <title>Exception errors - AppsDock OS Documentation</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#exceptions" class="md-skip">
+        <a href="#exception-errors" class="md-skip">
           Skip to content
         </a>
       
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Exceptions
+              Exception errors
             
           </span>
         </div>
@@ -419,12 +419,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Exceptions
+          Exception errors
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Exceptions
+        Exception errors
       </a>
       
         
@@ -442,9 +442,49 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    Usage
+  </a>
+  
+    <nav class="md-nav" aria-label="Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#call" class="md-nav__link">
+    Call
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#error-codes" class="md-nav__link">
+    Error codes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#specification" class="md-nav__link">
+    Specification
+  </a>
+  
+    <nav class="md-nav" aria-label="Specification">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#error-code-ranges" class="md-nav__link">
     Error code ranges
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -628,9 +668,49 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    Usage
+  </a>
+  
+    <nav class="md-nav" aria-label="Usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#call" class="md-nav__link">
+    Call
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#error-codes" class="md-nav__link">
+    Error codes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#specification" class="md-nav__link">
+    Specification
+  </a>
+  
+    <nav class="md-nav" aria-label="Specification">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#error-code-ranges" class="md-nav__link">
     Error code ranges
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -651,8 +731,91 @@
                   </a>
                 
                 
-                <h1 id="exceptions">Exceptions</h1>
-<h2 id="error-code-ranges">Error code ranges</h2>
+                <h1 id="exception-errors">Exception errors</h1>
+<p>In AppsDock <abbr title="Operating System">OS</abbr> there are 3 main exception errors, the general <strong>exception</strong> error,
+the <strong>runtime exception</strong> error and the <strong>logic exception</strong> error,
+which inherit from the respective <abbr title="PHP: Hypertext Preprocessor">PHP</abbr> exception errors.</p>
+<p>In addition, the AppsDock <abbr title="Operating System">OS</abbr> exception errors are extended by means of a <strong>trait</strong>
+so that useful information can be provided for finding the cause and fixing the problem.</p>
+<h2 id="usage">Usage</h2>
+<h3 id="call">Call</h3>
+<p>Each exception error has 3 parameters.
+The first parameter is the error code which must adhere to the <a href="#specification">specification</a>.
+The second parameter may contain additional information.
+The third parameter may contain a preceding exception error.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="cp">&lt;?php</span>
+
+<span class="sd">/**</span>
+<span class="sd"> * ExampleException</span>
+<span class="sd"> *</span>
+<span class="sd"> * @param array $ex</span>
+<span class="sd"> * @param array $details</span>
+<span class="sd"> * @param Throwable|null $previous</span>
+<span class="sd"> */</span>
+<span class="k">public</span> <span class="k">function</span> <span class="fm">__construct</span><span class="p">(</span><span class="k">array</span> <span class="nv">$ex</span><span class="p">,</span> <span class="k">array</span> <span class="nv">$details</span> <span class="o">=</span> <span class="p">[],</span> <span class="nx">Throwable</span> <span class="nv">$previous</span> <span class="o">=</span> <span class="k">null</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="o">...</span>
+<span class="p">}</span>
+
+<span class="k">throw</span> <span class="k">new</span> <span class="nx">ExampleException</span><span class="p">(</span><span class="nx">EX_00000</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;Variable 1&#39;</span> <span class="o">=&gt;</span> <span class="nv">$var1</span><span class="p">,</span> <span class="s1">&#39;Variable 2&#39;</span> <span class="o">=&gt;</span> <span class="nv">$var2</span><span class="p">],</span> <span class="nv">$previous</span><span class="p">);</span>
+</code></pre></div>
+</td></tr></table>
+<h3 id="error-codes">Error codes</h3>
+<p>An error code is created as a <code>ARRAY</code> constant under <strong>AppsDock <abbr title="Operating System">OS</abbr> &#10095; application &#10095; config &#10095; exceptions.php</strong>.
+The constant name must start with <code>EX_</code> followed by a 5-digit <strong>unique</strong> number.</p>
+<p>An error code constant must always contain the error code itself and a message.</p>
+<p>Optionally, a public message can be included, which is then shown to users instead of the actual message.
+The description is also not mandatory if the message is already meaningful enough.</p>
+<p>Optionally, reasons and solutions for the exception error can be given.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="cp">&lt;?php</span>
+
+<span class="k">const</span> <span class="no">EX_00000</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">&#39;code&#39;</span> <span class="o">=&gt;</span> <span class="mo">00000</span><span class="p">,</span>
+    <span class="s1">&#39;message&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;The variable has the wrong data type.&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;publicMessage&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;Something is wrong. Please try again later.&#39;</span>
+    <span class="s1">&#39;description&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;When validating the data type ...&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;reasons&#39;</span> <span class="o">=&gt;</span> <span class="p">[</span>
+        <span class="s1">&#39;The data type is not the expected data type.&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;...&#39;</span>
+    <span class="p">],</span>
+    <span class="s1">&#39;solutions&#39;</span> <span class="o">=&gt;</span> <span class="p">[</span>
+        <span class="s1">&#39;Change the data type of the variable.&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;...&#39;</span>
+    <span class="p">]</span>
+<span class="p">];</span>
+</code></pre></div>
+</td></tr></table>
+<h2 id="specification">Specification</h2>
+<h3 id="error-code-ranges">Error code ranges</h3>
 <table>
 <thead>
 <tr>
