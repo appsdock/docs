@@ -1,8 +1,8 @@
 
-# Exceptions
+# Exception errors
 
-This list provides an overview of all exception errors within AppsDock OS.
-There is a more detailed description with possible causes and solutions for every error.
+This page provides a list of all exception errors within AppsDock OS.
+The guideline for exception errors can be found under **Getting Started &#10095; Guidelines &#10095; [Exception errors](gettingstarted/guidelines/exceptions)**.
 
 ## 10001
 
@@ -58,6 +58,21 @@ There is a more detailed description with possible causes and solutions for ever
 !!! danger "The setting does not exist."
     When setting the setting in the user preferences, it was found that the setting does not exist.
 
+## 10013
+
+!!! danger "System cannot be uninstalled via app lifecycle management."
+    
+
+## 10014
+
+!!! danger "Invalid/malformed database setup definition files."
+    
+
+## 10015
+
+!!! danger "An error occurred while setup schema via database descriptor for database lifecycle operations."
+    
+
 ## 11000
 
 !!! danger "An error occurred while connecting to the database."
@@ -76,6 +91,26 @@ There is a more detailed description with possible causes and solutions for ever
 ## 11003
 
 !!! danger "An error occurred during ORM operations."
+    
+
+## 11004
+
+!!! danger "An error occurred while execute statement for create or use/switch database/schema during installation."
+    
+
+## 11005
+
+!!! danger "An error occurred while execute statement for database/schema tables creation during installation."
+    
+
+## 11006
+
+!!! danger "An error occurred while execute statement to delete database/schema during uninstallation."
+    
+
+## 11007
+
+!!! danger "An error occurred while execute statement to update database/schema during migration."
     
 
 ## 12000
@@ -186,5 +221,6 @@ There is a more detailed description with possible causes and solutions for ever
 - The user has to sign in with personal credentials.
 
 
+*[HTTP]: Hypertext Transfer Protocol
 *[OS]: Operating System
 *[SSH]: Secure Shell
