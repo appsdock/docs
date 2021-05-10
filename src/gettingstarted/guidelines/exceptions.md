@@ -9,7 +9,7 @@ AppsDock OS has the following three main exception errors classes.
 All three implement the **ExceptionInterface** and use the **ExceptionTrait** to provide useful information for finding the cause and fixing the problem. They are all located at **AppsDock &#10095; Core &#10095; Common &#10095; Exception**.
 
 !!! warning "Convention"
-    Every AppsDock OS exception **must** inherit from one of these exception classes.
+    Every AppsDock OS *usage exception error*[^1] **must** inherit from one of these exception classes.
 
 ## Usage
 
@@ -80,9 +80,10 @@ const EX_00000 = [
 | 20.000 | System | | AppsDock OS system components.
 | 30.000 | Integration | | Third party API services, like an email service provider.
 | 40.000 | Plugin | | Small application to extend AppsDock OS or app functionality.
-| 90.000[^1] | Apps | | Applications build with AppsDock OS.
+| 90.000[^2] | Apps | | Applications build with AppsDock OS.
 
-[^1]: The ranges from 50.000 to 80.000 are reserved for future use.
+[^1]: Usage exception errors occur while using AppsDock OS. Mostly these errors are caused by a user. The opposite are build exception errors.
+[^2]: The ranges from 50.000 to 80.000 are reserved for future use.
 
 *[API]: Application Programming Interface
 *[PHP]: PHP: Hypertext Preprocessor
