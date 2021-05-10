@@ -450,13 +450,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#call" class="md-nav__link">
-    Call
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#error-codes" class="md-nav__link">
     Error codes
   </a>
@@ -469,11 +462,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#specification" class="md-nav__link">
-    Specification
+  <a href="#conventions" class="md-nav__link">
+    Conventions
   </a>
   
-    <nav class="md-nav" aria-label="Specification">
+    <nav class="md-nav" aria-label="Conventions">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -676,13 +669,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#call" class="md-nav__link">
-    Call
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#error-codes" class="md-nav__link">
     Error codes
   </a>
@@ -695,11 +681,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#specification" class="md-nav__link">
-    Specification
+  <a href="#conventions" class="md-nav__link">
+    Conventions
   </a>
   
-    <nav class="md-nav" aria-label="Specification">
+    <nav class="md-nav" aria-label="Conventions">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -732,17 +718,20 @@
                 
                 
                 <h1 id="exception-errors">Exception errors</h1>
-<p>In AppsDock <abbr title="Operating System">OS</abbr> there are 3 main exception errors.</p>
+<p>AppsDock <abbr title="Operating System">OS</abbr> has the following three main exception errors classes.</p>
 <ul>
-<li><strong>AppsDock &#10095; Core &#10095; Common &#10095; Exception &#10095; Exception</strong></li>
-<li><strong>AppsDock &#10095; Core &#10095; Common &#10095; Exception &#10095; RuntimeException</strong></li>
-<li><strong>AppsDock &#10095; Core &#10095; Common &#10095; Exception &#10095; LogicException</strong></li>
+<li><strong>Exception</strong></li>
+<li><strong>LogicException</strong></li>
+<li><strong>RuntimeException</strong></li>
 </ul>
-<p>They all implement the <strong>AppsDock &#10095; Core &#10095; Common &#10095; Exception &#10095; ExceptionInterface</strong> and use the <strong>AppsDock &#10095; Core &#10095; Common &#10095; Exception &#10095; ExceptionTrait</strong> to provide useful information for finding the cause and fixing the problem.</p>
+<p>All three implement the <strong>ExceptionInterface</strong> and use the <strong>ExceptionTrait</strong> to provide useful information for finding the cause and fixing the problem. They are all located at <strong>AppsDock &#10095; Core &#10095; Common &#10095; Exception</strong>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Convention</p>
+<p>Every AppsDock <abbr title="Operating System">OS</abbr> exception <strong>must</strong> inherit from one of these exception classes.</p>
+</div>
 <h2 id="usage">Usage</h2>
-<h3 id="call">Call</h3>
-<p>Each exception error has 3 parameters.
-The first parameter is the error code which must adhere to the <a href="#specification">specification</a>.
+<p>Each exception error has three parameters.
+The first parameter is the error code which must adhere to the <a href="#conventions">conventions</a>.
 The second parameter may contain additional information.
 The third parameter may contain a preceding exception error.</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
@@ -816,7 +805,7 @@ The description is also not mandatory if the message is already meaningful enoug
 <span class="p">];</span>
 </code></pre></div>
 </td></tr></table>
-<h2 id="specification">Specification</h2>
+<h2 id="conventions">Conventions</h2>
 <h3 id="error-code-ranges">Error code ranges</h3>
 <table>
 <thead>
