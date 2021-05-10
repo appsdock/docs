@@ -75,12 +75,12 @@ const EX_00000 = [
 | ----: | ------- | ----- | -----------
 | 10.000 | Core | | AppsDock OS core components.
 | 11.000 | | Infrastructure | AppsDock OS core infrastructure components.
-| 12.000 | | Security & authentication | AppsDock OS core security and authentication components.
+| 12.000 | | Security & Authentication | AppsDock OS core security and authentication components.
 | 13.000 | | Internal communication | AppsDock OS core internal communication components.
 | 20.000 | System | | AppsDock OS system components.
 | 30.000 | Integration | | Third party API services, like an email service provider.
 | 40.000 | Plugin | | Small application to extend AppsDock OS or app functionality.
-| 90.000[^2] | Apps | | Applications build with AppsDock OS.
+| 90.000[^2] | App | | Applications build with AppsDock OS.
 
 [^1]: Usage exception errors occur while using AppsDock OS. Mostly these errors are caused by a user. The opposite are build exception errors.
 [^2]: The ranges from 50.000 to 80.000 are reserved for future use.
