@@ -1,19 +1,20 @@
 # Exception errors
 
-In AppsDock OS there are 3 main exception errors.
+AppsDock OS has the following three main exception errors classes.
 
-* **AppsDock &#10095; Core &#10095; Common &#10095; Exception &#10095; Exception**
-* **AppsDock &#10095; Core &#10095; Common &#10095; Exception &#10095; RuntimeException**
-* **AppsDock &#10095; Core &#10095; Common &#10095; Exception &#10095; LogicException**
+* **Exception**
+* **LogicException**
+* **RuntimeException**
 
-They all implement the **AppsDock &#10095; Core &#10095; Common &#10095; Exception &#10095; ExceptionInterface** and use the **AppsDock &#10095; Core &#10095; Common &#10095; Exception &#10095; ExceptionTrait** to provide useful information for finding the cause and fixing the problem.
+All three implement the **ExceptionInterface** and use the **ExceptionTrait** to provide useful information for finding the cause and fixing the problem. They are all located at **AppsDock &#10095; Core &#10095; Common &#10095; Exception**.
+
+!!! warning "Convention"
+    Every AppsDock OS exception **must** inherit from one of these exception classes.
 
 ## Usage
 
-### Call
-
-Each exception error has 3 parameters.
-The first parameter is the error code which must adhere to the [specification](#specification).
+Each exception error has three parameters.
+The first parameter is the error code which must adhere to the [conventions](#conventions).
 The second parameter may contain additional information.
 The third parameter may contain a preceding exception error.
 
@@ -66,7 +67,7 @@ const EX_00000 = [
 ];
 ~~~
 
-## Specification
+## Conventions
 
 ### Error code ranges
 
