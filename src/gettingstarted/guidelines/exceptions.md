@@ -1,11 +1,12 @@
 # Exception errors
 
-In AppsDock OS there are 3 main exception errors, the general **exception** error,
-the **runtime exception** error and the **logic exception** error,
-which inherit from the respective PHP exception errors.
+In AppsDock OS there are 3 main exception errors.
 
-In addition, the AppsDock OS exception errors are extended by means of a **trait**
-so that useful information can be provided for finding the cause and fixing the problem.
+* **AppsDock &#10095; Core &#10095; Common &#10095; Exception &#10095; Exception**
+* **AppsDock &#10095; Core &#10095; Common &#10095; Exception &#10095; RuntimeException**
+* **AppsDock &#10095; Core &#10095; Common &#10095; Exception &#10095; LogicException**
+
+They all implement the **AppsDock &#10095; Core &#10095; Common &#10095; Exception &#10095; ExceptionInterface** and use the **AppsDock &#10095; Core &#10095; Common &#10095; Exception &#10095; ExceptionTrait** to provide useful information for finding the cause and fixing the problem.
 
 ## Usage
 
