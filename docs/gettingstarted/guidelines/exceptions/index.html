@@ -732,11 +732,13 @@
                 
                 
                 <h1 id="exception-errors">Exception errors</h1>
-<p>In AppsDock <abbr title="Operating System">OS</abbr> there are 3 main exception errors, the general <strong>exception</strong> error,
-the <strong>runtime exception</strong> error and the <strong>logic exception</strong> error,
-which inherit from the respective <abbr title="PHP: Hypertext Preprocessor">PHP</abbr> exception errors.</p>
-<p>In addition, the AppsDock <abbr title="Operating System">OS</abbr> exception errors are extended by means of a <strong>trait</strong>
-so that useful information can be provided for finding the cause and fixing the problem.</p>
+<p>In AppsDock <abbr title="Operating System">OS</abbr> there are 3 main exception errors.</p>
+<ul>
+<li><strong>AppsDock &#10095; Core &#10095; Common &#10095; Exception &#10095; Exception</strong></li>
+<li><strong>AppsDock &#10095; Core &#10095; Common &#10095; Exception &#10095; RuntimeException</strong></li>
+<li><strong>AppsDock &#10095; Core &#10095; Common &#10095; Exception &#10095; LogicException</strong></li>
+</ul>
+<p>They all implement the <strong>AppsDock &#10095; Core &#10095; Common &#10095; Exception &#10095; ExceptionInterface</strong> and use the <strong>AppsDock &#10095; Core &#10095; Common &#10095; Exception &#10095; ExceptionTrait</strong> to provide useful information for finding the cause and fixing the problem.</p>
 <h2 id="usage">Usage</h2>
 <h3 id="call">Call</h3>
 <p>Each exception error has 3 parameters.
