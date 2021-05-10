@@ -1,9 +1,4 @@
 
-RANGE: 40
-EXCEPTIONS: \nArray
-(
-)
-
 # Plugin exception errors
 
 This page provides a list of all plugin exception errors within AppsDock OS.

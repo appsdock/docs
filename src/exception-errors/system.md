@@ -1,9 +1,4 @@
 
-RANGE: 20
-EXCEPTIONS: \nArray
-(
-)
-
 # System exception errors
 
 This page provides a list of all system exception errors within AppsDock OS.
