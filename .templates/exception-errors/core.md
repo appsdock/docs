@@ -6,19 +6,19 @@ The guideline for exception errors can be found [here](../../gettingstarted/guid
 
 ## General
 
-_EL
+PH_GENERAL
 
 ## Infrastructure
 
-_EL_INFRASTRUCTURE
+PH_INFRASTRUCTURE
 
 ## Security & Authentication
 
-_EL_SECURITY_AUTHENTICATION
+PH_SECURITY_AUTHENTICATION
 
 ## Internal communication
 
-_EL_INTERNAL_COMMUNICATION
+PH_INTERNAL_COMMUNICATION
 
 *[HTTP]: Hypertext Transfer Protocol
 *[OS]: Operating System
