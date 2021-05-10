@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#app" class="md-skip">
+        <a href="#app-exception-errors" class="md-skip">
           Skip to content
         </a>
       
@@ -635,9 +635,39 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          App
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         App
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#general" class="md-nav__link">
+    General
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -668,6 +698,21 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#general" class="md-nav__link">
+    General
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -683,8 +728,228 @@
                   </a>
                 
                 
-                <h1 id="app">App</h1>
-<p>Currently, there are no exception errors exist or documented.</p>
+                <h1 id="app-exception-errors">App exception errors</h1>
+<p>This page provides a list of all app exception errors within AppsDock <abbr title="Operating System">OS</abbr>.</p>
+<p>The guideline for exception errors can be found <a href="../gettingstarted/guidelines/exception-errors">here</a>.</p>
+<h2 id="general">General</h2>
+<h3 id="10001">10001</h3>
+<div class="admonition danger">
+<p class="admonition-title">The setting has the wrong type.</p>
+<p>When validating the data type of the value of the setting, it was found that it does not correspond to the expected data type.</p>
+</div>
+<h4 id="reasons">Reasons</h4>
+<ul>
+<li>The data type of the value of the setting is not of the expected data type.</li>
+<li>The data type of the value of the setting was of the expected data type, but changed during transportation.</li>
+</ul>
+<h4 id="solutions">Solutions</h4>
+<ul>
+<li>Change the data type of the value of the setting to the expected data type.</li>
+<li>Check your network for <code>HTTP</code> <code>POST</code> manipulation by firewalls or proxies.</li>
+</ul>
+<h3 id="10005">10005</h3>
+<div class="admonition danger">
+<p class="admonition-title">The option is not in the list of allowed options.</p>
+<p>When validating the value of the setting, it was found that it does not correspond to the allowed values.</p>
+</div>
+<h3 id="10006">10006</h3>
+<div class="admonition danger">
+<p class="admonition-title">Some options are not in the list of allowed options.</p>
+<p>When validating the values of the setting, it was found that some do not correspond to the allowed values.</p>
+</div>
+<h3 id="10007">10007</h3>
+<div class="admonition danger">
+<p class="admonition-title">The setting is not a valid date.</p>
+<p>When validating the value of the setting, it was found that it does not correspond to a date. A valid date format is <code>0000-00-00</code>.</p>
+</div>
+<h3 id="10008">10008</h3>
+<div class="admonition danger">
+<p class="admonition-title">The setting is not a valid time.</p>
+<p>When validating the value of the setting, it was found that it does not correspond to a time. A valid time format is <code>00:00:00</code>.</p>
+</div>
+<h3 id="10009">10009</h3>
+<div class="admonition danger">
+<p class="admonition-title">The setting does not exist.</p>
+<p>When reading the setting in the configuration, it was found that the setting does not exist.</p>
+</div>
+<h3 id="10010">10010</h3>
+<div class="admonition danger">
+<p class="admonition-title">The setting does not exist.</p>
+<p>When changing the setting in the configuration, it was found that the setting does not exist.</p>
+</div>
+<h3 id="10011">10011</h3>
+<div class="admonition danger">
+<p class="admonition-title">The setting does not exist.</p>
+<p>When resetting the setting in the configuration, it was found that the setting does not exist.</p>
+</div>
+<h3 id="10012">10012</h3>
+<div class="admonition danger">
+<p class="admonition-title">The setting does not exist.</p>
+<p>When setting the setting in the user preferences, it was found that the setting does not exist.</p>
+</div>
+<h3 id="10013">10013</h3>
+<div class="admonition danger">
+<p class="admonition-title">System cannot be uninstalled via app lifecycle management.</p>
+</div>
+<h3 id="10014">10014</h3>
+<div class="admonition danger">
+<p class="admonition-title">Invalid/malformed database setup definition files.</p>
+</div>
+<h3 id="10015">10015</h3>
+<div class="admonition danger">
+<p class="admonition-title">An error occurred while setup schema via database descriptor for database lifecycle operations.</p>
+</div>
+<h3 id="11000">11000</h3>
+<div class="admonition danger">
+<p class="admonition-title">An error occurred while connecting to the database.</p>
+</div>
+<h3 id="11001">11001</h3>
+<div class="admonition danger">
+<p class="admonition-title">An error occurred while setup the ORM.</p>
+</div>
+<h3 id="11002">11002</h3>
+<div class="admonition danger">
+<p class="admonition-title">An error occurred during executing a sql statement.</p>
+</div>
+<h3 id="11003">11003</h3>
+<div class="admonition danger">
+<p class="admonition-title">An error occurred during ORM operations.</p>
+</div>
+<h3 id="11004">11004</h3>
+<div class="admonition danger">
+<p class="admonition-title">An error occurred while execute statement for creating a new database.</p>
+</div>
+<h3 id="11005">11005</h3>
+<div class="admonition danger">
+<p class="admonition-title">An error occurred while execute statement for database table creation.</p>
+</div>
+<h3 id="11006">11006</h3>
+<div class="admonition danger">
+<p class="admonition-title">An error occurred while execute statement for delete database.</p>
+</div>
+<h3 id="11007">11007</h3>
+<div class="admonition danger">
+<p class="admonition-title">An error occurred while execute statement during database migration.</p>
+</div>
+<h3 id="11008">11008</h3>
+<div class="admonition danger">
+<p class="admonition-title">An error occurred while operate with database via ORM.</p>
+</div>
+<h3 id="11009">11009</h3>
+<div class="admonition danger">
+<p class="admonition-title">An error occurred while database operation via cli.</p>
+</div>
+<h3 id="11010">11010</h3>
+<div class="admonition danger">
+<p class="admonition-title">An error occurred while execute statement to copy database/schema.</p>
+</div>
+<h3 id="12000">12000</h3>
+<div class="admonition danger">
+<p class="admonition-title">The server is currently not available.</p>
+</div>
+<h4 id="reasons_1">Reasons</h4>
+<ul>
+<li>AppsDock <abbr title="Operating System">OS</abbr> is not installed yet.</li>
+<li>Could not create SSH key pairs.</li>
+</ul>
+<h4 id="solutions_1">Solutions</h4>
+<ul>
+<li>Check current installation and eventually run <code>adk install</code></li>
+<li>Run <code>adk util:ssh-gen</code> for generating new key pairs. Please note, that all current auth sessions will not work anymore.</li>
+</ul>
+<h3 id="12001">12001</h3>
+<div class="admonition danger">
+<p class="admonition-title">The username or password is wrong.</p>
+</div>
+<h4 id="reasons_2">Reasons</h4>
+<ul>
+<li>The entered username does not exist.</li>
+<li>The password entered is incorrect or does not belong to the user name.</li>
+</ul>
+<h4 id="solutions_2">Solutions</h4>
+<ul>
+<li>Check the username and try again.</li>
+<li>Account may not exist now, please contact your account administrator.</li>
+</ul>
+<h3 id="12002">12002</h3>
+<div class="admonition danger">
+<p class="admonition-title">The account is not available yet.</p>
+</div>
+<h4 id="reason">Reason</h4>
+<ul>
+<li>The user account has been created recently and requires an action of the account owner for activation.</li>
+</ul>
+<h4 id="solutions_3">Solutions</h4>
+<ul>
+<li>Check your email inbox for an activation email and complete the account activation by following the instructions.</li>
+<li>Contact the user account administrator and request for a new activation email.</li>
+</ul>
+<h3 id="12003">12003</h3>
+<div class="admonition danger">
+<p class="admonition-title">Your account is temporary suspended because of too many failed logins.</p>
+</div>
+<h4 id="reason_1">Reason</h4>
+<ul>
+<li>Frequently failed login attempts.</li>
+</ul>
+<h4 id="solution">Solution</h4>
+<ul>
+<li>Try again shortly.</li>
+</ul>
+<h3 id="12004">12004</h3>
+<div class="admonition danger">
+<p class="admonition-title">The credentials were incorrect.</p>
+</div>
+<h4 id="reason_2">Reason</h4>
+<ul>
+<li>Username or password is wrong.</li>
+</ul>
+<h4 id="solution_1">Solution</h4>
+<ul>
+<li>Check entered username and password and try again.</li>
+</ul>
+<h3 id="12005">12005</h3>
+<div class="admonition danger">
+<p class="admonition-title">The user account is locked.</p>
+</div>
+<h4 id="solution_2">Solution</h4>
+<ul>
+<li>Contact the user account administrator.</li>
+</ul>
+<h3 id="12006">12006</h3>
+<div class="admonition danger">
+<p class="admonition-title">The user account is inactive.</p>
+</div>
+<h4 id="solution_3">Solution</h4>
+<ul>
+<li>Contact the user account administrator.</li>
+</ul>
+<h3 id="12007">12007</h3>
+<div class="admonition danger">
+<p class="admonition-title">Access denied due to insufficient permissions.</p>
+</div>
+<h4 id="reasons_3">Reasons</h4>
+<ul>
+<li>The users role does not have the policy that permits the required action.</li>
+<li>The user is not assigned to the role which is already permitted.</li>
+</ul>
+<h4 id="solutions_4">Solutions</h4>
+<ul>
+<li>Assign the policy that permits the required action to the users role.</li>
+<li>Assign the user to the role which is already permitted.</li>
+</ul>
+<h3 id="12008">12008</h3>
+<div class="admonition danger">
+<p class="admonition-title">Access denied due to insufficient authority.</p>
+</div>
+<h4 id="reason_3">Reason</h4>
+<ul>
+<li>The user is not authorized/signed in.</li>
+</ul>
+<h4 id="solution_4">Solution</h4>
+<ul>
+<li>The user has to sign in with personal credentials.</li>
+</ul>
                 
               
               
