@@ -727,7 +727,7 @@
 <p>All three implement the <strong>ExceptionInterface</strong> and use the <strong>ExceptionTrait</strong> to provide useful information for finding the cause and fixing the problem. They are all located at <strong>AppsDock &#10095; Core &#10095; Common &#10095; Exception</strong>.</p>
 <div class="admonition warning">
 <p class="admonition-title">Convention</p>
-<p>Every AppsDock <abbr title="Operating System">OS</abbr> exception <strong>must</strong> inherit from one of these exception classes.</p>
+<p>Every AppsDock <abbr title="Operating System">OS</abbr> <em>usage exception error</em><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> <strong>must</strong> inherit from one of these exception classes.</p>
 </div>
 <h2 id="usage">Usage</h2>
 <p>Each exception error has three parameters.
@@ -860,7 +860,7 @@ The description is also not mandatory if the message is already meaningful enoug
 <td>Small application to extend AppsDock <abbr title="Operating System">OS</abbr> or app functionality.</td>
 </tr>
 <tr>
-<td align="right">90.000<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></td>
+<td align="right">90.000<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></td>
 <td>Apps</td>
 <td></td>
 <td>Applications build with AppsDock <abbr title="Operating System">OS</abbr>.</td>
@@ -871,7 +871,10 @@ The description is also not mandatory if the message is already meaningful enoug
 <hr />
 <ol>
 <li id="fn:1">
-<p>The ranges from 50.000 to 80.000 are reserved for future use.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+<p>Usage exception errors occur while using AppsDock <abbr title="Operating System">OS</abbr>. Mostly these errors are caused by a user. The opposite are build exception errors.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>The ranges from 50.000 to 80.000 are reserved for future use.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>
