@@ -68,4 +68,4 @@ nav:
     - System: exception-errors/system.md
     - Integration: exception-errors/integration.md
     - Plugin: exception-errors/plugin.md
-    - Apps: exception-errors/apps.md
+    - App: exception-errors/app.md
