@@ -2,7 +2,7 @@
 # Exception errors
 
 This page provides a list of all exception errors within AppsDock OS.
-The guideline for exception errors can be found under **Getting Started &#10095; Guidelines &#10095; [Exception errors](gettingstarted/guidelines/exceptions)**.
+The guideline for exception errors can be found under **Getting Started &#10095; Guidelines &#10095; [Exception errors](../gettingstarted/guidelines/exceptions)**.
 
 ## 10001
 
@@ -95,22 +95,37 @@ The guideline for exception errors can be found under **Getting Started &#10095;
 
 ## 11004
 
-!!! danger "An error occurred while execute statement for create or use/switch database/schema during installation."
+!!! danger "An error occurred while execute statement for creating a new database."
     
 
 ## 11005
 
-!!! danger "An error occurred while execute statement for database/schema tables creation during installation."
+!!! danger "An error occurred while execute statement for database table creation."
     
 
 ## 11006
 
-!!! danger "An error occurred while execute statement to delete database/schema during uninstallation."
+!!! danger "An error occurred while execute statement for delete database."
     
 
 ## 11007
 
-!!! danger "An error occurred while execute statement to update database/schema during migration."
+!!! danger "An error occurred while execute statement during database migration."
+    
+
+## 11008
+
+!!! danger "An error occurred while operate with database via ORM."
+    
+
+## 11009
+
+!!! danger "An error occurred while database operation via cli."
+    
+
+## 11010
+
+!!! danger "An error occurred while execute statement to copy database/schema."
     
 
 ## 12000
