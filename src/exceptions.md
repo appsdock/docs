@@ -225,7 +225,7 @@ The guideline for exception errors can be found under **Getting Started &#10095;
 
 ## 12008
 
-!!! danger "Access denied due to absence of authorization."
+!!! danger "Access denied due to insufficient authority."
     
 ### Reason
 
