@@ -9,14 +9,14 @@
       
       
       
-        <link rel="canonical" href="https://appsdock.github.io/docs/gettingstarted/guidelines/naming-convention/">
+        <link rel="canonical" href="https://appsdock.github.io/docs/gettingstarted/guidelines/exception-errors/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.4">
     
     
       
-        <title>Naming convention - AppsDock OS Documentation</title>
+        <title>Exception errors - AppsDock OS Documentation</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#naming-convention" class="md-skip">
+        <a href="#exception-errors" class="md-skip">
           Skip to content
         </a>
       
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Naming convention
+              Exception errors
             
           </span>
         </div>
@@ -411,18 +411,6 @@
             
   
   
-  
-    <li class="md-nav__item">
-      <a href="../exception-errors/" class="md-nav__link">
-        Exception errors
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
     
   
   
@@ -435,12 +423,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Naming convention
+          Exception errors
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Naming convention
+        Exception errors
       </a>
       
         
@@ -458,15 +446,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#classes" class="md-nav__link">
-    Classes
+  <a href="#usage" class="md-nav__link">
+    Usage
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#methods" class="md-nav__link">
-    Methods
+  <a href="#conventions" class="md-nav__link">
+    Conventions
   </a>
   
 </li>
@@ -475,6 +463,18 @@
   
 </nav>
       
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../naming-convention/" class="md-nav__link">
+        Naming convention
+      </a>
     </li>
   
 
@@ -714,15 +714,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#classes" class="md-nav__link">
-    Classes
+  <a href="#usage" class="md-nav__link">
+    Usage
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#methods" class="md-nav__link">
-    Methods
+  <a href="#conventions" class="md-nav__link">
+    Conventions
   </a>
   
 </li>
@@ -739,22 +739,172 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/appsdock/docs/edit/master/docs/gettingstarted/guidelines/naming-convention.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/appsdock/docs/edit/master/docs/gettingstarted/guidelines/exception-errors.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="naming-convention">Naming convention</h1>
-<h2 id="classes">Classes</h2>
-<p>Class names are written in <strong>CamelCase</strong> notation. Class names should be as meaningful as possible.</p>
-<p>If a class name contains an abbreviation, <strong><abbr title="Application Programming Interface">API</abbr></strong> becomes <strong>Api</strong> and <strong><abbr title="Structured Query Language">SQL</abbr></strong> becomes <strong>Sql</strong> for example.</p>
-<h3 id="exceptions">Exceptions</h3>
-<p>If an abbreviation stands alone or is at the end of the class name, it is written in capital letters like <strong><abbr title="Application Programming Interface">API</abbr></strong>, <strong><abbr title="Dependency Injection">DI</abbr></strong>, <strong>RestAPI</strong> or <strong>ExtendedHTML</strong>.</p>
-<h2 id="methods">Methods</h2>
-<p>Method names are written in <strong>CamelCase</strong> notation. Method names should be as meaningful as possible.</p>
-<p>If a method name contains an abbreviation, <strong><abbr title="Application Programming Interface">API</abbr></strong> becomes <strong>Api</strong> and <strong><abbr title="Structured Query Language">SQL</abbr></strong> becomes <strong>Sql</strong> for example.</p>
-<h3 id="exceptions_1">Exceptions</h3>
-<p>If an abbreviation stands alone or is at the end of the method name, it is written in capital letters like <strong><abbr title="Application Programming Interface">API</abbr></strong>, <strong><abbr title="Dependency Injection">DI</abbr></strong>, <strong>RestAPI</strong> or <strong>ExtendedHTML</strong>.</p>
+                <h1 id="exception-errors">Exception errors</h1>
+<p>AppsDock <abbr title="Operating System">OS</abbr> has the following three main exception errors classes.</p>
+<ul>
+<li><strong>Exception</strong></li>
+<li><strong>LogicException</strong></li>
+<li><strong>RuntimeException</strong></li>
+</ul>
+<p>All three implement the <strong>ExceptionInterface</strong> and use the <strong>ExceptionTrait</strong> to provide useful information for finding the cause and fixing the problem. They are all located at <strong>AppsDock &#10095; Core &#10095; Common &#10095; Exception</strong>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Convention</p>
+<p>Every AppsDock <abbr title="Operating System">OS</abbr> <em>usage exception error</em><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> <strong>must</strong> inherit from one of these exception classes.</p>
+</div>
+<h2 id="usage">Usage</h2>
+<p>Each exception error has three parameters.
+The first parameter is the error code which must adhere to the <a href="#conventions">conventions</a>.
+The second parameter may contain additional information.
+The third parameter may contain a preceding exception error.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="cp">&lt;?php</span>
+
+<span class="sd">/**</span>
+<span class="sd"> * ExampleException</span>
+<span class="sd"> *</span>
+<span class="sd"> * @param array $ex</span>
+<span class="sd"> * @param array $details</span>
+<span class="sd"> * @param Throwable|null $previous</span>
+<span class="sd"> */</span>
+<span class="k">public</span> <span class="k">function</span> <span class="fm">__construct</span><span class="p">(</span><span class="k">array</span> <span class="nv">$ex</span><span class="p">,</span> <span class="k">array</span> <span class="nv">$details</span> <span class="o">=</span> <span class="p">[],</span> <span class="nx">Throwable</span> <span class="nv">$previous</span> <span class="o">=</span> <span class="k">null</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="o">...</span>
+<span class="p">}</span>
+
+<span class="k">throw</span> <span class="k">new</span> <span class="nx">ExampleException</span><span class="p">(</span><span class="nx">EX_00000</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;Variable 1&#39;</span> <span class="o">=&gt;</span> <span class="nv">$var1</span><span class="p">,</span> <span class="s1">&#39;Variable 2&#39;</span> <span class="o">=&gt;</span> <span class="nv">$var2</span><span class="p">],</span> <span class="nv">$previous</span><span class="p">);</span>
+</code></pre></div>
+</td></tr></table>
+<h3 id="error-codes">Error codes</h3>
+<p>An error code is created as a <code>ARRAY</code> constant under <strong>AppsDock <abbr title="Operating System">OS</abbr> &#10095; application &#10095; config &#10095; exceptions.php</strong>.
+The constant name must start with <code>EX_</code> followed by a 5-digit <strong>unique</strong> number.</p>
+<p>An error code constant must always contain the error code itself and a message.</p>
+<p>Optionally, a public message can be included, which is then shown to users instead of the actual message.
+The description is also not mandatory if the message is already meaningful enough.</p>
+<p>Optionally, reasons and solutions for the exception error can be given.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="cp">&lt;?php</span>
+
+<span class="k">const</span> <span class="no">EX_00000</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">&#39;code&#39;</span> <span class="o">=&gt;</span> <span class="mo">00000</span><span class="p">,</span>
+    <span class="s1">&#39;message&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;The variable has the wrong data type.&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;publicMessage&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;Something is wrong. Please try again later.&#39;</span>
+    <span class="s1">&#39;description&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;When validating the data type ...&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;reasons&#39;</span> <span class="o">=&gt;</span> <span class="p">[</span>
+        <span class="s1">&#39;The data type is not the expected data type.&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;...&#39;</span>
+    <span class="p">],</span>
+    <span class="s1">&#39;solutions&#39;</span> <span class="o">=&gt;</span> <span class="p">[</span>
+        <span class="s1">&#39;Change the data type of the variable.&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;...&#39;</span>
+    <span class="p">]</span>
+<span class="p">];</span>
+</code></pre></div>
+</td></tr></table>
+<h2 id="conventions">Conventions</h2>
+<h3 id="error-code-ranges">Error code ranges</h3>
+<table>
+<thead>
+<tr>
+<th align="right">Range</th>
+<th>Context</th>
+<th>Scope</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">10.000</td>
+<td>Core</td>
+<td></td>
+<td>AppsDock <abbr title="Operating System">OS</abbr> core components.</td>
+</tr>
+<tr>
+<td align="right">11.000</td>
+<td></td>
+<td>Infrastructure</td>
+<td>AppsDock <abbr title="Operating System">OS</abbr> core infrastructure components.</td>
+</tr>
+<tr>
+<td align="right">12.000</td>
+<td></td>
+<td>Security &amp; Authentication</td>
+<td>AppsDock <abbr title="Operating System">OS</abbr> core security and authentication components.</td>
+</tr>
+<tr>
+<td align="right">13.000</td>
+<td></td>
+<td>Internal communication</td>
+<td>AppsDock <abbr title="Operating System">OS</abbr> core internal communication components.</td>
+</tr>
+<tr>
+<td align="right">20.000</td>
+<td>System</td>
+<td></td>
+<td>AppsDock <abbr title="Operating System">OS</abbr> system components.</td>
+</tr>
+<tr>
+<td align="right">30.000</td>
+<td>Integration</td>
+<td></td>
+<td>Third party <abbr title="Application Programming Interface">API</abbr> services, like an email service provider.</td>
+</tr>
+<tr>
+<td align="right">40.000</td>
+<td>Plugin</td>
+<td></td>
+<td>Small application to extend AppsDock <abbr title="Operating System">OS</abbr> or app functionality.</td>
+</tr>
+<tr>
+<td align="right">90.000<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></td>
+<td>App</td>
+<td></td>
+<td>Applications build with AppsDock <abbr title="Operating System">OS</abbr>.</td>
+</tr>
+</tbody>
+</table>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Usage exception errors occur while using AppsDock <abbr title="Operating System">OS</abbr>. Mostly these errors are caused by a user. The opposite are build exception errors.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>The ranges from 50.000 to 80.000 are reserved for future use.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
                 
               
               
@@ -777,7 +927,7 @@
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../exception-errors/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../configuration/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -786,19 +936,19 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Exception errors
+              Configuration
             </div>
           </div>
         </a>
       
       
-        <a href="../../phpstorm/xdebug/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../naming-convention/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Xdebug
+              Naming convention
             </div>
           </div>
           <div class="md-footer__button md-icon">

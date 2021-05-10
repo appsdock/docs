@@ -16,7 +16,7 @@
      <lastmod>2021-05-10</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://appsdock.github.io/docs/gettingstarted/guidelines/exceptions/</loc>
+     <loc>https://appsdock.github.io/docs/gettingstarted/guidelines/exception-errors/</loc>
      <lastmod>2021-05-10</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -40,7 +40,23 @@
      <lastmod>2021-05-10</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://appsdock.github.io/docs/exceptions/</loc>
+     <loc>https://appsdock.github.io/docs/exception-errors/core/</loc>
+     <lastmod>2021-05-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://appsdock.github.io/docs/exception-errors/system/</loc>
+     <lastmod>2021-05-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://appsdock.github.io/docs/exception-errors/integration/</loc>
+     <lastmod>2021-05-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://appsdock.github.io/docs/exception-errors/plugin/</loc>
+     <lastmod>2021-05-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://appsdock.github.io/docs/exception-errors/apps/</loc>
      <lastmod>2021-05-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
