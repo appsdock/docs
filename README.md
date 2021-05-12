@@ -1,3 +1,3 @@
 # AppsDock OS Documentation
 
-You can find the entire documentation [here](https://appsdock.github.io/docs/).
+The entire documentation can be found [here](https://docs.appsdock.de/).
