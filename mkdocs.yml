@@ -48,24 +48,31 @@ markdown_extensions:
       toc_depth: 3
 
 nav:
-  - Introduction: index.md
+  - Home: index.md
   - Getting Started:
-    - API:
-      - REST: gettingstarted/api/rest.md
     - Guidelines:
       - Commit messages: gettingstarted/guidelines/commit-messages.md
       - Configuration: gettingstarted/guidelines/configuration.md
       - Exception errors: gettingstarted/guidelines/exception-errors.md
       - Naming convention: gettingstarted/guidelines/naming-convention.md
+      - REST API: gettingstarted/guidelines/rest-api.md
     - PhpStorm:
       - Xdebug: gettingstarted/phpstorm/xdebug.md
-  - Identity and access:
-    - Authentication: identity-access/authentication.md
-    - Identity: identity-access/identity.md
-    - Policies and permissions: identity-access/policies-and-permissions.md
+  - API:
+    - REST:
+      - Access: api/rest/access.md
+      - App: api/rest/app.md
+      - Configuration: api/rest/configuration.md
+      - Identity: api/rest/identity.md
+      - Mail: api/rest/mail.md
+      - Organization: api/rest/organization.md
   - Exception errors:
     - Core: exception-errors/core.md
     - System: exception-errors/system.md
     - Integration: exception-errors/integration.md
     - Plugin: exception-errors/plugin.md
     - App: exception-errors/app.md
+  - Identity and access:
+    - Authentication: identity-access/authentication.md
+    - Identity: identity-access/identity.md
+    - Policies and permissions: identity-access/policies-and-permissions.md
