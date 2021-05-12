@@ -134,6 +134,16 @@ The guideline for exception errors can be found [here](../../gettingstarted/guid
 !!! danger "An error occurred while execute statement to copy database/schema."
     
 
+### 11300
+
+!!! danger "The attempt to connect to the AMQP Server failed."
+    
+
+### 11301
+
+!!! danger "The message translation from a message bus message to amqp message failed due to an json encoding of the message body."
+    
+
 
 ## Security & Authentication
 
