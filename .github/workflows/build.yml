@@ -15,6 +15,9 @@ jobs:
       - name: Generate website
         run: docker run --rm -v ${PWD}:/docs/ squidfunk/mkdocs-material build
 
+      - name: Add custom domain
+        run: echo "docs.appsdock.de" > ./docs/CNAME
+
       - name: Commit and push
         run: |
           git config --global user.name '${{ secrets.GIT_USER }}'
