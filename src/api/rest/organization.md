@@ -8,71 +8,64 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 | Route | Method | Version
 | ----- | ------ | ------:
-| `/organizations` | `GET` | **1**
+| /organizations | `GET` | 1
 
 !!! important "Developer"
-    Class: `AppsDock &#10095; System &#10095; Application &#10095; Organization &#10095; API &#10095; OrganizationReadRestAPI`            
-    Method: `listOrganization`
+    AppsDock ❯ System ❯ Application ❯ Organization ❯ API ❯ OrganizationReadRestAPI ❯ listOrganization
 
 ## Get Organization
 
 | Route | Method | Version
 | ----- | ------ | ------:
-| `/organizations/{id}` | `GET` | **1**
+| /organizations/{id} | `GET` | 1
 
 !!! important "Developer"
-    Class: `AppsDock &#10095; System &#10095; Application &#10095; Organization &#10095; API &#10095; OrganizationReadRestAPI`            
-    Method: `getOrganization`
+    AppsDock ❯ System ❯ Application ❯ Organization ❯ API ❯ OrganizationReadRestAPI ❯ getOrganization
 
 ## Create Organization
 
 | Route | Method | Version
 | ----- | ------ | ------:
-| `/organizations` | `POST` | **1**
+| /organizations | `POST` | 1
 
 !!! important "Developer"
-    Class: `AppsDock &#10095; System &#10095; Application &#10095; Organization &#10095; API &#10095; OrganizationWriteRestAPI`            
-    Method: `createOrganization`
+    AppsDock ❯ System ❯ Application ❯ Organization ❯ API ❯ OrganizationWriteRestAPI ❯ createOrganization
 
 ## Rename Organization
 
 | Route | Method | Version
 | ----- | ------ | ------:
-| `/organizations/{id}` | `POST` | **1**
+| /organizations/{id} | `POST` | 1
 
 !!! important "Developer"
-    Class: `AppsDock &#10095; System &#10095; Application &#10095; Organization &#10095; API &#10095; OrganizationWriteRestAPI`            
-    Method: `renameOrganization`
+    AppsDock ❯ System ❯ Application ❯ Organization ❯ API ❯ OrganizationWriteRestAPI ❯ renameOrganization
 
 ## Delete Organization
 
 | Route | Method | Version
 | ----- | ------ | ------:
-| `/organizations/{id}` | `DELETE` | **1**
+| /organizations/{id} | `DELETE` | 1
 
 !!! important "Developer"
-    Class: `AppsDock &#10095; System &#10095; Application &#10095; Organization &#10095; API &#10095; OrganizationWriteRestAPI`            
-    Method: `deleteOrganization`
+    AppsDock ❯ System ❯ Application ❯ Organization ❯ API ❯ OrganizationWriteRestAPI ❯ deleteOrganization
 
 ## Assign User To Organization
 
 | Route | Method | Version
 | ----- | ------ | ------:
-| `/organizations/{organizationId}/users/{userId}` | `POST` | **1**
+| /organizations/{organizationId}/users/{userId} | `POST` | 1
 
 !!! important "Developer"
-    Class: `AppsDock &#10095; System &#10095; Application &#10095; Organization &#10095; API &#10095; OrganizationWriteRestAPI`            
-    Method: `assignUserToOrganization`
+    AppsDock ❯ System ❯ Application ❯ Organization ❯ API ❯ OrganizationWriteRestAPI ❯ assignUserToOrganization
 
 ## Remove User From Organization
 
 | Route | Method | Version
 | ----- | ------ | ------:
-| `/organizations/{organizationId}/users/{userId}` | `DELETE` | **1**
+| /organizations/{organizationId}/users/{userId} | `DELETE` | 1
 
 !!! important "Developer"
-    Class: `AppsDock &#10095; System &#10095; Application &#10095; Organization &#10095; API &#10095; OrganizationWriteRestAPI`            
-    Method: `removeUserFromOrganization`
+    AppsDock ❯ System ❯ Application ❯ Organization ❯ API ❯ OrganizationWriteRestAPI ❯ removeUserFromOrganization
 
 *[API]: Application Programming Interface
 *[OS]: Operating System

@@ -8,261 +8,235 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 | Route | Method | Version
 | ----- | ------ | ------:
-| `/roles` | `GET` | **1**
+| /roles | `GET` | 1
 
 !!! important "Developer"
-    Class: `AppsDock &#10095; System &#10095; Application &#10095; Identity &#10095; API &#10095; RoleReadRestAPI`            
-    Method: `listRoles`
+    AppsDock ❯ System ❯ Application ❯ Identity ❯ API ❯ RoleReadRestAPI ❯ listRoles
 
 ## Get Role
 
 | Route | Method | Version
 | ----- | ------ | ------:
-| `/roles/{id}` | `GET` | **1**
+| /roles/{id} | `GET` | 1
 
 !!! important "Developer"
-    Class: `AppsDock &#10095; System &#10095; Application &#10095; Identity &#10095; API &#10095; RoleReadRestAPI`            
-    Method: `getRole`
+    AppsDock ❯ System ❯ Application ❯ Identity ❯ API ❯ RoleReadRestAPI ❯ getRole
 
 ## List Group
 
 | Route | Method | Version
 | ----- | ------ | ------:
-| `/groups` | `GET` | **1**
+| /groups | `GET` | 1
 
 !!! important "Developer"
-    Class: `AppsDock &#10095; System &#10095; Application &#10095; Identity &#10095; API &#10095; GroupReadRestAPI`            
-    Method: `listGroup`
+    AppsDock ❯ System ❯ Application ❯ Identity ❯ API ❯ GroupReadRestAPI ❯ listGroup
 
 ## Get Group
 
 | Route | Method | Version
 | ----- | ------ | ------:
-| `/groups/{id}` | `GET` | **1**
+| /groups/{id} | `GET` | 1
 
 !!! important "Developer"
-    Class: `AppsDock &#10095; System &#10095; Application &#10095; Identity &#10095; API &#10095; GroupReadRestAPI`            
-    Method: `getGroup`
+    AppsDock ❯ System ❯ Application ❯ Identity ❯ API ❯ GroupReadRestAPI ❯ getGroup
 
 ## Create Group
 
 | Route | Method | Version
 | ----- | ------ | ------:
-| `/groups` | `POST` | **1**
+| /groups | `POST` | 1
 
 !!! important "Developer"
-    Class: `AppsDock &#10095; System &#10095; Application &#10095; Identity &#10095; API &#10095; GroupWriteRestAPI`            
-    Method: `createGroup`
+    AppsDock ❯ System ❯ Application ❯ Identity ❯ API ❯ GroupWriteRestAPI ❯ createGroup
 
 ## Rename Group
 
 | Route | Method | Version
 | ----- | ------ | ------:
-| `/groups/{id}` | `PATCH` | **1**
+| /groups/{id} | `PATCH` | 1
 
 !!! important "Developer"
-    Class: `AppsDock &#10095; System &#10095; Application &#10095; Identity &#10095; API &#10095; GroupWriteRestAPI`            
-    Method: `renameGroup`
+    AppsDock ❯ System ❯ Application ❯ Identity ❯ API ❯ GroupWriteRestAPI ❯ renameGroup
 
 ## Delete Group
 
 | Route | Method | Version
 | ----- | ------ | ------:
-| `/groups/{id}` | `DELETE` | **1**
+| /groups/{id} | `DELETE` | 1
 
 !!! important "Developer"
-    Class: `AppsDock &#10095; System &#10095; Application &#10095; Identity &#10095; API &#10095; GroupWriteRestAPI`            
-    Method: `deleteGroup`
+    AppsDock ❯ System ❯ Application ❯ Identity ❯ API ❯ GroupWriteRestAPI ❯ deleteGroup
 
 ## Assign User To Group
 
 | Route | Method | Version
 | ----- | ------ | ------:
-| `/groups/{groupId}/users/{userId}` | `POST` | **1**
+| /groups/{groupId}/users/{userId} | `POST` | 1
 
 !!! important "Developer"
-    Class: `AppsDock &#10095; System &#10095; Application &#10095; Identity &#10095; API &#10095; GroupWriteRestAPI`            
-    Method: `assignUserToGroup`
+    AppsDock ❯ System ❯ Application ❯ Identity ❯ API ❯ GroupWriteRestAPI ❯ assignUserToGroup
 
 ## Remove User From Group
 
 | Route | Method | Version
 | ----- | ------ | ------:
-| `/groups/{groupId}/users/{userId}` | `DELETE` | **1**
+| /groups/{groupId}/users/{userId} | `DELETE` | 1
 
 !!! important "Developer"
-    Class: `AppsDock &#10095; System &#10095; Application &#10095; Identity &#10095; API &#10095; GroupWriteRestAPI`            
-    Method: `removeUserFromGroup`
+    AppsDock ❯ System ❯ Application ❯ Identity ❯ API ❯ GroupWriteRestAPI ❯ removeUserFromGroup
 
 ## Create Users
 
 | Route | Method | Version
 | ----- | ------ | ------:
-| `/users` | `POST` | **1**
+| /users | `POST` | 1
 
 !!! important "Developer"
-    Class: `AppsDock &#10095; System &#10095; Application &#10095; Identity &#10095; API &#10095; UserWriteRestAPI`            
-    Method: `createUsers`
+    AppsDock ❯ System ❯ Application ❯ Identity ❯ API ❯ UserWriteRestAPI ❯ createUsers
 
 ## Set Password
 
 | Route | Method | Version
 | ----- | ------ | ------:
-| `/users/{id}/password` | `PATCH` | **1**
+| /users/{id}/password | `PATCH` | 1
 
 !!! important "Developer"
-    Class: `AppsDock &#10095; System &#10095; Application &#10095; Identity &#10095; API &#10095; UserWriteRestAPI`            
-    Method: `setPassword`
+    AppsDock ❯ System ❯ Application ❯ Identity ❯ API ❯ UserWriteRestAPI ❯ setPassword
 
 ## Set User Preference
 
 | Route | Method | Version
 | ----- | ------ | ------:
-| `/users/me/preferences` | `PUT` | **1**
+| /users/me/preferences | `PUT` | 1
 
 !!! important "Developer"
-    Class: `AppsDock &#10095; System &#10095; Application &#10095; Identity &#10095; API &#10095; UserWriteRestAPI`            
-    Method: `setUserPreference`
+    AppsDock ❯ System ❯ Application ❯ Identity ❯ API ❯ UserWriteRestAPI ❯ setUserPreference
 
 ## Remove User From Organization
 
 | Route | Method | Version
 | ----- | ------ | ------:
-| `/users/me/preferences/{settingId}` | `DELETE` | **1**
+| /users/me/preferences/{settingId} | `DELETE` | 1
 
 !!! important "Developer"
-    Class: `AppsDock &#10095; System &#10095; Application &#10095; Identity &#10095; API &#10095; UserWriteRestAPI`            
-    Method: `removeUserFromOrganization`
+    AppsDock ❯ System ❯ Application ❯ Identity ❯ API ❯ UserWriteRestAPI ❯ removeUserFromOrganization
 
 ## List Users
 
 | Route | Method | Version
 | ----- | ------ | ------:
-| `/users` | `GET` | **1**
+| /users | `GET` | 1
 
 !!! important "Developer"
-    Class: `AppsDock &#10095; System &#10095; Application &#10095; Identity &#10095; API &#10095; UserReadRestAPI`            
-    Method: `listUsers`
+    AppsDock ❯ System ❯ Application ❯ Identity ❯ API ❯ UserReadRestAPI ❯ listUsers
 
 ## Get
 
 | Route | Method | Version
 | ----- | ------ | ------:
-| `/users/{id}` | `GET` | **1**
+| /users/{id} | `GET` | 1
 
 !!! important "Developer"
-    Class: `AppsDock &#10095; System &#10095; Application &#10095; Identity &#10095; API &#10095; UserReadRestAPI`            
-    Method: `get`
+    AppsDock ❯ System ❯ Application ❯ Identity ❯ API ❯ UserReadRestAPI ❯ get
 
 ## Get Secured Identity
 
 | Route | Method | Version
 | ----- | ------ | ------:
-| `/users/{id}/identity/{securityToken}` | `GET` | **1**
+| /users/{id}/identity/{securityToken} | `GET` | 1
 
 !!! important "Developer"
-    Class: `AppsDock &#10095; System &#10095; Application &#10095; Identity &#10095; API &#10095; UserReadRestAPI`            
-    Method: `getSecuredIdentity`
+    AppsDock ❯ System ❯ Application ❯ Identity ❯ API ❯ UserReadRestAPI ❯ getSecuredIdentity
 
 ## Get Me
 
 | Route | Method | Version
 | ----- | ------ | ------:
-| `/users/me` | `GET` | **1**
+| /users/me | `GET` | 1
 
 !!! important "Developer"
-    Class: `AppsDock &#10095; System &#10095; Application &#10095; Identity &#10095; API &#10095; UserReadRestAPI`            
-    Method: `getMe`
+    AppsDock ❯ System ❯ Application ❯ Identity ❯ API ❯ UserReadRestAPI ❯ getMe
 
 ## List Me Policies
 
 | Route | Method | Version
 | ----- | ------ | ------:
-| `/users/me/policies` | `GET` | **1**
+| /users/me/policies | `GET` | 1
 
 !!! important "Developer"
-    Class: `AppsDock &#10095; System &#10095; Application &#10095; Identity &#10095; API &#10095; UserReadRestAPI`            
-    Method: `listMePolicies`
+    AppsDock ❯ System ❯ Application ❯ Identity ❯ API ❯ UserReadRestAPI ❯ listMePolicies
 
 ## List Me Preferences
 
 | Route | Method | Version
 | ----- | ------ | ------:
-| `/users/me/preferences` | `GET` | **1**
+| /users/me/preferences | `GET` | 1
 
 !!! important "Developer"
-    Class: `AppsDock &#10095; System &#10095; Application &#10095; Identity &#10095; API &#10095; UserReadRestAPI`            
-    Method: `listMePreferences`
+    AppsDock ❯ System ❯ Application ❯ Identity ❯ API ❯ UserReadRestAPI ❯ listMePreferences
 
 ## Create Role
 
 | Route | Method | Version
 | ----- | ------ | ------:
-| `/roles` | `POST` | **1**
+| /roles | `POST` | 1
 
 !!! important "Developer"
-    Class: `AppsDock &#10095; System &#10095; Application &#10095; Identity &#10095; API &#10095; RoleWriteRestAPI`            
-    Method: `createRole`
+    AppsDock ❯ System ❯ Application ❯ Identity ❯ API ❯ RoleWriteRestAPI ❯ createRole
 
 ## Rename Role
 
 | Route | Method | Version
 | ----- | ------ | ------:
-| `/roles/{id}` | `PATCH` | **1**
+| /roles/{id} | `PATCH` | 1
 
 !!! important "Developer"
-    Class: `AppsDock &#10095; System &#10095; Application &#10095; Identity &#10095; API &#10095; RoleWriteRestAPI`            
-    Method: `renameRole`
+    AppsDock ❯ System ❯ Application ❯ Identity ❯ API ❯ RoleWriteRestAPI ❯ renameRole
 
 ## Delete Role
 
 | Route | Method | Version
 | ----- | ------ | ------:
-| `/roles/{id}` | `DELETE` | **1**
+| /roles/{id} | `DELETE` | 1
 
 !!! important "Developer"
-    Class: `AppsDock &#10095; System &#10095; Application &#10095; Identity &#10095; API &#10095; RoleWriteRestAPI`            
-    Method: `deleteRole`
+    AppsDock ❯ System ❯ Application ❯ Identity ❯ API ❯ RoleWriteRestAPI ❯ deleteRole
 
 ## Assign Role To User
 
 | Route | Method | Version
 | ----- | ------ | ------:
-| `/roles/{roleId}/users/{userId}` | `POST` | **1**
+| /roles/{roleId}/users/{userId} | `POST` | 1
 
 !!! important "Developer"
-    Class: `AppsDock &#10095; System &#10095; Application &#10095; Identity &#10095; API &#10095; RoleWriteRestAPI`            
-    Method: `assignRoleToUser`
+    AppsDock ❯ System ❯ Application ❯ Identity ❯ API ❯ RoleWriteRestAPI ❯ assignRoleToUser
 
 ## Assign Role To Group
 
 | Route | Method | Version
 | ----- | ------ | ------:
-| `/roles/{roleId}/groups/{groupId}` | `POST` | **1**
+| /roles/{roleId}/groups/{groupId} | `POST` | 1
 
 !!! important "Developer"
-    Class: `AppsDock &#10095; System &#10095; Application &#10095; Identity &#10095; API &#10095; RoleWriteRestAPI`            
-    Method: `assignRoleToGroup`
+    AppsDock ❯ System ❯ Application ❯ Identity ❯ API ❯ RoleWriteRestAPI ❯ assignRoleToGroup
 
 ## Remove Role From User
 
 | Route | Method | Version
 | ----- | ------ | ------:
-| `/roles/{roleId}/users/{userId}` | `DELETE` | **1**
+| /roles/{roleId}/users/{userId} | `DELETE` | 1
 
 !!! important "Developer"
-    Class: `AppsDock &#10095; System &#10095; Application &#10095; Identity &#10095; API &#10095; RoleWriteRestAPI`            
-    Method: `removeRoleFromUser`
+    AppsDock ❯ System ❯ Application ❯ Identity ❯ API ❯ RoleWriteRestAPI ❯ removeRoleFromUser
 
 ## Remove Role From Group
 
 | Route | Method | Version
 | ----- | ------ | ------:
-| `/roles/{roleId}/groups/{groupId}` | `DELETE` | **1**
+| /roles/{roleId}/groups/{groupId} | `DELETE` | 1
 
 !!! important "Developer"
-    Class: `AppsDock &#10095; System &#10095; Application &#10095; Identity &#10095; API &#10095; RoleWriteRestAPI`            
-    Method: `removeRoleFromGroup`
+    AppsDock ❯ System ❯ Application ❯ Identity ❯ API ❯ RoleWriteRestAPI ❯ removeRoleFromGroup
 
 *[API]: Application Programming Interface
 *[OS]: Operating System

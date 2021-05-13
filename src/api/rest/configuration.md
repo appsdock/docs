@@ -8,31 +8,28 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 | Route | Method | Version
 | ----- | ------ | ------:
-| `/settings/{id}` | `POST` | **1**
+| /settings/{id} | `POST` | 1
 
 !!! important "Developer"
-    Class: `AppsDock &#10095; System &#10095; Application &#10095; Configuration &#10095; API &#10095; SettingWriteRestAPI`            
-    Method: `changeSetting`
+    AppsDock ❯ System ❯ Application ❯ Configuration ❯ API ❯ SettingWriteRestAPI ❯ changeSetting
 
 ## List Setting
 
 | Route | Method | Version
 | ----- | ------ | ------:
-| `/settings` | `GET` | **1**
+| /settings | `GET` | 1
 
 !!! important "Developer"
-    Class: `AppsDock &#10095; System &#10095; Application &#10095; Configuration &#10095; API &#10095; SettingReadRestAPI`            
-    Method: `listSetting`
+    AppsDock ❯ System ❯ Application ❯ Configuration ❯ API ❯ SettingReadRestAPI ❯ listSetting
 
 ## Get Setting
 
 | Route | Method | Version
 | ----- | ------ | ------:
-| `/settings/{id}` | `GET` | **1**
+| /settings/{id} | `GET` | 1
 
 !!! important "Developer"
-    Class: `AppsDock &#10095; System &#10095; Application &#10095; Configuration &#10095; API &#10095; SettingReadRestAPI`            
-    Method: `getSetting`
+    AppsDock ❯ System ❯ Application ❯ Configuration ❯ API ❯ SettingReadRestAPI ❯ getSetting
 
 *[API]: Application Programming Interface
 *[OS]: Operating System

@@ -8,61 +8,55 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 | Route | Method | Version
 | ----- | ------ | ------:
-| `/apps` | `GET` | **1**
+| /apps | `GET` | 1
 
 !!! important "Developer"
-    Class: `AppsDock &#10095; System &#10095; Application &#10095; App &#10095; API &#10095; AppReadRestAPI`            
-    Method: `listApps`
+    AppsDock ❯ System ❯ Application ❯ App ❯ API ❯ AppReadRestAPI ❯ listApps
 
 ## Install
 
 | Route | Method | Version
 | ----- | ------ | ------:
-| `/apps:install/{id}` | `POST` | **1**
+| /apps:install/{id} | `POST` | 1
 
 !!! important "Developer"
-    Class: `AppsDock &#10095; System &#10095; Application &#10095; App &#10095; API &#10095; AppWriteRestAPI`            
-    Method: `install`
+    AppsDock ❯ System ❯ Application ❯ App ❯ API ❯ AppWriteRestAPI ❯ install
 
 ## Uninstall
 
 | Route | Method | Version
 | ----- | ------ | ------:
-| `/apps:uninstall/{id}` | `POST` | **1**
+| /apps:uninstall/{id} | `POST` | 1
 
 !!! important "Developer"
-    Class: `AppsDock &#10095; System &#10095; Application &#10095; App &#10095; API &#10095; AppWriteRestAPI`            
-    Method: `uninstall`
+    AppsDock ❯ System ❯ Application ❯ App ❯ API ❯ AppWriteRestAPI ❯ uninstall
 
 ## Update
 
 | Route | Method | Version
 | ----- | ------ | ------:
-| `/apps:update/{id}` | `POST` | **1**
+| /apps:update/{id} | `POST` | 1
 
 !!! important "Developer"
-    Class: `AppsDock &#10095; System &#10095; Application &#10095; App &#10095; API &#10095; AppWriteRestAPI`            
-    Method: `update`
+    AppsDock ❯ System ❯ Application ❯ App ❯ API ❯ AppWriteRestAPI ❯ update
 
 ## Activate
 
 | Route | Method | Version
 | ----- | ------ | ------:
-| `/apps:activate/{id}` | `POST` | **1**
+| /apps:activate/{id} | `POST` | 1
 
 !!! important "Developer"
-    Class: `AppsDock &#10095; System &#10095; Application &#10095; App &#10095; API &#10095; AppWriteRestAPI`            
-    Method: `activate`
+    AppsDock ❯ System ❯ Application ❯ App ❯ API ❯ AppWriteRestAPI ❯ activate
 
 ## Deactivate
 
 | Route | Method | Version
 | ----- | ------ | ------:
-| `/apps:deactivate/{id}` | `POST` | **1**
+| /apps:deactivate/{id} | `POST` | 1
 
 !!! important "Developer"
-    Class: `AppsDock &#10095; System &#10095; Application &#10095; App &#10095; API &#10095; AppWriteRestAPI`            
-    Method: `deactivate`
+    AppsDock ❯ System ❯ Application ❯ App ❯ API ❯ AppWriteRestAPI ❯ deactivate
 
 *[API]: Application Programming Interface
 *[OS]: Operating System
