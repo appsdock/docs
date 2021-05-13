@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#access" class="md-skip">
+        <a href="#access-rest-api" class="md-skip">
           Skip to content
         </a>
       
@@ -540,9 +540,60 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Access
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Access
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#create-policy" class="md-nav__link">
+    Create Policy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#change-policy" class="md-nav__link">
+    Change Policy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delete-policy" class="md-nav__link">
+    Delete Policy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#list-policies" class="md-nav__link">
+    List Policies
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -795,6 +846,42 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#create-policy" class="md-nav__link">
+    Create Policy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#change-policy" class="md-nav__link">
+    Change Policy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delete-policy" class="md-nav__link">
+    Delete Policy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#list-policies" class="md-nav__link">
+    List Policies
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -810,7 +897,97 @@
                   </a>
                 
                 
-                <h1 id="access">Access</h1>
+                <h1 id="access-rest-api">Access <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr></h1>
+<p>This page provides a list of all access <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr> endpoints within AppsDock <abbr title="Operating System">OS</abbr>.</p>
+<p>The guideline for the <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr> can be found <a href="../../../gettingstarted/guidelines/rest-api">here</a>.</p>
+<h2 id="create-policy">Create Policy</h2>
+<table>
+<thead>
+<tr>
+<th>Route</th>
+<th>Method</th>
+<th align="right">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/policies</code></td>
+<td><code>POST</code></td>
+<td align="right"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition important">
+<p class="admonition-title">Developer</p>
+<p>Class: <code>AppsDock &amp;#10095; System &amp;#10095; Application &amp;#10095; Access &amp;#10095; API &amp;#10095; PolicyWriteRestAPI</code>          <br />
+Method: <code>createPolicy</code></p>
+</div>
+<h2 id="change-policy">Change Policy</h2>
+<table>
+<thead>
+<tr>
+<th>Route</th>
+<th>Method</th>
+<th align="right">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/policies/{id}</code></td>
+<td><code>POST</code></td>
+<td align="right"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition important">
+<p class="admonition-title">Developer</p>
+<p>Class: <code>AppsDock &amp;#10095; System &amp;#10095; Application &amp;#10095; Access &amp;#10095; API &amp;#10095; PolicyWriteRestAPI</code>          <br />
+Method: <code>changePolicy</code></p>
+</div>
+<h2 id="delete-policy">Delete Policy</h2>
+<table>
+<thead>
+<tr>
+<th>Route</th>
+<th>Method</th>
+<th align="right">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/policies/{id}</code></td>
+<td><code>DELETE</code></td>
+<td align="right"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition important">
+<p class="admonition-title">Developer</p>
+<p>Class: <code>AppsDock &amp;#10095; System &amp;#10095; Application &amp;#10095; Access &amp;#10095; API &amp;#10095; PolicyWriteRestAPI</code>          <br />
+Method: <code>deletePolicy</code></p>
+</div>
+<h2 id="list-policies">List Policies</h2>
+<table>
+<thead>
+<tr>
+<th>Route</th>
+<th>Method</th>
+<th align="right">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/policies</code></td>
+<td><code>GET</code></td>
+<td align="right"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition important">
+<p class="admonition-title">Developer</p>
+<p>Class: <code>AppsDock &amp;#10095; System &amp;#10095; Application &amp;#10095; Access &amp;#10095; API &amp;#10095; PolicyReadRestAPI</code>          <br />
+Method: <code>listPolicies</code></p>
+</div>
                 
               
               

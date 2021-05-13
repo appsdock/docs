@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#configuration" class="md-skip">
+        <a href="#configuration-rest-api" class="md-skip">
           Skip to content
         </a>
       
@@ -564,9 +564,53 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Configuration
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Configuration
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#change-setting" class="md-nav__link">
+    Change Setting
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#list-setting" class="md-nav__link">
+    List Setting
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-setting" class="md-nav__link">
+    Get Setting
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -795,6 +839,35 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#change-setting" class="md-nav__link">
+    Change Setting
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#list-setting" class="md-nav__link">
+    List Setting
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-setting" class="md-nav__link">
+    Get Setting
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -810,7 +883,75 @@
                   </a>
                 
                 
-                <h1 id="configuration">Configuration</h1>
+                <h1 id="configuration-rest-api">Configuration <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr></h1>
+<p>This page provides a list of all configuration <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr> endpoints within AppsDock <abbr title="Operating System">OS</abbr>.</p>
+<p>The guideline for the <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr> can be found <a href="../../../gettingstarted/guidelines/rest-api">here</a>.</p>
+<h2 id="change-setting">Change Setting</h2>
+<table>
+<thead>
+<tr>
+<th>Route</th>
+<th>Method</th>
+<th align="right">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/settings/{id}</code></td>
+<td><code>POST</code></td>
+<td align="right"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition important">
+<p class="admonition-title">Developer</p>
+<p>Class: <code>AppsDock &amp;#10095; System &amp;#10095; Application &amp;#10095; Configuration &amp;#10095; API &amp;#10095; SettingWriteRestAPI</code>          <br />
+Method: <code>changeSetting</code></p>
+</div>
+<h2 id="list-setting">List Setting</h2>
+<table>
+<thead>
+<tr>
+<th>Route</th>
+<th>Method</th>
+<th align="right">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/settings</code></td>
+<td><code>GET</code></td>
+<td align="right"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition important">
+<p class="admonition-title">Developer</p>
+<p>Class: <code>AppsDock &amp;#10095; System &amp;#10095; Application &amp;#10095; Configuration &amp;#10095; API &amp;#10095; SettingReadRestAPI</code>          <br />
+Method: <code>listSetting</code></p>
+</div>
+<h2 id="get-setting">Get Setting</h2>
+<table>
+<thead>
+<tr>
+<th>Route</th>
+<th>Method</th>
+<th align="right">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/settings/{id}</code></td>
+<td><code>GET</code></td>
+<td align="right"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition important">
+<p class="admonition-title">Developer</p>
+<p>Class: <code>AppsDock &amp;#10095; System &amp;#10095; Application &amp;#10095; Configuration &amp;#10095; API &amp;#10095; SettingReadRestAPI</code>          <br />
+Method: <code>getSetting</code></p>
+</div>
                 
               
               

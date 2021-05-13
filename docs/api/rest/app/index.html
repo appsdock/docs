@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#app" class="md-skip">
+        <a href="#app-rest-api" class="md-skip">
           Skip to content
         </a>
       
@@ -552,9 +552,74 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          App
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         App
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#list-apps" class="md-nav__link">
+    List Apps
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install" class="md-nav__link">
+    Install
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uninstall" class="md-nav__link">
+    Uninstall
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#update" class="md-nav__link">
+    Update
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#activate" class="md-nav__link">
+    Activate
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deactivate" class="md-nav__link">
+    Deactivate
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -795,6 +860,56 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#list-apps" class="md-nav__link">
+    List Apps
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install" class="md-nav__link">
+    Install
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uninstall" class="md-nav__link">
+    Uninstall
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#update" class="md-nav__link">
+    Update
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#activate" class="md-nav__link">
+    Activate
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deactivate" class="md-nav__link">
+    Deactivate
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -810,7 +925,141 @@
                   </a>
                 
                 
-                <h1 id="app">App</h1>
+                <h1 id="app-rest-api">App <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr></h1>
+<p>This page provides a list of all app <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr> endpoints within AppsDock <abbr title="Operating System">OS</abbr>.</p>
+<p>The guideline for the <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr> can be found <a href="../../../gettingstarted/guidelines/rest-api">here</a>.</p>
+<h2 id="list-apps">List Apps</h2>
+<table>
+<thead>
+<tr>
+<th>Route</th>
+<th>Method</th>
+<th align="right">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/apps</code></td>
+<td><code>GET</code></td>
+<td align="right"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition important">
+<p class="admonition-title">Developer</p>
+<p>Class: <code>AppsDock &amp;#10095; System &amp;#10095; Application &amp;#10095; App &amp;#10095; API &amp;#10095; AppReadRestAPI</code>          <br />
+Method: <code>listApps</code></p>
+</div>
+<h2 id="install">Install</h2>
+<table>
+<thead>
+<tr>
+<th>Route</th>
+<th>Method</th>
+<th align="right">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/apps:install/{id}</code></td>
+<td><code>POST</code></td>
+<td align="right"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition important">
+<p class="admonition-title">Developer</p>
+<p>Class: <code>AppsDock &amp;#10095; System &amp;#10095; Application &amp;#10095; App &amp;#10095; API &amp;#10095; AppWriteRestAPI</code>          <br />
+Method: <code>install</code></p>
+</div>
+<h2 id="uninstall">Uninstall</h2>
+<table>
+<thead>
+<tr>
+<th>Route</th>
+<th>Method</th>
+<th align="right">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/apps:uninstall/{id}</code></td>
+<td><code>POST</code></td>
+<td align="right"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition important">
+<p class="admonition-title">Developer</p>
+<p>Class: <code>AppsDock &amp;#10095; System &amp;#10095; Application &amp;#10095; App &amp;#10095; API &amp;#10095; AppWriteRestAPI</code>          <br />
+Method: <code>uninstall</code></p>
+</div>
+<h2 id="update">Update</h2>
+<table>
+<thead>
+<tr>
+<th>Route</th>
+<th>Method</th>
+<th align="right">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/apps:update/{id}</code></td>
+<td><code>POST</code></td>
+<td align="right"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition important">
+<p class="admonition-title">Developer</p>
+<p>Class: <code>AppsDock &amp;#10095; System &amp;#10095; Application &amp;#10095; App &amp;#10095; API &amp;#10095; AppWriteRestAPI</code>          <br />
+Method: <code>update</code></p>
+</div>
+<h2 id="activate">Activate</h2>
+<table>
+<thead>
+<tr>
+<th>Route</th>
+<th>Method</th>
+<th align="right">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/apps:activate/{id}</code></td>
+<td><code>POST</code></td>
+<td align="right"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition important">
+<p class="admonition-title">Developer</p>
+<p>Class: <code>AppsDock &amp;#10095; System &amp;#10095; Application &amp;#10095; App &amp;#10095; API &amp;#10095; AppWriteRestAPI</code>          <br />
+Method: <code>activate</code></p>
+</div>
+<h2 id="deactivate">Deactivate</h2>
+<table>
+<thead>
+<tr>
+<th>Route</th>
+<th>Method</th>
+<th align="right">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/apps:deactivate/{id}</code></td>
+<td><code>POST</code></td>
+<td align="right"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition important">
+<p class="admonition-title">Developer</p>
+<p>Class: <code>AppsDock &amp;#10095; System &amp;#10095; Application &amp;#10095; App &amp;#10095; API &amp;#10095; AppWriteRestAPI</code>          <br />
+Method: <code>deactivate</code></p>
+</div>
                 
               
               
