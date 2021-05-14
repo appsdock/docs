@@ -383,6 +383,40 @@
     Composition
   </a>
   
+    <nav class="md-nav" aria-label="Composition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#publisher-appsdock-os" class="md-nav__link">
+    Publisher (AppsDock OS)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consumer-appsdock-amqp-agent" class="md-nav__link">
+    Consumer (AppsDock AMQP-Agent)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#message-types-subjects" class="md-nav__link">
+    Message Types (Subjects)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workflow" class="md-nav__link">
+    Workflow
+  </a>
+  
 </li>
       
     </ul>
@@ -421,7 +455,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../identity-access/authentication.md" class="md-nav__link">
+      <a href="../identity-access/authentication/" class="md-nav__link">
         Authentication
       </a>
     </li>
@@ -433,7 +467,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../identity-access/identity.md" class="md-nav__link">
+      <a href="../identity-access/identity/" class="md-nav__link">
         Identity
       </a>
     </li>
@@ -445,7 +479,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../identity-access/policies-and-permissions.md" class="md-nav__link">
+      <a href="../identity-access/policies-and-permissions/" class="md-nav__link">
         Policies and permissions
       </a>
     </li>
@@ -875,6 +909,40 @@
     Composition
   </a>
   
+    <nav class="md-nav" aria-label="Composition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#publisher-appsdock-os" class="md-nav__link">
+    Publisher (AppsDock OS)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consumer-appsdock-amqp-agent" class="md-nav__link">
+    Consumer (AppsDock AMQP-Agent)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#message-types-subjects" class="md-nav__link">
+    Message Types (Subjects)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workflow" class="md-nav__link">
+    Workflow
+  </a>
+  
 </li>
       
     </ul>
@@ -897,8 +965,18 @@
                 <h1 id="message-queue-amqp">Message Queue (<abbr title="Advanced Message Queuing Protocol">AMQP</abbr>)</h1>
 <p>AppsDock <abbr title="Operating System">OS</abbr> uses an <abbr title="Advanced Message Queuing Protocol">AMQP</abbr> based infrastructure to handle asynchronous messages, which allows executing long-running processes in the background by implementing async event handlers or async command executions via Message Bus within AppsDock <abbr title="Operating System">OS</abbr>.</p>
 <h2 id="composition">Composition</h2>
-<p>AppsDock <abbr title="Operating System">OS</abbr> provides a dedicated <abbr title="Advanced Message Queuing Protocol">AMQP</abbr>-Agent that acts as a consumer and mediator of messages. AppsDock <abbr title="Operating System">OS</abbr> avoids processing messages via CLI in consumer mode directly due to potential environment inequality between CLI and PHP-FPM and disregard of PHP-FPM process worker benefits. Instead, the dedicated <abbr title="Advanced Message Queuing Protocol">AMQP</abbr>-Agent consumes the messages from <abbr title="Advanced Message Queuing Protocol">AMQP</abbr> server and executes, controls and monitors asynchronous PHP-FPM process workers, which process the messages.  </p>
+<p>AppsDock <abbr title="Operating System">OS</abbr> provides a dedicated <abbr title="Advanced Message Queuing Protocol">AMQP</abbr>-Agent that acts as a consumer and mediator of messages. AppsDock <abbr title="Operating System">OS</abbr> avoids processing messages via <abbr title="Command Line Interface">CLI</abbr> in consumer mode directly due to potential environment inequality between <abbr title="Command Line Interface">CLI</abbr> and <abbr title="Hypertext Preprocessor">PHP</abbr>-<abbr title="FastCGI Process Manager">FPM</abbr> and disregard of <abbr title="Hypertext Preprocessor">PHP</abbr>-<abbr title="FastCGI Process Manager">FPM</abbr> process worker benefits. Instead, the dedicated <abbr title="Advanced Message Queuing Protocol">AMQP</abbr>-Agent consumes the messages from <abbr title="Advanced Message Queuing Protocol">AMQP</abbr> server and executes, controls and monitors asynchronous <abbr title="Hypertext Preprocessor">PHP</abbr>-<abbr title="FastCGI Process Manager">FPM</abbr> process workers, which process the messages.  </p>
 <p><img alt="Service Structure" src="../../assets/images/amqp/service-structure.svg" /></p>
+<h3 id="publisher-appsdock-os">Publisher (AppsDock <abbr title="Operating System">OS</abbr>)</h3>
+<p>AppsDock <abbr title="Operating System">OS</abbr> uses the MessageBus component to publish messages to the <abbr title="Advanced Message Queuing Protocol">AMQP</abbr> server directly.  It does not provide any kind of consuming the published messages via <abbr title="Advanced Message Queuing Protocol">AMQP</abbr> server due to this responsibility is adopted by the AppsDock <abbr title="Advanced Message Queuing Protocol">AMQP</abbr>-Agent. Instead, AppsDock <abbr title="Operating System">OS</abbr> provides an internal and secured API endpoint to handle published messages which are provided by the <abbr title="Advanced Message Queuing Protocol">AMQP</abbr>-Agent. The handling of these messages over API uses also the MessageBus component.</p>
+<h3 id="consumer-appsdock-amqp-agent">Consumer (AppsDock <abbr title="Advanced Message Queuing Protocol">AMQP</abbr>-Agent)</h3>
+<p>The dedicated <abbr title="Advanced Message Queuing Protocol">AMQP</abbr>-Agent, which is a part of the AppsDock Dedicated Services, is a scalable <abbr title="Advanced Message Queuing Protocol">AMQP</abbr> message consumer service. This service consumes the messages from the <abbr title="Advanced Message Queuing Protocol">AMQP</abbr> server directly and manage their processes and states in conjunction with <abbr title="Hypertext Preprocessor">PHP</abbr>-<abbr title="FastCGI Process Manager">FPM</abbr> workers.</p>
+<h2 id="message-types-subjects">Message Types (Subjects)</h2>
+<p>AppsDock <abbr title="Operating System">OS</abbr> does support actually two kinds of message types: <strong>event</strong> and <strong>command</strong>.</p>
+<p>The <strong>event</strong> message type is used to handle asynchronous event handlers via MessageBus.
+The <strong>command</strong> message type is used to execute asynchronous command handlers via MessageBus.</p>
+<p>Each message type uses a separate message queue.</p>
+<h2 id="workflow">Workflow</h2>
                 
               
               
@@ -936,13 +1014,13 @@
         </a>
       
       
-        <a href="../../gettingstarted/guidelines/commit-messages/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../identity-access/authentication/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Commit messages
+              Authentication
             </div>
           </div>
           <div class="md-footer__button md-icon">
