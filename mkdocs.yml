@@ -49,6 +49,12 @@ markdown_extensions:
 
 nav:
   - Home: index.md
+  - Concepts:
+      - Message Queue (AMQP): concepts/amqp.md
+      - Identity and access:
+          - Authentication: identity-access/authentication.md
+          - Identity: identity-access/identity.md
+          - Policies and permissions: identity-access/policies-and-permissions.md
   - Getting Started:
     - Guidelines:
       - Commit messages: gettingstarted/guidelines/commit-messages.md
@@ -72,7 +78,4 @@ nav:
     - Integration: exception-errors/integration.md
     - Plugin: exception-errors/plugin.md
     - App: exception-errors/app.md
-  - Identity and access:
-    - Authentication: identity-access/authentication.md
-    - Identity: identity-access/identity.md
-    - Policies and permissions: identity-access/policies-and-permissions.md
+
