@@ -18,15 +18,27 @@ The dedicated AMQP-Agent, which is a part of the AppsDock Dedicated Services, is
 
 ## Message Types (Subjects)
 
-AppsDock OS does support actually two kinds of message types: **event** and **command**.
+AppsDock OS uses different types of messages for different process purposes. Each type of message uses a specific php class as message body to represent the message content. AppsDock OS supports actually two kinds of message types: 
+- event
+- command.
 
-The **event** message type is used to handle asynchronous event handlers via MessageBus.
-The **command** message type is used to execute asynchronous command handlers via MessageBus.
+Each message type has several allocated message queues to handle different process results.
+- A main queue for delivery and processing
+- A retry queue for delayed redelivery on failures
+- A error queue for non-deliverable messages
 
-Each message type uses a separate message queue.
+### Event Message
+The **event** message type is used to handle asynchronous event handlers via MessageBus. This type uses `AppsDock\Core\Event\Integration\IntegrationEvent` as content class and is basically used to publish integration events. 
 
-## Workflow
+### Command Message
+The **command** message type is used to execute asynchronous command handlers via MessageBus. This type uses any class which is a type of `AppsDock\Core\Contracts\App\Application\Command` as content class.
 
+## Approach in case of error
+
+As already described above (Message Types), the AMQP-Agent defines **dedicated queues to handle failures**. If the process worker failed (any case), the message will be **rejected without a direct requeue**. Instead, the message will be moved automatically into the **retry queue** which keep the failed message for a certain time. After this time, this message is published back into the **main queue** for a retry. If this procedure fails for a certain number of retries, this message will be **dropped from main and retry** queue and published into the **error queue** for further investigation. 
+
+
+![Error Handling](../assets/images/amqp/amqp-error-handling.svg)
 
 
 *[AMQP]: Advanced Message Queuing Protocol
