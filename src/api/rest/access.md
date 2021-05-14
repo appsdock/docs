@@ -4,41 +4,123 @@ This page provides a list of all access REST API endpoints within AppsDock OS.
 
 The guideline for the REST API can be found [here](../../../gettingstarted/guidelines/rest-api).
 
-## Create Policy
+## Change a policy
 
-| Route | Method | Version
-| ----- | ------ | ------:
-| /policies | `POST` | 1
+### Payload
+**effect** `string` optional
+Effect of the policy.
+Valid values: Array
+(
+    [0] => ALLOW
+    [1] => DENY
+)
 
-!!! important "Developer"
-    AppsDock ❯ System ❯ Application ❯ Access ❯ API ❯ PolicyWriteRestAPI ❯ createPolicy
 
-## Change Policy
+#### Example
+~~~php
+<?php
 
-| Route | Method | Version
-| ----- | ------ | ------:
-| /policies/{id} | `POST` | 1
+Array
+(
+    [0] => ALLOW
+)
+~~~
 
-!!! important "Developer"
-    AppsDock ❯ System ❯ Application ❯ Access ❯ API ❯ PolicyWriteRestAPI ❯ changePolicy
+### Response
 
-## Delete Policy
+Status: 200
+| Name | Type | Example
+| ---- | :--: | -------
+| id |  | 
+| actionId |  | 
+| roleId |  | 
+| resource |  | 
+| effect |  | 
 
-| Route | Method | Version
-| ----- | ------ | ------:
-| /policies/{id} | `DELETE` | 1
 
-!!! important "Developer"
-    AppsDock ❯ System ❯ Application ❯ Access ❯ API ❯ PolicyWriteRestAPI ❯ deletePolicy
+## Create a policy
 
-## List Policies
+### Payload
+**roleId** `string` optional
+Role ID for the policy.
 
-| Route | Method | Version
-| ----- | ------ | ------:
-| /policies | `GET` | 1
+#### Example
+~~~php
+<?php
 
-!!! important "Developer"
-    AppsDock ❯ System ❯ Application ❯ Access ❯ API ❯ PolicyReadRestAPI ❯ listPolicies
+Array
+(
+    [0] => 680fe5ff-3b68-4d22-bb91-eb6a9712f78d
+)
+~~~
+**resource** `string` optional
+Resource of the policy.
+Valid values: Array
+(
+    [0] => *
+    [1] => UUID
+)
+
+
+#### Example
+~~~php
+<?php
+
+Array
+(
+    [0] => *
+)
+~~~
+**effect** `string` optional
+Effect of the policy.
+Valid values: Array
+(
+    [0] => ALLOW
+    [1] => DENY
+)
+
+
+#### Example
+~~~php
+<?php
+
+Array
+(
+    [0] => ALLOW
+)
+~~~
+
+### Response
+
+Status: 201
+| Name | Type | Example
+| ---- | :--: | -------
+| id |  | 
+| actionId |  | 
+| roleId |  | 
+| resource |  | 
+| effect |  | 
+
+
+## Delete a policy
+
+### Response
+
+Status: 204
+
+
+## List all policies
+
+### Response
+
+Status: 200
+| Name | Type | Example
+| ---- | :--: | -------
+| id |  | 
+| actionId |  | 
+| roleId |  | 
+| resource |  | 
+| effect |  |
 
 *[API]: Application Programming Interface
 *[OS]: Operating System

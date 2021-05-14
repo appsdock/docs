@@ -4,239 +4,530 @@ This page provides a list of all identity REST API endpoints within AppsDock OS.
 
 The guideline for the REST API can be found [here](../../../gettingstarted/guidelines/rest-api).
 
-## List Roles
+## Assign a user to a group.
 
-| Route | Method | Version
-| ----- | ------ | ------:
-| /roles | `GET` | 1
+### Response
 
-!!! important "Developer"
-    AppsDock ❯ System ❯ Application ❯ Identity ❯ API ❯ RoleReadRestAPI ❯ listRoles
+Status: 204
 
-## Get Role
 
-| Route | Method | Version
-| ----- | ------ | ------:
-| /roles/{id} | `GET` | 1
+## Create a group
 
-!!! important "Developer"
-    AppsDock ❯ System ❯ Application ❯ Identity ❯ API ❯ RoleReadRestAPI ❯ getRole
+### Payload
+**name** `array` optional
+Name of the group in one or more languages.
 
-## List Group
+#### Example
+~~~php
+<?php
 
-| Route | Method | Version
-| ----- | ------ | ------:
-| /groups | `GET` | 1
+Array
+(
+    [0] => Array
+        (
+            [de-DE] => Entwicklung
+            [en-GB] => Development
+            [zh-Hans-HK] => 发展
+        )
 
-!!! important "Developer"
-    AppsDock ❯ System ❯ Application ❯ Identity ❯ API ❯ GroupReadRestAPI ❯ listGroup
+)
+~~~
 
-## Get Group
+### Response
 
-| Route | Method | Version
-| ----- | ------ | ------:
-| /groups/{id} | `GET` | 1
+Status: 201
+| Name | Type | Example
+| ---- | :--: | -------
+| id |  | 
+| name |  | 
+| createdBy |  | 
+| createdAt |  | 
 
-!!! important "Developer"
-    AppsDock ❯ System ❯ Application ❯ Identity ❯ API ❯ GroupReadRestAPI ❯ getGroup
 
-## Create Group
+## Delete a group
 
-| Route | Method | Version
-| ----- | ------ | ------:
-| /groups | `POST` | 1
+### Response
 
-!!! important "Developer"
-    AppsDock ❯ System ❯ Application ❯ Identity ❯ API ❯ GroupWriteRestAPI ❯ createGroup
+Status: 204
 
-## Rename Group
 
-| Route | Method | Version
-| ----- | ------ | ------:
-| /groups/{id} | `PATCH` | 1
+## Get a group
 
-!!! important "Developer"
-    AppsDock ❯ System ❯ Application ❯ Identity ❯ API ❯ GroupWriteRestAPI ❯ renameGroup
+### Response
 
-## Delete Group
+Status: 200
+| Name | Type | Example
+| ---- | :--: | -------
+| id |  | 
+| name |  | 
+| createdBy |  | 
+| createdAt |  | 
 
-| Route | Method | Version
-| ----- | ------ | ------:
-| /groups/{id} | `DELETE` | 1
 
-!!! important "Developer"
-    AppsDock ❯ System ❯ Application ❯ Identity ❯ API ❯ GroupWriteRestAPI ❯ deleteGroup
+## List all groups
 
-## Assign User To Group
+### Response
 
-| Route | Method | Version
-| ----- | ------ | ------:
-| /groups/{groupId}/users/{userId} | `POST` | 1
+Status: 200
+| Name | Type | Example
+| ---- | :--: | -------
+| 0 |  | 
 
-!!! important "Developer"
-    AppsDock ❯ System ❯ Application ❯ Identity ❯ API ❯ GroupWriteRestAPI ❯ assignUserToGroup
 
-## Remove User From Group
+## Remove a user from a group.
 
-| Route | Method | Version
-| ----- | ------ | ------:
-| /groups/{groupId}/users/{userId} | `DELETE` | 1
+### Response
 
-!!! important "Developer"
-    AppsDock ❯ System ❯ Application ❯ Identity ❯ API ❯ GroupWriteRestAPI ❯ removeUserFromGroup
+Status: 204
 
-## Create Users
 
-| Route | Method | Version
-| ----- | ------ | ------:
-| /users | `POST` | 1
+## Rename a group
 
-!!! important "Developer"
-    AppsDock ❯ System ❯ Application ❯ Identity ❯ API ❯ UserWriteRestAPI ❯ createUsers
+### Payload
+**name** `array` optional
+Name of the group in one or more languages.
 
-## Set Password
+#### Example
+~~~php
+<?php
 
-| Route | Method | Version
-| ----- | ------ | ------:
-| /users/{id}/password | `PATCH` | 1
+Array
+(
+    [0] => Array
+        (
+            [de-DE] => Entwicklung
+            [en-GB] => Development
+            [zh-Hans-HK] => 发展
+        )
 
-!!! important "Developer"
-    AppsDock ❯ System ❯ Application ❯ Identity ❯ API ❯ UserWriteRestAPI ❯ setPassword
+)
+~~~
 
-## Set User Preference
+### Response
 
-| Route | Method | Version
-| ----- | ------ | ------:
-| /users/me/preferences | `PUT` | 1
+Status: 200
+| Name | Type | Example
+| ---- | :--: | -------
+| id |  | 
+| name |  | 
+| createdBy |  | 
+| createdAt |  | 
 
-!!! important "Developer"
-    AppsDock ❯ System ❯ Application ❯ Identity ❯ API ❯ UserWriteRestAPI ❯ setUserPreference
 
-## Remove User From Organization
+## Assign a role to a group.
 
-| Route | Method | Version
-| ----- | ------ | ------:
-| /users/me/preferences/{settingId} | `DELETE` | 1
+### Response
 
-!!! important "Developer"
-    AppsDock ❯ System ❯ Application ❯ Identity ❯ API ❯ UserWriteRestAPI ❯ removeUserFromOrganization
+Status: 204
 
-## List Users
 
-| Route | Method | Version
-| ----- | ------ | ------:
-| /users | `GET` | 1
+## Assign a role to a user.
 
-!!! important "Developer"
-    AppsDock ❯ System ❯ Application ❯ Identity ❯ API ❯ UserReadRestAPI ❯ listUsers
+### Response
 
-## Get
+Status: 204
 
-| Route | Method | Version
-| ----- | ------ | ------:
-| /users/{id} | `GET` | 1
 
-!!! important "Developer"
-    AppsDock ❯ System ❯ Application ❯ Identity ❯ API ❯ UserReadRestAPI ❯ get
+## Create a role
 
-## Get Secured Identity
+### Payload
+**name** `array` optional
+Name of the role in one or more languages.
 
-| Route | Method | Version
-| ----- | ------ | ------:
-| /users/{id}/identity/{securityToken} | `GET` | 1
+#### Example
+~~~php
+<?php
 
-!!! important "Developer"
-    AppsDock ❯ System ❯ Application ❯ Identity ❯ API ❯ UserReadRestAPI ❯ getSecuredIdentity
+Array
+(
+    [0] => Array
+        (
+            [de-DE] => Entwicklung
+            [en-GB] => Development
+            [zh-Hans-HK] => 发展
+        )
 
-## Get Me
+)
+~~~
+**type** `string` optional
+Type of the role.
+Valid values: Array
+(
+    [0] => USER
+    [1] => ADMIN
+    [2] => GUEST
+    [3] => EXTERNAL
+)
 
-| Route | Method | Version
-| ----- | ------ | ------:
-| /users/me | `GET` | 1
 
-!!! important "Developer"
-    AppsDock ❯ System ❯ Application ❯ Identity ❯ API ❯ UserReadRestAPI ❯ getMe
+#### Example
+~~~php
+<?php
 
-## List Me Policies
+Array
+(
+    [0] => USER
+)
+~~~
 
-| Route | Method | Version
-| ----- | ------ | ------:
-| /users/me/policies | `GET` | 1
+### Response
 
-!!! important "Developer"
-    AppsDock ❯ System ❯ Application ❯ Identity ❯ API ❯ UserReadRestAPI ❯ listMePolicies
+Status: 201
+| Name | Type | Example
+| ---- | :--: | -------
+| id |  | 
+| name |  | 
+| type |  | 
+| isPredefined |  | 
 
-## List Me Preferences
 
-| Route | Method | Version
-| ----- | ------ | ------:
-| /users/me/preferences | `GET` | 1
+## Delete a role
 
-!!! important "Developer"
-    AppsDock ❯ System ❯ Application ❯ Identity ❯ API ❯ UserReadRestAPI ❯ listMePreferences
+### Response
 
-## Create Role
+Status: 204
 
-| Route | Method | Version
-| ----- | ------ | ------:
-| /roles | `POST` | 1
 
-!!! important "Developer"
-    AppsDock ❯ System ❯ Application ❯ Identity ❯ API ❯ RoleWriteRestAPI ❯ createRole
+## Get a role
 
-## Rename Role
+### Response
 
-| Route | Method | Version
-| ----- | ------ | ------:
-| /roles/{id} | `PATCH` | 1
+Status: 200
+| Name | Type | Example
+| ---- | :--: | -------
+| id |  | 
+| name |  | 
+| type |  | 
+| isPredefined |  | 
 
-!!! important "Developer"
-    AppsDock ❯ System ❯ Application ❯ Identity ❯ API ❯ RoleWriteRestAPI ❯ renameRole
 
-## Delete Role
+## List all roles
 
-| Route | Method | Version
-| ----- | ------ | ------:
-| /roles/{id} | `DELETE` | 1
+### Response
 
-!!! important "Developer"
-    AppsDock ❯ System ❯ Application ❯ Identity ❯ API ❯ RoleWriteRestAPI ❯ deleteRole
+Status: 200
+| Name | Type | Example
+| ---- | :--: | -------
+| 0 |  | 
 
-## Assign Role To User
 
-| Route | Method | Version
-| ----- | ------ | ------:
-| /roles/{roleId}/users/{userId} | `POST` | 1
+## Remove a role from a group.
 
-!!! important "Developer"
-    AppsDock ❯ System ❯ Application ❯ Identity ❯ API ❯ RoleWriteRestAPI ❯ assignRoleToUser
+### Response
 
-## Assign Role To Group
+Status: 204
 
-| Route | Method | Version
-| ----- | ------ | ------:
-| /roles/{roleId}/groups/{groupId} | `POST` | 1
 
-!!! important "Developer"
-    AppsDock ❯ System ❯ Application ❯ Identity ❯ API ❯ RoleWriteRestAPI ❯ assignRoleToGroup
+## Remove a role from a user.
 
-## Remove Role From User
+### Response
 
-| Route | Method | Version
-| ----- | ------ | ------:
-| /roles/{roleId}/users/{userId} | `DELETE` | 1
+Status: 204
 
-!!! important "Developer"
-    AppsDock ❯ System ❯ Application ❯ Identity ❯ API ❯ RoleWriteRestAPI ❯ removeRoleFromUser
 
-## Remove Role From Group
+## Rename a role
 
-| Route | Method | Version
-| ----- | ------ | ------:
-| /roles/{roleId}/groups/{groupId} | `DELETE` | 1
+### Payload
+**name** `array` optional
+Name of the role in one or more languages.
 
-!!! important "Developer"
-    AppsDock ❯ System ❯ Application ❯ Identity ❯ API ❯ RoleWriteRestAPI ❯ removeRoleFromGroup
+#### Example
+~~~php
+<?php
+
+Array
+(
+    [0] => Array
+        (
+            [de-DE] => Entwicklung
+            [en-GB] => Development
+            [zh-Hans-HK] => 发展
+        )
+
+)
+~~~
+
+### Response
+
+Status: 200
+| Name | Type | Example
+| ---- | :--: | -------
+| id |  | 
+| name |  | 
+| type |  | 
+| isPredefined |  | 
+
+
+## Create a user
+
+### Payload
+**organizationId** `string` optional
+The Organization where the user is assigned to.
+
+#### Example
+~~~php
+<?php
+
+Array
+(
+    [0] => 680fe5ff-3b68-4d22-bb91-eb6a9712f78d
+)
+~~~
+**username** `string` optional
+The username of the user.
+
+#### Example
+~~~php
+<?php
+
+Array
+(
+    [0] => IronMan
+)
+~~~
+**password** `string` optional
+The password of the user.
+
+#### Example
+~~~php
+<?php
+
+Array
+(
+    [0] => 4-v3ry.53cr37_p455w0rd
+)
+~~~
+**email** `string` optional
+The email address of the user.
+
+#### Example
+~~~php
+<?php
+
+Array
+(
+    [0] => examples@examples.com
+)
+~~~
+**name** `string` optional
+The name of the user.
+
+#### Example
+~~~php
+<?php
+
+Array
+(
+    [0] => Robert Downey Jr.
+)
+~~~
+**roles** `array` optional
+The roles which should be assigned to the user.
+
+#### Example
+~~~php
+<?php
+
+Array
+(
+    [0] => Array
+        (
+            [0] => 680fe5ff-3b68-4d22-bb91-eb6a9712f78d
+            [1] => 680fe5ff-3b68-4d22-bb91-eb6a9712f78d
+        )
+
+)
+~~~
+
+### Response
+
+Status: 201
+| Name | Type | Example
+| ---- | :--: | -------
+| id |  | 
+| username |  | 
+| email |  | 
+| name |  | 
+| status |  | 
+| verified |  | 
+| penultimateLoginAt |  | 
+| createdAt |  | 
+
+
+## Delete a preference for a user.
+
+### Response
+
+Status: 204
+
+
+## Get a user
+
+### Response
+
+Status: 200
+| Name | Type | Example
+| ---- | :--: | -------
+| id |  | 
+| username |  | 
+| email |  | 
+| name |  | 
+| status |  | 
+| verified |  | 
+| penultimateLoginAt |  | 
+| createdAt |  | 
+
+
+## Get a user identity
+
+### Response
+
+Status: 200
+| Name | Type | Example
+| ---- | :--: | -------
+| id |  | 
+| username |  | 
+| email |  | 
+| name |  | 
+| status |  | 
+| verified |  | 
+| penultimateLoginAt |  | 
+| createdAt |  | 
+
+
+## List all users
+
+### Response
+
+Status: 200
+| Name | Type | Example
+| ---- | :--: | -------
+| 0 |  | 
+
+
+## Get a user
+
+### Response
+
+Status: 200
+| Name | Type | Example
+| ---- | :--: | -------
+| id |  | 
+| username |  | 
+| email |  | 
+| name |  | 
+| status |  | 
+| verified |  | 
+| penultimateLoginAt |  | 
+| createdAt |  | 
+
+
+## Get a user
+
+### Response
+
+Status: 200
+| Name | Type | Example
+| ---- | :--: | -------
+| id |  | 
+| username |  | 
+| email |  | 
+| name |  | 
+| status |  | 
+| verified |  | 
+| penultimateLoginAt |  | 
+| createdAt |  | 
+
+
+## Get a user
+
+### Response
+
+Status: 200
+| Name | Type | Example
+| ---- | :--: | -------
+| id |  | 
+| username |  | 
+| email |  | 
+| name |  | 
+| status |  | 
+| verified |  | 
+| penultimateLoginAt |  | 
+| createdAt |  | 
+
+
+## Set the password for a user.
+
+### Payload
+**password** `string` optional
+The password of the user.
+
+#### Example
+~~~php
+<?php
+
+Array
+(
+    [0] => 4-v3ry.53cr37_p455w0rd
+)
+~~~
+**securityToken** `string` optional
+The security token to authenticate.
+
+#### Example
+~~~php
+<?php
+
+Array
+(
+)
+~~~
+
+### Response
+
+Status: 204
+
+
+## Set a preference for a user.
+
+### Payload
+**settingId** `string` optional
+The ID of the configuration setting.
+
+#### Example
+~~~php
+<?php
+
+Array
+(
+    [0] => 680fe5ff-3b68-4d22-bb91-eb6a9712f78d
+)
+~~~
+**value** `bool|int|string|array` optional
+The value to set the configuration setting set to.
+
+#### Example
+~~~php
+<?php
+
+Array
+(
+    [0] => 1
+    [1] => 1620979351
+    [2] => Europe/Berlin
+    [3] => Array
+        (
+            [de-DE] => Entwicklung
+            [en-GB] => Development
+            [zh-Hans-HK] => 发展
+        )
+
+)
+~~~
+
+### Response
+
+Status: 204
 
 *[API]: Application Programming Interface
 *[OS]: Operating System

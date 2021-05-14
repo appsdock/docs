@@ -4,59 +4,55 @@ This page provides a list of all app REST API endpoints within AppsDock OS.
 
 The guideline for the REST API can be found [here](../../../gettingstarted/guidelines/rest-api).
 
-## List Apps
+## Activate an app
 
-| Route | Method | Version
-| ----- | ------ | ------:
-| /apps | `GET` | 1
+### Response
 
-!!! important "Developer"
-    AppsDock ❯ System ❯ Application ❯ App ❯ API ❯ AppReadRestAPI ❯ listApps
+Status: 204
 
-## Install
 
-| Route | Method | Version
-| ----- | ------ | ------:
-| /apps:install/{id} | `POST` | 1
+## Deactivate an app
 
-!!! important "Developer"
-    AppsDock ❯ System ❯ Application ❯ App ❯ API ❯ AppWriteRestAPI ❯ install
+### Response
 
-## Uninstall
+Status: 204
 
-| Route | Method | Version
-| ----- | ------ | ------:
-| /apps:uninstall/{id} | `POST` | 1
 
-!!! important "Developer"
-    AppsDock ❯ System ❯ Application ❯ App ❯ API ❯ AppWriteRestAPI ❯ uninstall
+## Install an app
 
-## Update
+### Response
 
-| Route | Method | Version
-| ----- | ------ | ------:
-| /apps:update/{id} | `POST` | 1
+Status: 204
 
-!!! important "Developer"
-    AppsDock ❯ System ❯ Application ❯ App ❯ API ❯ AppWriteRestAPI ❯ update
 
-## Activate
+## List all apps
 
-| Route | Method | Version
-| ----- | ------ | ------:
-| /apps:activate/{id} | `POST` | 1
+### Response
 
-!!! important "Developer"
-    AppsDock ❯ System ❯ Application ❯ App ❯ API ❯ AppWriteRestAPI ❯ activate
+Status: 200
+| Name | Type | Example
+| ---- | :--: | -------
+| id |  | 
+| name |  | 
+| active |  | 
+| version |  | 
+| build |  | 
+| status |  | 
+| channel |  | 
 
-## Deactivate
 
-| Route | Method | Version
-| ----- | ------ | ------:
-| /apps:deactivate/{id} | `POST` | 1
+## Uninstall an app
 
-!!! important "Developer"
-    AppsDock ❯ System ❯ Application ❯ App ❯ API ❯ AppWriteRestAPI ❯ deactivate
+### Response
+
+Status: 204
+
+
+## Update an app
+
+### Response
+
+Status: 204
 
 *[API]: Application Programming Interface
 *[OS]: Operating System

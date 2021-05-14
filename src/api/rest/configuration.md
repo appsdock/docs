@@ -4,32 +4,62 @@ This page provides a list of all configuration REST API endpoints within AppsDoc
 
 The guideline for the REST API can be found [here](../../../gettingstarted/guidelines/rest-api).
 
-## Change Setting
+## Change a configuration setting
 
-| Route | Method | Version
-| ----- | ------ | ------:
-| /settings/{id} | `POST` | 1
+### Payload
+**value** `bool|int|string|array` optional
+Value of the configuration setting.
 
-!!! important "Developer"
-    AppsDock ❯ System ❯ Application ❯ Configuration ❯ API ❯ SettingWriteRestAPI ❯ changeSetting
+#### Example
+~~~php
+<?php
 
-## List Setting
+Array
+(
+    [0] => 
+    [1] => 1620979351
+    [2] => Europe/Berlin
+    [3] => Array
+        (
+            [de-DE] => Entwicklung
+            [en-GB] => Development
+            [zh-Hans-HK] => 发展
+        )
 
-| Route | Method | Version
-| ----- | ------ | ------:
-| /settings | `GET` | 1
+)
+~~~
 
-!!! important "Developer"
-    AppsDock ❯ System ❯ Application ❯ Configuration ❯ API ❯ SettingReadRestAPI ❯ listSetting
+### Response
 
-## Get Setting
+Status: 204
 
-| Route | Method | Version
-| ----- | ------ | ------:
-| /settings/{id} | `GET` | 1
 
-!!! important "Developer"
-    AppsDock ❯ System ❯ Application ❯ Configuration ❯ API ❯ SettingReadRestAPI ❯ getSetting
+## Get a configuration setting
+
+### Response
+
+Status: 200
+| Name | Type | Example
+| ---- | :--: | -------
+| id |  | 
+| type |  | 
+| value |  | 
+| default |  | 
+| options |  | 
+
+
+## List all configuration settings
+
+### Response
+
+Status: 200
+| Name | Type | Example
+| ---- | :--: | -------
+| id |  | 
+| type |  | 
+| value |  | 
+| default |  | 
+| options |  |
 
 *[API]: Application Programming Interface
 *[OS]: Operating System
