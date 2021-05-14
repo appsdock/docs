@@ -9,14 +9,14 @@
       
       
       
-        <link rel="canonical" href="https://appsdock.github.io/docs/api/rest/configuration/">
+        <link rel="canonical" href="https://appsdock.github.io/docs/concepts/identity-access/authentication/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.4">
     
     
       
-        <title>Configuration - AppsDock OS Documentation</title>
+        <title>AppsDock OS Authentication Service - AppsDock OS Documentation</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#configuration-rest-api" class="md-skip">
+        <a href="#appsdock-os-authentication-service" class="md-skip">
           Skip to content
         </a>
       
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Configuration
+              AppsDock OS Authentication Service
             
           </span>
         </div>
@@ -185,7 +185,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../concepts/amqp/" class="md-tabs__link">
+      <a href="../../amqp/" class="md-tabs__link">
         Concepts
       </a>
     </li>
@@ -218,8 +218,6 @@
         
   
   
-    
-  
 
 
   
@@ -231,7 +229,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../access/" class="md-tabs__link md-tabs__link--active">
+      <a href="../../../api/rest/access/" class="md-tabs__link">
         API
       </a>
     </li>
@@ -344,7 +342,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../concepts/amqp/" class="md-nav__link">
+      <a href="../../amqp/" class="md-nav__link">
         Message Queue (AMQP)
       </a>
     </li>
@@ -588,14 +586,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
       
       <label class="md-nav__link" for="__nav_4">
         API
@@ -611,16 +607,14 @@
             
   
   
-    
-  
   
     
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_1" type="checkbox" id="__nav_4_1" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_1" type="checkbox" id="__nav_4_1" >
       
       <label class="md-nav__link" for="__nav_4_1">
         REST
@@ -638,7 +632,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../access/" class="md-nav__link">
+      <a href="../../../api/rest/access/" class="md-nav__link">
         Access
       </a>
     </li>
@@ -650,7 +644,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../app/" class="md-nav__link">
+      <a href="../../../api/rest/app/" class="md-nav__link">
         App
       </a>
     </li>
@@ -660,65 +654,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Configuration
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../api/rest/configuration/" class="md-nav__link">
         Configuration
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#change-setting" class="md-nav__link">
-    Change Setting
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#list-setting" class="md-nav__link">
-    List Setting
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#get-setting" class="md-nav__link">
-    Get Setting
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -728,7 +668,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../identity/" class="md-nav__link">
+      <a href="../../../api/rest/identity/" class="md-nav__link">
         Identity
       </a>
     </li>
@@ -740,7 +680,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mail/" class="md-nav__link">
+      <a href="../../../api/rest/mail/" class="md-nav__link">
         Mail
       </a>
     </li>
@@ -752,7 +692,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../organization/" class="md-nav__link">
+      <a href="../../../api/rest/organization/" class="md-nav__link">
         Organization
       </a>
     </li>
@@ -887,23 +827,56 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#change-setting" class="md-nav__link">
-    Change Setting
+  <a href="#basics" class="md-nav__link">
+    Basics
   </a>
+  
+    <nav class="md-nav" aria-label="Basics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#auth-client" class="md-nav__link">
+    Auth Client
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#access-token" class="md-nav__link">
+    Access token
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#list-setting" class="md-nav__link">
-    List Setting
+  <a href="#authentication" class="md-nav__link">
+    Authentication
+  </a>
+  
+    <nav class="md-nav" aria-label="Authentication">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#token-based-auth" class="md-nav__link">
+    Token Based Auth
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#get-setting" class="md-nav__link">
-    Get Setting
+        
+          <li class="md-nav__item">
+  <a href="#cookie-based-auth" class="md-nav__link">
+    Cookie Based Auth
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -919,76 +892,114 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/appsdock/docs/edit/master/docs/api/rest/configuration.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/appsdock/docs/edit/master/docs/concepts/identity-access/authentication.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="configuration-rest-api">Configuration <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr></h1>
-<p>This page provides a list of all configuration <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr> endpoints within AppsDock <abbr title="Operating System">OS</abbr>.</p>
-<p>The guideline for the <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr> can be found <a href="../../../gettingstarted/guidelines/rest-api">here</a>.</p>
-<h2 id="change-setting">Change Setting</h2>
+                <h1 id="appsdock-os-authentication-service">AppsDock <abbr title="Operating System">OS</abbr> Authentication Service</h1>
+<p>The AppsDock <abbr title="Operating System">OS</abbr> application server provides a build in authentication and authorization service to secure the resources. 
+This topic provides an overview how to authenticate and access secured resources of the application server.</p>
+<h2 id="basics">Basics</h2>
+<p>The request of resources from AppsDock <abbr title="Operating System">OS</abbr> application server requires an access token from the AppsDock <abbr title="Operating System">OS</abbr> authentication
+service. To obtain an access token, there must be a registered auth client at AppsDock <abbr title="Operating System">OS</abbr> identity management which must be 
+used when requesting the auth endpoints with client credentials from your web or app application.</p>
+<h3 id="auth-client">Auth Client</h3>
+<p>The access of auth <abbr title="Application Programming Interface">API</abbr> endpoints requires at least one registered auth client at AppsDock <abbr title="Operating System">OS</abbr> identity management. 
+The AppsDock <abbr title="Operating System">OS</abbr> identity management can register multiple auth client with different configurations which can be used by
+different applications. Each auth client has its own credentials (client id or client id with secret) which must be used
+when requesting the auth <abbr title="Application Programming Interface">API</abbr>. The credentials can be attached as basic base64 encoded Auhtorization header or as query
+parameter at request uri.</p>
+<h3 id="access-token">Access token</h3>
+<p>The access token is issued by the AppsDock authentication service and contains secured information (claims) about the
+actual operator. The token also contains information which are used to validate/authenticate the operator and verify 
+that it has the required permissions / is authorized to perform the operation. 
+Access tokens have to be attached to each request that intents to access secured resources of the AppsDock <abbr title="Operating System">OS</abbr> application
+server. The transport must be always over a secured channel like <abbr title="Hypertext Transfer Protocol Secure">HTTPS</abbr>.</p>
+<p>An access token issued by the AppsDock authentication service looks like the following example:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
+</code></pre></div>
+</td></tr></table>
+<p>To attach the access token, you must set the access token as bearer type in the Authorization header.</p>
+<h2 id="authentication">Authentication</h2>
+<p>The AppsDock <abbr title="Operating System">OS</abbr> authentication service provides an <abbr title="Application Programming Interface">API</abbr> for token and cookie based authentication management which 
+includes the following operations:</p>
 <table>
 <thead>
 <tr>
-<th>Route</th>
-<th>Method</th>
-<th align="right">Version</th>
+<th>Endpoint</th>
+<th>Operation</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>/settings/{id}</td>
-<td><code>POST</code></td>
-<td align="right">1</td>
+<td>/auth/token</td>
+<td>Authentication with email/username and password</td>
+</tr>
+<tr>
+<td>/auth/token/refresh</td>
+<td>Session/Token refresh via refresh token or cookie</td>
+</tr>
+<tr>
+<td>/auth/revoke</td>
+<td>Revoke auth session via refresh token or cookie</td>
 </tr>
 </tbody>
 </table>
-<div class="admonition important">
-<p class="admonition-title">Developer</p>
-<p>AppsDock ❯ System ❯ Application ❯ Configuration ❯ <abbr title="Application Programming Interface">API</abbr> ❯ SettingWriteRestAPI ❯ changeSetting</p>
+<p>The AppsDock <abbr title="Operating System">OS</abbr> authentication service supports both token and cookie based authentication flows. </p>
+<h3 id="token-based-auth">Token Based Auth</h3>
+<p>The token based authentication is used by confidential clients like mobile apps, which are capable of storing the 
+refresh token securely. To obtain an access and refresh token, you have to send a request with the auth 
+client credentials as authorization header to the token endpoint.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>POST https://domain.com/auth/token
+Content-Type: application/json
+Authrorization: Basic WIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF
+
+{&quot;email&quot;: &quot;jon@doe.com&quot;, &quot;password&quot;: &quot;xxxxx&quot;}
+</code></pre></div>
+</td></tr></table>
+<p>The response contains the access/refresh token and additional information about the access token.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="nt">&quot;expires_in&quot;</span><span class="p">:</span> <span class="mi">180</span><span class="p">,</span>
+    <span class="nt">&quot;expires_at&quot;</span><span class="p">:</span> <span class="mi">1595453215</span><span class="p">,</span>
+    <span class="nt">&quot;token_type&quot;</span><span class="p">:</span> <span class="s2">&quot;bearer&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;access_token&quot;</span><span class="p">:</span> <span class="s2">&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0......&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;refresh_token&quot;</span><span class="p">:</span> <span class="s2">&quot;xwRJSMxNTE2MjMeKKF2QiwibmFtZSIfwpMeJf6Ik&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+<p>The access token must be attached as bearer token in Authorization header on each request of secured resources. 
+The refresh token is used to refresh the access token when it expires and obtain a new access token.</p>
+<div class="admonition warning">
+<p class="admonition-title">Refresh token storage</p>
+<p>The refresh token must be stored securely and should not be accessible by the client user. Do not store the refresh token into any kind of client side storages of web applications like local or session store nor into cookies.</p>
 </div>
-<h2 id="list-setting">List Setting</h2>
-<table>
-<thead>
-<tr>
-<th>Route</th>
-<th>Method</th>
-<th align="right">Version</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>/settings</td>
-<td><code>GET</code></td>
-<td align="right">1</td>
-</tr>
-</tbody>
-</table>
-<div class="admonition important">
-<p class="admonition-title">Developer</p>
-<p>AppsDock ❯ System ❯ Application ❯ Configuration ❯ <abbr title="Application Programming Interface">API</abbr> ❯ SettingReadRestAPI ❯ listSetting</p>
-</div>
-<h2 id="get-setting">Get Setting</h2>
-<table>
-<thead>
-<tr>
-<th>Route</th>
-<th>Method</th>
-<th align="right">Version</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>/settings/{id}</td>
-<td><code>GET</code></td>
-<td align="right">1</td>
-</tr>
-</tbody>
-</table>
-<div class="admonition important">
-<p class="admonition-title">Developer</p>
-<p>AppsDock ❯ System ❯ Application ❯ Configuration ❯ <abbr title="Application Programming Interface">API</abbr> ❯ SettingReadRestAPI ❯ getSetting</p>
+<h3 id="cookie-based-auth">Cookie Based Auth</h3>
+<p>A cookie based client response only the expiry information about the current auth session, and uses a secured <abbr title="Hypertext Transfer Protocol Secure">HTTPS</abbr> only
+cookie to store the auth session information on client side. The auth cookie issued by the cookie based confidential client
+has also a short lifetime like the access token, so it must be refreshed to keep the auth session valid.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="nt">&quot;expires_in&quot;</span><span class="p">:</span> <span class="mi">180</span><span class="p">,</span>
+    <span class="nt">&quot;expires_at&quot;</span><span class="p">:</span> <span class="mi">1595453215</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+<div class="admonition warning">
+<p class="admonition-title">Public clients</p>
+<p>Public auth clients are currently not supported by the AppsDock authentication service!</p>
 </div>
                 
               
@@ -1009,39 +1020,6 @@
       
         
 <footer class="md-footer">
-  
-    <nav class="md-footer__inner md-grid" aria-label="Footer">
-      
-        <a href="../app/" class="md-footer__link md-footer__link--prev" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              App
-            </div>
-          </div>
-        </a>
-      
-      
-        <a href="../identity/" class="md-footer__link md-footer__link--next" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Identity
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
