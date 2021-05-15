@@ -731,6 +731,33 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#the-organization-resource" class="md-nav__link">
+    The organization resource
+  </a>
+  
+    <nav class="md-nav" aria-label="The organization resource">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#attributes" class="md-nav__link">
+    Attributes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response" class="md-nav__link">
+    Response
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#assign-a-user-to-an-organization" class="md-nav__link">
     Assign a user to an organization.
   </a>
@@ -1020,6 +1047,33 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#the-organization-resource" class="md-nav__link">
+    The organization resource
+  </a>
+  
+    <nav class="md-nav" aria-label="The organization resource">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#attributes" class="md-nav__link">
+    Attributes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response" class="md-nav__link">
+    Response
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#assign-a-user-to-an-organization" class="md-nav__link">
     Assign a user to an organization.
   </a>
@@ -1193,6 +1247,39 @@
                 <h1 id="organization-rest-api">Organization <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr></h1>
 <p>This page provides a list of all organization <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr> endpoints within AppsDock <abbr title="Operating System">OS</abbr>.</p>
 <p>The guideline for the <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr> can be found <a href="../../../gettingstarted/guidelines/rest-api">here</a>.</p>
+<h2 id="the-organization-resource">The organization resource</h2>
+<h3 id="attributes">Attributes</h3>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th align="center">Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>id</strong></td>
+<td align="center"><code>string</code></td>
+<td>The identifier of the organization as <abbr title="Universally Unique Identifier">UUID</abbr>.</td>
+</tr>
+<tr>
+<td><strong>name</strong></td>
+<td align="center"><code>string</code></td>
+<td>The name of the organization.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="response">Response</h3>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;680fe5ff-3b68-4d22-bb91-eb6a9712f78d&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Stark Industries&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
 <h2 id="assign-a-user-to-an-organization">Assign a user to an organization.</h2>
 <p><code>POST</code> <strong>/v1/organizations/{organizationId}/users/{userId}</strong></p>
 <h3 id="parameters">Parameters</h3>

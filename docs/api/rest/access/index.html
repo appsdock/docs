@@ -671,6 +671,33 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#the-policy-resource" class="md-nav__link">
+    The policy resource
+  </a>
+  
+    <nav class="md-nav" aria-label="The policy resource">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#attributes" class="md-nav__link">
+    Attributes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response" class="md-nav__link">
+    Response
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#change-a-policy" class="md-nav__link">
     Change a policy
   </a>
@@ -960,6 +987,33 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#the-policy-resource" class="md-nav__link">
+    The policy resource
+  </a>
+  
+    <nav class="md-nav" aria-label="The policy resource">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#attributes" class="md-nav__link">
+    Attributes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response" class="md-nav__link">
+    Response
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#change-a-policy" class="md-nav__link">
     Change a policy
   </a>
@@ -1073,6 +1127,60 @@
                 <h1 id="access-rest-api">Access <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr></h1>
 <p>This page provides a list of all access <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr> endpoints within AppsDock <abbr title="Operating System">OS</abbr>.</p>
 <p>The guideline for the <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr> can be found <a href="../../../gettingstarted/guidelines/rest-api">here</a>.</p>
+<h2 id="the-policy-resource">The policy resource</h2>
+<h3 id="attributes">Attributes</h3>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th align="center">Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>id</strong></td>
+<td align="center"><code>string</code></td>
+<td>Policy identifier as <abbr title="Universally Unique Identifier">UUID</abbr>.</td>
+</tr>
+<tr>
+<td><strong>actionId</strong></td>
+<td align="center"><code>string</code></td>
+<td>Action identifier as <abbr title="Universally Unique Identifier">UUID</abbr>.</td>
+</tr>
+<tr>
+<td><strong>roleId</strong></td>
+<td align="center"><code>string</code></td>
+<td>Role identifier as <abbr title="Universally Unique Identifier">UUID</abbr>.</td>
+</tr>
+<tr>
+<td><strong>resource</strong></td>
+<td align="center"><code>string</code></td>
+<td>Resource of the policy.</td>
+</tr>
+<tr>
+<td><strong>effect</strong></td>
+<td align="center"><code>string</code></td>
+<td>Effect of the policy.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="response">Response</h3>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;680fe5ff-3b68-4d22-bb91-eb6a9712f78d&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;actionId&quot;</span><span class="p">:</span> <span class="s2">&quot;680fe5ff-3b68-4d22-bb91-eb6a9712f78d&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;roleId&quot;</span><span class="p">:</span> <span class="s2">&quot;680fe5ff-3b68-4d22-bb91-eb6a9712f78d&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;resource&quot;</span><span class="p">:</span> <span class="s2">&quot;*&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;effect&quot;</span><span class="p">:</span> <span class="s2">&quot;ALLOW&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
 <h2 id="change-a-policy">Change a policy</h2>
 <p><code>POST</code> <strong>/v1/policies/{id}</strong></p>
 <h3 id="parameters">Parameters</h3>
@@ -1119,7 +1227,7 @@
 <td><strong>roleId</strong></td>
 <td align="center"><code>string</code></td>
 <td align="center">❌</td>
-<td>Role ID for the policy.</td>
+<td>Role identifier for the policy as <abbr title="Universally Unique Identifier">UUID</abbr>.</td>
 </tr>
 <tr>
 <td><strong>resource</strong></td>
@@ -1140,13 +1248,9 @@
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span>
-<span class="normal">7</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="p">{</span>
     <span class="nt">&quot;roleId&quot;</span><span class="p">:</span> <span class="s2">&quot;680fe5ff-3b68-4d22-bb91-eb6a9712f78d&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;resource&quot;</span><span class="p">:</span> <span class="p">[</span>
-        <span class="s2">&quot;*&quot;</span>
-    <span class="p">],</span>
+    <span class="nt">&quot;resource&quot;</span><span class="p">:</span> <span class="s2">&quot;*&quot;</span><span class="p">,</span>
     <span class="nt">&quot;effect&quot;</span><span class="p">:</span> <span class="s2">&quot;ALLOW&quot;</span>
 <span class="p">}</span>
 </code></pre></div>
