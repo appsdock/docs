@@ -695,33 +695,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#the-setting-resource" class="md-nav__link">
-    The setting resource
-  </a>
-  
-    <nav class="md-nav" aria-label="The setting resource">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#attributes" class="md-nav__link">
-    Attributes
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#response" class="md-nav__link">
-    Response
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#change-a-configuration-setting" class="md-nav__link">
     Change a configuration setting
   </a>
@@ -960,33 +933,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#the-setting-resource" class="md-nav__link">
-    The setting resource
-  </a>
-  
-    <nav class="md-nav" aria-label="The setting resource">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#attributes" class="md-nav__link">
-    Attributes
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#response" class="md-nav__link">
-    Response
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#change-a-configuration-setting" class="md-nav__link">
     Change a configuration setting
   </a>
@@ -1073,33 +1019,27 @@
                 <h1 id="configuration-rest-api">Configuration <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr></h1>
 <p>This page provides a list of all configuration <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr> endpoints within AppsDock <abbr title="Operating System">OS</abbr>.</p>
 <p>The guideline for the <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr> can be found <a href="../../../gettingstarted/guidelines/rest-api">here</a>.</p>
-<h2 id="the-setting-resource">The setting resource</h2>
-<h3 id="attributes">Attributes</h3>
-<p><strong>id</strong> <code>string</code></p>
-<p><strong>type</strong> <code>string</code></p>
-<p><strong>value</strong> <code>array|null</code></p>
-<p><strong>default</strong> <code>array|null</code></p>
-<p><strong>options</strong> <code>array|null</code></p>
-<h3 id="response">Response</h3>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span>
-<span class="normal">7</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="p">{</span>
-    <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;680fe5ff-3b68-4d22-bb91-eb6a9712f78d&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;680fe5ff-3b68-4d22-bb91-eb6a9712f78d&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;value&quot;</span><span class="p">:</span> <span class="s2">&quot;680fe5ff-3b68-4d22-bb91-eb6a9712f78d&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;default&quot;</span><span class="p">:</span> <span class="s2">&quot;680fe5ff-3b68-4d22-bb91-eb6a9712f78d&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;options&quot;</span><span class="p">:</span> <span class="s2">&quot;680fe5ff-3b68-4d22-bb91-eb6a9712f78d&quot;</span>
-<span class="p">}</span>
-</code></pre></div>
-</td></tr></table>
 <h2 id="change-a-configuration-setting">Change a configuration setting</h2>
+<p><code>POST</code> <strong>/v1/settings/{id}</strong></p>
 <h3 id="parameters">Parameters</h3>
-<p><strong>value</strong> <code>bool|int|string|array</code> optional
-Value of the configuration setting.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th align="center">Type</th>
+<th align="center">Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>value</strong></td>
+<td align="center"><code>bool</code></td>
+<td align="center"><code>int</code></td>
+<td><code>string</code></td>
+</tr>
+</tbody>
+</table>
 <h3 id="payload">Payload</h3>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
@@ -1109,11 +1049,17 @@ Value of the configuration setting.</p>
 </code></pre></div>
 </td></tr></table>
 <h2 id="get-a-configuration-setting">Get a configuration setting</h2>
+<p><code>GET</code> <strong>/v1/settings/{id}</strong></p>
 <h3 id="parameters_1">Parameters</h3>
-<p>This endpoint has no parameters.</p>
+<div class="admonition important">
+<p class="admonition-title">This endpoint has no parameters.</p>
+</div>
 <h2 id="list-all-configuration-settings">List all configuration settings</h2>
+<p><code>GET</code> <strong>/v1/settings</strong></p>
 <h3 id="parameters_2">Parameters</h3>
-<p>This endpoint has no parameters.</p>
+<div class="admonition important">
+<p class="admonition-title">This endpoint has no parameters.</p>
+</div>
                 
               
               
