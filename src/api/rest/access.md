@@ -4,6 +4,30 @@ This page provides a list of all access REST API endpoints within AppsDock OS.
 
 The guideline for the REST API can be found [here](../../../gettingstarted/guidelines/rest-api).
 
+## The policy resource
+
+### Attributes
+
+| Attribute | Type | Description
+| --------- | :--: | -----------
+| **id** | `string` | Policy identifier as UUID.
+| **actionId** | `string` | Action identifier as UUID.
+| **roleId** | `string` | Role identifier as UUID.
+| **resource** | `string` | Resource of the policy.
+| **effect** | `string` | Effect of the policy.
+
+### Response
+
+~~~json
+{
+    "id": "680fe5ff-3b68-4d22-bb91-eb6a9712f78d",
+    "actionId": "680fe5ff-3b68-4d22-bb91-eb6a9712f78d",
+    "roleId": "680fe5ff-3b68-4d22-bb91-eb6a9712f78d",
+    "resource": "*",
+    "effect": "ALLOW"
+}
+~~~
+
 ## Change a policy
 
 `POST` **/v1/policies/{id}**
@@ -30,7 +54,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 | Parameter | Type | Required | Description
 | --------- | :--: | :------: | -----------
-| **roleId** | `string` | ❌ | Role ID for the policy.
+| **roleId** | `string` | ❌ | Role identifier for the policy as UUID.
 | **resource** | `string` | ❌ | Resource of the policy.
 | **effect** | `string` | ❌ | Effect of the policy.
 
@@ -39,9 +63,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 ~~~json
 {
     "roleId": "680fe5ff-3b68-4d22-bb91-eb6a9712f78d",
-    "resource": [
-        "*"
-    ],
+    "resource": "*",
     "effect": "ALLOW"
 }
 ~~~

@@ -4,6 +4,24 @@ This page provides a list of all organization REST API endpoints within AppsDock
 
 The guideline for the REST API can be found [here](../../../gettingstarted/guidelines/rest-api).
 
+## The organization resource
+
+### Attributes
+
+| Attribute | Type | Description
+| --------- | :--: | -----------
+| **id** | `string` | The identifier of the organization as UUID.
+| **name** | `string` | The name of the organization.
+
+### Response
+
+~~~json
+{
+    "id": "680fe5ff-3b68-4d22-bb91-eb6a9712f78d",
+    "name": "Stark Industries"
+}
+~~~
+
 ## Assign a user to an organization.
 
 `POST` **/v1/organizations/{organizationId}/users/{userId}**
