@@ -702,12 +702,52 @@
     Change a policy
   </a>
   
+    <nav class="md-nav" aria-label="Change a policy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#payload" class="md-nav__link">
+    Payload
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
   <a href="#create-a-policy" class="md-nav__link">
     Create a policy
   </a>
+  
+    <nav class="md-nav" aria-label="Create a policy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_1" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#payload_1" class="md-nav__link">
+    Payload
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -716,12 +756,38 @@
     Delete a policy
   </a>
   
+    <nav class="md-nav" aria-label="Delete a policy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_2" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
   <a href="#list-all-policies" class="md-nav__link">
     List all policies
   </a>
+  
+    <nav class="md-nav" aria-label="List all policies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_3" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -952,12 +1018,52 @@
     Change a policy
   </a>
   
+    <nav class="md-nav" aria-label="Change a policy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#payload" class="md-nav__link">
+    Payload
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
   <a href="#create-a-policy" class="md-nav__link">
     Create a policy
   </a>
+  
+    <nav class="md-nav" aria-label="Create a policy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_1" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#payload_1" class="md-nav__link">
+    Payload
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -966,12 +1072,38 @@
     Delete a policy
   </a>
   
+    <nav class="md-nav" aria-label="Delete a policy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_2" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
   <a href="#list-all-policies" class="md-nav__link">
     List all policies
   </a>
+  
+    <nav class="md-nav" aria-label="List all policies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameters_3" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1019,9 +1151,47 @@
 </code></pre></div>
 </td></tr></table>
 <h2 id="change-a-policy">Change a policy</h2>
+<h3 id="parameters">Parameters</h3>
+<p><strong>effect</strong> <code>string</code> optional
+Effect of the policy.</p>
+<h3 id="payload">Payload</h3>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="nt">&quot;effect&quot;</span><span class="p">:</span> <span class="s2">&quot;DENY&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
 <h2 id="create-a-policy">Create a policy</h2>
+<h3 id="parameters_1">Parameters</h3>
+<p><strong>roleId</strong> <code>string</code> optional
+Role ID for the policy.</p>
+<p><strong>resource</strong> <code>string</code> optional
+Resource of the policy.</p>
+<p><strong>effect</strong> <code>string</code> optional
+Effect of the policy.</p>
+<h3 id="payload_1">Payload</h3>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="nt">&quot;roleId&quot;</span><span class="p">:</span> <span class="s2">&quot;680fe5ff-3b68-4d22-bb91-eb6a9712f78d&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;resource&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&quot;*&quot;</span>
+    <span class="p">],</span>
+    <span class="nt">&quot;effect&quot;</span><span class="p">:</span> <span class="s2">&quot;ALLOW&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
 <h2 id="delete-a-policy">Delete a policy</h2>
+<h3 id="parameters_2">Parameters</h3>
+<p>This endpoint has no parameters.</p>
 <h2 id="list-all-policies">List all policies</h2>
+<h3 id="parameters_3">Parameters</h3>
+<p>This endpoint has no parameters.</p>
                 
               
               
