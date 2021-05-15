@@ -9,3 +9,7 @@ PLACEHOLDER
 *[API]: Application Programming Interface
 *[OS]: Operating System
 *[REST]: Representational State Transfer
+*[UUID]: Universally Unique Identifier
+
+*[✓]: Yes
+*[❌]: No
