@@ -9,13 +9,18 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 ### Attributes
 
 **id** `string`
+The identifier of the organization as UUID.
 
 **name** `string`
+The name of the organization.
 
 ### Response
 
 ~~~json
-{\n\t"id":"680fe5ff-3b68-4d22-bb91-eb6a9712f78d",\n\t"name":"ACME organization"\n}
+{
+    "id": "680fe5ff-3b68-4d22-bb91-eb6a9712f78d",
+    "name": "Stark Industries"
+}
 ~~~
 
 ## Assign a user to an organization.
@@ -26,7 +31,13 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 ## Get a organization
 
+!!! info "Description"
+    You will get a active organizations.
+
 ## List all organizations
+
+!!! info "Description"
+    You will get a collection of all active organizations.
 
 ## Remove a user from an organization.
 
