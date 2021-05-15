@@ -4,62 +4,32 @@ This page provides a list of all configuration REST API endpoints within AppsDoc
 
 The guideline for the REST API can be found [here](../../../gettingstarted/guidelines/rest-api).
 
-## Change a configuration setting
+## The setting resource
 
-### Payload
-**value** `bool|int|string|array` optional
-Value of the configuration setting.
+### Attributes
 
-#### Example
-~~~php
-<?php
+**id** `string`
 
-Array
-(
-    [0] => 
-    [1] => 1620979351
-    [2] => Europe/Berlin
-    [3] => Array
-        (
-            [de-DE] => Entwicklung
-            [en-GB] => Development
-            [zh-Hans-HK] => 发展
-        )
+**type** `string`
 
-)
-~~~
+**value** `array|null`
+
+**default** `array|null`
+
+**options** `array|null`
 
 ### Response
 
-Status: 204
+~~~json
+{"id":"680fe5ff-3b68-4d22-bb91-eb6a9712f78d","type":"680fe5ff-3b68-4d22-bb91-eb6a9712f78d","value":"680fe5ff-3b68-4d22-bb91-eb6a9712f78d","default":"680fe5ff-3b68-4d22-bb91-eb6a9712f78d","options":"680fe5ff-3b68-4d22-bb91-eb6a9712f78d"}
+~~~
 
+## Change a configuration setting
 
 ## Get a configuration setting
 
-### Response
-
-Status: 200
-| Name | Type | Example
-| ---- | :--: | -------
-| id |  | 
-| type |  | 
-| value |  | 
-| default |  | 
-| options |  | 
-
-
 ## List all configuration settings
 
-### Response
-
-Status: 200
-| Name | Type | Example
-| ---- | :--: | -------
-| id |  | 
-| type |  | 
-| value |  | 
-| default |  | 
-| options |  |
 
 *[API]: Application Programming Interface
 *[OS]: Operating System

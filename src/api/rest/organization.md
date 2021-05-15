@@ -4,97 +4,34 @@ This page provides a list of all organization REST API endpoints within AppsDock
 
 The guideline for the REST API can be found [here](../../../gettingstarted/guidelines/rest-api).
 
-## Assign a user to an organization.
+## The organization resource
+
+### Attributes
+
+**id** `string`
+
+**name** `string`
 
 ### Response
 
-Status: 204
+~~~json
+{"id":"680fe5ff-3b68-4d22-bb91-eb6a9712f78d","name":"ACME organization"}
+~~~
 
+## Assign a user to an organization.
 
 ## Create a organization
 
-### Payload
-**name** `string` optional
-Name of the organization.
-
-#### Example
-~~~php
-<?php
-
-Array
-(
-    [0] => ACME organization
-)
-~~~
-
-### Response
-
-Status: 201
-| Name | Type | Example
-| ---- | :--: | -------
-| id |  | 
-| name |  | 
-
-
 ## Delete a organization
-
-### Response
-
-Status: 204
-
 
 ## Get a organization
 
-### Response
-
-Status: 200
-| Name | Type | Example
-| ---- | :--: | -------
-| id |  | 
-| name |  | 
-
-
 ## List all organizations
-
-### Response
-
-Status: 200
-| Name | Type | Example
-| ---- | :--: | -------
-| id |  | 
-| name |  | 
-
 
 ## Remove a user from an organization.
 
-### Response
-
-Status: 204
-
-
 ## Rename a organization
 
-### Payload
-**name** `string` optional
-Name of the organization.
-
-#### Example
-~~~php
-<?php
-
-Array
-(
-    [0] => ACME organization
-)
-~~~
-
-### Response
-
-Status: 200
-| Name | Type | Example
-| ---- | :--: | -------
-| id |  | 
-| name |  |
 
 *[API]: Application Programming Interface
 *[OS]: Operating System
