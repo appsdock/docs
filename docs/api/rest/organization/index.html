@@ -1039,17 +1039,33 @@
 <p>The guideline for the <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr> can be found <a href="../../../gettingstarted/guidelines/rest-api">here</a>.</p>
 <h2 id="the-organization-resource">The organization resource</h2>
 <h3 id="attributes">Attributes</h3>
-<p><strong>id</strong> <code>string</code></p>
-<p><strong>name</strong> <code>string</code></p>
+<p><strong>id</strong> <code>string</code>
+The identifier of the organization as UUID.</p>
+<p><strong>name</strong> <code>string</code>
+The name of the organization.</p>
 <h3 id="response">Response</h3>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="p">{</span><span class="err">\</span><span class="kc">n</span><span class="err">\</span><span class="kc">t</span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="s2">&quot;680fe5ff-3b68-4d22-bb91-eb6a9712f78d&quot;</span><span class="p">,</span><span class="err">\</span><span class="kc">n</span><span class="err">\</span><span class="kc">t</span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;ACME organization&quot;</span><span class="err">\</span><span class="kc">n</span><span class="p">}</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;680fe5ff-3b68-4d22-bb91-eb6a9712f78d&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Stark Industries&quot;</span>
+<span class="p">}</span>
 </code></pre></div>
 </td></tr></table>
 <h2 id="assign-a-user-to-an-organization">Assign a user to an organization.</h2>
 <h2 id="create-a-organization">Create a organization</h2>
 <h2 id="delete-a-organization">Delete a organization</h2>
 <h2 id="get-a-organization">Get a organization</h2>
+<div class="admonition info">
+<p class="admonition-title">Description</p>
+<p>You will get a active organizations.</p>
+</div>
 <h2 id="list-all-organizations">List all organizations</h2>
+<div class="admonition info">
+<p class="admonition-title">Description</p>
+<p>You will get a collection of all active organizations.</p>
+</div>
 <h2 id="remove-a-user-from-an-organization">Remove a user from an organization.</h2>
 <h2 id="rename-a-organization">Rename a organization</h2>
                 
