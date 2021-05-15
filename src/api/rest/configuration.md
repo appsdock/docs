@@ -37,9 +37,30 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 ## Change a configuration setting
 
+### Parameters
+
+**value** `bool|int|string|array` optional
+Value of the configuration setting.
+
+### Payload
+
+~~~json
+{
+    "value": "Europe\/Berlin"
+}
+~~~
+
 ## Get a configuration setting
 
+### Parameters
+
+This endpoint has no parameters.
+
 ## List all configuration settings
+
+### Parameters
+
+This endpoint has no parameters.
 
 
 *[API]: Application Programming Interface

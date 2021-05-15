@@ -45,15 +45,39 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 ## Activate an app
 
+### Parameters
+
+This endpoint has no parameters.
+
 ## Deactivate an app
+
+### Parameters
+
+This endpoint has no parameters.
 
 ## Install an app
 
+### Parameters
+
+This endpoint has no parameters.
+
 ## List all apps
+
+### Parameters
+
+This endpoint has no parameters.
 
 ## Uninstall an app
 
+### Parameters
+
+This endpoint has no parameters.
+
 ## Update an app
+
+### Parameters
+
+This endpoint has no parameters.
 
 
 *[API]: Application Programming Interface

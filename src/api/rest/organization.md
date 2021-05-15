@@ -25,23 +25,69 @@ The name of the organization.
 
 ## Assign a user to an organization.
 
+### Parameters
+
+This endpoint has no parameters.
+
 ## Create a organization
 
+### Parameters
+
+**name** `string` optional
+The name of the organization.
+
+### Payload
+
+~~~json
+{
+    "name": "Stark Industries"
+}
+~~~
+
 ## Delete a organization
+
+### Parameters
+
+This endpoint has no parameters.
 
 ## Get a organization
 
 !!! info "Description"
-    You will get a active organizations.
+    Returns an object of the organization. If the organization is inactive an 404 Not Found error will be returned instead.
+
+### Parameters
+
+This endpoint has no parameters.
 
 ## List all organizations
 
 !!! info "Description"
-    You will get a collection of all active organizations.
+    Returns a object collection of all organizations. Inactive organizations are excluded.
+
+### Parameters
+
+This endpoint has no parameters.
 
 ## Remove a user from an organization.
 
+### Parameters
+
+This endpoint has no parameters.
+
 ## Rename a organization
+
+### Parameters
+
+**name** `string` optional
+The name of the organization.
+
+### Payload
+
+~~~json
+{
+    "name": "Stark Industries"
+}
+~~~
 
 
 *[API]: Application Programming Interface
