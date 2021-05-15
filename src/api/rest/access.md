@@ -4,43 +4,15 @@ This page provides a list of all access REST API endpoints within AppsDock OS.
 
 The guideline for the REST API can be found [here](../../../gettingstarted/guidelines/rest-api).
 
-## The policy resource
-
-### Attributes
-
-**id** `string`
-
-
-**actionId** `string`
-
-
-**roleId** `string`
-
-
-**resource** `string`
-
-
-**effect** `string`
-
-
-### Response
-
-~~~json
-{
-    "id": "680fe5ff-3b68-4d22-bb91-eb6a9712f78d",
-    "actionId": "680fe5ff-3b68-4d22-bb91-eb6a9712f78d",
-    "roleId": "680fe5ff-3b68-4d22-bb91-eb6a9712f78d",
-    "resource": "*",
-    "effect": "ALLOW"
-}
-~~~
-
 ## Change a policy
+
+`POST` **/v1/policies/{id}**
 
 ### Parameters
 
-**effect** `string` optional
-Effect of the policy.
+| Parameter | Type | Required | Description
+| --------- | :--: | :------: | -----------
+| **effect** | `string` | ❌ | Effect of the policy.
 
 ### Payload
 
@@ -52,16 +24,15 @@ Effect of the policy.
 
 ## Create a policy
 
+`POST` **/v1/policies**
+
 ### Parameters
 
-**roleId** `string` optional
-Role ID for the policy.
-
-**resource** `string` optional
-Resource of the policy.
-
-**effect** `string` optional
-Effect of the policy.
+| Parameter | Type | Required | Description
+| --------- | :--: | :------: | -----------
+| **roleId** | `string` | ❌ | Role ID for the policy.
+| **resource** | `string` | ❌ | Resource of the policy.
+| **effect** | `string` | ❌ | Effect of the policy.
 
 ### Payload
 
@@ -77,17 +48,25 @@ Effect of the policy.
 
 ## Delete a policy
 
+`DELETE` **/v1/policies/{id}**
+
 ### Parameters
 
-This endpoint has no parameters.
+!!! important "This endpoint has no parameters."
 
 ## List all policies
 
+`GET` **/v1/policies**
+
 ### Parameters
 
-This endpoint has no parameters.
+!!! important "This endpoint has no parameters."
 
 
 *[API]: Application Programming Interface
 *[OS]: Operating System
 *[REST]: Representational State Transfer
+*[UUID]: Universally Unique Identifier
+
+*[✓]: Yes
+*[❌]: No
