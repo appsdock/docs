@@ -27,7 +27,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 ### Response
 
 ~~~json
-{"id":"680fe5ff-3b68-4d22-bb91-eb6a9712f78d","username":"680fe5ff-3b68-4d22-bb91-eb6a9712f78d","email":"680fe5ff-3b68-4d22-bb91-eb6a9712f78d","name":"680fe5ff-3b68-4d22-bb91-eb6a9712f78d","status":"680fe5ff-3b68-4d22-bb91-eb6a9712f78d","verified":true,"penultimateLoginAt":1620979351,"createdAt":1620979351}
+{\n\t"id":"680fe5ff-3b68-4d22-bb91-eb6a9712f78d",\n\t"username":"680fe5ff-3b68-4d22-bb91-eb6a9712f78d",\n\t"email":"680fe5ff-3b68-4d22-bb91-eb6a9712f78d",\n\t"name":"680fe5ff-3b68-4d22-bb91-eb6a9712f78d",\n\t"status":"680fe5ff-3b68-4d22-bb91-eb6a9712f78d",\n\t"verified":true,\n\t"penultimateLoginAt":1620979351,\n\t"createdAt":1620979351\n}
 ~~~
 
 ## Create a user

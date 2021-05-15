@@ -15,7 +15,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 ### Response
 
 ~~~json
-{"id":"680fe5ff-3b68-4d22-bb91-eb6a9712f78d","name":"ACME organization"}
+{\n\t"id":"680fe5ff-3b68-4d22-bb91-eb6a9712f78d",\n\t"name":"ACME organization"\n}
 ~~~
 
 ## Assign a user to an organization.

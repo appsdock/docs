@@ -21,7 +21,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 ### Response
 
 ~~~json
-{"id":"680fe5ff-3b68-4d22-bb91-eb6a9712f78d","actionId":"680fe5ff-3b68-4d22-bb91-eb6a9712f78d","roleId":"680fe5ff-3b68-4d22-bb91-eb6a9712f78d","resource":"*","effect":"ALLOW"}
+{\n\t"id":"680fe5ff-3b68-4d22-bb91-eb6a9712f78d",\n\t"actionId":"680fe5ff-3b68-4d22-bb91-eb6a9712f78d",\n\t"roleId":"680fe5ff-3b68-4d22-bb91-eb6a9712f78d",\n\t"resource":"*",\n\t"effect":"ALLOW"\n}
 ~~~
 
 ## Change a policy

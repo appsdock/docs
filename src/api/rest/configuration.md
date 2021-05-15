@@ -21,7 +21,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 ### Response
 
 ~~~json
-{"id":"680fe5ff-3b68-4d22-bb91-eb6a9712f78d","type":"680fe5ff-3b68-4d22-bb91-eb6a9712f78d","value":"680fe5ff-3b68-4d22-bb91-eb6a9712f78d","default":"680fe5ff-3b68-4d22-bb91-eb6a9712f78d","options":"680fe5ff-3b68-4d22-bb91-eb6a9712f78d"}
+{\n\t"id":"680fe5ff-3b68-4d22-bb91-eb6a9712f78d",\n\t"type":"680fe5ff-3b68-4d22-bb91-eb6a9712f78d",\n\t"value":"680fe5ff-3b68-4d22-bb91-eb6a9712f78d",\n\t"default":"680fe5ff-3b68-4d22-bb91-eb6a9712f78d",\n\t"options":"680fe5ff-3b68-4d22-bb91-eb6a9712f78d"\n}
 ~~~
 
 ## Change a configuration setting

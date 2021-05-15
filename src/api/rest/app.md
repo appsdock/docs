@@ -25,7 +25,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 ### Response
 
 ~~~json
-{"id":"680fe5ff-3b68-4d22-bb91-eb6a9712f78d","name":"My app","active":true,"version":"1.0.0","build":"xy-123 (2000-01-01)","status":"READY","channel":"BETA"}
+{\n\t"id":"680fe5ff-3b68-4d22-bb91-eb6a9712f78d",\n\t"name":"My app",\n\t"active":true,\n\t"version":"1.0.0",\n\t"build":"xy-123 (2000-01-01)",\n\t"status":"READY",\n\t"channel":"BETA"\n}
 ~~~
 
 ## Activate an app
