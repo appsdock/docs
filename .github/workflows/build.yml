@@ -18,10 +18,9 @@ jobs:
       - name: Add custom domain
         run: echo "docs.appsdock.de" > ./docs/CNAME
 
+      # To prevent error code 1 if nothing to commit wrap git commands into an echo (simple solution)
       - name: Commit and push
         run: |
           git config --global user.name '${{ secrets.GIT_USER }}'
           git config --global user.email '${{ secrets.GIT_EMAIL }}'
-          git add *
-          git commit -am 'CHANGE #automated #documentation Documentation generated'
-          git push
+          echo `git add -A && git commit -am 'CHANGE #automated #documentation Documentation generated' && git push`
