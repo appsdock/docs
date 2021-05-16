@@ -11,5 +11,5 @@ PLACEHOLDER
 *[REST]: Representational State Transfer
 *[UUID]: Universally Unique Identifier
 
-*[✓]: Yes
-*[❌]: No
+[^1]: Yes
+[^2]: No
