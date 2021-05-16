@@ -8,20 +8,13 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 ### Attributes
 
-**id** `string`
-
-
-**type** `string`
-
-
-**value** `array|null`
-
-
-**default** `array|null`
-
-
-**options** `array|null`
-
+| Attribute | Type | Description
+| --------- | :--: | -----------
+| **id** | `string` | 
+| **type** | `string` | 
+| **value** | `array`\|`null` | 
+| **default** | `array`\|`null` | 
+| **options** | `array`\|`null` | 
 
 ### Response
 
@@ -37,10 +30,13 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 ## Change a configuration setting
 
+`POST` **/v1/settings/{id}**
+
 ### Parameters
 
-**value** `bool|int|string|array` optional
-Value of the configuration setting.
+| Parameter | Type | Required | Description
+| --------- | :--: | :------: | -----------
+| **value** | `bool`\|`int`\|`string`\|`array` | ❌ | Value of the configuration setting.
 
 ### Payload
 
@@ -52,17 +48,25 @@ Value of the configuration setting.
 
 ## Get a configuration setting
 
+`GET` **/v1/settings/{id}**
+
 ### Parameters
 
-This endpoint has no parameters.
+!!! important "This endpoint has no parameters."
 
 ## List all configuration settings
 
+`GET` **/v1/settings**
+
 ### Parameters
 
-This endpoint has no parameters.
+!!! important "This endpoint has no parameters."
 
 
 *[API]: Application Programming Interface
 *[OS]: Operating System
 *[REST]: Representational State Transfer
+*[UUID]: Universally Unique Identifier
+
+*[✓]: Yes
+*[❌]: No

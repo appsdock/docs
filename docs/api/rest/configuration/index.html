@@ -1075,11 +1075,42 @@
 <p>The guideline for the <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr> can be found <a href="../../../gettingstarted/guidelines/rest-api">here</a>.</p>
 <h2 id="the-setting-resource">The setting resource</h2>
 <h3 id="attributes">Attributes</h3>
-<p><strong>id</strong> <code>string</code></p>
-<p><strong>type</strong> <code>string</code></p>
-<p><strong>value</strong> <code>array|null</code></p>
-<p><strong>default</strong> <code>array|null</code></p>
-<p><strong>options</strong> <code>array|null</code></p>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th align="center">Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>id</strong></td>
+<td align="center"><code>string</code></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>type</strong></td>
+<td align="center"><code>string</code></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>value</strong></td>
+<td align="center"><code>array</code>|<code>null</code></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>default</strong></td>
+<td align="center"><code>array</code>|<code>null</code></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>options</strong></td>
+<td align="center"><code>array</code>|<code>null</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <h3 id="response">Response</h3>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
@@ -1097,9 +1128,26 @@
 </code></pre></div>
 </td></tr></table>
 <h2 id="change-a-configuration-setting">Change a configuration setting</h2>
+<p><code>POST</code> <strong>/v1/settings/{id}</strong></p>
 <h3 id="parameters">Parameters</h3>
-<p><strong>value</strong> <code>bool|int|string|array</code> optional
-Value of the configuration setting.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th align="center">Type</th>
+<th align="center">Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>value</strong></td>
+<td align="center"><code>bool</code>|<code>int</code>|<code>string</code>|<code>array</code></td>
+<td align="center">❌</td>
+<td>Value of the configuration setting.</td>
+</tr>
+</tbody>
+</table>
 <h3 id="payload">Payload</h3>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
@@ -1109,11 +1157,17 @@ Value of the configuration setting.</p>
 </code></pre></div>
 </td></tr></table>
 <h2 id="get-a-configuration-setting">Get a configuration setting</h2>
+<p><code>GET</code> <strong>/v1/settings/{id}</strong></p>
 <h3 id="parameters_1">Parameters</h3>
-<p>This endpoint has no parameters.</p>
+<div class="admonition important">
+<p class="admonition-title">This endpoint has no parameters.</p>
+</div>
 <h2 id="list-all-configuration-settings">List all configuration settings</h2>
+<p><code>GET</code> <strong>/v1/settings</strong></p>
 <h3 id="parameters_2">Parameters</h3>
-<p>This endpoint has no parameters.</p>
+<div class="admonition important">
+<p class="admonition-title">This endpoint has no parameters.</p>
+</div>
                 
               
               

@@ -8,11 +8,10 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 ### Attributes
 
-**id** `string`
-The identifier of the organization as UUID.
-
-**name** `string`
-The name of the organization.
+| Attribute | Type | Description
+| --------- | :--: | -----------
+| **id** | `string` | The identifier of the organization as UUID.
+| **name** | `string` | The name of the organization.
 
 ### Response
 
@@ -25,16 +24,21 @@ The name of the organization.
 
 ## Assign a user to an organization.
 
+`POST` **/v1/organizations/{organizationId}/users/{userId}**
+
 ### Parameters
 
-This endpoint has no parameters.
+!!! important "This endpoint has no parameters."
 
 ## Create a organization
 
+`POST` **/v1/organizations**
+
 ### Parameters
 
-**name** `string` optional
-The name of the organization.
+| Parameter | Type | Required | Description
+| --------- | :--: | :------: | -----------
+| **name** | `string` | ❌ | The name of the organization.
 
 ### Payload
 
@@ -46,40 +50,51 @@ The name of the organization.
 
 ## Delete a organization
 
+`DELETE` **/v1/organizations/{id}**
+
 ### Parameters
 
-This endpoint has no parameters.
+!!! important "This endpoint has no parameters."
 
 ## Get a organization
+
+`GET` **/v1/organizations/{id}**
 
 !!! info "Description"
     Returns an object of the organization. If the organization is inactive an 404 Not Found error will be returned instead.
 
 ### Parameters
 
-This endpoint has no parameters.
+!!! important "This endpoint has no parameters."
 
 ## List all organizations
+
+`GET` **/v1/organizations**
 
 !!! info "Description"
     Returns a object collection of all organizations. Inactive organizations are excluded.
 
 ### Parameters
 
-This endpoint has no parameters.
+!!! important "This endpoint has no parameters."
 
 ## Remove a user from an organization.
 
+`DELETE` **/v1/organizations/{organizationId}/users/{userId}**
+
 ### Parameters
 
-This endpoint has no parameters.
+!!! important "This endpoint has no parameters."
 
 ## Rename a organization
 
+`POST` **/v1/organizations/{id}**
+
 ### Parameters
 
-**name** `string` optional
-The name of the organization.
+| Parameter | Type | Required | Description
+| --------- | :--: | :------: | -----------
+| **name** | `string` | ❌ | The name of the organization.
 
 ### Payload
 
@@ -93,3 +108,7 @@ The name of the organization.
 *[API]: Application Programming Interface
 *[OS]: Operating System
 *[REST]: Representational State Transfer
+*[UUID]: Universally Unique Identifier
+
+*[✓]: Yes
+*[❌]: No

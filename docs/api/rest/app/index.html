@@ -1181,13 +1181,52 @@
 <p>The guideline for the <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr> can be found <a href="../../../gettingstarted/guidelines/rest-api">here</a>.</p>
 <h2 id="the-app-resource">The app resource</h2>
 <h3 id="attributes">Attributes</h3>
-<p><strong>id</strong> <code>string</code></p>
-<p><strong>name</strong> <code>string</code></p>
-<p><strong>active</strong> <code>bool</code></p>
-<p><strong>version</strong> <code>string</code></p>
-<p><strong>build</strong> <code>string</code></p>
-<p><strong>status</strong> <code>string</code></p>
-<p><strong>channel</strong> <code>string</code></p>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th align="center">Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>id</strong></td>
+<td align="center"><code>string</code></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>name</strong></td>
+<td align="center"><code>string</code></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>active</strong></td>
+<td align="center"><code>bool</code></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>version</strong></td>
+<td align="center"><code>string</code></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>build</strong></td>
+<td align="center"><code>string</code></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>status</strong></td>
+<td align="center"><code>string</code></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>channel</strong></td>
+<td align="center"><code>string</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <h3 id="response">Response</h3>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
@@ -1209,23 +1248,41 @@
 </code></pre></div>
 </td></tr></table>
 <h2 id="activate-an-app">Activate an app</h2>
+<p><code>POST</code> <strong>/v1/apps:activate/{id}</strong></p>
 <h3 id="parameters">Parameters</h3>
-<p>This endpoint has no parameters.</p>
+<div class="admonition important">
+<p class="admonition-title">This endpoint has no parameters.</p>
+</div>
 <h2 id="deactivate-an-app">Deactivate an app</h2>
+<p><code>POST</code> <strong>/v1/apps:deactivate/{id}</strong></p>
 <h3 id="parameters_1">Parameters</h3>
-<p>This endpoint has no parameters.</p>
+<div class="admonition important">
+<p class="admonition-title">This endpoint has no parameters.</p>
+</div>
 <h2 id="install-an-app">Install an app</h2>
+<p><code>POST</code> <strong>/v1/apps:install/{id}</strong></p>
 <h3 id="parameters_2">Parameters</h3>
-<p>This endpoint has no parameters.</p>
+<div class="admonition important">
+<p class="admonition-title">This endpoint has no parameters.</p>
+</div>
 <h2 id="list-all-apps">List all apps</h2>
+<p><code>GET</code> <strong>/v1/apps</strong></p>
 <h3 id="parameters_3">Parameters</h3>
-<p>This endpoint has no parameters.</p>
+<div class="admonition important">
+<p class="admonition-title">This endpoint has no parameters.</p>
+</div>
 <h2 id="uninstall-an-app">Uninstall an app</h2>
+<p><code>POST</code> <strong>/v1/apps:uninstall/{id}</strong></p>
 <h3 id="parameters_4">Parameters</h3>
-<p>This endpoint has no parameters.</p>
+<div class="admonition important">
+<p class="admonition-title">This endpoint has no parameters.</p>
+</div>
 <h2 id="update-an-app">Update an app</h2>
+<p><code>POST</code> <strong>/v1/apps:update/{id}</strong></p>
 <h3 id="parameters_5">Parameters</h3>
-<p>This endpoint has no parameters.</p>
+<div class="admonition important">
+<p class="admonition-title">This endpoint has no parameters.</p>
+</div>
                 
               
               
