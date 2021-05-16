@@ -4,18 +4,20 @@ This page provides a list of all identity REST API endpoints within AppsDock OS.
 
 The guideline for the REST API can be found [here](../../../gettingstarted/guidelines/rest-api).
 
-## The group resource
+## Group
 
-### Attributes
+### Resource
+
+#### Attributes
 
 | Attribute | Type | Description
-| --------- | :--: | -----------
+| --------- | ---- | -----------
 | **id** | `string` | The identifier of the group as UUID.
 | **name** | `array` | Name of the group in one or more languages.
 | **createdBy** | `string` | 
 | **createdAt** | `int` | 
 
-### Response
+#### Response
 
 ~~~json
 {
@@ -30,25 +32,27 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 }
 ~~~
 
-## Assign a user to a group.
+### Requests
+
+### Assign a user to a group.
 
 `POST` **/v1/groups/{groupId}/users/{userId}**
 
-### Parameters
+#### Parameters
 
 !!! important "This endpoint has no parameters."
 
-## Create a group
+### Create a group
 
 `POST` **/v1/groups**
 
-### Parameters
+#### Parameters
 
 | Parameter | Type | Required | Description
-| --------- | :--: | :------: | -----------
-| **name** | `array` | ❌ | Name of the group in one or more languages.
+| --------- | ---- | :------: | -----------
+| **name** | `array` | ✓[^1] | Name of the group in one or more languages.
 
-### Payload
+#### Payload
 
 ~~~json
 {
@@ -60,49 +64,49 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 }
 ~~~
 
-## Delete a group
+### Delete a group
 
 `DELETE` **/v1/groups/{id}**
 
-### Parameters
+#### Parameters
 
 !!! important "This endpoint has no parameters."
 
-## Get a group
+### Get a group
 
 `GET` **/v1/groups/{id}**
 
-### Parameters
+#### Parameters
 
 !!! important "This endpoint has no parameters."
 
-## List all groups
+### List all groups
 
 `GET` **/v1/groups**
 
-### Parameters
+#### Parameters
 
 !!! important "This endpoint has no parameters."
 
-## Remove a user from a group.
+### Remove a user from a group.
 
 `DELETE` **/v1/groups/{groupId}/users/{userId}**
 
-### Parameters
+#### Parameters
 
 !!! important "This endpoint has no parameters."
 
-## Rename a group
+### Rename a group
 
 `PATCH` **/v1/groups/{id}**
 
-### Parameters
+#### Parameters
 
 | Parameter | Type | Required | Description
-| --------- | :--: | :------: | -----------
-| **name** | `array` | ❌ | Name of the group in one or more languages.
+| --------- | ---- | :------: | -----------
+| **name** | `array` | ✓[^1] | Name of the group in one or more languages.
 
-### Payload
+#### Payload
 
 ~~~json
 {
@@ -113,18 +117,20 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
     }
 }
 ~~~
-## The role resource
+## Role
 
-### Attributes
+### Resource
+
+#### Attributes
 
 | Attribute | Type | Description
-| --------- | :--: | -----------
+| --------- | ---- | -----------
 | **id** | `string` | The identifier of the role as UUID.
 | **name** | `array` | Name of the role in one or more languages.
 | **type** | `string` | 
 | **isPredefined** | `bool` | 
 
-### Response
+#### Response
 
 ~~~json
 {
@@ -139,34 +145,36 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 }
 ~~~
 
-## Assign a role to a group
+### Requests
+
+### Assign a role to a group
 
 `POST` **/v1/roles/{roleId}/groups/{groupId}**
 
-### Parameters
+#### Parameters
 
 !!! important "This endpoint has no parameters."
 
-## Assign a role to a user
+### Assign a role to a user
 
 `POST` **/v1/roles/{roleId}/users/{userId}**
 
-### Parameters
+#### Parameters
 
 !!! important "This endpoint has no parameters."
 
-## Create a role
+### Create a role
 
 `POST` **/v1/roles**
 
-### Parameters
+#### Parameters
 
 | Parameter | Type | Required | Description
-| --------- | :--: | :------: | -----------
-| **name** | `array` | ❌ | Name of the role in one or more languages.
-| **type** | `string` | ❌ | Type of the role.
+| --------- | ---- | :------: | -----------
+| **name** | `array` | ✓[^1] | Name of the role in one or more languages.
+| **type** | `string` | ✓[^1] | Type of the role.
 
-### Payload
+#### Payload
 
 ~~~json
 {
@@ -179,57 +187,57 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 }
 ~~~
 
-## Delete a role
+### Delete a role
 
 `DELETE` **/v1/roles/{id}**
 
-### Parameters
+#### Parameters
 
 !!! important "This endpoint has no parameters."
 
-## Get a role
+### Get a role
 
 `GET` **/v1/roles/{id}**
 
-### Parameters
+#### Parameters
 
 !!! important "This endpoint has no parameters."
 
-## List all roles
+### List all roles
 
 `GET` **/v1/roles**
 
-### Parameters
+#### Parameters
 
 !!! important "This endpoint has no parameters."
 
-## Remove a role from a group
+### Remove a role from a group
 
 `DELETE` **/v1/roles/{roleId}/groups/{groupId}**
 
-### Parameters
+#### Parameters
 
 !!! important "This endpoint has no parameters."
 
-## Remove a role from a user
+### Remove a role from a user
 
 `DELETE` **/v1/roles/{roleId}/users/{userId}**
 
-### Parameters
+#### Parameters
 
 !!! important "This endpoint has no parameters."
 
-## Rename a role
+### Rename a role
 
 `PATCH` **/v1/roles/{id}**
 
-### Parameters
+#### Parameters
 
 | Parameter | Type | Required | Description
-| --------- | :--: | :------: | -----------
-| **name** | `array` | ❌ | Name of the role in one or more languages.
+| --------- | ---- | :------: | -----------
+| **name** | `array` | ✓[^1] | Name of the role in one or more languages.
 
-### Payload
+#### Payload
 
 ~~~json
 {
@@ -240,12 +248,14 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
     }
 }
 ~~~
-## The user resource
+## User
 
-### Attributes
+### Resource
+
+#### Attributes
 
 | Attribute | Type | Description
-| --------- | :--: | -----------
+| --------- | ---- | -----------
 | **id** | `string` | The identifier of the user as UUID.
 | **username** | `string` | The username of the user.
 | **email** | `string` | The email address of the user.
@@ -255,7 +265,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 | **penultimateLoginAt** | `int` | 
 | **createdAt** | `int` | Timestamp of the record creation.
 
-### Response
+#### Response
 
 ~~~json
 {
@@ -270,22 +280,24 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 }
 ~~~
 
-## Create a user
+### Requests
+
+### Create a user
 
 `POST` **/v1/users**
 
-### Parameters
+#### Parameters
 
 | Parameter | Type | Required | Description
-| --------- | :--: | :------: | -----------
-| **organizationId** | `string` | ❌ | The identifier of the user as UUID.
-| **username** | `string` | ❌ | The username of the user.
-| **password** | `string` | ❌ | The password of the user.
-| **email** | `string` | ❌ | The email address of the user.
-| **name** | `string` | ❌ | The name of the user.
-| **roles** | `array` | ❌ | The roles which should be assigned to the user as UUID.
+| --------- | ---- | :------: | -----------
+| **organizationId** | `string` | ❌[^2] | The identifier of the user as UUID.
+| **username** | `string` | ✓[^1] | The username of the user.
+| **password** | `string` | ✓[^1] | The password of the user.
+| **email** | `string` | ✓[^1] | The email address of the user.
+| **name** | `string` | ✓[^1] | The name of the user.
+| **roles** | `array` | ❌[^2] | The roles which should be assigned to the user as UUID.
 
-### Payload
+#### Payload
 
 ~~~json
 {
@@ -301,74 +313,74 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 }
 ~~~
 
-## Delete a preference for a user.
+### Delete a preference for a user.
 
 `DELETE` **/v1/users/me/preferences/{settingId}**
 
-### Parameters
+#### Parameters
 
 !!! important "This endpoint has no parameters."
 
-## Get a user
+### Get a user
 
 `GET` **/v1/users/{id}**
 
-### Parameters
+#### Parameters
 
 !!! important "This endpoint has no parameters."
 
-## Get a user identity
+### Get a user identity
 
 `GET` **/v1/users/{id}/identity/{securityToken}**
 
-### Parameters
+#### Parameters
 
 !!! important "This endpoint has no parameters."
 
-## List all users
+### List all users
 
 `GET` **/v1/users**
 
-### Parameters
+#### Parameters
 
 !!! important "This endpoint has no parameters."
 
-## Get the current user
+### Get the current user
 
 `GET` **/v1/users/me**
 
-### Parameters
+#### Parameters
 
 !!! important "This endpoint has no parameters."
 
-## Get the current user policies
+### Get the current user policies
 
 `GET` **/v1/users/me/policies**
 
-### Parameters
+#### Parameters
 
 !!! important "This endpoint has no parameters."
 
-## Get the current user preferences
+### Get the current user preferences
 
 `GET` **/v1/users/me/preferences**
 
-### Parameters
+#### Parameters
 
 !!! important "This endpoint has no parameters."
 
-## Set the password for a user
+### Set the password for a user
 
 `PATCH` **/v1/users/{id}/password**
 
-### Parameters
+#### Parameters
 
 | Parameter | Type | Required | Description
-| --------- | :--: | :------: | -----------
-| **password** | `string` | ❌ | The password of the user.
-| **securityToken** | `string` | ❌ | The security token to authenticate.
+| --------- | ---- | :------: | -----------
+| **password** | `string` | ✓[^1] | The password of the user.
+| **securityToken** | `string` | ✓[^1] | The security token to authenticate.
 
-### Payload
+#### Payload
 
 ~~~json
 {
@@ -377,18 +389,18 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 }
 ~~~
 
-## Set a preference for a user
+### Set a preference for a user
 
 `PUT` **/v1/users/me/preferences**
 
-### Parameters
+#### Parameters
 
 | Parameter | Type | Required | Description
-| --------- | :--: | :------: | -----------
-| **settingId** | `string` | ❌ | The ID of the configuration setting.
-| **value** | `bool`\|`int`\|`string`\|`array` | ❌ | The value to set the configuration setting set to.
+| --------- | ---- | :------: | -----------
+| **settingId** | `string` | ✓[^1] | The ID of the configuration setting.
+| **value** | `bool` \| `int` \| `string` \| `array` | ✓[^1] | The value to set the configuration setting set to.
 
-### Payload
+#### Payload
 
 ~~~json
 {
@@ -407,5 +419,5 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 *[REST]: Representational State Transfer
 *[UUID]: Universally Unique Identifier
 
-*[✓]: Yes
-*[❌]: No
+[^1]: Yes
+[^2]: No

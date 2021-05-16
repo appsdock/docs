@@ -4,19 +4,21 @@ This page provides a list of all configuration REST API endpoints within AppsDoc
 
 The guideline for the REST API can be found [here](../../../gettingstarted/guidelines/rest-api).
 
-## The setting resource
+## Setting
 
-### Attributes
+### Resource
+
+#### Attributes
 
 | Attribute | Type | Description
-| --------- | :--: | -----------
-| **id** | `string` | 
-| **type** | `string` | 
-| **value** | `array`\|`null` | 
-| **default** | `array`\|`null` | 
-| **options** | `array`\|`null` | 
+| --------- | ---- | -----------
+| **id** | `string` | The setting ID in UUID format.
+| **type** | `string` | The type of the setting.
+| **value** | `array` \| `null` | The value of the setting.
+| **default** | `array` \| `null` | The default value of the setting.
+| **options** | `array` \| `null` | The options of the setting.
 
-### Response
+#### Response
 
 ~~~json
 {
@@ -28,17 +30,19 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 }
 ~~~
 
-## Change a configuration setting
+### Requests
+
+### Change a configuration setting
 
 `POST` **/v1/settings/{id}**
 
-### Parameters
+#### Parameters
 
 | Parameter | Type | Required | Description
-| --------- | :--: | :------: | -----------
-| **value** | `bool`\|`int`\|`string`\|`array` | ❌ | Value of the configuration setting.
+| --------- | ---- | :------: | -----------
+| **value** | `bool` \| `int` \| `string` \| `array` | ✓[^1] | The value of the setting.
 
-### Payload
+#### Payload
 
 ~~~json
 {
@@ -46,19 +50,19 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 }
 ~~~
 
-## Get a configuration setting
+### Get a configuration setting
 
 `GET` **/v1/settings/{id}**
 
-### Parameters
+#### Parameters
 
 !!! important "This endpoint has no parameters."
 
-## List all configuration settings
+### List all configuration settings
 
 `GET` **/v1/settings**
 
-### Parameters
+#### Parameters
 
 !!! important "This endpoint has no parameters."
 
@@ -68,5 +72,5 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 *[REST]: Representational State Transfer
 *[UUID]: Universally Unique Identifier
 
-*[✓]: Yes
-*[❌]: No
+[^1]: Yes
+[^2]: No

@@ -4,79 +4,83 @@ This page provides a list of all app REST API endpoints within AppsDock OS.
 
 The guideline for the REST API can be found [here](../../../gettingstarted/guidelines/rest-api).
 
-## The app resource
+## App
 
-### Attributes
+### Resource
+
+#### Attributes
 
 | Attribute | Type | Description
-| --------- | :--: | -----------
-| **id** | `string` | 
-| **name** | `string` | 
-| **active** | `bool` | 
-| **version** | `string` | 
-| **build** | `string` | 
-| **status** | `string` | 
-| **channel** | `string` | 
+| --------- | ---- | -----------
+| **id** | `string` | The app ID in UUID format.
+| **name** | `string` | The name of the application.
+| **active** | `bool` | The activity status of the application.
+| **version** | `string` | The version number of the application. The number is divided into major, minor and revision number, each separated by a dot.
+| **build** | `string` | The build number of the application. The number can be freely assigned.
+| **status** | `string` | The life status of the application.
+| **channel** | `string` | The development status of the application.
 
-### Response
+#### Response
 
 ~~~json
 {
     "id": "680fe5ff-3b68-4d22-bb91-eb6a9712f78d",
-    "name": "My app",
+    "name": "Jarvis",
     "active": true,
     "version": "1.0.0",
-    "build": "xy-123 (2000-01-01)",
+    "build": "#59-1964",
     "status": "READY",
     "channel": "BETA"
 }
 ~~~
 
-## Activate an app
+### Requests
+
+### Activate an app
 
 `POST` **/v1/apps:activate/{id}**
 
-### Parameters
+#### Parameters
 
 !!! important "This endpoint has no parameters."
 
-## Deactivate an app
+### Deactivate an app
 
 `POST` **/v1/apps:deactivate/{id}**
 
-### Parameters
+#### Parameters
 
 !!! important "This endpoint has no parameters."
 
-## Install an app
+### Install an app
 
 `POST` **/v1/apps:install/{id}**
 
-### Parameters
+#### Parameters
 
 !!! important "This endpoint has no parameters."
 
-## List all apps
+### List all apps
 
 `GET` **/v1/apps**
 
-### Parameters
+#### Parameters
 
 !!! important "This endpoint has no parameters."
 
-## Uninstall an app
+### Uninstall an app
 
 `POST` **/v1/apps:uninstall/{id}**
 
-### Parameters
+#### Parameters
 
 !!! important "This endpoint has no parameters."
 
-## Update an app
+### Update an app
 
 `POST` **/v1/apps:update/{id}**
 
-### Parameters
+#### Parameters
 
 !!! important "This endpoint has no parameters."
 
@@ -86,5 +90,5 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 *[REST]: Representational State Transfer
 *[UUID]: Universally Unique Identifier
 
-*[✓]: Yes
-*[❌]: No
+[^1]: Yes
+[^2]: No

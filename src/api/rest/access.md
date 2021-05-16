@@ -4,19 +4,21 @@ This page provides a list of all access REST API endpoints within AppsDock OS.
 
 The guideline for the REST API can be found [here](../../../gettingstarted/guidelines/rest-api).
 
-## The policy resource
+## Policy
 
-### Attributes
+### Resource
+
+#### Attributes
 
 | Attribute | Type | Description
-| --------- | :--: | -----------
-| **id** | `string` | Policy identifier as UUID.
-| **actionId** | `string` | Action identifier as UUID.
-| **roleId** | `string` | Role identifier as UUID.
-| **resource** | `string` | Resource of the policy.
-| **effect** | `string` | Effect of the policy.
+| --------- | ---- | -----------
+| **id** | `string` | The policy ID in UUID format.
+| **actionId** | `string` | The action ID in UUID format.
+| **roleId** | `string` | The role ID in UUID format.
+| **resource** | `string` | The resource affected by the policy.
+| **effect** | `string` | The effect of the policy. The effect can be to either allow or prohibit access.
 
-### Response
+#### Response
 
 ~~~json
 {
@@ -28,17 +30,19 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 }
 ~~~
 
-## Change a policy
+### Requests
+
+### Change a policy
 
 `POST` **/v1/policies/{id}**
 
-### Parameters
+#### Parameters
 
 | Parameter | Type | Required | Description
-| --------- | :--: | :------: | -----------
-| **effect** | `string` | ❌ | Effect of the policy.
+| --------- | ---- | :------: | -----------
+| **effect** | `string` | ✓[^1] | The effect of the policy. The effect can be to either allow or prohibit access.
 
-### Payload
+#### Payload
 
 ~~~json
 {
@@ -46,19 +50,19 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 }
 ~~~
 
-## Create a policy
+### Create a policy
 
 `POST` **/v1/policies**
 
-### Parameters
+#### Parameters
 
 | Parameter | Type | Required | Description
-| --------- | :--: | :------: | -----------
-| **roleId** | `string` | ❌ | Role identifier for the policy as UUID.
-| **resource** | `string` | ❌ | Resource of the policy.
-| **effect** | `string` | ❌ | Effect of the policy.
+| --------- | ---- | :------: | -----------
+| **roleId** | `string` | ✓[^1] | The role ID in UUID format.
+| **resource** | `string` | ✓[^1] | The resource affected by the policy.
+| **effect** | `string` | ✓[^1] | The effect of the policy. The effect can be to either allow or prohibit access.
 
-### Payload
+#### Payload
 
 ~~~json
 {
@@ -68,19 +72,19 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 }
 ~~~
 
-## Delete a policy
+### Delete a policy
 
 `DELETE` **/v1/policies/{id}**
 
-### Parameters
+#### Parameters
 
 !!! important "This endpoint has no parameters."
 
-## List all policies
+### List all policies
 
 `GET` **/v1/policies**
 
-### Parameters
+#### Parameters
 
 !!! important "This endpoint has no parameters."
 
@@ -90,5 +94,5 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 *[REST]: Representational State Transfer
 *[UUID]: Universally Unique Identifier
 
-*[✓]: Yes
-*[❌]: No
+[^1]: Yes
+[^2]: No
