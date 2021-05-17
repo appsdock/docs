@@ -710,15 +710,15 @@
     Requests
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="Requests">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#change-a-policy" class="md-nav__link">
     Change a policy
   </a>
   
-    <nav class="md-nav" aria-label="Change a policy">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#parameters" class="md-nav__link">
@@ -734,18 +734,12 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#create-a-policy" class="md-nav__link">
     Create a policy
   </a>
   
-    <nav class="md-nav" aria-label="Create a policy">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#parameters_1" class="md-nav__link">
@@ -761,18 +755,12 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#delete-a-policy" class="md-nav__link">
     Delete a policy
   </a>
   
-    <nav class="md-nav" aria-label="Delete a policy">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#parameters_2" class="md-nav__link">
@@ -781,18 +769,12 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#list-all-policies" class="md-nav__link">
     List all policies
   </a>
   
-    <nav class="md-nav" aria-label="List all policies">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#parameters_3" class="md-nav__link">
@@ -1046,15 +1028,15 @@
     Requests
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="Requests">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#change-a-policy" class="md-nav__link">
     Change a policy
   </a>
   
-    <nav class="md-nav" aria-label="Change a policy">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#parameters" class="md-nav__link">
@@ -1070,18 +1052,12 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#create-a-policy" class="md-nav__link">
     Create a policy
   </a>
   
-    <nav class="md-nav" aria-label="Create a policy">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#parameters_1" class="md-nav__link">
@@ -1097,18 +1073,12 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#delete-a-policy" class="md-nav__link">
     Delete a policy
   </a>
   
-    <nav class="md-nav" aria-label="Delete a policy">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#parameters_2" class="md-nav__link">
@@ -1117,18 +1087,12 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#list-all-policies" class="md-nav__link">
     List all policies
   </a>
   
-    <nav class="md-nav" aria-label="List all policies">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#parameters_3" class="md-nav__link">
@@ -1223,7 +1187,7 @@
 </code></pre></div>
 </td></tr></table>
 <h3 id="requests">Requests</h3>
-<h3 id="change-a-policy">Change a policy</h3>
+<h4 id="change-a-policy">Change a policy</h4>
 <p><code>POST</code> <strong>/v1/policies/{id}</strong></p>
 <h4 id="parameters">Parameters</h4>
 <table>
@@ -1239,7 +1203,7 @@
 <tr>
 <td><strong>effect</strong></td>
 <td><code>string</code></td>
-<td align="center">✓<sup id="fnref4:1"><a class="footnote-ref" href="#fn:1">1</a></sup></td>
+<td align="center">✔</td>
 <td>The effect of the policy. The effect can be to either allow or prohibit access.</td>
 </tr>
 </tbody>
@@ -1252,7 +1216,7 @@
 <span class="p">}</span>
 </code></pre></div>
 </td></tr></table>
-<h3 id="create-a-policy">Create a policy</h3>
+<h4 id="create-a-policy">Create a policy</h4>
 <p><code>POST</code> <strong>/v1/policies</strong></p>
 <h4 id="parameters_1">Parameters</h4>
 <table>
@@ -1268,19 +1232,19 @@
 <tr>
 <td><strong>roleId</strong></td>
 <td><code>string</code></td>
-<td align="center">✓<sup id="fnref3:1"><a class="footnote-ref" href="#fn:1">1</a></sup></td>
+<td align="center">✔</td>
 <td>The role ID in <abbr title="Universally Unique Identifier">UUID</abbr> format.</td>
 </tr>
 <tr>
 <td><strong>resource</strong></td>
 <td><code>string</code></td>
-<td align="center">✓<sup id="fnref2:1"><a class="footnote-ref" href="#fn:1">1</a></sup></td>
+<td align="center">✔</td>
 <td>The resource affected by the policy.</td>
 </tr>
 <tr>
 <td><strong>effect</strong></td>
 <td><code>string</code></td>
-<td align="center">✓<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></td>
+<td align="center">✔</td>
 <td>The effect of the policy. The effect can be to either allow or prohibit access.</td>
 </tr>
 </tbody>
@@ -1297,28 +1261,17 @@
 <span class="p">}</span>
 </code></pre></div>
 </td></tr></table>
-<h3 id="delete-a-policy">Delete a policy</h3>
+<h4 id="delete-a-policy">Delete a policy</h4>
 <p><code>DELETE</code> <strong>/v1/policies/{id}</strong></p>
 <h4 id="parameters_2">Parameters</h4>
 <div class="admonition important">
 <p class="admonition-title">This endpoint has no parameters.</p>
 </div>
-<h3 id="list-all-policies">List all policies</h3>
+<h4 id="list-all-policies">List all policies</h4>
 <p><code>GET</code> <strong>/v1/policies</strong></p>
 <h4 id="parameters_3">Parameters</h4>
 <div class="admonition important">
 <p class="admonition-title">This endpoint has no parameters.</p>
-</div>
-<div class="footnote">
-<hr />
-<ol>
-<li id="fn:1">
-<p>Yes&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:1" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref4:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
-</li>
-<li id="fn:2">
-<p>No&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
-</li>
-</ol>
 </div>
                 
               
