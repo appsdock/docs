@@ -32,7 +32,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 ### Requests
 
-### Change a configuration setting
+#### Change a configuration setting
 
 `POST` **/v1/settings/{id}**
 
@@ -40,7 +40,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 | Parameter | Type | Required | Description
 | --------- | ---- | :------: | -----------
-| **value** | `bool` \| `int` \| `string` \| `array` | ✓[^1] | The value of the setting.
+| **value** | `bool` \| `int` \| `string` \| `array` | ✔ | The value of the setting.
 
 #### Payload
 
@@ -50,7 +50,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 }
 ~~~
 
-### Get a configuration setting
+#### Get a configuration setting
 
 `GET` **/v1/settings/{id}**
 
@@ -58,7 +58,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 !!! important "This endpoint has no parameters."
 
-### List all configuration settings
+#### List all configuration settings
 
 `GET` **/v1/settings**
 
@@ -71,6 +71,3 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 *[OS]: Operating System
 *[REST]: Representational State Transfer
 *[UUID]: Universally Unique Identifier
-
-[^1]: Yes
-[^2]: No

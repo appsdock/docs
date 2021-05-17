@@ -36,7 +36,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 ### Requests
 
-### Activate an app
+#### Activate an app
 
 `POST` **/v1/apps:activate/{id}**
 
@@ -44,7 +44,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 !!! important "This endpoint has no parameters."
 
-### Deactivate an app
+#### Deactivate an app
 
 `POST` **/v1/apps:deactivate/{id}**
 
@@ -52,7 +52,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 !!! important "This endpoint has no parameters."
 
-### Install an app
+#### Install an app
 
 `POST` **/v1/apps:install/{id}**
 
@@ -60,7 +60,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 !!! important "This endpoint has no parameters."
 
-### List all apps
+#### List all apps
 
 `GET` **/v1/apps**
 
@@ -68,7 +68,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 !!! important "This endpoint has no parameters."
 
-### Uninstall an app
+#### Uninstall an app
 
 `POST` **/v1/apps:uninstall/{id}**
 
@@ -76,7 +76,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 !!! important "This endpoint has no parameters."
 
-### Update an app
+#### Update an app
 
 `POST` **/v1/apps:update/{id}**
 
@@ -89,6 +89,3 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 *[OS]: Operating System
 *[REST]: Representational State Transfer
 *[UUID]: Universally Unique Identifier
-
-[^1]: Yes
-[^2]: No

@@ -26,7 +26,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 ### Requests
 
-### Assign a user to an organization.
+#### Assign a user to an organization
 
 `POST` **/v1/organizations/{organizationId}/users/{userId}**
 
@@ -34,7 +34,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 !!! important "This endpoint has no parameters."
 
-### Create a organization
+#### Create a organization
 
 `POST` **/v1/organizations**
 
@@ -42,7 +42,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 | Parameter | Type | Required | Description
 | --------- | ---- | :------: | -----------
-| **name** | `string` | ✓[^1] | The name of the organization.
+| **name** | `string` | ✔ | The name of the organization.
 
 #### Payload
 
@@ -52,7 +52,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 }
 ~~~
 
-### Delete a organization
+#### Delete a organization
 
 `DELETE` **/v1/organizations/{id}**
 
@@ -60,7 +60,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 !!! important "This endpoint has no parameters."
 
-### Get a organization
+#### Get a organization
 
 `GET` **/v1/organizations/{id}**
 
@@ -71,7 +71,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 !!! important "This endpoint has no parameters."
 
-### List all organizations
+#### List all organizations
 
 `GET` **/v1/organizations**
 
@@ -82,7 +82,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 !!! important "This endpoint has no parameters."
 
-### Remove a user from an organization.
+#### Remove a user from an organization
 
 `DELETE` **/v1/organizations/{organizationId}/users/{userId}**
 
@@ -90,7 +90,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 !!! important "This endpoint has no parameters."
 
-### Rename a organization
+#### Rename a organization
 
 `POST` **/v1/organizations/{id}**
 
@@ -98,7 +98,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 | Parameter | Type | Required | Description
 | --------- | ---- | :------: | -----------
-| **name** | `string` | ✓[^1] | The name of the organization.
+| **name** | `string` | ✔ | The name of the organization.
 
 #### Payload
 
@@ -113,6 +113,3 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 *[OS]: Operating System
 *[REST]: Representational State Transfer
 *[UUID]: Universally Unique Identifier
-
-[^1]: Yes
-[^2]: No

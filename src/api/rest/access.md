@@ -32,7 +32,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 ### Requests
 
-### Change a policy
+#### Change a policy
 
 `POST` **/v1/policies/{id}**
 
@@ -40,7 +40,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 | Parameter | Type | Required | Description
 | --------- | ---- | :------: | -----------
-| **effect** | `string` | ✓[^1] | The effect of the policy. The effect can be to either allow or prohibit access.
+| **effect** | `string` | ✔ | The effect of the policy. The effect can be to either allow or prohibit access.
 
 #### Payload
 
@@ -50,7 +50,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 }
 ~~~
 
-### Create a policy
+#### Create a policy
 
 `POST` **/v1/policies**
 
@@ -58,9 +58,9 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 | Parameter | Type | Required | Description
 | --------- | ---- | :------: | -----------
-| **roleId** | `string` | ✓[^1] | The role ID in UUID format.
-| **resource** | `string` | ✓[^1] | The resource affected by the policy.
-| **effect** | `string` | ✓[^1] | The effect of the policy. The effect can be to either allow or prohibit access.
+| **roleId** | `string` | ✔ | The role ID in UUID format.
+| **resource** | `string` | ✔ | The resource affected by the policy.
+| **effect** | `string` | ✔ | The effect of the policy. The effect can be to either allow or prohibit access.
 
 #### Payload
 
@@ -72,7 +72,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 }
 ~~~
 
-### Delete a policy
+#### Delete a policy
 
 `DELETE` **/v1/policies/{id}**
 
@@ -80,7 +80,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 !!! important "This endpoint has no parameters."
 
-### List all policies
+#### List all policies
 
 `GET` **/v1/policies**
 
@@ -93,6 +93,3 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 *[OS]: Operating System
 *[REST]: Representational State Transfer
 *[UUID]: Universally Unique Identifier
-
-[^1]: Yes
-[^2]: No
