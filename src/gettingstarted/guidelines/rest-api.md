@@ -8,10 +8,10 @@ To create your own REST API endpoints for an app, create a class that inherits f
 
 | Parameter | Data type | Default value | Required | Description
 | --------: | --------- | :-----------: | :------: | ----------- 
-| 1 | `STRING`<br>`STRING[]` | - | &#10004;[^1] | Possible values are `DELETE`, `GET`, `HEAD`, `PATCH`, `POST` and `PUT`.
-| 2 | `STRING` | - | &#10004;[^1] | A valid URI.
-| 3 | `STRING` | - | &#10004;[^1] | A unique name in domain notation.
-| 4 | `INTEGER` | 1 | &#10006;[^2] | The API version.
+| 1 | `STRING`<br>`STRING[]` | - | &#10004; | Possible values are `DELETE`, `GET`, `HEAD`, `PATCH`, `POST` and `PUT`.
+| 2 | `STRING` | - | &#10004; | A valid URI.
+| 3 | `STRING` | - | &#10004; | A unique name in domain notation.
+| 4 | `INTEGER` | 1 | &#10006; | The API version.
 <div class="text-align-right">Legend: &#10004; Yes &#10008; No</div>
 
 ~~~php
@@ -88,6 +88,5 @@ $this->createDataResponse(
 *[API]: Application Programming Interface
 *[REST]: Representational State Transfer
 *[URI]: Uniform Resource Identifier
-
-[^1]: Yes
-[^2]: No
+*[&#10004;]: Yes
+*[&#10006;]: No
