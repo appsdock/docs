@@ -225,18 +225,11 @@
   
   
   
-    
-
-  
-  
-  
     <li class="md-tabs__item">
-      <a href="../../../api/rest/access/" class="md-tabs__link">
+      <a href="../../../api/" class="md-tabs__link">
         API
       </a>
     </li>
-  
-
   
 
       
@@ -559,16 +552,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#endpoints" class="md-nav__link">
-    Endpoints
+  <a href="#create-an-endpoint" class="md-nav__link">
+    Create an endpoint
   </a>
   
-    <nav class="md-nav" aria-label="Endpoints">
+    <nav class="md-nav" aria-label="Create an endpoint">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#methods" class="md-nav__link">
-    Methods
+  <a href="#method-attributes" class="md-nav__link">
+    Method attributes
   </a>
   
 </li>
@@ -577,6 +570,33 @@
   <a href="#return-value" class="md-nav__link">
     Return value
   </a>
+  
+    <nav class="md-nav" aria-label="Return value">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#general" class="md-nav__link">
+    General
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#http-status" class="md-nav__link">
+    HTTP status
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data" class="md-nav__link">
+    Data
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -674,24 +694,48 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../../../api/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
     
       
     
     <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_1" type="checkbox" id="__nav_4_1" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2" type="checkbox" id="__nav_4_2" >
       
-      <label class="md-nav__link" for="__nav_4_1">
+      <label class="md-nav__link" for="__nav_4_2">
         REST
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="REST" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_1">
+        <label class="md-nav__title" for="__nav_4_2">
           <span class="md-nav__icon md-icon"></span>
           REST
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../api/rest/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
           
             
   
@@ -893,16 +937,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#endpoints" class="md-nav__link">
-    Endpoints
+  <a href="#create-an-endpoint" class="md-nav__link">
+    Create an endpoint
   </a>
   
-    <nav class="md-nav" aria-label="Endpoints">
+    <nav class="md-nav" aria-label="Create an endpoint">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#methods" class="md-nav__link">
-    Methods
+  <a href="#method-attributes" class="md-nav__link">
+    Method attributes
   </a>
   
 </li>
@@ -911,6 +955,33 @@
   <a href="#return-value" class="md-nav__link">
     Return value
   </a>
+  
+    <nav class="md-nav" aria-label="Return value">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#general" class="md-nav__link">
+    General
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#http-status" class="md-nav__link">
+    HTTP status
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data" class="md-nav__link">
+    Data
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -937,52 +1008,12 @@
                 
                 
                 <h1 id="rest-api"><abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr></h1>
-<h2 id="endpoints">Endpoints</h2>
-<p>To create your own <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr> endpoints for an app, create a class that inherits from the <strong>AppsDock &#10095; Core &#10095; Contracts &#10095; App &#10095; Application &#10095; RestAPIController</strong>. In this class, the individual endpoints are defined via annotation attributes. Access to endpoints can be secured by means of policies.</p>
-<h3 id="methods">Methods</h3>
-<table>
-<thead>
-<tr>
-<th align="right">Parameter</th>
-<th>Data type</th>
-<th align="center">Default value</th>
-<th align="center">Required</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="right">1</td>
-<td><code>STRING</code><br><code>STRING[]</code></td>
-<td align="center">-</td>
-<td align="center">&#10004;</td>
-<td>Possible values are <code>DELETE</code>, <code>GET</code>, <code>HEAD</code>, <code>PATCH</code>, <code>POST</code> and <code>PUT</code>.</td>
-</tr>
-<tr>
-<td align="right">2</td>
-<td><code>STRING</code></td>
-<td align="center">-</td>
-<td align="center">&#10004;</td>
-<td>A valid <abbr title="Uniform Resource Identifier">URI</abbr>.</td>
-</tr>
-<tr>
-<td align="right">3</td>
-<td><code>STRING</code></td>
-<td align="center">-</td>
-<td align="center">&#10004;</td>
-<td>A unique name in domain notation.</td>
-</tr>
-<tr>
-<td align="right">4</td>
-<td><code>INTEGER</code></td>
-<td align="center">1</td>
-<td align="center">&#10006;</td>
-<td>The <abbr title="Application Programming Interface">API</abbr> version.</td>
-</tr>
-</tbody>
-</table>
-<div class="text-align-right">Legend: &#10004; Yes &#10008; No</div>
-
+<p>AppsDock <abbr title="Operating System">OS</abbr> provides a <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr> service for external communication.
+The service can be used to query as well as manipulate the state of resources.</p>
+<p>An overview of all available <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr> endpoints can be found <a href="../../../api/rest">here</a>.</p>
+<h2 id="create-an-endpoint">Create an endpoint</h2>
+<p>The endpoints are defined via annotation attributes, and the access can be secured by policies.</p>
+<p>Create a class that inherits from the <strong>AppsDock &#10095; Core &#10095; Contracts &#10095; App &#10095; Application &#10095; RestAPIController</strong>.</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -1010,29 +1041,43 @@
 <span class="normal">25</span>
 <span class="normal">26</span>
 <span class="normal">27</span>
-<span class="normal">28</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="cp">&lt;?php</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="cp">&lt;?php</span>
+
+<span class="k">use</span> <span class="nx">AppsDock\Core\Contracts\App\Application\RestAPIController</span><span class="p">;</span>
+<span class="k">use</span> <span class="nx">AppsDock\Core\Http\JsonResponse</span><span class="p">;</span>
+<span class="k">use</span> <span class="k">const</span> <span class="no">AppsDock\API\REST\Book\BOOK_CREATE</span><span class="p">;</span>
+<span class="k">use</span> <span class="k">const</span> <span class="no">AppsDock\API\REST\Book\BOOK_DELETE</span><span class="p">;</span>
+<span class="k">use</span> <span class="k">const</span> <span class="no">AppsDock\API\REST\Book\BOOK_GET</span><span class="p">;</span>
+<span class="k">use</span> <span class="k">const</span> <span class="no">AppsDock\API\REST\Book\BOOK_LIST</span><span class="p">;</span>
 
 <span class="k">class</span> <span class="nc">BookRestAPI</span> <span class="k">extends</span> <span class="nx">RestAPIController</span>
 <span class="p">{</span>
-    <span class="c1">#[API(&#39;GET&#39;, &#39;/books&#39;, &#39;book.list&#39;)]</span>
+    <span class="c1">#[API(&#39;GET&#39;, &#39;/books&#39;, BOOK_LIST)]</span>
     <span class="k">public</span> <span class="k">function</span> <span class="nf">listBooks</span><span class="p">()</span><span class="o">:</span> <span class="nx">JsonResponse</span>
     <span class="p">{</span>
         <span class="o">...</span>
     <span class="p">}</span>
 
-    <span class="c1">#[API(&#39;GET&#39;, &#39;/books/{id}&#39;, &#39;book.get&#39;)]</span>
+    <span class="c1">#[API(&#39;GET&#39;, &#39;/books/{id}&#39;, BOOK_GET)]</span>
     <span class="k">public</span> <span class="k">function</span> <span class="nf">getBook</span><span class="p">(</span><span class="nx">string</span> <span class="nv">$bookId</span><span class="p">)</span><span class="o">:</span> <span class="nx">JsonResponse</span>
     <span class="p">{</span>
         <span class="o">...</span>
     <span class="p">}</span>
 
-    <span class="c1">#[API(&#39;POST&#39;, &#39;/books&#39;, &#39;book.create&#39;)]</span>
+    <span class="c1">#[API(&#39;POST&#39;, &#39;/books&#39;, BOOK_CREATE)]</span>
     <span class="k">public</span> <span class="k">function</span> <span class="nf">createBook</span><span class="p">()</span><span class="o">:</span> <span class="nx">JsonResponse</span>
     <span class="p">{</span>
         <span class="o">...</span>
     <span class="p">}</span>
 
-    <span class="c1">#[API(&#39;DELETE&#39;, &#39;/books/{id}&#39;, &#39;book.delete&#39;)]</span>
+    <span class="c1">#[API(&#39;DELETE&#39;, &#39;/books/{id}&#39;, BOOK_DELETE)]</span>
     <span class="k">public</span> <span class="k">function</span> <span class="nf">deleteBook</span><span class="p">(</span><span class="nx">string</span> <span class="nv">$bookId</span><span class="p">)</span><span class="o">:</span> <span class="nx">JsonResponse</span>
     <span class="p">{</span>
         <span class="o">...</span>
@@ -1040,9 +1085,52 @@
 <span class="p">}</span>
 </code></pre></div>
 </td></tr></table>
+<h3 id="method-attributes">Method attributes</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th align="center">Default</th>
+<th align="center">Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Method</td>
+<td><code>string</code> | <code>string[]</code></td>
+<td align="center"></td>
+<td align="center">&#10004;</td>
+<td>Possible values are <code>DELETE</code>, <code>GET</code>, <code>HEAD</code>, <code>PATCH</code>, <code>POST</code> and <code>PUT</code>.</td>
+</tr>
+<tr>
+<td>Route</td>
+<td><code>string</code></td>
+<td align="center"></td>
+<td align="center">&#10004;</td>
+<td>An endpoint route.</td>
+</tr>
+<tr>
+<td>Context</td>
+<td><code>array</code></td>
+<td align="center"></td>
+<td align="center">&#10004;</td>
+<td>An Array constant with more information about this endpoint.</td>
+</tr>
+<tr>
+<td>Version</td>
+<td><code>int</code></td>
+<td align="center">1</td>
+<td align="center">&#10006;</td>
+<td>The <abbr title="Application Programming Interface">API</abbr> version.</td>
+</tr>
+</tbody>
+</table>
 <h3 id="return-value">Return value</h3>
-<p>The return value of an endpoint must always be of the data type <strong>AppsDock &#10095; Core &#10095; Http &#10095; JsonResponse</strong>.</p>
-<p>To create a general response, the method <strong>createResponse</strong> can be used.</p>
+<p>The return type of any endpoint must be always an instance of <strong>AppsDock &#10095; Core &#10095; Http &#10095; JsonResponse</strong>.
+The following methods are provided by AppsDock <abbr title="Operating System">OS</abbr> and should be used to return a valid type.</p>
+<h4 id="general">General</h4>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
@@ -1058,7 +1146,7 @@
 <span class="p">);</span>
 </code></pre></div>
 </td></tr></table>
-<p>If an HTTP status code is to be returned, the method <strong>createStatusResponse</strong> can be used.</p>
+<h4 id="http-status">HTTP status</h4>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
@@ -1074,7 +1162,7 @@
 <span class="p">);</span>
 </code></pre></div>
 </td></tr></table>
-<p>If data is to be returned, the method <strong>createDataResponse</strong> can be used.</p>
+<h4 id="data">Data</h4>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>

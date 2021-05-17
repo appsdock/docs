@@ -9,21 +9,21 @@
       
       
       
-        <link rel="canonical" href="https://appsdock.github.io/docs/concepts/amqp/">
+        <link rel="canonical" href="https://appsdock.github.io/docs/api/">
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.4">
     
     
       
-        <title>Message Queue (AMQP) - AppsDock OS Documentation</title>
+        <title>Overview - AppsDock OS Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.bde7dde4.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.bde7dde4.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ef6f36e2.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ef6f36e2.min.css">
         
           
           
@@ -41,10 +41,10 @@
       
     
     
-      <link rel="manifest" href="../../manifest.webmanifest" crossorigin="use-credentials">
+      <link rel="manifest" href="../manifest.webmanifest" crossorigin="use-credentials">
     
     
-      <link rel="stylesheet" href="../../assets/css/appsdock.css">
+      <link rel="stylesheet" href="../assets/css/appsdock.css">
     
     
       
@@ -61,7 +61,7 @@
     <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="light-green">
   
     
-    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#message-queue-amqp" class="md-skip">
+        <a href="#api" class="md-skip">
           Skip to content
         </a>
       
@@ -80,7 +80,7 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="AppsDock OS Documentation" class="md-header__button md-logo" aria-label="AppsDock OS Documentation" data-md-component="logo">
+    <a href=".." title="AppsDock OS Documentation" class="md-header__button md-logo" aria-label="AppsDock OS Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Message Queue (AMQP)
+              Overview
             
           </span>
         </div>
@@ -170,7 +170,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="../.." class="md-tabs__link">
+    <a href=".." class="md-tabs__link">
       Home
     </a>
   </li>
@@ -179,15 +179,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="./" class="md-tabs__link md-tabs__link--active">
+      <a href="../concepts/amqp/" class="md-tabs__link">
         Concepts
       </a>
     </li>
@@ -208,7 +206,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../gettingstarted/guidelines/commit-messages/" class="md-tabs__link">
+      <a href="../gettingstarted/guidelines/commit-messages/" class="md-tabs__link">
         Getting Started
       </a>
     </li>
@@ -220,13 +218,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../api/" class="md-tabs__link">
+      <a href="./" class="md-tabs__link md-tabs__link--active">
         API
       </a>
     </li>
@@ -242,7 +242,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../exception-errors/core/" class="md-tabs__link">
+      <a href="../exception-errors/core/" class="md-tabs__link">
         Exception errors
       </a>
     </li>
@@ -269,7 +269,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="AppsDock OS Documentation" class="md-nav__button md-logo" aria-label="AppsDock OS Documentation" data-md-component="logo">
+    <a href=".." title="AppsDock OS Documentation" class="md-nav__button md-logo" aria-label="AppsDock OS Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -301,7 +301,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         Home
       </a>
     </li>
@@ -314,14 +314,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
       
       <label class="md-nav__link" for="__nav_2">
         Concepts
@@ -337,105 +335,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Message Queue (AMQP)
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../concepts/amqp/" class="md-nav__link">
         Message Queue (AMQP)
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#composition" class="md-nav__link">
-    Composition
-  </a>
-  
-    <nav class="md-nav" aria-label="Composition">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#publisher-appsdock-os" class="md-nav__link">
-    Publisher (AppsDock OS)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#consumer-appsdock-amqp-agent" class="md-nav__link">
-    Consumer (AppsDock AMQP-Agent)
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#message-types-subjects" class="md-nav__link">
-    Message Types (Subjects)
-  </a>
-  
-    <nav class="md-nav" aria-label="Message Types (Subjects)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#event-message" class="md-nav__link">
-    Event Message
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#command-message" class="md-nav__link">
-    Command Message
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#approach-in-case-of-error" class="md-nav__link">
-    Approach in case of error
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -468,7 +372,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../identity-access/authentication/" class="md-nav__link">
+      <a href="../concepts/identity-access/authentication/" class="md-nav__link">
         Authentication
       </a>
     </li>
@@ -480,7 +384,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../identity-access/identity/" class="md-nav__link">
+      <a href="../concepts/identity-access/identity/" class="md-nav__link">
         Identity
       </a>
     </li>
@@ -492,7 +396,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../identity-access/policies-and-permissions/" class="md-nav__link">
+      <a href="../concepts/identity-access/policies-and-permissions/" class="md-nav__link">
         Policies and permissions
       </a>
     </li>
@@ -563,7 +467,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../gettingstarted/guidelines/commit-messages/" class="md-nav__link">
+      <a href="../gettingstarted/guidelines/commit-messages/" class="md-nav__link">
         Commit messages
       </a>
     </li>
@@ -575,7 +479,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../gettingstarted/guidelines/configuration/" class="md-nav__link">
+      <a href="../gettingstarted/guidelines/configuration/" class="md-nav__link">
         Configuration
       </a>
     </li>
@@ -587,7 +491,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../gettingstarted/guidelines/exception-errors/" class="md-nav__link">
+      <a href="../gettingstarted/guidelines/exception-errors/" class="md-nav__link">
         Exception errors
       </a>
     </li>
@@ -599,7 +503,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../gettingstarted/guidelines/naming-convention/" class="md-nav__link">
+      <a href="../gettingstarted/guidelines/naming-convention/" class="md-nav__link">
         Naming convention
       </a>
     </li>
@@ -611,7 +515,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../gettingstarted/guidelines/rest-api/" class="md-nav__link">
+      <a href="../gettingstarted/guidelines/rest-api/" class="md-nav__link">
         REST API
       </a>
     </li>
@@ -652,7 +556,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../gettingstarted/phpstorm/xdebug/" class="md-nav__link">
+      <a href="../gettingstarted/phpstorm/xdebug/" class="md-nav__link">
         Xdebug
       </a>
     </li>
@@ -677,12 +581,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
       
       <label class="md-nav__link" for="__nav_4">
         API
@@ -698,11 +604,21 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../api/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Overview
       </a>
+      
     </li>
   
 
@@ -735,7 +651,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../api/rest/" class="md-nav__link">
+      <a href="rest/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -747,7 +663,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../api/rest/access/" class="md-nav__link">
+      <a href="rest/access/" class="md-nav__link">
         Access
       </a>
     </li>
@@ -759,7 +675,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../api/rest/app/" class="md-nav__link">
+      <a href="rest/app/" class="md-nav__link">
         App
       </a>
     </li>
@@ -771,7 +687,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../api/rest/configuration/" class="md-nav__link">
+      <a href="rest/configuration/" class="md-nav__link">
         Configuration
       </a>
     </li>
@@ -783,7 +699,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../api/rest/identity/" class="md-nav__link">
+      <a href="rest/identity/" class="md-nav__link">
         Identity
       </a>
     </li>
@@ -795,7 +711,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../api/rest/mail/" class="md-nav__link">
+      <a href="rest/mail/" class="md-nav__link">
         Mail
       </a>
     </li>
@@ -807,7 +723,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../api/rest/organization/" class="md-nav__link">
+      <a href="rest/organization/" class="md-nav__link">
         Organization
       </a>
     </li>
@@ -855,7 +771,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../exception-errors/core/" class="md-nav__link">
+      <a href="../exception-errors/core/" class="md-nav__link">
         Core
       </a>
     </li>
@@ -867,7 +783,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../exception-errors/system/" class="md-nav__link">
+      <a href="../exception-errors/system/" class="md-nav__link">
         System
       </a>
     </li>
@@ -879,7 +795,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../exception-errors/integration/" class="md-nav__link">
+      <a href="../exception-errors/integration/" class="md-nav__link">
         Integration
       </a>
     </li>
@@ -891,7 +807,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../exception-errors/plugin/" class="md-nav__link">
+      <a href="../exception-errors/plugin/" class="md-nav__link">
         Plugin
       </a>
     </li>
@@ -903,7 +819,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../exception-errors/app/" class="md-nav__link">
+      <a href="../exception-errors/app/" class="md-nav__link">
         App
       </a>
     </li>
@@ -935,75 +851,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#composition" class="md-nav__link">
-    Composition
-  </a>
-  
-    <nav class="md-nav" aria-label="Composition">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#publisher-appsdock-os" class="md-nav__link">
-    Publisher (AppsDock OS)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#consumer-appsdock-amqp-agent" class="md-nav__link">
-    Consumer (AppsDock AMQP-Agent)
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#message-types-subjects" class="md-nav__link">
-    Message Types (Subjects)
-  </a>
-  
-    <nav class="md-nav" aria-label="Message Types (Subjects)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#event-message" class="md-nav__link">
-    Event Message
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#command-message" class="md-nav__link">
-    Command Message
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#approach-in-case-of-error" class="md-nav__link">
-    Approach in case of error
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1014,35 +861,15 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/appsdock/docs/edit/master/docs/concepts/amqp.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/appsdock/docs/edit/master/docs/api/index.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="message-queue-amqp">Message Queue (<abbr title="Advanced Message Queuing Protocol">AMQP</abbr>)</h1>
-<p>AppsDock <abbr title="Operating System">OS</abbr> uses an <abbr title="Advanced Message Queuing Protocol">AMQP</abbr> based infrastructure to handle asynchronous messages, which allows executing long-running processes in the background by implementing async event handlers or async command executions via Message Bus within AppsDock <abbr title="Operating System">OS</abbr>.</p>
-<h2 id="composition">Composition</h2>
-<p>AppsDock <abbr title="Operating System">OS</abbr> provides a dedicated <abbr title="Advanced Message Queuing Protocol">AMQP</abbr>-Agent that acts as a consumer and mediator of messages. AppsDock <abbr title="Operating System">OS</abbr> avoids processing messages via <abbr title="Command Line Interface">CLI</abbr> in consumer mode directly due to potential environment inequality between <abbr title="Command Line Interface">CLI</abbr> and <abbr title="Hypertext Preprocessor">PHP</abbr>-<abbr title="FastCGI Process Manager">FPM</abbr> and disregard of <abbr title="Hypertext Preprocessor">PHP</abbr>-<abbr title="FastCGI Process Manager">FPM</abbr> process worker benefits. Instead, the dedicated <abbr title="Advanced Message Queuing Protocol">AMQP</abbr>-Agent consumes the messages from <abbr title="Advanced Message Queuing Protocol">AMQP</abbr> server and executes, controls and monitors asynchronous <abbr title="Hypertext Preprocessor">PHP</abbr>-<abbr title="FastCGI Process Manager">FPM</abbr> process workers, which process the messages.  </p>
-<p><img alt="Service Structure" src="../../assets/images/amqp/service-structure.svg" /></p>
-<h3 id="publisher-appsdock-os">Publisher (AppsDock <abbr title="Operating System">OS</abbr>)</h3>
-<p>AppsDock <abbr title="Operating System">OS</abbr> uses the MessageBus component to publish messages to the <abbr title="Advanced Message Queuing Protocol">AMQP</abbr> server directly.  It does not provide any kind of consuming the published messages via <abbr title="Advanced Message Queuing Protocol">AMQP</abbr> server due to this responsibility is adopted by the AppsDock <abbr title="Advanced Message Queuing Protocol">AMQP</abbr>-Agent. Instead, AppsDock <abbr title="Operating System">OS</abbr> provides an internal and secured API endpoint to handle published messages which are provided by the <abbr title="Advanced Message Queuing Protocol">AMQP</abbr>-Agent. The handling of these messages over API uses also the MessageBus component.</p>
-<h3 id="consumer-appsdock-amqp-agent">Consumer (AppsDock <abbr title="Advanced Message Queuing Protocol">AMQP</abbr>-Agent)</h3>
-<p>The dedicated <abbr title="Advanced Message Queuing Protocol">AMQP</abbr>-Agent, which is a part of the AppsDock Dedicated Services, is a scalable <abbr title="Advanced Message Queuing Protocol">AMQP</abbr> message consumer service. This service consumes the messages from the <abbr title="Advanced Message Queuing Protocol">AMQP</abbr> server directly and manage their processes and states in conjunction with <abbr title="Hypertext Preprocessor">PHP</abbr>-<abbr title="FastCGI Process Manager">FPM</abbr> workers.</p>
-<h2 id="message-types-subjects">Message Types (Subjects)</h2>
-<p>AppsDock <abbr title="Operating System">OS</abbr> uses different types of messages for different process purposes. Each type of message uses a specific php class as message body to represent the message content. AppsDock <abbr title="Operating System">OS</abbr> supports actually two kinds of message types: 
-- event
-- command.</p>
-<p>Each message type has several allocated message queues to handle different process results.
-- A main queue for delivery and processing
-- A retry queue for delayed redelivery on failures
-- A error queue for non-deliverable messages</p>
-<h3 id="event-message">Event Message</h3>
-<p>The <strong>event</strong> message type is used to handle asynchronous event handlers via MessageBus. This type uses <code>AppsDock\Core\Event\Integration\IntegrationEvent</code> as content class and is basically used to publish integration events. </p>
-<h3 id="command-message">Command Message</h3>
-<p>The <strong>command</strong> message type is used to execute asynchronous command handlers via MessageBus. This type uses any class which is a type of <code>AppsDock\Core\Contracts\App\Application\Command</code> as content class.</p>
-<h2 id="approach-in-case-of-error">Approach in case of error</h2>
-<p>As already described above (Message Types), the <abbr title="Advanced Message Queuing Protocol">AMQP</abbr>-Agent defines <strong>dedicated queues to handle failures</strong>. If the process worker failed (any case), the message will be <strong>rejected without a direct requeue</strong>. Instead, the message will be moved automatically into the <strong>retry queue</strong> which keep the failed message for a certain time. After this time, this message is published back into the <strong>main queue</strong> for a retry. If this procedure fails for a certain number of retries, this message will be <strong>dropped from main and retry</strong> queue and published into the <strong>error queue</strong> for further investigation. </p>
-<p><img alt="Error Handling" src="../../assets/images/amqp/amqp-error-handling.svg" /></p>
+                <h1 id="api">API</h1>
+<ul>
+<li><a href="rest">REST</a></li>
+</ul>
                 
               
               
@@ -1065,7 +892,7 @@
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../.." class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../gettingstarted/phpstorm/xdebug/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1074,19 +901,19 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Home
+              Xdebug
             </div>
           </div>
         </a>
       
       
-        <a href="../identity-access/authentication/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="rest/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Authentication
+              Overview
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -1119,10 +946,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.sections", "navigation.tabs", "navigation.top"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.4fa0e4ee.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.sections", "navigation.tabs", "navigation.top"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.4fa0e4ee.min.js", "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.1d3bfcf1.min.js"></script>
+      <script src="../assets/javascripts/bundle.1d3bfcf1.min.js"></script>
       
     
   </body>
