@@ -88,5 +88,3 @@ $this->createDataResponse(
 *[API]: Application Programming Interface
 *[REST]: Representational State Transfer
 *[URI]: Uniform Resource Identifier
-*[&#10004;]: Yes
-*[&#10006;]: No

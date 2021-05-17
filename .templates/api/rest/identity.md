@@ -10,6 +10,3 @@ PLACEHOLDER
 *[OS]: Operating System
 *[REST]: Representational State Transfer
 *[UUID]: Universally Unique Identifier
-
-[^1]: Yes
-[^2]: No
