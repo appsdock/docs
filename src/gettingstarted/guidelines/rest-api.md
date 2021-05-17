@@ -1,43 +1,47 @@
 # REST API
 
-## Endpoints
+AppsDock OS provides a REST API service for external communication.
+The service can be used to query as well as manipulate the state of resources.
 
-To create your own REST API endpoints for an app, create a class that inherits from the **AppsDock &#10095; Core &#10095; Contracts &#10095; App &#10095; Application &#10095; RestAPIController**. In this class, the individual endpoints are defined via annotation attributes. Access to endpoints can be secured by means of policies.
+An overview of all available REST API endpoints can be found [here](../../../api/rest).
 
-### Methods
+## Create an endpoint
 
-| Parameter | Data type | Default value | Required | Description
-| --------: | --------- | :-----------: | :------: | ----------- 
-| 1 | `STRING`<br>`STRING[]` | - | &#10004; | Possible values are `DELETE`, `GET`, `HEAD`, `PATCH`, `POST` and `PUT`.
-| 2 | `STRING` | - | &#10004; | A valid URI.
-| 3 | `STRING` | - | &#10004; | A unique name in domain notation.
-| 4 | `INTEGER` | 1 | &#10006; | The API version.
-<div class="text-align-right">Legend: &#10004; Yes &#10008; No</div>
+The endpoints are defined via annotation attributes, and the access can be secured by policies.
+
+Create a class that inherits from the **AppsDock &#10095; Core &#10095; Contracts &#10095; App &#10095; Application &#10095; RestAPIController**.
 
 ~~~php
 <?php
 
+use AppsDock\Core\Contracts\App\Application\RestAPIController;
+use AppsDock\Core\Http\JsonResponse;
+use const AppsDock\API\REST\Book\BOOK_CREATE;
+use const AppsDock\API\REST\Book\BOOK_DELETE;
+use const AppsDock\API\REST\Book\BOOK_GET;
+use const AppsDock\API\REST\Book\BOOK_LIST;
+
 class BookRestAPI extends RestAPIController
 {
-    #[API('GET', '/books', 'book.list')]
+    #[API('GET', '/books', BOOK_LIST)]
     public function listBooks(): JsonResponse
     {
         ...
     }
     
-    #[API('GET', '/books/{id}', 'book.get')]
+    #[API('GET', '/books/{id}', BOOK_GET)]
     public function getBook(string $bookId): JsonResponse
     {
         ...
     }
     
-    #[API('POST', '/books', 'book.create')]
+    #[API('POST', '/books', BOOK_CREATE)]
     public function createBook(): JsonResponse
     {
         ...
     }
     
-    #[API('DELETE', '/books/{id}', 'book.delete')]
+    #[API('DELETE', '/books/{id}', BOOK_DELETE)]
     public function deleteBook(string $bookId): JsonResponse
     {
         ...
@@ -45,11 +49,21 @@ class BookRestAPI extends RestAPIController
 }
 ~~~
 
+### Method attributes
+
+| Parameter | Type | Default | Required | Description
+| --------- | ---- | :-----: | :------: | ----------- 
+| Method | `string` \| `string[]` |  | &#10004; | Possible values are `DELETE`, `GET`, `HEAD`, `PATCH`, `POST` and `PUT`.
+| Route | `string` |  | &#10004; | An endpoint route.
+| Context | `array` |  | &#10004; | An Array constant with more information about this endpoint.
+| Version | `int` | 1 | &#10006; | The API version.
+
 ### Return value
 
-The return value of an endpoint must always be of the data type **AppsDock &#10095; Core &#10095; Http &#10095; JsonResponse**.
+The return type of any endpoint must be always an instance of **AppsDock &#10095; Core &#10095; Http &#10095; JsonResponse**.
+The following methods are provided by AppsDock OS and should be used to return a valid type.
 
-To create a general response, the method **createResponse** can be used.
+#### General
 
 ~~~php
 <?php
@@ -61,7 +75,7 @@ $this->createResponse(
 );
 ~~~
 
-If an HTTP status code is to be returned, the method **createStatusResponse** can be used.
+#### HTTP status
 
 ~~~php
 <?php
@@ -73,7 +87,7 @@ $this->createStatusResponse(
 );
 ~~~
 
-If data is to be returned, the method **createDataResponse** can be used.
+#### Data
 
 ~~~php
 <?php
@@ -86,5 +100,7 @@ $this->createDataResponse(
 ~~~
 
 *[API]: Application Programming Interface
+*[ID]: Identifier
+*[OS]: Operating System
 *[REST]: Representational State Transfer
 *[URI]: Uniform Resource Identifier

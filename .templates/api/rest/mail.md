@@ -7,6 +7,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 PLACEHOLDER
 
 *[API]: Application Programming Interface
+*[ID]: Identifier
 *[OS]: Operating System
 *[REST]: Representational State Transfer
 *[UUID]: Universally Unique Identifier

@@ -65,7 +65,9 @@ nav:
     - PhpStorm:
       - Xdebug: gettingstarted/phpstorm/xdebug.md
   - API:
+    - Overview: api/index.md
     - REST:
+      - Overview: api/rest/index.md
       - Access: api/rest/access.md
       - App: api/rest/app.md
       - Configuration: api/rest/configuration.md
