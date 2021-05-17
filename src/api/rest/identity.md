@@ -38,7 +38,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 `POST` **/v1/groups/{groupId}/users/{userId}**
 
-#### Parameters
+##### Parameters
 
 !!! important "This endpoint has no parameters."
 
@@ -46,13 +46,13 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 `POST` **/v1/groups**
 
-#### Parameters
+##### Parameters
 
 | Parameter | Type | Required | Description
 | --------- | ---- | :------: | -----------
 | **name** | `array` | ✔ | Name of the group in one or more languages.
 
-#### Payload
+##### Payload
 
 ~~~json
 {
@@ -68,7 +68,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 `DELETE` **/v1/groups/{id}**
 
-#### Parameters
+##### Parameters
 
 !!! important "This endpoint has no parameters."
 
@@ -76,7 +76,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 `GET` **/v1/groups/{id}**
 
-#### Parameters
+##### Parameters
 
 !!! important "This endpoint has no parameters."
 
@@ -84,7 +84,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 `GET` **/v1/groups**
 
-#### Parameters
+##### Parameters
 
 !!! important "This endpoint has no parameters."
 
@@ -92,7 +92,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 `DELETE` **/v1/groups/{groupId}/users/{userId}**
 
-#### Parameters
+##### Parameters
 
 !!! important "This endpoint has no parameters."
 
@@ -100,13 +100,13 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 `PATCH` **/v1/groups/{id}**
 
-#### Parameters
+##### Parameters
 
 | Parameter | Type | Required | Description
 | --------- | ---- | :------: | -----------
 | **name** | `array` | ✔ | Name of the group in one or more languages.
 
-#### Payload
+##### Payload
 
 ~~~json
 {
@@ -151,7 +151,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 `POST` **/v1/roles/{roleId}/groups/{groupId}**
 
-#### Parameters
+##### Parameters
 
 !!! important "This endpoint has no parameters."
 
@@ -159,7 +159,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 `POST` **/v1/roles/{roleId}/users/{userId}**
 
-#### Parameters
+##### Parameters
 
 !!! important "This endpoint has no parameters."
 
@@ -167,14 +167,14 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 `POST` **/v1/roles**
 
-#### Parameters
+##### Parameters
 
 | Parameter | Type | Required | Description
 | --------- | ---- | :------: | -----------
 | **name** | `array` | ✔ | Name of the role in one or more languages.
 | **type** | `string` | ✔ | Type of the role.
 
-#### Payload
+##### Payload
 
 ~~~json
 {
@@ -191,7 +191,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 `DELETE` **/v1/roles/{id}**
 
-#### Parameters
+##### Parameters
 
 !!! important "This endpoint has no parameters."
 
@@ -199,7 +199,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 `GET` **/v1/roles/{id}**
 
-#### Parameters
+##### Parameters
 
 !!! important "This endpoint has no parameters."
 
@@ -207,7 +207,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 `GET` **/v1/roles**
 
-#### Parameters
+##### Parameters
 
 !!! important "This endpoint has no parameters."
 
@@ -215,7 +215,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 `DELETE` **/v1/roles/{roleId}/groups/{groupId}**
 
-#### Parameters
+##### Parameters
 
 !!! important "This endpoint has no parameters."
 
@@ -223,7 +223,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 `DELETE` **/v1/roles/{roleId}/users/{userId}**
 
-#### Parameters
+##### Parameters
 
 !!! important "This endpoint has no parameters."
 
@@ -231,13 +231,13 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 `PATCH` **/v1/roles/{id}**
 
-#### Parameters
+##### Parameters
 
 | Parameter | Type | Required | Description
 | --------- | ---- | :------: | -----------
 | **name** | `array` | ✔ | Name of the role in one or more languages.
 
-#### Payload
+##### Payload
 
 ~~~json
 {
@@ -286,7 +286,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 `POST` **/v1/users**
 
-#### Parameters
+##### Parameters
 
 | Parameter | Type | Required | Description
 | --------- | ---- | :------: | -----------
@@ -297,7 +297,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 | **name** | `string` | ✔ | The name of the user.
 | **roles** | `array` | ✖ | The roles which should be assigned to the user as UUID.
 
-#### Payload
+##### Payload
 
 ~~~json
 {
@@ -317,7 +317,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 `DELETE` **/v1/users/me/preferences/{settingId}**
 
-#### Parameters
+##### Parameters
 
 !!! important "This endpoint has no parameters."
 
@@ -325,7 +325,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 `GET` **/v1/users/{id}**
 
-#### Parameters
+##### Parameters
 
 !!! important "This endpoint has no parameters."
 
@@ -333,7 +333,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 `GET` **/v1/users/{id}/identity/{securityToken}**
 
-#### Parameters
+##### Parameters
 
 !!! important "This endpoint has no parameters."
 
@@ -341,7 +341,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 `GET` **/v1/users**
 
-#### Parameters
+##### Parameters
 
 !!! important "This endpoint has no parameters."
 
@@ -349,7 +349,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 `GET` **/v1/users/me**
 
-#### Parameters
+##### Parameters
 
 !!! important "This endpoint has no parameters."
 
@@ -357,7 +357,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 `GET` **/v1/users/me/policies**
 
-#### Parameters
+##### Parameters
 
 !!! important "This endpoint has no parameters."
 
@@ -365,7 +365,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 `GET` **/v1/users/me/preferences**
 
-#### Parameters
+##### Parameters
 
 !!! important "This endpoint has no parameters."
 
@@ -373,14 +373,14 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 `PATCH` **/v1/users/{id}/password**
 
-#### Parameters
+##### Parameters
 
 | Parameter | Type | Required | Description
 | --------- | ---- | :------: | -----------
 | **password** | `string` | ✔ | The password of the user.
 | **securityToken** | `string` | ✔ | The security token to authenticate.
 
-#### Payload
+##### Payload
 
 ~~~json
 {
@@ -393,14 +393,14 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 `PUT` **/v1/users/me/preferences**
 
-#### Parameters
+##### Parameters
 
 | Parameter | Type | Required | Description
 | --------- | ---- | :------: | -----------
 | **settingId** | `string` | ✔ | The ID of the configuration setting.
 | **value** | `bool` \| `int` \| `string` \| `array` | ✔ | The value to set the configuration setting set to.
 
-#### Payload
+##### Payload
 
 ~~~json
 {
@@ -415,6 +415,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 
 *[API]: Application Programming Interface
+*[ID]: Identifier
 *[OS]: Operating System
 *[REST]: Representational State Transfer
 *[UUID]: Universally Unique Identifier

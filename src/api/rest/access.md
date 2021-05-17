@@ -36,13 +36,13 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 `POST` **/v1/policies/{id}**
 
-#### Parameters
+##### Parameters
 
 | Parameter | Type | Required | Description
 | --------- | ---- | :------: | -----------
 | **effect** | `string` | ✔ | The effect of the policy. The effect can be to either allow or prohibit access.
 
-#### Payload
+##### Payload
 
 ~~~json
 {
@@ -54,7 +54,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 `POST` **/v1/policies**
 
-#### Parameters
+##### Parameters
 
 | Parameter | Type | Required | Description
 | --------- | ---- | :------: | -----------
@@ -62,7 +62,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 | **resource** | `string` | ✔ | The resource affected by the policy.
 | **effect** | `string` | ✔ | The effect of the policy. The effect can be to either allow or prohibit access.
 
-#### Payload
+##### Payload
 
 ~~~json
 {
@@ -76,7 +76,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 `DELETE` **/v1/policies/{id}**
 
-#### Parameters
+##### Parameters
 
 !!! important "This endpoint has no parameters."
 
@@ -84,12 +84,13 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 `GET` **/v1/policies**
 
-#### Parameters
+##### Parameters
 
 !!! important "This endpoint has no parameters."
 
 
 *[API]: Application Programming Interface
+*[ID]: Identifier
 *[OS]: Operating System
 *[REST]: Representational State Transfer
 *[UUID]: Universally Unique Identifier

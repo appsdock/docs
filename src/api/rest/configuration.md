@@ -36,13 +36,13 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 `POST` **/v1/settings/{id}**
 
-#### Parameters
+##### Parameters
 
 | Parameter | Type | Required | Description
 | --------- | ---- | :------: | -----------
 | **value** | `bool` \| `int` \| `string` \| `array` | ✔ | The value of the setting.
 
-#### Payload
+##### Payload
 
 ~~~json
 {
@@ -54,7 +54,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 `GET` **/v1/settings/{id}**
 
-#### Parameters
+##### Parameters
 
 !!! important "This endpoint has no parameters."
 
@@ -62,12 +62,13 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 `GET` **/v1/settings**
 
-#### Parameters
+##### Parameters
 
 !!! important "This endpoint has no parameters."
 
 
 *[API]: Application Programming Interface
+*[ID]: Identifier
 *[OS]: Operating System
 *[REST]: Representational State Transfer
 *[UUID]: Universally Unique Identifier

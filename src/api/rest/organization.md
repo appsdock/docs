@@ -30,7 +30,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 `POST` **/v1/organizations/{organizationId}/users/{userId}**
 
-#### Parameters
+##### Parameters
 
 !!! important "This endpoint has no parameters."
 
@@ -38,13 +38,13 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 `POST` **/v1/organizations**
 
-#### Parameters
+##### Parameters
 
 | Parameter | Type | Required | Description
 | --------- | ---- | :------: | -----------
 | **name** | `string` | ✔ | The name of the organization.
 
-#### Payload
+##### Payload
 
 ~~~json
 {
@@ -56,7 +56,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 `DELETE` **/v1/organizations/{id}**
 
-#### Parameters
+##### Parameters
 
 !!! important "This endpoint has no parameters."
 
@@ -67,7 +67,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 !!! info "Description"
     Returns an object of the organization. If the organization is inactive an 404 Not Found error will be returned instead.
 
-#### Parameters
+##### Parameters
 
 !!! important "This endpoint has no parameters."
 
@@ -78,7 +78,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 !!! info "Description"
     Returns a object collection of all organizations. Inactive organizations are excluded.
 
-#### Parameters
+##### Parameters
 
 !!! important "This endpoint has no parameters."
 
@@ -86,7 +86,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 `DELETE` **/v1/organizations/{organizationId}/users/{userId}**
 
-#### Parameters
+##### Parameters
 
 !!! important "This endpoint has no parameters."
 
@@ -94,13 +94,13 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 `POST` **/v1/organizations/{id}**
 
-#### Parameters
+##### Parameters
 
 | Parameter | Type | Required | Description
 | --------- | ---- | :------: | -----------
 | **name** | `string` | ✔ | The name of the organization.
 
-#### Payload
+##### Payload
 
 ~~~json
 {
@@ -110,6 +110,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 
 *[API]: Application Programming Interface
+*[ID]: Identifier
 *[OS]: Operating System
 *[REST]: Representational State Transfer
 *[UUID]: Universally Unique Identifier

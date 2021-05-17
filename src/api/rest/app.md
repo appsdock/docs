@@ -40,7 +40,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 `POST` **/v1/apps:activate/{id}**
 
-#### Parameters
+##### Parameters
 
 !!! important "This endpoint has no parameters."
 
@@ -48,7 +48,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 `POST` **/v1/apps:deactivate/{id}**
 
-#### Parameters
+##### Parameters
 
 !!! important "This endpoint has no parameters."
 
@@ -56,7 +56,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 `POST` **/v1/apps:install/{id}**
 
-#### Parameters
+##### Parameters
 
 !!! important "This endpoint has no parameters."
 
@@ -64,7 +64,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 `GET` **/v1/apps**
 
-#### Parameters
+##### Parameters
 
 !!! important "This endpoint has no parameters."
 
@@ -72,7 +72,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 `POST` **/v1/apps:uninstall/{id}**
 
-#### Parameters
+##### Parameters
 
 !!! important "This endpoint has no parameters."
 
@@ -80,12 +80,13 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 `POST` **/v1/apps:update/{id}**
 
-#### Parameters
+##### Parameters
 
 !!! important "This endpoint has no parameters."
 
 
 *[API]: Application Programming Interface
+*[ID]: Identifier
 *[OS]: Operating System
 *[REST]: Representational State Transfer
 *[UUID]: Universally Unique Identifier
