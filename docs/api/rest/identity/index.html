@@ -992,8 +992,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#delete-a-preference-for-a-user" class="md-nav__link">
-    Delete a preference for a user
+  <a href="#delete-a-user-preference" class="md-nav__link">
+    Delete a user preference
   </a>
   
 </li>
@@ -1041,15 +1041,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#set-the-password-for-a-user" class="md-nav__link">
-    Set the password for a user
+  <a href="#set-a-user-password" class="md-nav__link">
+    Set a user password
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#set-a-preference-for-a-user" class="md-nav__link">
-    Set a preference for a user
+  <a href="#set-a-user-preference" class="md-nav__link">
+    Set a user preference
   </a>
   
 </li>
@@ -1492,8 +1492,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#delete-a-preference-for-a-user" class="md-nav__link">
-    Delete a preference for a user
+  <a href="#delete-a-user-preference" class="md-nav__link">
+    Delete a user preference
   </a>
   
 </li>
@@ -1541,15 +1541,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#set-the-password-for-a-user" class="md-nav__link">
-    Set the password for a user
+  <a href="#set-a-user-password" class="md-nav__link">
+    Set a user password
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#set-a-preference-for-a-user" class="md-nav__link">
-    Set a preference for a user
+  <a href="#set-a-user-preference" class="md-nav__link">
+    Set a user preference
   </a>
   
 </li>
@@ -1599,12 +1599,12 @@
 <tr>
 <td><strong>id</strong></td>
 <td><code>string</code></td>
-<td>The identifier of the group as <abbr title="Universally Unique Identifier">UUID</abbr>.</td>
+<td>The <abbr title="Identifier">ID</abbr> of the group as <abbr title="Universally Unique Identifier">UUID</abbr>.</td>
 </tr>
 <tr>
 <td><strong>name</strong></td>
 <td><code>array</code></td>
-<td>Name of the group in one or more languages.</td>
+<td>The name of the group per language.</td>
 </tr>
 <tr>
 <td><strong>createdBy</strong></td>
@@ -1664,7 +1664,7 @@
 <td><strong>name</strong></td>
 <td><code>array</code></td>
 <td align="center">✔</td>
-<td>Name of the group in one or more languages.</td>
+<td>The name of the group per language.</td>
 </tr>
 </tbody>
 </table>
@@ -1725,7 +1725,7 @@
 <td><strong>name</strong></td>
 <td><code>array</code></td>
 <td align="center">✔</td>
-<td>Name of the group in one or more languages.</td>
+<td>The name of the group per language.</td>
 </tr>
 </tbody>
 </table>
@@ -1760,12 +1760,12 @@
 <tr>
 <td><strong>id</strong></td>
 <td><code>string</code></td>
-<td>The identifier of the role as <abbr title="Universally Unique Identifier">UUID</abbr>.</td>
+<td>The <abbr title="Identifier">ID</abbr> of the role as <abbr title="Universally Unique Identifier">UUID</abbr></td>
 </tr>
 <tr>
 <td><strong>name</strong></td>
 <td><code>array</code></td>
-<td>Name of the role in one or more languages.</td>
+<td>The name of the role per language.</td>
 </tr>
 <tr>
 <td><strong>type</strong></td>
@@ -1831,7 +1831,7 @@
 <td><strong>name</strong></td>
 <td><code>array</code></td>
 <td align="center">✔</td>
-<td>Name of the role in one or more languages.</td>
+<td>The name of the role per language.</td>
 </tr>
 <tr>
 <td><strong>type</strong></td>
@@ -1906,7 +1906,7 @@
 <td><strong>name</strong></td>
 <td><code>array</code></td>
 <td align="center">✔</td>
-<td>Name of the role in one or more languages.</td>
+<td>The name of the role per language.</td>
 </tr>
 </tbody>
 </table>
@@ -1941,7 +1941,7 @@
 <tr>
 <td><strong>id</strong></td>
 <td><code>string</code></td>
-<td>The identifier of the user as <abbr title="Universally Unique Identifier">UUID</abbr>.</td>
+<td>The <abbr title="Identifier">ID</abbr> of the user as <abbr title="Universally Unique Identifier">UUID</abbr>.</td>
 </tr>
 <tr>
 <td><strong>username</strong></td>
@@ -1961,22 +1961,22 @@
 <tr>
 <td><strong>status</strong></td>
 <td><code>string</code></td>
-<td>The current status of the user.</td>
+<td>The life status of the user.</td>
 </tr>
 <tr>
 <td><strong>verified</strong></td>
 <td><code>bool</code></td>
-<td>Shows if the user is verified.</td>
+<td>The verification status of the user.</td>
 </tr>
 <tr>
 <td><strong>penultimateLoginAt</strong></td>
 <td><code>int</code></td>
-<td></td>
+<td>The penultimate login of the user as a timestamp.</td>
 </tr>
 <tr>
 <td><strong>createdAt</strong></td>
 <td><code>int</code></td>
-<td>Timestamp of the record creation.</td>
+<td>The time of creation ot the record as a timestamp.</td>
 </tr>
 </tbody>
 </table>
@@ -1998,7 +1998,7 @@
     <span class="nt">&quot;status&quot;</span><span class="p">:</span> <span class="s2">&quot;680fe5ff-3b68-4d22-bb91-eb6a9712f78d&quot;</span><span class="p">,</span>
     <span class="nt">&quot;verified&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
     <span class="nt">&quot;penultimateLoginAt&quot;</span><span class="p">:</span> <span class="mi">1620979351</span><span class="p">,</span>
-    <span class="nt">&quot;createdAt&quot;</span><span class="p">:</span> <span class="mi">1620979351</span>
+    <span class="nt">&quot;createdAt&quot;</span><span class="p">:</span> <span class="mi">1620972963</span>
 <span class="p">}</span>
 </code></pre></div>
 </td></tr></table>
@@ -2020,7 +2020,7 @@
 <td><strong>organizationId</strong></td>
 <td><code>string</code></td>
 <td align="center">✖</td>
-<td>The identifier of the user as <abbr title="Universally Unique Identifier">UUID</abbr>.</td>
+<td>The <abbr title="Identifier">ID</abbr> of the organization as <abbr title="Universally Unique Identifier">UUID</abbr>.</td>
 </tr>
 <tr>
 <td><strong>username</strong></td>
@@ -2050,7 +2050,7 @@
 <td><strong>roles</strong></td>
 <td><code>array</code></td>
 <td align="center">✖</td>
-<td>The roles which should be assigned to the user as <abbr title="Universally Unique Identifier">UUID</abbr>.</td>
+<td>The <abbr title="Identifier">ID</abbr> of the role as <abbr title="Universally Unique Identifier">UUID</abbr> which should be assigned to the user.</td>
 </tr>
 </tbody>
 </table>
@@ -2078,7 +2078,7 @@
 <span class="p">}</span>
 </code></pre></div>
 </td></tr></table>
-<h4 id="delete-a-preference-for-a-user">Delete a preference for a user</h4>
+<h4 id="delete-a-user-preference">Delete a user preference</h4>
 <p><code>DELETE</code> <strong>/v1/users/me/preferences/{settingId}</strong></p>
 <h5 id="parameters_17">Parameters</h5>
 <div class="admonition important">
@@ -2120,7 +2120,7 @@
 <div class="admonition important">
 <p class="admonition-title">This endpoint has no parameters.</p>
 </div>
-<h4 id="set-the-password-for-a-user">Set the password for a user</h4>
+<h4 id="set-a-user-password">Set a user password</h4>
 <p><code>PATCH</code> <strong>/v1/users/{id}/password</strong></p>
 <h5 id="parameters_24">Parameters</h5>
 <table>
@@ -2157,7 +2157,7 @@
 <span class="p">}</span>
 </code></pre></div>
 </td></tr></table>
-<h4 id="set-a-preference-for-a-user">Set a preference for a user</h4>
+<h4 id="set-a-user-preference">Set a user preference</h4>
 <p><code>PUT</code> <strong>/v1/users/me/preferences</strong></p>
 <h5 id="parameters_25">Parameters</h5>
 <table>

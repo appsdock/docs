@@ -1065,12 +1065,12 @@
 <tr>
 <td><strong>id</strong></td>
 <td><code>string</code></td>
-<td>The setting <abbr title="Identifier">ID</abbr> in <abbr title="Universally Unique Identifier">UUID</abbr> format.</td>
+<td>The setting <abbr title="Identifier">ID</abbr> as <abbr title="Universally Unique Identifier">UUID</abbr>.</td>
 </tr>
 <tr>
 <td><strong>type</strong></td>
 <td><code>string</code></td>
-<td>The type of the setting.</td>
+<td>The data type of the setting.</td>
 </tr>
 <tr>
 <td><strong>value</strong></td>
@@ -1108,6 +1108,10 @@
 <h3 id="requests">Requests</h3>
 <h4 id="change-a-configuration-setting">Change a configuration setting</h4>
 <p><code>POST</code> <strong>/v1/settings/{id}</strong></p>
+<div class="admonition info">
+<p class="admonition-title">Description</p>
+<p>Changes the value of the setting resource.</p>
+</div>
 <h5 id="parameters">Parameters</h5>
 <table>
 <thead>
@@ -1123,7 +1127,7 @@
 <td><strong>value</strong></td>
 <td><code>bool</code> | <code>int</code> | <code>string</code> | <code>array</code></td>
 <td align="center">✔</td>
-<td>The value of the setting.</td>
+<td>The value of the setting. The type of value depends on the specified data type.</td>
 </tr>
 </tbody>
 </table>
@@ -1137,6 +1141,10 @@
 </td></tr></table>
 <h4 id="get-a-configuration-setting">Get a configuration setting</h4>
 <p><code>GET</code> <strong>/v1/settings/{id}</strong></p>
+<div class="admonition info">
+<p class="admonition-title">Description</p>
+<p>Returns the setting resource.</p>
+</div>
 <h5 id="parameters_1">Parameters</h5>
 <div class="admonition important">
 <p class="admonition-title">This endpoint has no parameters.</p>

@@ -1121,7 +1121,7 @@
 <tr>
 <td><strong>id</strong></td>
 <td><code>string</code></td>
-<td>The identifier of the organization as <abbr title="Universally Unique Identifier">UUID</abbr>.</td>
+<td>The <abbr title="Identifier">ID</abbr> of the organization as <abbr title="Universally Unique Identifier">UUID</abbr>.</td>
 </tr>
 <tr>
 <td><strong>name</strong></td>
@@ -1149,6 +1149,10 @@
 </div>
 <h4 id="create-a-organization">Create a organization</h4>
 <p><code>POST</code> <strong>/v1/organizations</strong></p>
+<div class="admonition info">
+<p class="admonition-title">Description</p>
+<p>Creates a new organization resource.</p>
+</div>
 <h5 id="parameters_1">Parameters</h5>
 <table>
 <thead>
@@ -1178,6 +1182,10 @@
 </td></tr></table>
 <h4 id="delete-a-organization">Delete a organization</h4>
 <p><code>DELETE</code> <strong>/v1/organizations/{id}</strong></p>
+<div class="admonition info">
+<p class="admonition-title">Description</p>
+<p>Deletes an existing organization resource.</p>
+</div>
 <h5 id="parameters_2">Parameters</h5>
 <div class="admonition important">
 <p class="admonition-title">This endpoint has no parameters.</p>
@@ -1186,7 +1194,7 @@
 <p><code>GET</code> <strong>/v1/organizations/{id}</strong></p>
 <div class="admonition info">
 <p class="admonition-title">Description</p>
-<p>Returns an object of the organization. If the organization is inactive an 404 Not Found error will be returned instead.</p>
+<p>Returns the organization resource.</p>
 </div>
 <h5 id="parameters_3">Parameters</h5>
 <div class="admonition important">
@@ -1196,7 +1204,7 @@
 <p><code>GET</code> <strong>/v1/organizations</strong></p>
 <div class="admonition info">
 <p class="admonition-title">Description</p>
-<p>Returns a object collection of all organizations. Inactive organizations are excluded.</p>
+<p>Returns a collection of all organization resources.</p>
 </div>
 <h5 id="parameters_4">Parameters</h5>
 <div class="admonition important">
@@ -1210,6 +1218,10 @@
 </div>
 <h4 id="rename-a-organization">Rename a organization</h4>
 <p><code>POST</code> <strong>/v1/organizations/{id}</strong></p>
+<div class="admonition info">
+<p class="admonition-title">Description</p>
+<p>Renames an existing organization resource.</p>
+</div>
 <h5 id="parameters_6">Parameters</h5>
 <table>
 <thead>
