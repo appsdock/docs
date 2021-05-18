@@ -12,8 +12,8 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 | Attribute | Type | Description
 | --------- | ---- | -----------
-| **id** | `string` | The setting ID in UUID format.
-| **type** | `string` | The type of the setting.
+| **id** | `string` | The setting ID as UUID.
+| **type** | `string` | The data type of the setting.
 | **value** | `array` \| `null` | The value of the setting.
 | **default** | `array` \| `null` | The default value of the setting.
 | **options** | `array` \| `null` | The options of the setting.
@@ -36,11 +36,14 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 `POST` **/v1/settings/{id}**
 
+!!! info "Description"
+    Changes the value of the setting resource.
+
 ##### Parameters
 
 | Parameter | Type | Required | Description
 | --------- | ---- | :------: | -----------
-| **value** | `bool` \| `int` \| `string` \| `array` | ✔ | The value of the setting.
+| **value** | `bool` \| `int` \| `string` \| `array` | ✔ | The value of the setting. The type of value depends on the specified data type.
 
 ##### Payload
 
@@ -53,6 +56,9 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 #### Get a configuration setting
 
 `GET` **/v1/settings/{id}**
+
+!!! info "Description"
+    Returns the setting resource.
 
 ##### Parameters
 

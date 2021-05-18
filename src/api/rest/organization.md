@@ -12,7 +12,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 | Attribute | Type | Description
 | --------- | ---- | -----------
-| **id** | `string` | The identifier of the organization as UUID.
+| **id** | `string` | The ID of the organization as UUID.
 | **name** | `string` | The name of the organization.
 
 #### Response
@@ -38,6 +38,9 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 `POST` **/v1/organizations**
 
+!!! info "Description"
+    Creates a new organization resource.
+
 ##### Parameters
 
 | Parameter | Type | Required | Description
@@ -56,6 +59,9 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 `DELETE` **/v1/organizations/{id}**
 
+!!! info "Description"
+    Deletes an existing organization resource.
+
 ##### Parameters
 
 !!! important "This endpoint has no parameters."
@@ -65,7 +71,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 `GET` **/v1/organizations/{id}**
 
 !!! info "Description"
-    Returns an object of the organization. If the organization is inactive an 404 Not Found error will be returned instead.
+    Returns the organization resource.
 
 ##### Parameters
 
@@ -76,7 +82,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 `GET` **/v1/organizations**
 
 !!! info "Description"
-    Returns a object collection of all organizations. Inactive organizations are excluded.
+    Returns a collection of all organization resources.
 
 ##### Parameters
 
@@ -93,6 +99,9 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 #### Rename a organization
 
 `POST` **/v1/organizations/{id}**
+
+!!! info "Description"
+    Renames an existing organization resource.
 
 ##### Parameters
 

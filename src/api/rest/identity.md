@@ -12,8 +12,8 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 | Attribute | Type | Description
 | --------- | ---- | -----------
-| **id** | `string` | The identifier of the group as UUID.
-| **name** | `array` | Name of the group in one or more languages.
+| **id** | `string` | The ID of the group as UUID.
+| **name** | `array` | The name of the group per language.
 | **createdBy** | `string` | 
 | **createdAt** | `int` | 
 
@@ -50,7 +50,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 | Parameter | Type | Required | Description
 | --------- | ---- | :------: | -----------
-| **name** | `array` | ✔ | Name of the group in one or more languages.
+| **name** | `array` | ✔ | The name of the group per language.
 
 ##### Payload
 
@@ -104,7 +104,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 | Parameter | Type | Required | Description
 | --------- | ---- | :------: | -----------
-| **name** | `array` | ✔ | Name of the group in one or more languages.
+| **name** | `array` | ✔ | The name of the group per language.
 
 ##### Payload
 
@@ -125,8 +125,8 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 | Attribute | Type | Description
 | --------- | ---- | -----------
-| **id** | `string` | The identifier of the role as UUID.
-| **name** | `array` | Name of the role in one or more languages.
+| **id** | `string` | The ID of the role as UUID
+| **name** | `array` | The name of the role per language.
 | **type** | `string` | 
 | **isPredefined** | `bool` | 
 
@@ -171,7 +171,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 | Parameter | Type | Required | Description
 | --------- | ---- | :------: | -----------
-| **name** | `array` | ✔ | Name of the role in one or more languages.
+| **name** | `array` | ✔ | The name of the role per language.
 | **type** | `string` | ✔ | Type of the role.
 
 ##### Payload
@@ -235,7 +235,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 | Parameter | Type | Required | Description
 | --------- | ---- | :------: | -----------
-| **name** | `array` | ✔ | Name of the role in one or more languages.
+| **name** | `array` | ✔ | The name of the role per language.
 
 ##### Payload
 
@@ -256,14 +256,14 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 | Attribute | Type | Description
 | --------- | ---- | -----------
-| **id** | `string` | The identifier of the user as UUID.
+| **id** | `string` | The ID of the user as UUID.
 | **username** | `string` | The username of the user.
 | **email** | `string` | The email address of the user.
 | **name** | `string` | The name of the user.
-| **status** | `string` | The current status of the user.
-| **verified** | `bool` | Shows if the user is verified.
-| **penultimateLoginAt** | `int` | 
-| **createdAt** | `int` | Timestamp of the record creation.
+| **status** | `string` | The life status of the user.
+| **verified** | `bool` | The verification status of the user.
+| **penultimateLoginAt** | `int` | The penultimate login of the user as a timestamp.
+| **createdAt** | `int` | The time of creation ot the record as a timestamp.
 
 #### Response
 
@@ -276,7 +276,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
     "status": "680fe5ff-3b68-4d22-bb91-eb6a9712f78d",
     "verified": true,
     "penultimateLoginAt": 1620979351,
-    "createdAt": 1620979351
+    "createdAt": 1620972963
 }
 ~~~
 
@@ -290,12 +290,12 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 | Parameter | Type | Required | Description
 | --------- | ---- | :------: | -----------
-| **organizationId** | `string` | ✖ | The identifier of the user as UUID.
+| **organizationId** | `string` | ✖ | The ID of the organization as UUID.
 | **username** | `string` | ✔ | The username of the user.
 | **password** | `string` | ✔ | The password of the user.
 | **email** | `string` | ✔ | The email address of the user.
 | **name** | `string` | ✔ | The name of the user.
-| **roles** | `array` | ✖ | The roles which should be assigned to the user as UUID.
+| **roles** | `array` | ✖ | The ID of the role as UUID which should be assigned to the user.
 
 ##### Payload
 
@@ -313,7 +313,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 }
 ~~~
 
-#### Delete a preference for a user
+#### Delete a user preference
 
 `DELETE` **/v1/users/me/preferences/{settingId}**
 
@@ -369,7 +369,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 !!! important "This endpoint has no parameters."
 
-#### Set the password for a user
+#### Set a user password
 
 `PATCH` **/v1/users/{id}/password**
 
@@ -389,7 +389,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 }
 ~~~
 
-#### Set a preference for a user
+#### Set a user preference
 
 `PUT` **/v1/users/me/preferences**
 
