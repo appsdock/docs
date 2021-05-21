@@ -15,8 +15,8 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 | **id** | `string` | The policy ID in UUID format.
 | **actionId** | `string` | The action ID in UUID format.
 | **roleId** | `string` | The role ID in UUID format.
-| **resource** | `string` | The resource affected by the policy.
-| **effect** | `string` | The effect of the policy. The effect can be to either allow or prohibit access.
+| **resource** | `string` | The resource affected by the policy. Valid values are: *, `UUID`
+| **effect** | `string` | The effect of the policy. The effect can be to either allow or prohibit access. Valid values are: ALLOW, DENY
 
 #### Response
 
@@ -40,7 +40,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 | Parameter | Type | Required | Description
 | --------- | ---- | :------: | -----------
-| **effect** | `string` | ✔ | The effect of the policy. The effect can be to either allow or prohibit access.
+| **effect** | `string` | ✔ | The effect of the policy. The effect can be to either allow or prohibit access. Valid values are: ALLOW, DENY
 
 ##### Payload
 
@@ -59,8 +59,8 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 | Parameter | Type | Required | Description
 | --------- | ---- | :------: | -----------
 | **roleId** | `string` | ✔ | The role ID in UUID format.
-| **resource** | `string` | ✔ | The resource affected by the policy.
-| **effect** | `string` | ✔ | The effect of the policy. The effect can be to either allow or prohibit access.
+| **resource** | `string` | ✔ | The resource affected by the policy. Valid values are: *, `UUID`
+| **effect** | `string` | ✔ | The effect of the policy. The effect can be to either allow or prohibit access. Valid values are: ALLOW, DENY
 
 ##### Payload
 

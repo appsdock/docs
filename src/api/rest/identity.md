@@ -14,8 +14,8 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 | --------- | ---- | -----------
 | **id** | `string` | The ID of the group as UUID.
 | **name** | `array` | The name of the group per language.
-| **createdBy** | `string` | 
-| **createdAt** | `int` | 
+| **createdBy** | `string` | The ID of the user who created the group as UUID.
+| **createdAt** | `int` | The time of creation ot the record as a timestamp.
 
 #### Response
 
@@ -127,8 +127,8 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 | --------- | ---- | -----------
 | **id** | `string` | The ID of the role as UUID
 | **name** | `array` | The name of the role per language.
-| **type** | `string` | 
-| **isPredefined** | `bool` | 
+| **type** | `string` | The type of the role. Valid values are: USER, ADMIN, GUEST, EXTERNAL
+| **isPredefined** | `bool` | Shows if the role is predefined or a created by a user.
 
 #### Response
 
@@ -172,7 +172,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 | Parameter | Type | Required | Description
 | --------- | ---- | :------: | -----------
 | **name** | `array` | ✔ | The name of the role per language.
-| **type** | `string` | ✔ | Type of the role.
+| **type** | `string` | ✔ | Type of the role. Valid values are: USER, ADMIN, GUEST, EXTERNAL
 
 ##### Payload
 

@@ -23,10 +23,14 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 ~~~json
 {
     "id": "680fe5ff-3b68-4d22-bb91-eb6a9712f78d",
-    "type": "680fe5ff-3b68-4d22-bb91-eb6a9712f78d",
-    "value": "680fe5ff-3b68-4d22-bb91-eb6a9712f78d",
-    "default": "680fe5ff-3b68-4d22-bb91-eb6a9712f78d",
-    "options": "680fe5ff-3b68-4d22-bb91-eb6a9712f78d"
+    "type": "STRING",
+    "value": [
+        "America\/New_York"
+    ],
+    "default": [
+        "Europe\/Berlin"
+    ],
+    "options": null
 }
 ~~~
 
@@ -67,6 +71,9 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 #### List all configuration settings
 
 `GET` **/v1/settings**
+
+!!! info "Description"
+    Returns a collection of all setting resources.
 
 ##### Parameters
 
