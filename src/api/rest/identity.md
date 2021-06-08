@@ -261,7 +261,6 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 | **email** | `string` | The email address of the user.
 | **name** | `string` | The name of the user.
 | **status** | `string` | The life status of the user.
-| **verified** | `bool` | The verification status of the user.
 | **penultimateLoginAt** | `int` | The penultimate login of the user as a timestamp.
 | **createdAt** | `int` | The time of creation ot the record as a timestamp.
 
@@ -274,7 +273,6 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
     "email": "680fe5ff-3b68-4d22-bb91-eb6a9712f78d",
     "name": "680fe5ff-3b68-4d22-bb91-eb6a9712f78d",
     "status": "680fe5ff-3b68-4d22-bb91-eb6a9712f78d",
-    "verified": true,
     "penultimateLoginAt": 1620979351,
     "createdAt": 1620972963
 }
