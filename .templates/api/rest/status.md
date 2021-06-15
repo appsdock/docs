@@ -7,3 +7,5 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 PLACEHOLDER
 
 *[API]: Application Programming Interface
+*[OS]: Operating System
+*[REST]: Representational State Transfer
