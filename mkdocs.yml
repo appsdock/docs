@@ -74,6 +74,7 @@ nav:
       - Identity: api/rest/identity.md
       - Mail: api/rest/mail.md
       - Organization: api/rest/organization.md
+      - Status: api/rest/status.md
   - Exception errors:
     - Core: exception-errors/core.md
     - System: exception-errors/system.md

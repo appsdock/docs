@@ -8,3 +8,4 @@
 * [Identity](identity)
 * [Mail](mail)
 * [Organization](organization)
+* [Status](status)
