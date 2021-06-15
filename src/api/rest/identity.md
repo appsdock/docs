@@ -34,7 +34,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 ### Requests
 
-#### Assign a user to a group.
+#### Assign a user to a group
 
 `POST` **/v1/groups/{groupId}/users/{userId}**
 
@@ -88,7 +88,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 !!! important "This endpoint has no parameters."
 
-#### Remove a user from a group.
+#### Remove a user from a group
 
 `DELETE` **/v1/groups/{groupId}/users/{userId}**
 
