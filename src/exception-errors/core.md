@@ -76,6 +76,20 @@ The guideline for exception errors can be found [here](../../gettingstarted/guid
 !!! danger "An error occurred while setup schema via database descriptor for database lifecycle operations."
     
 
+### 10016
+
+!!! danger "An error occurred while processing seeding files for database setup via descriptor in context of lifecycle operations."
+    
+#### Reasons
+
+- Invalid or malformed seeding files.
+- Inconsistent id relations within the seeding files.
+
+#### Solutions
+
+- Check seeding files for syntax and correct formatting.
+- Check relations ($uuid, $ref) for consistency.
+
 
 ## Infrastructure
 
@@ -132,6 +146,11 @@ The guideline for exception errors can be found [here](../../gettingstarted/guid
 ### 11010
 
 !!! danger "An error occurred while execute statement to copy database/schema."
+    
+
+### 11011
+
+!!! danger "An error occurred while execute statement for database seeding."
     
 
 ### 11300
