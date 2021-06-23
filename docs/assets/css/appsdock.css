@@ -3,14 +3,14 @@ body {
 }
 
 .md-nav .md-nav__title {
-    font-size: 1rem;
+    font-size: 1em;
     font-weight: 500;
     text-transform: uppercase;
     padding-top: 12px;
 }
 
 .md-nav[data-md-level="1"] .md-nav__title {
-    font-size: 1.2rem;
+    font-size: 1.2em;
     font-weight: 500;
     padding-top: 0;
 }
