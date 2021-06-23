@@ -16,7 +16,9 @@ theme:
     - navigation.sections
       # Enable tabs
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.top
+    - navigation.indexes
   palette:
     scheme: slate
     primary: green
@@ -64,9 +66,12 @@ nav:
       - REST API: gettingstarted/guidelines/rest-api.md
     - PhpStorm:
       - Xdebug: gettingstarted/phpstorm/xdebug.md
-  - API:
-    - Overview: api/index.md
-    - REST:
+  - API Reference:
+    - Introduction: api/index.md
+    - Authentication: api/authentication.md
+    - Errors: api/errors.md
+    - Pagination: api/pagination.md
+    - Resources:
       - Overview: api/rest/index.md
       - Access: api/rest/access.md
       - App: api/rest/app.md
