@@ -3,18 +3,25 @@ body {
 }
 
 .md-nav .md-nav__title {
-    font-size: .8rem;
-    font-weight: 600;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-top: 12px;
 }
 
 .md-nav[data-md-level="1"] .md-nav__title {
-    font-size: .9rem;
+    font-size: 1.2rem;
     font-weight: 500;
+    padding-top: 0;
 }
 
 .md-content__inner h1{
     color: inherit;
     font-weight: 400;
+}
+
+.md-nav__link {
+    color: rgba(255,255,255,0.7);
 }
 
 .md-typeset h2 {
