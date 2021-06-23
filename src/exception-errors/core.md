@@ -1,4 +1,3 @@
-
 # Core exception errors
 
 This page provides a list of all core exception errors within AppsDock OS.

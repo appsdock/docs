@@ -1,4 +1,3 @@
-
 # App exception errors
 
 This page provides a list of all app exception errors within AppsDock OS.
