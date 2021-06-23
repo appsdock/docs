@@ -11,6 +11,21 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://appsdock.github.io/docs/api/authentication/</loc>
+         <lastmod>2021-06-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://appsdock.github.io/docs/api/errors/</loc>
+         <lastmod>2021-06-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://appsdock.github.io/docs/api/pagination/</loc>
+         <lastmod>2021-06-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://appsdock.github.io/docs/api/rest/</loc>
          <lastmod>2021-06-23</lastmod>
          <changefreq>daily</changefreq>

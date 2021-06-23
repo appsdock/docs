@@ -1,3 +1,30 @@
+body {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+.md-nav .md-nav__title {
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+.md-nav[data-md-level="1"] .md-nav__title {
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+.md-content__inner h1{
+    color: inherit;
+    font-weight: 400;
+}
+
+.md-typeset h2 {
+    font-size: 1.8em;
+}
+
+.md-typeset h3 {
+    font-size: 1.4em;
+}
+
 /* No in-word break */
 code {
     white-space: pre;
