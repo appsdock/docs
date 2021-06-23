@@ -1,13 +1,12 @@
-# Configuration REST API
+# Configuration Resources
 
-This page provides a list of all configuration REST API endpoints within AppsDock OS.
+This page provides a list of all configuration resource endpoints within AppsDock OS.
 
 The guideline for the REST API can be found [here](../../../gettingstarted/guidelines/rest-api).
 
 ## Setting
 
-### Resource
-
+### The Setting resource
 ~~~json
 {
     "id": "680fe5ff-3b68-4d22-bb91-eb6a9712f78d",
@@ -30,16 +29,16 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 | **default** | `array` \| `null` | The default value of the setting.
 | **options** | `array` \| `null` | The options of the setting.
 
-### Endpoints
 
-#### Change a configuration setting
+### Change a configuration setting
 
 `POST` **/v1/settings/{id}**
 
 !!! info "Description"
     Changes the value of the setting resource.
 
-##### Parameters
+
+**Parameters**
 
 | Parameter | Type | Required | Description
 | --------- | ---- | :------: | -----------
@@ -53,25 +52,27 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 }
 ~~~
 
-#### Get a configuration setting
+### Get a configuration setting
 
 `GET` **/v1/settings/{id}**
 
 !!! info "Description"
     Returns the setting resource.
 
-##### Parameters
+
+**Parameters**
 
 !!! important "This endpoint has no parameters."
 
-#### List all configuration settings
+### List all configuration settings
 
 `GET` **/v1/settings**
 
 !!! info "Description"
     Returns a collection of all setting resources.
 
-##### Parameters
+
+**Parameters**
 
 !!! important "This endpoint has no parameters."
 

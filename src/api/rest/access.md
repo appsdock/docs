@@ -1,13 +1,12 @@
-# Access REST API
+# Access Resources
 
-This page provides a list of all access REST API endpoints within AppsDock OS.
+This page provides a list of all access resource endpoints within AppsDock OS.
 
 The guideline for the REST API can be found [here](../../../gettingstarted/guidelines/rest-api).
 
 ## Policy
 
-### Resource
-
+### The Policy resource
 ~~~json
 {
     "id": "680fe5ff-3b68-4d22-bb91-eb6a9712f78d",
@@ -26,13 +25,13 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 | **resource** | `string` | The resource affected by the policy. Valid values are: *, `UUID`
 | **effect** | `string` | The effect of the policy. The effect can be to either allow or prohibit access. Valid values are: ALLOW, DENY
 
-### Endpoints
 
-#### Change a policy
+### Change a policy
 
 `POST` **/v1/policies/{id}**
 
-##### Parameters
+
+**Parameters**
 
 | Parameter | Type | Required | Description
 | --------- | ---- | :------: | -----------
@@ -46,11 +45,12 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 }
 ~~~
 
-#### Create a policy
+### Create a policy
 
 `POST` **/v1/policies**
 
-##### Parameters
+
+**Parameters**
 
 | Parameter | Type | Required | Description
 | --------- | ---- | :------: | -----------
@@ -68,19 +68,21 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 }
 ~~~
 
-#### Delete a policy
+### Delete a policy
 
 `DELETE` **/v1/policies/{id}**
 
-##### Parameters
+
+**Parameters**
 
 !!! important "This endpoint has no parameters."
 
-#### List all policies
+### List all policies
 
 `GET` **/v1/policies**
 
-##### Parameters
+
+**Parameters**
 
 !!! important "This endpoint has no parameters."
 
