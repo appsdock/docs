@@ -72,7 +72,6 @@ nav:
     - Errors: api/errors.md
     - Pagination: api/pagination.md
     - Resources:
-      - Overview: api/rest/index.md
       - Access: api/rest/access.md
       - App: api/rest/app.md
       - Configuration: api/rest/configuration.md
