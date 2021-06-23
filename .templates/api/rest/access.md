@@ -1,6 +1,6 @@
-# Access REST API
+# Access Resources
 
-This page provides a list of all access REST API endpoints within AppsDock OS.
+This page provides a list of all access resource endpoints within AppsDock OS.
 
 The guideline for the REST API can be found [here](../../../gettingstarted/guidelines/rest-api).
 

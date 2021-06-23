@@ -1,6 +1,6 @@
-# Configuration REST API
+# Configuration Resources
 
-This page provides a list of all configuration REST API endpoints within AppsDock OS.
+This page provides a list of all configuration resource endpoints within AppsDock OS.
 
 The guideline for the REST API can be found [here](../../../gettingstarted/guidelines/rest-api).
 
