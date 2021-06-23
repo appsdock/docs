@@ -71,7 +71,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#configuration-rest-api" class="md-skip">
+        <a href="#configuration-resources" class="md-skip">
           Skip to content
         </a>
       
@@ -746,19 +746,11 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#resource" class="md-nav__link">
-    Resource
+  <a href="#the-setting-resource" class="md-nav__link">
+    The Setting resource
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#endpoints" class="md-nav__link">
-    Endpoints
-  </a>
-  
-    <nav class="md-nav" aria-label="Endpoints">
-      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#change-a-configuration-setting" class="md-nav__link">
@@ -778,11 +770,6 @@
   <a href="#list-all-configuration-settings" class="md-nav__link">
     List all configuration settings
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -983,19 +970,11 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#resource" class="md-nav__link">
-    Resource
+  <a href="#the-setting-resource" class="md-nav__link">
+    The Setting resource
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#endpoints" class="md-nav__link">
-    Endpoints
-  </a>
-  
-    <nav class="md-nav" aria-label="Endpoints">
-      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#change-a-configuration-setting" class="md-nav__link">
@@ -1022,11 +1001,6 @@
     </nav>
   
 </li>
-        
-      </ul>
-    </nav>
-  
-</li>
       
     </ul>
   
@@ -1045,11 +1019,11 @@
                   </a>
                 
                 
-                <h1 id="configuration-rest-api">Configuration <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr></h1>
-<p>This page provides a list of all configuration <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr> endpoints within AppsDock <abbr title="Operating System">OS</abbr>.</p>
+                <h1 id="configuration-resources">Configuration Resources</h1>
+<p>This page provides a list of all configuration resource endpoints within AppsDock <abbr title="Operating System">OS</abbr>.</p>
 <p>The guideline for the <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr> can be found <a href="../../../gettingstarted/guidelines/rest-api">here</a>.</p>
 <h2 id="setting">Setting</h2>
-<h3 id="resource">Resource</h3>
+<h3 id="the-setting-resource">The Setting resource</h3>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -1109,14 +1083,13 @@
 </tr>
 </tbody>
 </table>
-<h3 id="endpoints">Endpoints</h3>
-<h4 id="change-a-configuration-setting">Change a configuration setting</h4>
+<h3 id="change-a-configuration-setting">Change a configuration setting</h3>
 <p><code>POST</code> <strong>/v1/settings/{id}</strong></p>
 <div class="admonition info">
 <p class="admonition-title">Description</p>
 <p>Changes the value of the setting resource.</p>
 </div>
-<h5 id="parameters">Parameters</h5>
+<p><strong>Parameters</strong></p>
 <table>
 <thead>
 <tr>
@@ -1143,23 +1116,23 @@
 <span class="p">}</span>
 </code></pre></div>
 </td></tr></table>
-<h4 id="get-a-configuration-setting">Get a configuration setting</h4>
+<h3 id="get-a-configuration-setting">Get a configuration setting</h3>
 <p><code>GET</code> <strong>/v1/settings/{id}</strong></p>
 <div class="admonition info">
 <p class="admonition-title">Description</p>
 <p>Returns the setting resource.</p>
 </div>
-<h5 id="parameters_1">Parameters</h5>
+<p><strong>Parameters</strong></p>
 <div class="admonition important">
 <p class="admonition-title">This endpoint has no parameters.</p>
 </div>
-<h4 id="list-all-configuration-settings">List all configuration settings</h4>
+<h3 id="list-all-configuration-settings">List all configuration settings</h3>
 <p><code>GET</code> <strong>/v1/settings</strong></p>
 <div class="admonition info">
 <p class="admonition-title">Description</p>
 <p>Returns a collection of all setting resources.</p>
 </div>
-<h5 id="parameters_2">Parameters</h5>
+<p><strong>Parameters</strong></p>
 <div class="admonition important">
 <p class="admonition-title">This endpoint has no parameters.</p>
 </div>
