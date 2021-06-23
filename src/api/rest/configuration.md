@@ -8,18 +8,6 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 ### Resource
 
-#### Attributes
-
-| Attribute | Type | Description
-| --------- | ---- | -----------
-| **id** | `string` | The setting ID as UUID.
-| **type** | `string` | The data type of the setting.
-| **value** | `array` \| `null` | The value of the setting.
-| **default** | `array` \| `null` | The default value of the setting.
-| **options** | `array` \| `null` | The options of the setting.
-
-#### Response
-
 ~~~json
 {
     "id": "680fe5ff-3b68-4d22-bb91-eb6a9712f78d",
@@ -34,7 +22,15 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 }
 ~~~
 
-### Requests
+| Attribute | Type | Description
+| --------- | ---- | -----------
+| **id** | `string` | The setting ID as UUID.
+| **type** | `string` | The data type of the setting.
+| **value** | `array` \| `null` | The value of the setting.
+| **default** | `array` \| `null` | The default value of the setting.
+| **options** | `array` \| `null` | The options of the setting.
+
+### Endpoints
 
 #### Change a configuration setting
 

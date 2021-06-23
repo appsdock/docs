@@ -8,20 +8,6 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 ### Resource
 
-#### Attributes
-
-| Attribute | Type | Description
-| --------- | ---- | -----------
-| **id** | `string` | The app ID in UUID format.
-| **name** | `string` | The name of the application.
-| **active** | `bool` | The activity status of the application.
-| **version** | `string` | The version number of the application. The number is divided into major, minor and revision number, each separated by a dot.
-| **build** | `string` | The build number of the application. The number can be freely assigned.
-| **status** | `string` | The life status of the application.
-| **channel** | `string` | The development status of the application.
-
-#### Response
-
 ~~~json
 {
     "id": "680fe5ff-3b68-4d22-bb91-eb6a9712f78d",
@@ -34,7 +20,17 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 }
 ~~~
 
-### Requests
+| Attribute | Type | Description
+| --------- | ---- | -----------
+| **id** | `string` | The app ID in UUID format.
+| **name** | `string` | The name of the application.
+| **active** | `bool` | The activity status of the application.
+| **version** | `string` | The version number of the application. The number is divided into major, minor and revision number, each separated by a dot.
+| **build** | `string` | The build number of the application. The number can be freely assigned.
+| **status** | `string` | The life status of the application.
+| **channel** | `string` | The development status of the application.
+
+### Endpoints
 
 #### Activate an app
 

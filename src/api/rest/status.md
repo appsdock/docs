@@ -8,21 +8,17 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 ### Resource
 
-#### Attributes
-
-| Attribute | Type | Description
-| --------- | ---- | -----------
-| **API-Server** | `string` | Shows the API status.
-
-#### Response
-
 ~~~json
 {
     "API-Server": "OK"
 }
 ~~~
 
-### Requests
+| Attribute | Type | Description
+| --------- | ---- | -----------
+| **API-Server** | `string` | Shows the API status.
+
+### Endpoints
 
 #### Shows the system status.
 

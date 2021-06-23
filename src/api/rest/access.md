@@ -8,18 +8,6 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 ### Resource
 
-#### Attributes
-
-| Attribute | Type | Description
-| --------- | ---- | -----------
-| **id** | `string` | The policy ID in UUID format.
-| **actionId** | `string` | The action ID in UUID format.
-| **roleId** | `string` | The role ID in UUID format.
-| **resource** | `string` | The resource affected by the policy. Valid values are: *, `UUID`
-| **effect** | `string` | The effect of the policy. The effect can be to either allow or prohibit access. Valid values are: ALLOW, DENY
-
-#### Response
-
 ~~~json
 {
     "id": "680fe5ff-3b68-4d22-bb91-eb6a9712f78d",
@@ -30,7 +18,15 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 }
 ~~~
 
-### Requests
+| Attribute | Type | Description
+| --------- | ---- | -----------
+| **id** | `string` | The policy ID in UUID format.
+| **actionId** | `string` | The action ID in UUID format.
+| **roleId** | `string` | The role ID in UUID format.
+| **resource** | `string` | The resource affected by the policy. Valid values are: *, `UUID`
+| **effect** | `string` | The effect of the policy. The effect can be to either allow or prohibit access. Valid values are: ALLOW, DENY
+
+### Endpoints
 
 #### Change a policy
 

@@ -8,17 +8,6 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 ### Resource
 
-#### Attributes
-
-| Attribute | Type | Description
-| --------- | ---- | -----------
-| **id** | `string` | The ID of the group as UUID.
-| **name** | `array` | The name of the group per language.
-| **createdBy** | `string` | The ID of the user who created the group as UUID.
-| **createdAt** | `int` | The time of creation ot the record as a timestamp.
-
-#### Response
-
 ~~~json
 {
     "id": "680fe5ff-3b68-4d22-bb91-eb6a9712f78d",
@@ -32,7 +21,14 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 }
 ~~~
 
-### Requests
+| Attribute | Type | Description
+| --------- | ---- | -----------
+| **id** | `string` | The ID of the group as UUID.
+| **name** | `array` | The name of the group per language.
+| **createdBy** | `string` | The ID of the user who created the group as UUID.
+| **createdAt** | `int` | The time of creation ot the record as a timestamp.
+
+### Endpoints
 
 #### Assign a user to a group
 
@@ -121,17 +117,6 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 ### Resource
 
-#### Attributes
-
-| Attribute | Type | Description
-| --------- | ---- | -----------
-| **id** | `string` | The ID of the role as UUID
-| **name** | `array` | The name of the role per language.
-| **type** | `string` | The type of the role. Valid values are: USER, ADMIN, GUEST, EXTERNAL
-| **isPredefined** | `bool` | Shows if the role is predefined or a created by a user.
-
-#### Response
-
 ~~~json
 {
     "id": "680fe5ff-3b68-4d22-bb91-eb6a9712f78d",
@@ -145,7 +130,14 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 }
 ~~~
 
-### Requests
+| Attribute | Type | Description
+| --------- | ---- | -----------
+| **id** | `string` | The ID of the role as UUID
+| **name** | `array` | The name of the role per language.
+| **type** | `string` | The type of the role. Valid values are: USER, ADMIN, GUEST, EXTERNAL
+| **isPredefined** | `bool` | Shows if the role is predefined or a created by a user.
+
+### Endpoints
 
 #### Assign a role to a group
 
@@ -252,20 +244,6 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 ### Resource
 
-#### Attributes
-
-| Attribute | Type | Description
-| --------- | ---- | -----------
-| **id** | `string` | The ID of the user as UUID.
-| **username** | `string` | The username of the user.
-| **email** | `string` | The email address of the user.
-| **name** | `string` | The name of the user.
-| **status** | `string` | The life status of the user.
-| **penultimateLoginAt** | `int` | The penultimate login of the user as a timestamp.
-| **createdAt** | `int` | The time of creation ot the record as a timestamp.
-
-#### Response
-
 ~~~json
 {
     "id": "680fe5ff-3b68-4d22-bb91-eb6a9712f78d",
@@ -278,7 +256,17 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 }
 ~~~
 
-### Requests
+| Attribute | Type | Description
+| --------- | ---- | -----------
+| **id** | `string` | The ID of the user as UUID.
+| **username** | `string` | The username of the user.
+| **email** | `string` | The email address of the user.
+| **name** | `string` | The name of the user.
+| **status** | `string` | The life status of the user.
+| **penultimateLoginAt** | `int` | The penultimate login of the user as a timestamp.
+| **createdAt** | `int` | The time of creation ot the record as a timestamp.
+
+### Endpoints
 
 #### Create a user
 
