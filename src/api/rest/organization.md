@@ -1,13 +1,12 @@
-# Organization REST API
+# Organization Resources
 
-This page provides a list of all organization REST API endpoints within AppsDock OS.
+This page provides a list of all organization resource endpoints within AppsDock OS.
 
 The guideline for the REST API can be found [here](../../../gettingstarted/guidelines/rest-api).
 
 ## Organization
 
-### Resource
-
+### The Organization resource
 ~~~json
 {
     "id": "680fe5ff-3b68-4d22-bb91-eb6a9712f78d",
@@ -20,24 +19,25 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 | **id** | `string` | The ID of the organization as UUID.
 | **name** | `string` | The name of the organization.
 
-### Endpoints
 
-#### Assign a user to an organization
+### Assign a user to an organization
 
 `POST` **/v1/organizations/{organizationId}/users/{userId}**
 
-##### Parameters
+
+**Parameters**
 
 !!! important "This endpoint has no parameters."
 
-#### Create a organization
+### Create a organization
 
 `POST` **/v1/organizations**
 
 !!! info "Description"
     Creates a new organization resource.
 
-##### Parameters
+
+**Parameters**
 
 | Parameter | Type | Required | Description
 | --------- | ---- | :------: | -----------
@@ -51,55 +51,60 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 }
 ~~~
 
-#### Delete a organization
+### Delete a organization
 
 `DELETE` **/v1/organizations/{id}**
 
 !!! info "Description"
     Deletes an existing organization resource.
 
-##### Parameters
+
+**Parameters**
 
 !!! important "This endpoint has no parameters."
 
-#### Get a organization
+### Get a organization
 
 `GET` **/v1/organizations/{id}**
 
 !!! info "Description"
     Returns the organization resource.
 
-##### Parameters
+
+**Parameters**
 
 !!! important "This endpoint has no parameters."
 
-#### List all organizations
+### List all organizations
 
 `GET` **/v1/organizations**
 
 !!! info "Description"
     Returns a collection of all organization resources.
 
-##### Parameters
+
+**Parameters**
 
 !!! important "This endpoint has no parameters."
 
-#### Remove a user from an organization
+### Remove a user from an organization
 
 `DELETE` **/v1/organizations/{organizationId}/users/{userId}**
 
-##### Parameters
+
+**Parameters**
 
 !!! important "This endpoint has no parameters."
 
-#### Rename a organization
+### Rename a organization
 
 `POST` **/v1/organizations/{id}**
 
 !!! info "Description"
     Renames an existing organization resource.
 
-##### Parameters
+
+**Parameters**
 
 | Parameter | Type | Required | Description
 | --------- | ---- | :------: | -----------

@@ -1,13 +1,12 @@
-# App REST API
+# App Resources
 
-This page provides a list of all app REST API endpoints within AppsDock OS.
+This page provides a list of all app resource endpoints within AppsDock OS.
 
 The guideline for the REST API can be found [here](../../../gettingstarted/guidelines/rest-api).
 
 ## App
 
-### Resource
-
+### The App resource
 ~~~json
 {
     "id": "680fe5ff-3b68-4d22-bb91-eb6a9712f78d",
@@ -30,53 +29,58 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 | **status** | `string` | The life status of the application.
 | **channel** | `string` | The development status of the application.
 
-### Endpoints
 
-#### Activate an app
+### Activate an app
 
 `POST` **/v1/apps:activate/{id}**
 
-##### Parameters
+
+**Parameters**
 
 !!! important "This endpoint has no parameters."
 
-#### Deactivate an app
+### Deactivate an app
 
 `POST` **/v1/apps:deactivate/{id}**
 
-##### Parameters
+
+**Parameters**
 
 !!! important "This endpoint has no parameters."
 
-#### Install an app
+### Install an app
 
 `POST` **/v1/apps:install/{id}**
 
-##### Parameters
+
+**Parameters**
 
 !!! important "This endpoint has no parameters."
 
-#### List all apps
+### List all apps
 
 `GET` **/v1/apps**
 
-##### Parameters
+
+**Parameters**
 
 !!! important "This endpoint has no parameters."
 
-#### Uninstall an app
+### Uninstall an app
 
 `POST` **/v1/apps:uninstall/{id}**
 
-##### Parameters
+
+**Parameters**
 
 !!! important "This endpoint has no parameters."
 
-#### Update an app
+### Update an app
 
 `POST` **/v1/apps:update/{id}**
 
-##### Parameters
+
+**Parameters**
 
 !!! important "This endpoint has no parameters."
 

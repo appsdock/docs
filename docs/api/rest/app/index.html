@@ -71,7 +71,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#app-rest-api" class="md-skip">
+        <a href="#app-resources" class="md-skip">
           Skip to content
         </a>
       
@@ -681,18 +681,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
-        Overview
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../access/" class="md-nav__link">
         Access
       </a>
@@ -746,19 +734,11 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#resource" class="md-nav__link">
-    Resource
+  <a href="#the-app-resource" class="md-nav__link">
+    The App resource
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#endpoints" class="md-nav__link">
-    Endpoints
-  </a>
-  
-    <nav class="md-nav" aria-label="Endpoints">
-      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#activate-an-app" class="md-nav__link">
@@ -799,11 +779,6 @@
   <a href="#update-an-app" class="md-nav__link">
     Update an app
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -1016,19 +991,11 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#resource" class="md-nav__link">
-    Resource
+  <a href="#the-app-resource" class="md-nav__link">
+    The App resource
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#endpoints" class="md-nav__link">
-    Endpoints
-  </a>
-  
-    <nav class="md-nav" aria-label="Endpoints">
-      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#activate-an-app" class="md-nav__link">
@@ -1076,11 +1043,6 @@
     </nav>
   
 </li>
-        
-      </ul>
-    </nav>
-  
-</li>
       
     </ul>
   
@@ -1099,11 +1061,11 @@
                   </a>
                 
                 
-                <h1 id="app-rest-api">App <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr></h1>
-<p>This page provides a list of all app <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr> endpoints within AppsDock <abbr title="Operating System">OS</abbr>.</p>
+                <h1 id="app-resources">App Resources</h1>
+<p>This page provides a list of all app resource endpoints within AppsDock <abbr title="Operating System">OS</abbr>.</p>
 <p>The guideline for the <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr> can be found <a href="../../../gettingstarted/guidelines/rest-api">here</a>.</p>
 <h2 id="app">App</h2>
-<h3 id="resource">Resource</h3>
+<h3 id="the-app-resource">The App resource</h3>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
@@ -1169,40 +1131,39 @@
 </tr>
 </tbody>
 </table>
-<h3 id="endpoints">Endpoints</h3>
-<h4 id="activate-an-app">Activate an app</h4>
+<h3 id="activate-an-app">Activate an app</h3>
 <p><code>POST</code> <strong>/v1/apps:activate/{id}</strong></p>
-<h5 id="parameters">Parameters</h5>
+<p><strong>Parameters</strong></p>
 <div class="admonition important">
 <p class="admonition-title">This endpoint has no parameters.</p>
 </div>
-<h4 id="deactivate-an-app">Deactivate an app</h4>
+<h3 id="deactivate-an-app">Deactivate an app</h3>
 <p><code>POST</code> <strong>/v1/apps:deactivate/{id}</strong></p>
-<h5 id="parameters_1">Parameters</h5>
+<p><strong>Parameters</strong></p>
 <div class="admonition important">
 <p class="admonition-title">This endpoint has no parameters.</p>
 </div>
-<h4 id="install-an-app">Install an app</h4>
+<h3 id="install-an-app">Install an app</h3>
 <p><code>POST</code> <strong>/v1/apps:install/{id}</strong></p>
-<h5 id="parameters_2">Parameters</h5>
+<p><strong>Parameters</strong></p>
 <div class="admonition important">
 <p class="admonition-title">This endpoint has no parameters.</p>
 </div>
-<h4 id="list-all-apps">List all apps</h4>
+<h3 id="list-all-apps">List all apps</h3>
 <p><code>GET</code> <strong>/v1/apps</strong></p>
-<h5 id="parameters_3">Parameters</h5>
+<p><strong>Parameters</strong></p>
 <div class="admonition important">
 <p class="admonition-title">This endpoint has no parameters.</p>
 </div>
-<h4 id="uninstall-an-app">Uninstall an app</h4>
+<h3 id="uninstall-an-app">Uninstall an app</h3>
 <p><code>POST</code> <strong>/v1/apps:uninstall/{id}</strong></p>
-<h5 id="parameters_4">Parameters</h5>
+<p><strong>Parameters</strong></p>
 <div class="admonition important">
 <p class="admonition-title">This endpoint has no parameters.</p>
 </div>
-<h4 id="update-an-app">Update an app</h4>
+<h3 id="update-an-app">Update an app</h3>
 <p><code>POST</code> <strong>/v1/apps:update/{id}</strong></p>
-<h5 id="parameters_5">Parameters</h5>
+<p><strong>Parameters</strong></p>
 <div class="admonition important">
 <p class="admonition-title">This endpoint has no parameters.</p>
 </div>

@@ -1,13 +1,12 @@
-# Identity REST API
+# Identity Resources
 
-This page provides a list of all identity REST API endpoints within AppsDock OS.
+This page provides a list of all identity resource endpoints within AppsDock OS.
 
 The guideline for the REST API can be found [here](../../../gettingstarted/guidelines/rest-api).
 
 ## Group
 
-### Resource
-
+### The Group resource
 ~~~json
 {
     "id": "680fe5ff-3b68-4d22-bb91-eb6a9712f78d",
@@ -28,21 +27,22 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 | **createdBy** | `string` | The ID of the user who created the group as UUID.
 | **createdAt** | `int` | The time of creation ot the record as a timestamp.
 
-### Endpoints
 
-#### Assign a user to a group
+### Assign a user to a group
 
 `POST` **/v1/groups/{groupId}/users/{userId}**
 
-##### Parameters
+
+**Parameters**
 
 !!! important "This endpoint has no parameters."
 
-#### Create a group
+### Create a group
 
 `POST` **/v1/groups**
 
-##### Parameters
+
+**Parameters**
 
 | Parameter | Type | Required | Description
 | --------- | ---- | :------: | -----------
@@ -60,43 +60,48 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 }
 ~~~
 
-#### Delete a group
+### Delete a group
 
 `DELETE` **/v1/groups/{id}**
 
-##### Parameters
+
+**Parameters**
 
 !!! important "This endpoint has no parameters."
 
-#### Get a group
+### Get a group
 
 `GET` **/v1/groups/{id}**
 
-##### Parameters
+
+**Parameters**
 
 !!! important "This endpoint has no parameters."
 
-#### List all groups
+### List all groups
 
 `GET` **/v1/groups**
 
-##### Parameters
+
+**Parameters**
 
 !!! important "This endpoint has no parameters."
 
-#### Remove a user from a group
+### Remove a user from a group
 
 `DELETE` **/v1/groups/{groupId}/users/{userId}**
 
-##### Parameters
+
+**Parameters**
 
 !!! important "This endpoint has no parameters."
 
-#### Rename a group
+### Rename a group
 
 `PATCH` **/v1/groups/{id}**
 
-##### Parameters
+
+**Parameters**
 
 | Parameter | Type | Required | Description
 | --------- | ---- | :------: | -----------
@@ -115,8 +120,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 ~~~
 ## Role
 
-### Resource
-
+### The Role resource
 ~~~json
 {
     "id": "680fe5ff-3b68-4d22-bb91-eb6a9712f78d",
@@ -137,29 +141,31 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 | **type** | `string` | The type of the role. Valid values are: USER, ADMIN, GUEST, EXTERNAL
 | **isPredefined** | `bool` | Shows if the role is predefined or a created by a user.
 
-### Endpoints
 
-#### Assign a role to a group
+### Assign a role to a group
 
 `POST` **/v1/roles/{roleId}/groups/{groupId}**
 
-##### Parameters
+
+**Parameters**
 
 !!! important "This endpoint has no parameters."
 
-#### Assign a role to a user
+### Assign a role to a user
 
 `POST` **/v1/roles/{roleId}/users/{userId}**
 
-##### Parameters
+
+**Parameters**
 
 !!! important "This endpoint has no parameters."
 
-#### Create a role
+### Create a role
 
 `POST` **/v1/roles**
 
-##### Parameters
+
+**Parameters**
 
 | Parameter | Type | Required | Description
 | --------- | ---- | :------: | -----------
@@ -179,51 +185,57 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 }
 ~~~
 
-#### Delete a role
+### Delete a role
 
 `DELETE` **/v1/roles/{id}**
 
-##### Parameters
+
+**Parameters**
 
 !!! important "This endpoint has no parameters."
 
-#### Get a role
+### Get a role
 
 `GET` **/v1/roles/{id}**
 
-##### Parameters
+
+**Parameters**
 
 !!! important "This endpoint has no parameters."
 
-#### List all roles
+### List all roles
 
 `GET` **/v1/roles**
 
-##### Parameters
+
+**Parameters**
 
 !!! important "This endpoint has no parameters."
 
-#### Remove a role from a group
+### Remove a role from a group
 
 `DELETE` **/v1/roles/{roleId}/groups/{groupId}**
 
-##### Parameters
+
+**Parameters**
 
 !!! important "This endpoint has no parameters."
 
-#### Remove a role from a user
+### Remove a role from a user
 
 `DELETE` **/v1/roles/{roleId}/users/{userId}**
 
-##### Parameters
+
+**Parameters**
 
 !!! important "This endpoint has no parameters."
 
-#### Rename a role
+### Rename a role
 
 `PATCH` **/v1/roles/{id}**
 
-##### Parameters
+
+**Parameters**
 
 | Parameter | Type | Required | Description
 | --------- | ---- | :------: | -----------
@@ -242,8 +254,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 ~~~
 ## User
 
-### Resource
-
+### The User resource
 ~~~json
 {
     "id": "680fe5ff-3b68-4d22-bb91-eb6a9712f78d",
@@ -266,13 +277,13 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 | **penultimateLoginAt** | `int` | The penultimate login of the user as a timestamp.
 | **createdAt** | `int` | The time of creation ot the record as a timestamp.
 
-### Endpoints
 
-#### Create a user
+### Create a user
 
 `POST` **/v1/users**
 
-##### Parameters
+
+**Parameters**
 
 | Parameter | Type | Required | Description
 | --------- | ---- | :------: | -----------
@@ -299,67 +310,75 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 }
 ~~~
 
-#### Delete a user preference
+### Delete a user preference
 
 `DELETE` **/v1/users/me/preferences/{settingId}**
 
-##### Parameters
+
+**Parameters**
 
 !!! important "This endpoint has no parameters."
 
-#### Get a user
+### Get a user
 
 `GET` **/v1/users/{id}**
 
-##### Parameters
+
+**Parameters**
 
 !!! important "This endpoint has no parameters."
 
-#### Get a user identity
+### Get a user identity
 
 `GET` **/v1/users/{id}/identity/{securityToken}**
 
-##### Parameters
+
+**Parameters**
 
 !!! important "This endpoint has no parameters."
 
-#### List all users
+### List all users
 
 `GET` **/v1/users**
 
-##### Parameters
+
+**Parameters**
 
 !!! important "This endpoint has no parameters."
 
-#### Get the current user
+### Get the current user
 
 `GET` **/v1/users/me**
 
-##### Parameters
+
+**Parameters**
 
 !!! important "This endpoint has no parameters."
 
-#### Get the current user policies
+### Get the current user policies
 
 `GET` **/v1/users/me/policies**
 
-##### Parameters
+
+**Parameters**
 
 !!! important "This endpoint has no parameters."
 
-#### Get the current user preferences
+### Get the current user preferences
 
 `GET` **/v1/users/me/preferences**
 
-##### Parameters
+
+**Parameters**
 
 !!! important "This endpoint has no parameters."
 
-#### Set a user password
+### Set a user password
 
 `PATCH` **/v1/users/{id}/password**
 
-##### Parameters
+
+**Parameters**
 
 | Parameter | Type | Required | Description
 | --------- | ---- | :------: | -----------
@@ -375,11 +394,12 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 }
 ~~~
 
-#### Set a user preference
+### Set a user preference
 
 `PUT` **/v1/users/me/preferences**
 
-##### Parameters
+
+**Parameters**
 
 | Parameter | Type | Required | Description
 | --------- | ---- | :------: | -----------
