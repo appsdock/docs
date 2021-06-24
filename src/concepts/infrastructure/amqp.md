@@ -6,7 +6,7 @@ AppsDock OS uses an AMQP based infrastructure to handle asynchronous messages, w
 
 AppsDock OS provides a dedicated AMQP-Agent that acts as a consumer and mediator of messages. AppsDock OS avoids processing messages via CLI in consumer mode directly due to potential environment inequality between CLI and PHP-FPM and disregard of PHP-FPM process worker benefits. Instead, the dedicated AMQP-Agent consumes the messages from AMQP server and executes, controls and monitors asynchronous PHP-FPM process workers, which process the messages.  
 
-![Service Structure](../assets/images/amqp/service-structure.svg)
+![Service Structure](../../assets/images/amqp/service-structure.svg)
 
 ### Publisher (AppsDock OS)
 
@@ -38,7 +38,7 @@ The **command** message type is used to execute asynchronous command handlers vi
 As already described above (Message Types), the AMQP-Agent defines **dedicated queues to handle failures**. If the process worker failed (any case), the message will be **rejected without a direct requeue**. Instead, the message will be moved automatically into the **retry queue** which keep the failed message for a certain time. After this time, this message is published back into the **main queue** for a retry. If this procedure fails for a certain number of retries, this message will be **dropped from main and retry** queue and published into the **error queue** for further investigation. 
 
 
-![Error Handling](../assets/images/amqp/amqp-error-handling.svg)
+![Error Handling](../../assets/images/amqp/amqp-error-handling.svg)
 
 
 *[AMQP]: Advanced Message Queuing Protocol
