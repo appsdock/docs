@@ -705,15 +705,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#src-the-application-source" class="md-nav__link">
-    src - The application source
+  <a href="#src" class="md-nav__link">
+    src
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#setup-files-for-installation" class="md-nav__link">
-    setup - Files for installation
+  <a href="#setup" class="md-nav__link">
+    setup
   </a>
   
 </li>
@@ -726,8 +726,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#locales-i18n" class="md-nav__link">
-    locales - i18n
+  <a href="#locales" class="md-nav__link">
+    locales
   </a>
   
 </li>
@@ -740,8 +740,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#manifest-application-meta-data" class="md-nav__link">
-    manifest - Application meta data
+  <a href="#manifest" class="md-nav__link">
+    manifest
   </a>
   
 </li>
@@ -760,6 +760,47 @@
   
 </nav>
       
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" type="checkbox" id="__nav_3_4" >
+      
+      <label class="md-nav__link" for="__nav_3_4">
+        CI/CD
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="CI/CD" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          CI/CD
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cicd/versioning/" class="md-nav__link">
+        Versioning
+      </a>
     </li>
   
 
@@ -1099,15 +1140,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#src-the-application-source" class="md-nav__link">
-    src - The application source
+  <a href="#src" class="md-nav__link">
+    src
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#setup-files-for-installation" class="md-nav__link">
-    setup - Files for installation
+  <a href="#setup" class="md-nav__link">
+    setup
   </a>
   
 </li>
@@ -1120,8 +1161,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#locales-i18n" class="md-nav__link">
-    locales - i18n
+  <a href="#locales" class="md-nav__link">
+    locales
   </a>
   
 </li>
@@ -1134,8 +1175,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#manifest-application-meta-data" class="md-nav__link">
-    manifest - Application meta data
+  <a href="#manifest" class="md-nav__link">
+    manifest
   </a>
   
 </li>
@@ -1168,48 +1209,79 @@
                 
                 
                 <h1 id="structure">Structure</h1>
-<p>The top level structure of AppsDock OS consists of four parts:
-- Application sources
+<p>The top level structure of AppsDock OS consists of four parts:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>- Application sources
 - Application filesystem data
 - Binaries / CLI for the interaction with the application
-- Vendor dependencies managed by composer</p>
+- Vendor dependencies managed by composer
+</code></pre></div>
+</td></tr></table>
 <h2 id="application-sources">Application sources</h2>
-<p>The main application source is located in the application folder of AppsDock OS. The application itself is divided into multiple parts:
-- Application main source 
+<p>The main application source is located in the application folder of AppsDock OS. The application itself is divided into multiple parts:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>- Application main source 
 - Apps (AppsDock OS based Applications, applications build on top of AppsDock)
-- Integrations (AppsDock OS Integrations, external services integrated into AppsDock via interfaces)</p>
+- Integrations (AppsDock OS Integrations, external services integrated into AppsDock via interfaces)
+</code></pre></div>
+</td></tr></table>
 <h3 id="the-application-source-composition">The application source composition</h3>
-<p>The application source has a unified structure which is not only used by the main application but also by all apps (AppsDock OS based Applications). This structure consists of the following parts:
-- src
+<p>The application source has a unified structure which is not only used by the main application but also by all apps (AppsDock OS based Applications). This structure consists of the following parts:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>- src
 - setup
 - config
 - locales
 - docs
-- manifest</p>
-<h4 id="src-the-application-source">src - The application source</h4>
-<p>The application source contains all object-oriented classes organized in a multi layered architecture, clean code and SOLID fashion. The main application source consists - differently than in apps - of the following parts: 
-- Console
+- manifest
+</code></pre></div>
+</td></tr></table>
+<h4 id="src">src</h4>
+<p>The application source contains all object-oriented classes organized in a multi layered architecture, clean code and SOLID fashion. The main application source consists - differently than in apps - of the following parts: </p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>- Console
 - Core
-- System </p>
+- System
+</code></pre></div>
+</td></tr></table>
 <p>Thereby, System is organized in a unified fashion which is used also by all apps. Core and Console are application main specific implementations.</p>
-<h4 id="setup-files-for-installation">setup - Files for installation</h4>
-<p>The setup directory provides files which are necessary for the installation. This includes the following files:
-- database table definition files
+<h4 id="setup">setup</h4>
+<p>The setup directory provides files which are necessary for the installation. This includes the following files:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>- database table definition files
 - tables seeding files
-- presets used for presetting system tables</p>
+- presets used for presetting system tables
+</code></pre></div>
+</td></tr></table>
 <h4 id="config">config</h4>
-<p>The config directory contains runtime configurations. Here you can find the following parts:
-- ORM files used by doctrine for write operations
+<p>The config directory contains runtime configurations. Here you can find the following parts:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>- ORM files used by doctrine for write operations
 - constants.php for defining application specific constants
 - container.php which configure the dependency injection
 - domain-events.php which registers the domain event handlers
 - integration-events.php which defines async and cross-context/application event handlers
-- system-events.php which defines the event listeners for system internal events</p>
-<h4 id="locales-i18n">locales - i18n</h4>
+- system-events.php which defines the event listeners for system internal events
+</code></pre></div>
+</td></tr></table>
+<h4 id="locales">locales</h4>
 <p>This directory contains the locale (gettext based) .po files. These files are used to compile the .mo files during the installation and update.</p>
 <h4 id="docs">docs</h4>
 <p>This directory contains technical organized documentation in php which are used both as code inline reference for exceptions/api definition and for dynamic documentation generation for the online docs. The implementation of these docs are required for implementing exceptions and rest api endpoints in AppsDock.</p>
-<h4 id="manifest-application-meta-data">manifest - Application meta data</h4>
+<h4 id="manifest">manifest</h4>
 <p>The manifest is a JSON encoded file always located in the top level directory of the application / app directory. The manifest.json is used by the main application (System) and all apps. It provides meta information about the application like a unique ID, name, version and in additional defines the dependencies which are used by composer. </p>
                 
               
@@ -1250,13 +1322,13 @@
       
       
         
-        <a href="../../../api/" class="md-footer__link md-footer__link--next" aria-label="Next: Introduction" rel="next">
+        <a href="../../cicd/versioning/" class="md-footer__link md-footer__link--next" aria-label="Next: Versioning" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Introduction
+              Versioning
             </div>
           </div>
           <div class="md-footer__button md-icon">
