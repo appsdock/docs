@@ -9,14 +9,14 @@
       
       
       
-        <link rel="canonical" href="https://appsdock.github.io/docs/concepts/amqp/">
+        <link rel="canonical" href="https://appsdock.github.io/docs/concepts/configuration/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.8">
     
     
       
-        <title>Message Queue (AMQP) - AppsDock OS Documentation</title>
+        <title>Configuration - AppsDock OS Documentation</title>
       
     
     
@@ -71,7 +71,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#message-queue-amqp" class="md-skip">
+        <a href="#configuration" class="md-skip">
           Skip to content
         </a>
       
@@ -101,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Message Queue (AMQP)
+              Configuration
             
           </span>
         </div>
@@ -189,7 +189,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="./" class="md-tabs__link md-tabs__link--active">
+      <a href="../introduction/" class="md-tabs__link md-tabs__link--active">
         Concepts
       </a>
     </li>
@@ -210,7 +210,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../gettingstarted/guidelines/commit-messages/" class="md-tabs__link">
+      <a href="../../gettingstarted/environment/" class="md-tabs__link">
         Getting Started
       </a>
     </li>
@@ -245,7 +245,7 @@
   
     <li class="md-tabs__item">
       <a href="../../exception-errors/core/" class="md-tabs__link">
-        Exception errors
+        Troubleshooting
       </a>
     </li>
   
@@ -339,6 +339,18 @@
             
   
   
+  
+    <li class="md-nav__item">
+      <a href="../introduction/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
     
   
   
@@ -351,12 +363,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Message Queue (AMQP)
+          Configuration
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Message Queue (AMQP)
+        Configuration
       </a>
       
         
@@ -374,23 +386,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#composition" class="md-nav__link">
-    Composition
+  <a href="#setting-id" class="md-nav__link">
+    Setting ID
   </a>
   
-    <nav class="md-nav" aria-label="Composition">
+    <nav class="md-nav" aria-label="Setting ID">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#publisher-appsdock-os" class="md-nav__link">
-    Publisher (AppsDock OS)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#consumer-appsdock-amqp-agent" class="md-nav__link">
-    Consumer (AppsDock AMQP-Agent)
+  <a href="#examples" class="md-nav__link">
+    Examples
   </a>
   
 </li>
@@ -401,36 +406,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#message-types-subjects" class="md-nav__link">
-    Message Types (Subjects)
-  </a>
-  
-    <nav class="md-nav" aria-label="Message Types (Subjects)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#event-message" class="md-nav__link">
-    Event Message
+  <a href="#setting-types" class="md-nav__link">
+    Setting types
   </a>
   
 </li>
+      
+        <li class="md-nav__item">
+  <a href="#default-value" class="md-nav__link">
+    Default value
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#database" class="md-nav__link">
+    Database
+  </a>
+  
+    <nav class="md-nav" aria-label="Database">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#command-message" class="md-nav__link">
-    Command Message
+  <a href="#examples_1" class="md-nav__link">
+    Examples
   </a>
   
 </li>
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#approach-in-case-of-error" class="md-nav__link">
-    Approach in case of error
-  </a>
   
 </li>
       
@@ -452,14 +457,55 @@
     <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" >
       
-      <label class="md-nav__link" for="__nav_2_2">
+      <label class="md-nav__link" for="__nav_2_3">
+        Infrastructure
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Infrastructure" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          Infrastructure
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../infrastructure/amqp/" class="md-nav__link">
+        Message Queue (AMQP)
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" type="checkbox" id="__nav_2_4" >
+      
+      <label class="md-nav__link" for="__nav_2_4">
         Identity and access
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Identity and access" data-md-level="2">
-        <label class="md-nav__title" for="__nav_2_2">
+        <label class="md-nav__title" for="__nav_2_4">
           <span class="md-nav__icon md-icon"></span>
           Identity and access
         </label>
@@ -550,13 +596,13 @@
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1" type="checkbox" id="__nav_3_1" >
       
       <label class="md-nav__link" for="__nav_3_1">
-        Guidelines
+        Environment
         <span class="md-nav__icon md-icon"></span>
       </label>
-      <nav class="md-nav" aria-label="Guidelines" data-md-level="2">
+      <nav class="md-nav" aria-label="Environment" data-md-level="2">
         <label class="md-nav__title" for="__nav_3_1">
           <span class="md-nav__icon md-icon"></span>
-          Guidelines
+          Environment
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -565,8 +611,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../gettingstarted/guidelines/commit-messages/" class="md-nav__link">
-        Commit messages
+      <a href="../../gettingstarted/environment/" class="md-nav__link">
+        Introduction
       </a>
     </li>
   
@@ -577,12 +623,53 @@
   
   
     <li class="md-nav__item">
-      <a href="../../gettingstarted/guidelines/configuration/" class="md-nav__link">
-        Configuration
+      <a href="../../gettingstarted/environment/ide/" class="md-nav__link">
+        IDE
       </a>
     </li>
   
 
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gettingstarted/environment/version-control/" class="md-nav__link">
+        Version Control
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
+      
+      <label class="md-nav__link" for="__nav_3_2">
+        Guidelines
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Guidelines" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Guidelines
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
           
             
   
@@ -636,16 +723,16 @@
     <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" >
       
-      <label class="md-nav__link" for="__nav_3_2">
-        PhpStorm
+      <label class="md-nav__link" for="__nav_3_3">
+        Application
         <span class="md-nav__icon md-icon"></span>
       </label>
-      <nav class="md-nav" aria-label="PhpStorm" data-md-level="2">
-        <label class="md-nav__title" for="__nav_3_2">
+      <nav class="md-nav" aria-label="Application" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_3">
           <span class="md-nav__icon md-icon"></span>
-          PhpStorm
+          Application
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -654,8 +741,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../gettingstarted/phpstorm/xdebug/" class="md-nav__link">
-        Xdebug
+      <a href="../../gettingstarted/application/structure/" class="md-nav__link">
+        Structure
       </a>
     </li>
   
@@ -878,13 +965,13 @@
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
       
       <label class="md-nav__link" for="__nav_5">
-        Exception errors
+        Troubleshooting
         <span class="md-nav__icon md-icon"></span>
       </label>
-      <nav class="md-nav" aria-label="Exception errors" data-md-level="1">
+      <nav class="md-nav" aria-label="Troubleshooting" data-md-level="1">
         <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
-          Exception errors
+          Troubleshooting
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -980,23 +1067,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#composition" class="md-nav__link">
-    Composition
+  <a href="#setting-id" class="md-nav__link">
+    Setting ID
   </a>
   
-    <nav class="md-nav" aria-label="Composition">
+    <nav class="md-nav" aria-label="Setting ID">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#publisher-appsdock-os" class="md-nav__link">
-    Publisher (AppsDock OS)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#consumer-appsdock-amqp-agent" class="md-nav__link">
-    Consumer (AppsDock AMQP-Agent)
+  <a href="#examples" class="md-nav__link">
+    Examples
   </a>
   
 </li>
@@ -1007,36 +1087,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#message-types-subjects" class="md-nav__link">
-    Message Types (Subjects)
-  </a>
-  
-    <nav class="md-nav" aria-label="Message Types (Subjects)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#event-message" class="md-nav__link">
-    Event Message
+  <a href="#setting-types" class="md-nav__link">
+    Setting types
   </a>
   
 </li>
+      
+        <li class="md-nav__item">
+  <a href="#default-value" class="md-nav__link">
+    Default value
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#database" class="md-nav__link">
+    Database
+  </a>
+  
+    <nav class="md-nav" aria-label="Database">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#command-message" class="md-nav__link">
-    Command Message
+  <a href="#examples_1" class="md-nav__link">
+    Examples
   </a>
   
 </li>
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#approach-in-case-of-error" class="md-nav__link">
-    Approach in case of error
-  </a>
   
 </li>
       
@@ -1052,35 +1132,204 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/appsdock/docs/edit/master/docs/concepts/amqp.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/appsdock/docs/edit/master/docs/concepts/configuration.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="message-queue-amqp">Message Queue (<abbr title="Advanced Message Queuing Protocol">AMQP</abbr>)</h1>
-<p>AppsDock <abbr title="Operating System">OS</abbr> uses an <abbr title="Advanced Message Queuing Protocol">AMQP</abbr> based infrastructure to handle asynchronous messages, which allows executing long-running processes in the background by implementing async event handlers or async command executions via Message Bus within AppsDock <abbr title="Operating System">OS</abbr>.</p>
-<h2 id="composition">Composition</h2>
-<p>AppsDock <abbr title="Operating System">OS</abbr> provides a dedicated <abbr title="Advanced Message Queuing Protocol">AMQP</abbr>-Agent that acts as a consumer and mediator of messages. AppsDock <abbr title="Operating System">OS</abbr> avoids processing messages via <abbr title="Command Line Interface">CLI</abbr> in consumer mode directly due to potential environment inequality between <abbr title="Command Line Interface">CLI</abbr> and <abbr title="Hypertext Preprocessor">PHP</abbr>-<abbr title="FastCGI Process Manager">FPM</abbr> and disregard of <abbr title="Hypertext Preprocessor">PHP</abbr>-<abbr title="FastCGI Process Manager">FPM</abbr> process worker benefits. Instead, the dedicated <abbr title="Advanced Message Queuing Protocol">AMQP</abbr>-Agent consumes the messages from <abbr title="Advanced Message Queuing Protocol">AMQP</abbr> server and executes, controls and monitors asynchronous <abbr title="Hypertext Preprocessor">PHP</abbr>-<abbr title="FastCGI Process Manager">FPM</abbr> process workers, which process the messages.  </p>
-<p><img alt="Service Structure" src="../../assets/images/amqp/service-structure.svg" /></p>
-<h3 id="publisher-appsdock-os">Publisher (AppsDock <abbr title="Operating System">OS</abbr>)</h3>
-<p>AppsDock <abbr title="Operating System">OS</abbr> uses the MessageBus component to publish messages to the <abbr title="Advanced Message Queuing Protocol">AMQP</abbr> server directly.  It does not provide any kind of consuming the published messages via <abbr title="Advanced Message Queuing Protocol">AMQP</abbr> server due to this responsibility is adopted by the AppsDock <abbr title="Advanced Message Queuing Protocol">AMQP</abbr>-Agent. Instead, AppsDock <abbr title="Operating System">OS</abbr> provides an internal and secured API endpoint to handle published messages which are provided by the <abbr title="Advanced Message Queuing Protocol">AMQP</abbr>-Agent. The handling of these messages over API uses also the MessageBus component.</p>
-<h3 id="consumer-appsdock-amqp-agent">Consumer (AppsDock <abbr title="Advanced Message Queuing Protocol">AMQP</abbr>-Agent)</h3>
-<p>The dedicated <abbr title="Advanced Message Queuing Protocol">AMQP</abbr>-Agent, which is a part of the AppsDock Dedicated Services, is a scalable <abbr title="Advanced Message Queuing Protocol">AMQP</abbr> message consumer service. This service consumes the messages from the <abbr title="Advanced Message Queuing Protocol">AMQP</abbr> server directly and manage their processes and states in conjunction with <abbr title="Hypertext Preprocessor">PHP</abbr>-<abbr title="FastCGI Process Manager">FPM</abbr> workers.</p>
-<h2 id="message-types-subjects">Message Types (Subjects)</h2>
-<p>AppsDock <abbr title="Operating System">OS</abbr> uses different types of messages for different process purposes. Each type of message uses a specific php class as message body to represent the message content. AppsDock <abbr title="Operating System">OS</abbr> supports actually two kinds of message types: 
-- event
-- command.</p>
-<p>Each message type has several allocated message queues to handle different process results.
-- A main queue for delivery and processing
-- A retry queue for delayed redelivery on failures
-- A error queue for non-deliverable messages</p>
-<h3 id="event-message">Event Message</h3>
-<p>The <strong>event</strong> message type is used to handle asynchronous event handlers via MessageBus. This type uses <code>AppsDock\Core\Event\Integration\IntegrationEvent</code> as content class and is basically used to publish integration events. </p>
-<h3 id="command-message">Command Message</h3>
-<p>The <strong>command</strong> message type is used to execute asynchronous command handlers via MessageBus. This type uses any class which is a type of <code>AppsDock\Core\Contracts\App\Application\Command</code> as content class.</p>
-<h2 id="approach-in-case-of-error">Approach in case of error</h2>
-<p>As already described above (Message Types), the <abbr title="Advanced Message Queuing Protocol">AMQP</abbr>-Agent defines <strong>dedicated queues to handle failures</strong>. If the process worker failed (any case), the message will be <strong>rejected without a direct requeue</strong>. Instead, the message will be moved automatically into the <strong>retry queue</strong> which keep the failed message for a certain time. After this time, this message is published back into the <strong>main queue</strong> for a retry. If this procedure fails for a certain number of retries, this message will be <strong>dropped from main and retry</strong> queue and published into the <strong>error queue</strong> for further investigation. </p>
-<p><img alt="Error Handling" src="../../assets/images/amqp/amqp-error-handling.svg" /></p>
+                <h1 id="configuration">Configuration</h1>
+<h2 id="setting-id">Setting ID</h2>
+<p>The first part of the ID of a setting is always composed of the app context, such as <strong>com.appsdock</strong> or <strong>com.appsdock.hrm</strong>, followed by the identifier <strong>config</strong>. This is followed by a colon as a separator. The second part consists of any (or none) grouping separated by dots. The last word is the name of the setting.</p>
+<h3 id="examples">Examples</h3>
+<table>
+<thead>
+<tr>
+<th>Context</th>
+<th align="center">Identifier<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></th>
+<th align="center">Separator</th>
+<th>Group<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>com.appsdock</td>
+<td align="center">.config</td>
+<td align="center">:</td>
+<td>maintenance</td>
+<td>date</td>
+</tr>
+<tr>
+<td>com.appsdock</td>
+<td align="center">.config</td>
+<td align="center">:</td>
+<td>email.smtp</td>
+<td>username</td>
+</tr>
+<tr>
+<td>com.appsdock.hrm</td>
+<td align="center">.config</td>
+<td align="center">:</td>
+<td>leave</td>
+<td>max</td>
+</tr>
+</tbody>
+</table>
+<h2 id="setting-types">Setting types</h2>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>BOOL</code></td>
+<td>True | False</td>
+<td>A "either or" choice.</td>
+</tr>
+<tr>
+<td><code>STRING</code></td>
+<td>String</td>
+<td>A string. It's the <strong>default</strong>.</td>
+</tr>
+<tr>
+<td><code>INT</code></td>
+<td>Number</td>
+<td>A signed number.</td>
+</tr>
+<tr>
+<td><code>SELECT</code></td>
+<td>Selection</td>
+<td>A single selection of options.</td>
+</tr>
+<tr>
+<td><code>MULTISELECT</code></td>
+<td>Multi selection</td>
+<td>A multiple selection of options.</td>
+</tr>
+<tr>
+<td><code>DATE</code></td>
+<td>Date</td>
+<td>A date.</td>
+</tr>
+<tr>
+<td><code>TIME</code></td>
+<td>Time</td>
+<td>A time.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="default-value">Default value</h2>
+<p>The default value is used if no value has been set by the user. Therefore, it can be easily overwritten during updates. If a value has been set by the user, it remains unaffected.</p>
+<p>The possibility to change the values is managed via the rights system. There are settings that cannot be changed by normal administrators, so the default value is always used here.</p>
+<h2 id="database">Database</h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td><code>VARCHAR(255)</code></td>
+</tr>
+<tr>
+<td>type</td>
+<td><code>ENUM('BOOL', 'STRING', 'INT', 'SELECT', 'MULTISELECT', 'DATE', 'TIME')</code></td>
+</tr>
+<tr>
+<td>value</td>
+<td><code>JSON</code></td>
+</tr>
+<tr>
+<td>default</td>
+<td><code>JSON</code></td>
+</tr>
+<tr>
+<td>options</td>
+<td><code>JSON</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="examples_1">Examples</h3>
+<table>
+<thead>
+<tr>
+<th>id</th>
+<th>type</th>
+<th>value</th>
+<th>default</th>
+<th>options</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>com.appsdock.config:email.smtp.authentication</td>
+<td><code>BOOL</code></td>
+<td><code>[true]</code></td>
+<td><code>[]</code></td>
+<td><code>[]</code></td>
+</tr>
+<tr>
+<td>com.appsdock.config:email.smtp.username</td>
+<td><code>STRING</code></td>
+<td><code>["example@example.com"]</code></td>
+<td><code>[]</code></td>
+<td><code>[]</code></td>
+</tr>
+<tr>
+<td>com.appsdock.config:email.smtp.connection.retries</td>
+<td><code>INT</code></td>
+<td><code>[10]</code></td>
+<td><code>[5]</code></td>
+<td><code>[]</code></td>
+</tr>
+<tr>
+<td>com.appsdock.hrm.config:notification.email.interval</td>
+<td><code>SELECT</code></td>
+<td><code>["daily"]</code></td>
+<td><code>["weekly"]</code></td>
+<td><code>["daily", "weekly", "monthly"]</code></td>
+</tr>
+<tr>
+<td>com.appsdock.config:notification.channels</td>
+<td><code>MULTISELECT</code></td>
+<td><code>["browser", "email", "discord"]</code></td>
+<td><code>["browser"]</code></td>
+<td><code>["browser", "email", "discord", "telegram", "whatsapp", "sms"]}</code></td>
+</tr>
+<tr>
+<td>com.appsdock.config:maintenance.date</td>
+<td><code>DATE</code></td>
+<td><code>["2021-06-01"]}</code></td>
+<td><code>[]</code></td>
+<td></td>
+</tr>
+<tr>
+<td>com.appsdock.config:maintenance.time</td>
+<td><code>TIME</code></td>
+<td><code>["14:35"]</code></td>
+<td><code>[]</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>The identifier for configuration settings is always <strong>config</strong>.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>A group is <strong>optional</strong>.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
                 
               
               
@@ -1104,7 +1353,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../.." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home" rel="prev">
+        <a href="../introduction/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Introduction" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1113,20 +1362,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Home
+              Introduction
             </div>
           </div>
         </a>
       
       
         
-        <a href="../identity-access/authentication/" class="md-footer__link md-footer__link--next" aria-label="Next: Authentication" rel="next">
+        <a href="../infrastructure/amqp/" class="md-footer__link md-footer__link--next" aria-label="Next: Message Queue (AMQP)" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Authentication
+              Message Queue (AMQP)
             </div>
           </div>
           <div class="md-footer__button md-icon">
