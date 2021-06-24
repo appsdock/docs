@@ -71,6 +71,8 @@ nav:
       - REST API: gettingstarted/guidelines/rest-api.md
     - Application:
       - Structure: gettingstarted/application/structure.md
+    - CI/CD:
+      - Versioning: gettingstarted/cicd/versioning.md
   - API Reference:
     - Introduction: api/index.md
     - Authentication: api/authentication.md
