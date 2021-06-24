@@ -52,16 +52,17 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Concepts:
-      - Introduction: concepts/introduction.md
-      - Configuration: concepts/configuration.md
-      - Infrastructure:
-        - Message Queue (AMQP): concepts/infrastructure/amqp.md
-      - Identity and access:
-        - Authentication: concepts/identity-access/authentication.md
-        - Identity: concepts/identity-access/identity.md
-        - Policies and permissions: concepts/identity-access/policies-and-permissions.md
+    - Introduction: concepts/introduction.md
+    - Configuration: concepts/configuration.md
+    - Infrastructure:
+      - Message Queue (AMQP): concepts/infrastructure/amqp.md
+    - Identity and access:
+      - Authentication: concepts/identity-access/authentication.md
+      - Identity: concepts/identity-access/identity.md
+      - Policies and permissions: concepts/identity-access/policies-and-permissions.md
   - Getting Started:
-    - Environment: gettingstarted/environment/index.md
+    - Environment:
+      - Introduction: gettingstarted/environment/index.md
       - IDE: gettingstarted/environment/ide.md
       - Version Control: gettingstarted/environment/version-control.md
     - Guidelines:
