@@ -13,9 +13,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
     "name": "Jarvis",
     "active": true,
     "version": "1.0.0",
-    "build": "#59-1964",
-    "status": "READY",
-    "channel": "BETA"
+    "status": "READY"
 }
 ~~~
 
@@ -25,9 +23,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 | **name** | `string` | The name of the application.
 | **active** | `bool` | The activity status of the application.
 | **version** | `string` | The version number of the application. The number is divided into major, minor and revision number, each separated by a dot.
-| **build** | `string` | The build number of the application. The number can be freely assigned.
 | **status** | `string` | The life status of the application.
-| **channel** | `string` | The development status of the application.
 
 
 ### Activate an app
