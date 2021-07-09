@@ -330,7 +330,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 
 ### Get a user identity
 
-`GET` **/v1/users/{id}/identity/{securityToken}**
+`GET` **/v1/users/st-{id}**
 
 
 **Parameters**
@@ -340,6 +340,15 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 ### List all users
 
 `GET` **/v1/users**
+
+
+**Parameters**
+
+!!! important "This endpoint has no parameters."
+
+### Resend the registration complete mail.
+
+`POST` **/v1/users/{id}/mails/completeRegistration**
 
 
 **Parameters**
@@ -367,6 +376,15 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 ### Get the current user preferences
 
 `GET` **/v1/users/me/preferences**
+
+
+**Parameters**
+
+!!! important "This endpoint has no parameters."
+
+### Get the current user roles
+
+`GET` **/v1/users/me/roles**
 
 
 **Parameters**

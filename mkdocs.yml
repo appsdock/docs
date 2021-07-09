@@ -19,10 +19,11 @@ theme:
     - navigation.tabs.sticky
     - navigation.top
     - navigation.indexes
+  logo: assets/images/logo.svg
   palette:
     scheme: slate
     primary: green
-    accent: light green
+    accent: light blue
 
 extra_css:
   - assets/css/appsdock.css
