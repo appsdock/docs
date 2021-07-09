@@ -60,7 +60,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="light-green">
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="light-blue">
   
     
     <script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
@@ -84,8 +84,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../../.." title="AppsDock OS Documentation" class="md-header__button md-logo" aria-label="AppsDock OS Documentation" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+  <img src="../../../assets/images/logo.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -273,8 +272,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../../.." title="AppsDock OS Documentation" class="md-nav__button md-logo" aria-label="AppsDock OS Documentation" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+  <img src="../../../assets/images/logo.svg" alt="logo">
 
     </a>
     AppsDock OS Documentation
@@ -1087,6 +1085,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#resend-the-registration-complete-mail" class="md-nav__link">
+    Resend the registration complete mail.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#get-the-current-user" class="md-nav__link">
     Get the current user
   </a>
@@ -1103,6 +1108,13 @@
           <li class="md-nav__item">
   <a href="#get-the-current-user-preferences" class="md-nav__link">
     Get the current user preferences
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-the-current-user-roles" class="md-nav__link">
+    Get the current user roles
   </a>
   
 </li>
@@ -1500,6 +1512,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#resend-the-registration-complete-mail" class="md-nav__link">
+    Resend the registration complete mail.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#get-the-current-user" class="md-nav__link">
     Get the current user
   </a>
@@ -1516,6 +1535,13 @@
           <li class="md-nav__item">
   <a href="#get-the-current-user-preferences" class="md-nav__link">
     Get the current user preferences
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-the-current-user-roles" class="md-nav__link">
+    Get the current user roles
   </a>
   
 </li>
@@ -2050,13 +2076,19 @@
 <p class="admonition-title">This endpoint has no parameters.</p>
 </div>
 <h3 id="get-a-user-identity">Get a user identity</h3>
-<p><code>GET</code> <strong>/v1/users/{id}/identity/{securityToken}</strong></p>
+<p><code>GET</code> <strong>/v1/users/st-{id}</strong></p>
 <p><strong>Parameters</strong></p>
 <div class="admonition important">
 <p class="admonition-title">This endpoint has no parameters.</p>
 </div>
 <h3 id="list-all-users">List all users</h3>
 <p><code>GET</code> <strong>/v1/users</strong></p>
+<p><strong>Parameters</strong></p>
+<div class="admonition important">
+<p class="admonition-title">This endpoint has no parameters.</p>
+</div>
+<h3 id="resend-the-registration-complete-mail">Resend the registration complete mail.</h3>
+<p><code>POST</code> <strong>/v1/users/{id}/mails/completeRegistration</strong></p>
 <p><strong>Parameters</strong></p>
 <div class="admonition important">
 <p class="admonition-title">This endpoint has no parameters.</p>
@@ -2075,6 +2107,12 @@
 </div>
 <h3 id="get-the-current-user-preferences">Get the current user preferences</h3>
 <p><code>GET</code> <strong>/v1/users/me/preferences</strong></p>
+<p><strong>Parameters</strong></p>
+<div class="admonition important">
+<p class="admonition-title">This endpoint has no parameters.</p>
+</div>
+<h3 id="get-the-current-user-roles">Get the current user roles</h3>
+<p><code>GET</code> <strong>/v1/users/me/roles</strong></p>
 <p><strong>Parameters</strong></p>
 <div class="admonition important">
 <p class="admonition-title">This endpoint has no parameters.</p>
