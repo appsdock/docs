@@ -9,6 +9,7 @@ site_dir: docs
 
 theme:
   name: material
+  favicon: assets/images/logo.svg
   features:
       # Enable XHR loading
     - navigation.instant
