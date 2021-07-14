@@ -12,7 +12,7 @@
         <link rel="canonical" href="https://appsdock.github.io/docs/api/rest/access/">
       
       <link rel="icon" href="../../../assets/images/logo.svg">
-      <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.9">
+      <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.10">
     
     
       
@@ -20,7 +20,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.ca7ac06f.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.1fe995fd.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.f1a3b89f.min.css">
@@ -847,6 +847,33 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#action" class="md-nav__link">
+    Action
+  </a>
+  
+    <nav class="md-nav" aria-label="Action">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-action-resource" class="md-nav__link">
+    The Action resource
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list-all-actions" class="md-nav__link">
+    List all actions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#policy" class="md-nav__link">
     Policy
   </a>
@@ -1102,6 +1129,33 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#action" class="md-nav__link">
+    Action
+  </a>
+  
+    <nav class="md-nav" aria-label="Action">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-action-resource" class="md-nav__link">
+    The Action resource
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list-all-actions" class="md-nav__link">
+    List all actions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#policy" class="md-nav__link">
     Policy
   </a>
@@ -1169,6 +1223,65 @@
                 <h1 id="access-resources">Access Resources</h1>
 <p>This page provides a list of all access resource endpoints within AppsDock <abbr title="Operating System">OS</abbr>.</p>
 <p>The guideline for the <abbr title="Representational State Transfer">REST</abbr> <abbr title="Application Programming Interface">API</abbr> can be found <a href="../../../gettingstarted/guidelines/rest-api">here</a>.</p>
+<h2 id="action">Action</h2>
+<h3 id="the-action-resource">The Action resource</h3>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="p">{</span>
+    <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;680fe5ff-3b68-4d22-bb91-eb6a9712f78d&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;appId&quot;</span><span class="p">:</span> <span class="s2">&quot;28dfe5ff-3b68-4d22-bb91-eb6a9712f78d&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;action&quot;</span><span class="p">:</span> <span class="s2">&quot;document.read&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Read documents&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Permits the read action for documents.&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>id</strong></td>
+<td><code>string</code></td>
+<td>The action <abbr title="Identifier">ID</abbr> in <abbr title="Universally Unique Identifier">UUID</abbr> format.</td>
+</tr>
+<tr>
+<td><strong>appId</strong></td>
+<td><code>string</code></td>
+<td>The app <abbr title="Identifier">ID</abbr> in <abbr title="Universally Unique Identifier">UUID</abbr> format.</td>
+</tr>
+<tr>
+<td><strong>action</strong></td>
+<td><code>string</code></td>
+<td>The action short id.</td>
+</tr>
+<tr>
+<td><strong>name</strong></td>
+<td><code>string</code></td>
+<td>The name of the action.</td>
+</tr>
+<tr>
+<td><strong>description</strong></td>
+<td><code>string</code></td>
+<td>The description of the action.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="list-all-actions">List all actions</h3>
+<p><code>GET</code> <strong>/v1/actions</strong></p>
+<p><strong>Parameters</strong></p>
+<div class="admonition important">
+<p class="admonition-title">This endpoint has no parameters.</p>
+</div>
 <h2 id="policy">Policy</h2>
 <h3 id="the-policy-resource">The Policy resource</h3>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
@@ -1277,6 +1390,12 @@
 <td>The resource affected by the policy. Valid values are: *, <code>UUID</code></td>
 </tr>
 <tr>
+<td><strong>actionId</strong></td>
+<td><code>string</code></td>
+<td align="center">✔</td>
+<td>The action <abbr title="Identifier">ID</abbr> in <abbr title="Universally Unique Identifier">UUID</abbr> format.</td>
+</tr>
+<tr>
 <td><strong>effect</strong></td>
 <td><code>string</code></td>
 <td align="center">✔</td>
@@ -1289,9 +1408,11 @@
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="p">{</span>
     <span class="nt">&quot;roleId&quot;</span><span class="p">:</span> <span class="s2">&quot;680fe5ff-3b68-4d22-bb91-eb6a9712f78d&quot;</span><span class="p">,</span>
     <span class="nt">&quot;resource&quot;</span><span class="p">:</span> <span class="s2">&quot;*&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;actionId&quot;</span><span class="p">:</span> <span class="s2">&quot;680fe5ff-3b68-4d22-bb91-eb6a9712f78d&quot;</span><span class="p">,</span>
     <span class="nt">&quot;effect&quot;</span><span class="p">:</span> <span class="s2">&quot;ALLOW&quot;</span>
 <span class="p">}</span>
 </code></pre></div>
@@ -1319,8 +1440,9 @@
           </div>
         </div>
         
-          <a href="#" class="md-top md-icon" title="Back to top" data-md-component="top" data-md-state="hidden">
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+            Back to top
           </a>
         
       </main>
@@ -1389,7 +1511,7 @@
     <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.indexes"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.82b56eb2.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.ddd52ceb.min.js"></script>
       
     
   </body>
