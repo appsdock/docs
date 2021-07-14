@@ -289,7 +289,7 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
 | --------- | ---- | :------: | -----------
 | **organizationId** | `string` | ✖ | The ID of the organization as UUID.
 | **username** | `string` | ✔ | The username of the user.
-| **password** | `string` | ✔ | The password of the user.
+| **password** | `string` | ✖ | The password of the user.
 | **email** | `string` | ✔ | The email address of the user.
 | **name** | `string` | ✔ | The name of the user.
 | **roles** | `array` | ✖ | The ID of the role as UUID which should be assigned to the user.
@@ -434,6 +434,31 @@ The guideline for the REST API can be found [here](../../../gettingstarted/guide
         "en-GB": "Development",
         "zh-Hans-HK": "\u53d1\u5c55"
     }
+}
+~~~
+
+### Update a user
+
+`PATCH` **/v1/users/{id}**
+
+
+**Parameters**
+
+| Parameter | Type | Required | Description
+| --------- | ---- | :------: | -----------
+| **username** | `string` | ✖ | The username of the user.
+| **password** | `string` | ✖ | The password of the user.
+| **email** | `string` | ✖ | The email address of the user.
+| **name** | `string` | ✖ | The name of the user.
+
+##### Payload
+
+~~~json
+{
+    "username": "IronMan",
+    "password": "4-v3ry.53cr37_p455w0rd",
+    "email": "tony@stark-industries.com",
+    "name": "Tony Stark"
 }
 ~~~
 
